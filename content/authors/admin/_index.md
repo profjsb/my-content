@@ -15,11 +15,10 @@ role: Professor of Astronomy
 # Organizations/Affiliations
 organizations:
 - name: UC Berkeley
-  url: ""
+  url: "https://berkeley.edu/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Bloom is an astronomy professor at the University of California, Berkeley where he teaches radiative processes, high-energy astrophysics, and a graduate-level "Python for Data Science" course. He has published over 300 refereed articles largely on time-domain transients events, artificial intelligence, and telescope/insight automation. His book on gamma-ray bursts, a technical introduction for physical scientists, was published by Princeton University Press. Josh has been awarded the Data-Driven Discovery prize from the Gordon and Betty Moore Foundation and the Pierce Prize from the American Astronomical Society; he is also a former Sloan Fellow, Junior Fellow at the Harvard Society, and Hertz Foundation Fellow. He holds a PhD from Caltech and degrees from Harvard College (AB) and Cambridge University (MPhil). He was co-founder and CTO of Wise.io, an AI application startup, acquired by GE in 2016.
-
+bio: Astrophysics Prof at UC Berkeley, former Wise.io cofounder (acquired by GE); Inventor; Dad, Tennis everything. Anti #TransparentMoon.
 
 interests:
 - Machine learning meeting Physics
@@ -71,5 +70,5 @@ user_groups:
 - Researchers
 - Visitors
 ---
-
+Bloom is an astronomy professor at the University of California, Berkeley where he teaches radiative processes, high-energy astrophysics, and a graduate-level "Python for Data Science" course. He has published over 300 refereed articles largely on time-domain transients events, artificial intelligence, and telescope/insight automation. His book on gamma-ray bursts, a technical introduction for physical scientists, was published by Princeton University Press. Josh has been awarded the Data-Driven Discovery prize from the Gordon and Betty Moore Foundation and the Pierce Prize from the American Astronomical Society; he is also a former Sloan Fellow, Junior Fellow at the Harvard Society, and Hertz Foundation Fellow. He holds a PhD from Caltech and degrees from Harvard College (AB) and Cambridge University (MPhil). He was co-founder and CTO of Wise.io, an AI application startup, acquired by GE in 2016.
 
