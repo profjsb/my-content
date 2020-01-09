@@ -1,12 +1,12 @@
 ---
 title: "The double-peaked 2008 outburst of the accreting milli-second X-ray pulsar, IGR J00291+5934"
 date: 2010-07-01
-publishDate: 2020-01-09T19:57:15.480066Z
+publishDate: 2020-01-09T21:52:32.884420Z
 authors: ["F. Lewis", "D. M. Russell", "P. G. Jonker", "M. Linares", "V. Tudose", "P. Roche", "J. S. Clark", "M. A. P. Torres", "D. Maitra", "C. G. Bassa", "D. Steeghs", "A. Patruno", "S. Migliari", "R. Wijnands", "G. Nelemans", "L. J. Kewley", "V. E. Stroud", "M. Modjaz", "J. S. Bloom", "C. H. Blake", "D. Starr"]
 publication_types: ["2"]
-abstract: ""
+abstract: "Context. In August 2008, the accreting milli-second X-ray pulsar (AMXP), IGR J00291+5934, underwent an outburst lasting åisebox-0.5ex 100 days, the first since its discovery in 2004. <BR /> Aims: We present data from the 2008 double-peaked outburst of IGR J00291+5934 from Faulkes Telescope North, the Isaac Newton Telescope, the Keck Telescope, PAIRITEL, the Westerbork Synthesis Radio Telescope and the Swift, XMM- Newton and RXTE X-ray missions. We study the outburst's evolution at various wavelengths, allowing us to probe accretion physics in this AMXP. <BR /> Methods: We study the light curve morphology, presenting the first radio-X-ray spectral energy Distributions (SEDs) for this source and the most detailed UV-IR SEDs for any outbursting AMXP. We show simple models that attempt to identify the emission mechanisms responsible for the SEDs. We analyse short-timescale optical variability, and compare a medium resolution optical spectrum with those from 2004. <BR /> Results: The outburst morphology is unusual for an AMXP, comprising two peaks, the second containing a “plateau” of i̊sebox-0.5ex 10 days at maximum brightness within 30 days of the initial activity. This has implications on duty cycles of short-period X-ray transients. The X-ray spectrum can be fitted by a single, hard power-law. We detect optical variability of rs̊ebox-0.5ex 0.05 mag, on timescales of minutes, but find no periodic modulation. In the optical, the SEDs contain a blue component, indicative of an irradiated disc, and a transient near-infrared (NIR) excess. This excess is consistent with a simple model of an optically thick synchrotron jet (as seen in other outbursting AMXPs), however we discuss other potential origins. The optical spectrum shows a double-peaked Hα profile, a diagnostic of an accretion disc, but we do not clearly see other lines (e.g. He I, II) that were reported in 2004. <BR /> Conclusions: Optical/IR observations of AMXPs appear to be excellent for studying the evolution of both the outer accretion disc and the inner jet, and may eventually provide us with tight constraints to model disc-jet coupling in accreting neutron stars. <P />Table 5 is only available in electronic form at <A href=``http://www.aanda.org''>http://www.aanda.org</A>"
 featured: false
-publication: "*Astronomy and Astrophysics*"
+publication: "*åp*"
 tags: ["pulsars: general", "X-rays: binaries", "stars: neutron", "accretion", "accretion disks", "Astrophysics - High Energy Astrophysical Phenomena"]
 doi: "10.1051/0004-6361/201014382"
 ---

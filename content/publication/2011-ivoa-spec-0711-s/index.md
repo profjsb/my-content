@@ -1,7 +1,7 @@
 ---
 title: "Sky Event Reporting Metadata Version 2.0"
 date: 2011-07-01
-publishDate: 2020-01-09T19:57:15.419673Z
+publishDate: 2020-01-09T21:52:32.818852Z
 authors: ["Rob Seaman", "Roy Williams", "Alasdair Allan", "Scott Barthelmy", "Joshua Bloom", "John Brewer", "Robert Denny", "Mike Fitzpatrick", "Matthew Graham", "Norman Gray", "Frederic Hessman", "Szabolcs Marka", "Arnold Rots", "Tom Vestrand", "Przemyslaw Wozniak"]
 publication_types: ["4"]
 abstract: ""

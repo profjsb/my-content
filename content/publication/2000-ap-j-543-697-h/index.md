@@ -1,10 +1,10 @@
 ---
 title: "GRB 991216 Joins the Jet Set: Discovery and Monitoring of Its Optical Afterglow"
 date: 2000-11-01
-publishDate: 2020-01-09T19:57:15.893304Z
+publishDate: 2020-01-09T21:52:33.261809Z
 authors: ["J. P. Halpern", "R. Uglesich", "N. Mirabal", "S. Kassin", "J. Thorstensen", "W. C. Keel", "A. Diercks", "J. S. Bloom", "F. Harrison", "J. Mattox", "M. Eracleous"]
 publication_types: ["2"]
-abstract: ""
+abstract: "The optical light curve of the energetic γ-ray burst GRB 991216 is consistent with jetlike behavior in which a power- law decay steepens from t$^-1.22+/-0.04$ at early times to t$^-1.53+/-0.05$ in a gradual transition at around 2 days. The derivation of the late-time decay slope takes into account the constant contribution of a host or intervening galaxy, which was measured 110 days after the event at R=24.56+/-0.14, although the light curve deviates from a single power law whether or not a constant term is included. The early-time spectral energy distribution of the afterglow can be described as F$_ensurema thν$åisebox-0.5ex ν$^- 0.74+/-0.05$ or flatter between optical and X-ray, which, together with the slow initial decay, is characteristic of standard adiabatic evolution in a uniformly dense medium. Assuming that a reported absorption-line redshift of 1.02 is correct, the apparent isotropic energy of 6.7×10$^53$ ergs is reduced by a factor of i̊sebox-0.5ex 200 in the jet model, and the initial half-opening angle is rs̊ebox-0.5ex 6°. GRB 991216 is the third good example of a jetlike afterglow (following GRB 990123 and GRB 990510), supporting a trend in which the apparently most energetic γ-ray events have the narrowest collimation and a uniform interstellar medium environment. This, plus the absence of evidence for supernovae associated with jetlike afterglows, suggests that these events may originate from a progenitor in which angular momentum plays an important role but a massive stellar envelope or wind does not, e.g., in the coalescence of a compact binary."
 featured: false
 publication: "*Astrophysical Journal*"
 tags: ["Gamma Rays: Bursts", "Astrophysics"]

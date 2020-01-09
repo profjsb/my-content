@@ -1,10 +1,10 @@
 ---
 title: "Multi-Messenger Astrophysics: Harnessing the Data Revolution"
 date: 2018-07-01
-publishDate: 2020-01-09T19:57:15.185602Z
+publishDate: 2020-01-09T21:52:32.567649Z
 authors: ["Gabrielle Allen", "Warren Anderson", "Erik Blaufuss", "Joshua S. Bloom", "Patrick Brady", "Sarah Burke-Spolaor", "S. Bradley Cenko", "Andrew Connolly", "Peter Couvares", "Derek Fox", "Avishay Gal-Yam", "Suvi Gezari", "Alyssa Goodman", "Darren Grant", "Paul Groot", "James Guillochon", "Chad Hanna", "David W. Hogg", "Kelly Holley-Bockelmann", "D. Andrew Howell", "David Kaplan", "Erik Katsavounidis", "Marek Kowalski", "Luis Lehner", "Daniel Muthukrishna", "Gautham Narayan", "J. E. G. Peek", "Abhijit Saha", "Peter Shawhan", "Ignacio Taboada"]
 publication_types: ["2"]
-abstract: ""
+abstract: "The past year has witnessed discovery of the first identified counterparts to a gravitational wave transient (GW 170817A) and a very high-energy neutrino (IceCube-170922A). These source identifications, and ensuing detailed studies, have realized longstanding dreams of astronomers and physicists to routinely carry out observations of cosmic sources by other than electromagnetic means, and inaugurated the era of ``multi- messenger'' astronomy. While this new era promises extraordinary physical insights into the universe, it brings with it new challenges, including: highly heterogeneous, high-volume, high- velocity datasets; globe-spanning cross-disciplinary teams of researchers, regularly brought together into transient collaborations; an extraordinary breadth and depth of domain- specific knowledge and computing resources required to anticipate, model, and interpret observations; and the routine need for adaptive, distributed, rapid-response observing campaigns to fully exploit the scientific potential of each source. We argue, therefore, that the time is ripe for the community to conceive and propose an Institute for Multi- Messenger Astrophysics that would coordinate its resources in a sustained and strategic fashion to efficiently address these challenges, while simultaneously serving as a center for education and key supporting activities. In this fashion, we can prepare now to realize the bright future that we see, beyond, through these newly opened windows onto the universe. <P />"
 featured: false
 publication: "*arXiv e-prints*"
 tags: ["Astrophysics - Instrumentation and Methods for Astrophysics", "Astrophysics - High Energy Astrophysical Phenomena"]

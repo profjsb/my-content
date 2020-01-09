@@ -1,7 +1,7 @@
 ---
 title: "Identifying High-z Gamma-Ray Burst Candidates Using Random Forest Classification"
 date: 2012-01-01
-publishDate: 2020-01-09T19:57:15.374077Z
+publishDate: 2020-01-09T21:52:32.777716Z
 authors: ["Adam N. Morgan", "James Long", "Tamara Broderick", "Joseph W. Richards", "Joshua S. Bloom"]
 publication_types: ["1"]
 abstract: ""

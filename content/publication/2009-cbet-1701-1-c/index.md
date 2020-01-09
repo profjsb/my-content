@@ -1,10 +1,10 @@
 ---
 title: "Supernovae 2009V and 2009ae"
 date: 2009-02-01
-publishDate: 2020-01-09T19:57:15.584313Z
+publishDate: 2020-01-09T21:52:32.964018Z
 authors: ["R. Chornock", "D. A. Perley", "J. S. Bloom"]
 publication_types: ["2"]
-abstract: ""
+abstract: "R. Chornock, D. A. Perley, and J. S. Bloom, University of California, Berkeley, report that inspection of spectra (range 310-925 nm) obtained on Feb. 19.61 UT with LRIS on the Keck-I 10-m telescope reveals that 2009V (cf. CBET 1680) is a type-Ia supernova; cross-correlation with a library of supernova spectra using the ``SuperNova IDentification'' code (SNID; Blondin and Tonry 2007, Ap.J. 666, 1024) indicates that the redshift is 0.093 +/- 0.003 and that 2009V is 10.5 +/- 1.1 days after maximum light. Spectra obtained on Feb. 19.68 of 2009ae (cf. CBET 1696) reveal that it is also a type-Ia supernova; SNID finds a best match with SN 1999ee at an age of 20 days after maximum light."
 featured: false
 publication: "*Central Bureau Electronic Telegrams*"
 ---

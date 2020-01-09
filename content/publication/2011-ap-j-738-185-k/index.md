@@ -1,10 +1,10 @@
 ---
 title: "Mid-infrared Period-luminosity Relations of RR Lyrae Stars Derived from the WISE Preliminary Data Release"
 date: 2011-09-01
-publishDate: 2020-01-09T19:57:15.408636Z
+publishDate: 2020-01-09T21:52:32.806833Z
 authors: ["Christopher R. Klein", "Joseph W. Richards", "Nathaniel R. Butler", "Joshua S. Bloom"]
 publication_types: ["2"]
-abstract: ""
+abstract: "Interstellar dust presents a significant challenge to extending parallax-determined distances of optically observed pulsational variables to larger volumes. Distance ladder work at mid- infrared wavebands, where dust effects are negligible and metallicity correlations are minimized, has been largely focused on few-epoch Cepheid studies. Here we present the first determination of mid-infrared period-luminosity (PL) relations of RR Lyrae stars from phase-resolved imaging using the preliminary data release of the Wide-field Infrared Survey Explorer (WISE). We present a novel statistical framework to predict posterior distances of 76 well observed RR Lyrae that uses the optically constructed prior distance moduli while simultaneously imposing a power-law PL relation to WISE- determined mean magnitudes. We find that the absolute magnitude in the bluest WISE filter is M $_W1$ = (- 0.421 ± 0.014) - (1.681 ± 0.147)log$_10$(P/0.50118 day), with no evidence for a correlation with metallicity. Combining the results from the three bluest WISE filters, we find that a typical star in our sample has a distance measurement uncertainty of 0.97% (statistical) plus 1.17% (systematic). We do not fundamentalize the periods of RRc stars to improve their fit to the relations. Taking the Hipparcos-derived mean V-band magnitudes, we use the distance posteriors to determine a new optical metallicity- luminosity relation. The results of this analysis will soon be tested by Hubble Space Telescope parallax measurements and, eventually, with the GAIA astrometric mission."
 featured: false
 publication: "*Astrophysical Journal*"
 tags: ["infrared: stars", "methods: statistical", "stars: distances", "stars: variables: RR Lyrae", "Astrophysics - Astrophysics of Galaxies", "Astrophysics - Cosmology and Nongalactic Astrophysics"]

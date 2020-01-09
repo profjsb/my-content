@@ -1,10 +1,10 @@
 ---
 title: "Supernovae 2006cb, 2006co, and 2006cq"
 date: 2006-05-01
-publishDate: 2020-01-09T19:57:15.691780Z
+publishDate: 2020-01-09T21:52:33.083422Z
 authors: ["R. J. Foley", "J. S. Bloom", "D. Kocevski", "D. Perley", "A. V. Filippenko"]
 publication_types: ["2"]
-abstract: ""
+abstract: "R. J. Foley, J. S. Bloom, D. Kocevski, D. Perley, and A. V. Filippenko, University of California, Berkeley, report that inspection of CCD spectra (range 350-930 nm), obtained on May 30 UT with the Keck I 10-m telescope (+ LRIS), shows that SN 2006cb (cf. IAUC 8709) is of type Ib, approximately 4-6 weeks after maximum light; absorption lines of He I are prominent. The spectrum of 2006co (cf. CBET 523) shows it to be a young type-II supernova, having a blue continuum with hydrogen Balmer lines superposed. Removing the recession velocity of 4030 km/s, derived from H-II- region emission lines, we find the minimum of the H-beta absorption to be blueshifted by 12300 km/s. Spectrograms obtained on May 31 shows that SN 2006cq (cf. CBET 527) is of type Ia, with a spectral-feature age (Riess et al. 1997, A.J. 114, 722) of -1.7 +/- 2 days relative to maximum brightness; adopting the recession velocity of 14500 km/s (Rines et al. 2003, A.J. 126, 2152), the minimum of the Si II 635.5-nm line is found to be blueshifted by 10700 km/s."
 featured: false
 publication: "*Central Bureau Electronic Telegrams*"
 ---

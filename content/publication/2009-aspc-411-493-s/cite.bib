@@ -1,4 +1,24 @@
 @inbook{2009ASPC..411..493S,
+ abstract = {The Berkeley Transients Classification Pipeline (TCP) is a parallelized
+source identification, classification, and broadcast pipeline
+which ingests several real-time data torrents and emits science
+events of pre-articulated interest. The TCP's classification
+machine-learning algorithms are trained using a comprehensive
+science class hierarchy of light-curves which are resampled to
+emulate the cadence and quality of incoming observatory data
+streams. The referenced classified light-curves are contained
+within our growing public data warehouse, DotAstro.org
+(http://dotastro.org/). To effectively distinguish a source's
+classification from neighboring classes or hierarchical parents,
+dozens of real-number metrics (``features'') are derived from
+its light-curve, color information, spatial context, and
+historical data. Upon science class identification (or
+reclassification), a VOEvent XML containing all available
+information is broadcast to subscribed telescopes and science
+groups for followup. Subsequently acquired data for that source
+can then be fed back to DotAstro.org which the TCP will use to
+reinforce its internal model of the source's science class. <P
+/>},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2009ASPC..411..493S},
  author = {Starr, D.~L. and Bloom, J.~S. and Brewer, J.~M. and

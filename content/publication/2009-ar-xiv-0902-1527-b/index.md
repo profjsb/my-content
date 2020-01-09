@@ -1,10 +1,10 @@
 ---
 title: "Astro2010 Decadal Survey Whitepaper: Coordinated Science in the Gravitational and Electromagnetic Skies"
 date: 2009-02-01
-publishDate: 2020-01-09T19:57:15.586188Z
+publishDate: 2020-01-09T21:52:32.965894Z
 authors: ["Joshua S. Bloom", "Daniel E. Holz", "Scott A. Hughes", "Kristen Menou", "Allan Adams", "Scott F. Anderson", "Andy Becker", "Geoffrey C. Bower", "Niel Brandt", "Bethany Cobb", "Kem Cook", "Alessandra Corsi", "Stefano Covino", "Derek Fox", "Andrew Fruchter", "Chris Fryer", "Jonathan Grindlay", "Dieter Hartmann", "Zoltan Haiman", "Bence Kocsis", "Lynne Jones", "Abraham Loeb", "Szabolcs Marka", "Brian Metzger", "Ehud Nakar", "Samaya Nissanke", "Daniel A. Perley", "Tsvi Piran", "Dovi Poznanski", "Tom Prince", "Jeremy Schnittman", "Alicia Soderberg", "Michael Strauss", "Peter S. Shawhan", "David H. Shoemaker", "Jonathan Sievers", "Christopher Stubbs", "Gianpiero Tagliaferri", "Pietro Ubertini", "Przemyslaw Wozniak"]
 publication_types: ["2"]
-abstract: ""
+abstract: "It is widely expected that the coming decade will witness the first direct detection of gravitational waves (GWs). The ground-based LIGO and Virgo GW observatories are being upgraded to advanced sensitivity, and are expected to observe a significant binary merger rate. The launch of The Laser Interferometer Space Antenna (LISA) would extend the GW window to low frequencies, opening new vistas on dynamical processes involving massive (M &gt;åisebox-0.5ex  105̂ M_Sun) black holes. GW events are likely to be accompanied by electromagnetic (EM) counterparts and, since information carried electromagnetically is complementary to that carried gravitationally, a great deal can be learned about an event and its environment if it becomes possible to measure both forms of radiation in concert. Measurements of this kind will mark the dawn of trans-spectral astrophysics, bridging two distinct spectral bands of information. The aim of this whitepaper is to articulate future directions in both theory and observation that are likely to impact broad astrophysical inquiries of general interest. What will EM observations reflect on the nature and diversity of GW sources? Can GW sources be exploited as complementary probes of cosmology? What cross-facility coordination will expand the science returns of gravitational and electromagnetic observations? <P />"
 featured: false
 publication: "*arXiv e-prints*"
 tags: ["Astrophysics - Cosmology and Extragalactic Astrophysics", "Astrophysics - High Energy Astrophysical Phenomena", "General Relativity and Quantum Cosmology"]

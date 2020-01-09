@@ -1,10 +1,10 @@
 ---
 title: "Towards a real-time transient classification engine"
 date: 2008-03-01
-publishDate: 2020-01-09T19:57:15.630234Z
+publishDate: 2020-01-09T21:52:33.009878Z
 authors: ["J. S. Bloom", "D. L. Starr", "N. R. Butler", "P. Nugent", "M. Rischard", "D. Eads", "D. Poznanski"]
 publication_types: ["2"]
-abstract: ""
+abstract: "Temporal sampling does more than add another axis to the vector of observables. Instead, under the recognition that how objects change (and move) in time speaks directly to the physics underlying astronomical phenomena, next-generation wide-field synoptic surveys are poised to revolutionize our understanding of just about anything that goes bump in the night (which is just about everything at some level). Still, even the most ambitious surveys will require targeted spectroscopic follow-up to fill in the physical details of newly discovered transients. We are now building a new system intended to ingest and classify transient phenomena in near real-time from high-throughput imaging data streams. Described herein, the Transient Classification Project at Berkeley will be making use of classification techniques operating on ``features`` extracted from time series and contextual (static) information. We also highlight the need for a community adoption of a standard representation of astronomical time series data (ie. ``VOTimeseries''). <P />"
 featured: false
 publication: "*Astronomische Nachrichten*"
 tags: ["methods: statistical", "methods: data analysis", "surveys", "Astrophysics"]

@@ -1,10 +1,10 @@
 ---
 title: "A Complete Catalog of Swift Gamma-Ray Burst Spectra and Durations: Demise of a Physical Origin for Pre-Swift High-Energy Correlations"
 date: 2007-12-01
-publishDate: 2020-01-09T19:57:15.639954Z
+publishDate: 2020-01-09T21:52:33.021311Z
 authors: ["Nathaniel R. Butler", "Daniel Kocevski", "Joshua S. Bloom", "Jason L. Curtis"]
 publication_types: ["2"]
-abstract: ""
+abstract: "We calculate durations and spectral parameters for 218 Swift bursts detected by the BAT instrument between and including gamma-ray bursts (GRBs) 041220 and 070509, including 77 events with measured redshifts. Incorporating prior knowledge into the spectral fits, we are able to measure the characteristic νF$_ν$ spectral peak energy E$_pk,obs$ and the isotropic equivalent energy E$_iso$ (1-10$^4$ keV) for all events. This complete and rather extensive catalog, analyzed with a unified methodology, allows us to address the persistence and origin of high-energy correlations suggested in pre-Swift observations. We find that the E$_pk,obs$-E$_iso$ correlation is present in the Swift sample; however, the best-fit power-law relation is inconsistent with the best-fit pre-Swift relation at &gt;5 σ significance. It has a factor &gt;åisebox-0.5ex 2 larger intrinsic scatter, after accounting for large errors on E$_pk,obs$. A large fraction of the Swift events are hard and subluminous relative to (and inconsistent with) the pre-Swift relation, in agreement with indications from BATSE GRBs without redshift. Moreover, we determine an experimental threshold for the BAT detector and show how the E$_pk,obs$-E$_iso$ correlation arises artificially due to partial correlation with the threshold. We show that pre-Swift correlations found by Amati et al., Yonetoku et al., and Firmani et al., and independently by others are likely unrelated to the physical properties of GRBs and are likely useless for tests of cosmology. Also, an explanation for these correlations in terms of a detector threshold provides a natural and quantitative explanation for why short-duration GRBs and events at low redshift tend to be outliers to the correlations."
 featured: false
 publication: "*Astrophysical Journal*"
 tags: ["Gamma Rays: Bursts", "Methods: Statistical", "Astrophysics"]

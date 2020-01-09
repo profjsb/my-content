@@ -22,7 +22,7 @@ bio: Astrophysics Prof at UC Berkeley, former Wise.io cofounder (acquired by GE)
 
 interests:
 - Machine learning meets Physics
-- Time domain: Black hole transients, Gamma-ray bursts
+- Time domain (Black hole transients, Gamma-ray bursts)
 - Optical/infrared instrumentation
 
 education:
