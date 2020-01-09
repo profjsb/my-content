@@ -4,7 +4,7 @@ name: Joshua Bloom
 
 # Username (this should match the folder name)
 authors:
-- admin
+- josh
 
 # Is this the primary user of the site?
 superuser: true
@@ -37,6 +37,9 @@ education:
   - course: AB in Astrophysics and Astronomy and Physics
     institution: Harvard College
     year: 1996
+
+speaking:
+- In the interest of fostering diverse representation, before inviting me to speak at a conferences, I ask that organizers pay particular attention to attracting women and those from underrepresented groups to be on the panel(s)/speaker list. I've served on too many academic and industry panels where the representation of such groups was nil or close to zero. If logistics work out, I'd be happy to participate so long as there are some assurances that it will be a diverse group on stage.
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
