@@ -8,7 +8,7 @@ featured: true
 tags : [python 3, dynamic programming, change]
 ---
 
-You can get the original Jupyter notebook for this post [here](./index.ipynb).
+You can get the original Jupyter notebook for this post [here](https://github.com/profjsb/my-content/blob/master/content/post/dataclasses_and_dynamic_programming/index.ipynb).
 
 Starting in Python 3.7 there is a new decorator from the module [`dataclasses`](https://docs.python.org/3/library/dataclasses.html) which allows us create  (essentially) immutable structures (like tuples) but with their own methods and batteries included. I wanted to give this a try with some non-trivial workloads. Having always been interested the [`coin change` problem](https://en.wikipedia.org/wiki/Change-making_problem), involving [dynamic programming](https://en.wikipedia.org/wiki/Dynamic_programming), this seemed to be a good test of `dataclasses`.
 
@@ -291,7 +291,7 @@ IFrame('plot.html', width=1000, height=650)
 <iframe
     width="1000"
     height="650"
-    src="./post.html"
+    src="https://github.com/profjsb/my-content/blob/master/content/post/dataclasses_and_dynamic_programming/plot.html"
     frameborder="0"
     allowfullscreen
 ></iframe>
