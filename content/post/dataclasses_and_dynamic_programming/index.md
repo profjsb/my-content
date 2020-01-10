@@ -290,7 +290,7 @@ IFrame('plot.html', width=1000, height=650)
 <iframe
     width="1000"
     height="650"
-    src="/post/dataclasses_and_dynamic_programming/plot.html"
+    src="plot.html"
     frameborder="0"
     allowfullscreen
 ></iframe>
