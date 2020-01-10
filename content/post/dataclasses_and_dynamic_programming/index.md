@@ -1,30 +1,22 @@
 ---
-title: Python dataclasses & Dynamic Programming
+title: Dynamic Programming with Python dataclasses and joblib
 date: 2020-01-07
-authors:
-- josh
+
 draft: false
+author:
+ -josh
 featured: true
-tags : [python 3, dynamic programming, change]
+image:
+  caption: ""
+  focal_point: ""
+tags : [python 3, dynamic programming, joblib, dataclasses]
 ---
 
-You can get the original Jupyter notebook for this post [here](https://github.com/profjsb/my-content/blob/master/content/post/dataclasses_and_dynamic_programming/index.ipynb).
+Starting in Python 3.7, the module [`dataclasses`](https://docs.python.org/3/library/dataclasses.html) introduces a decorator that allows us to create immutable structures (like tuples) but with their own batteries-included methods. I wanted to give `dataclasses` a try with some non-trivial workloads. Having always been interested the [`coin change` problem](https://en.wikipedia.org/wiki/Change-making_problem) where the solution involves [dynamic programming](https://en.wikipedia.org/wiki/Dynamic_programming), this seemed to be a good test of `dataclasses`.
 
-Starting in Python 3.7 there is a new decorator from the module [`dataclasses`](https://docs.python.org/3/library/dataclasses.html) which allows us create  (essentially) immutable structures (like tuples) but with their own methods and batteries included. I wanted to give this a try with some non-trivial workloads. Having always been interested the [`coin change` problem](https://en.wikipedia.org/wiki/Change-making_problem), involving [dynamic programming](https://en.wikipedia.org/wiki/Dynamic_programming), this seemed to be a good test of `dataclasses`.
+Instead of the classic coin change problem (finding the minimum number of coins that add up to a given amount), however, here I want to keep track of all possible combinations. The end result (at the bottom of this post) is an interactive plot to explore the results.
 
-But instead of the classic coin change problem, finding the minimum number of coins that add up to a given amount, here I want to keep track of all possible combinations.
-
-
-```javascript
-%%javascript
-IPython.OutputArea.prototype._should_scroll = function(lines) {
-    return false;
-}
-```
-
-
-    <IPython.core.display.Javascript object>
-
+Note: You can get the original Jupyter notebook for this post [here](https://github.com/profjsb/my-content/blob/master/content/post/dataclasses_and_dynamic_programming/index.ipynb).
 
 
 ```python
@@ -47,7 +39,7 @@ output_notebook()
 
 
 
-Here we'll use `joblib` to help help save
+Here we'll use `joblib` to cache the results, so we don't need to redo computations we already have completed:
 
 
 ```python
@@ -64,8 +56,8 @@ Now, let's define the universe of possible coins.
 
 ```python
 # coins = [1, 2, 5, 10, 20, 50, 100]  # European coins
-coins = [1, 5, 10, 25, 50, 100] # All US Coins circulation
 # coins = [1, 5, 10, 25] # US Coins in wide circulation
+coins = [1, 5, 10, 25, 50, 100] # All US Coins circulation
 ```
 
 Here's where we create our dataclass---this will hold a specific collection of coins (the purse variable). We'll also define how to add coins from one purse to another (`__add__`) and set some helper methods allowing us to sort (`__hash__`), compare (`__eq__`, `__le__`, `__lt__`) and print (`__repr__`).
@@ -198,6 +190,8 @@ The value `max_n` is the most number of combinations for a certain fixed value s
 
 
 
+Now let's make an interactive plot:
+
 
 ```python
 from bokeh.models import ColumnDataSource,  LabelSet, Label
@@ -249,30 +243,7 @@ show(p)
 ```
 
 
-
 This should be a dynamic plot -- you can zoom in to see some of the interesting structures. Hover over circles to see the coin combinations. I color coded and sized the circles so you can see where there is a lot of non-unique combinations. For example, we can see that 30 cents is the lowest value where there is a non-unique number of coin combinations (you can get 30 with 6 coins in 2 different ways). The numbers at the top of the plot show the total number of unique solutions. Try this out on your own; for example, what differences do you see with the Euro cent combination?
-
-
-```python
-# code to save the plot as a file
-```
-
-
-```python
-from bokeh.resources import CDN
-from bokeh.embed import file_html
-html = file_html(p, CDN, "my plot")
-f = open("plot.html", "w")
-f.write(html)
-f.close()
-```
-
-
-```python
-from IPython.display import IFrame
-IFrame('plot.html', width=1000, height=650)
-```
-
 
 
 <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
@@ -320,3 +291,9 @@ IFrame('plot.html', width=1000, height=650)
 </script>
 
 
+
+
+
+```python
+
+```
