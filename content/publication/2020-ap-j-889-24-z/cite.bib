@@ -1,0 +1,42 @@
+@article{2020ApJ...889...24Z,
+ abstract = {Cosmic ray (CR) identification and replacement are critical components
+of imaging and spectroscopic reduction pipelines involving
+solid-state detectors. We present deepCR, a deep-learning-based
+framework for CR identification and subsequent image inpainting
+based on the predicted CR mask. To demonstrate the effectiveness
+of this framework, we train and evaluate models on Hubble Space
+Telescope (HST) ACS/WFC images of sparse extragalactic fields,
+globular clusters, and resolved galaxies. We demonstrate that at
+a false-positive rate of 0.5%, deepCR achieves close to 100%
+detection rates in both extragalactic and globular cluster
+fields, and 91% in resolved galaxy fields, which is a
+significant improvement over the current state-of-the-art method
+LACosmic. Compared with a multicore CPU implementation of
+LACosmic, deepCR CR mask predictions run up to 6.5 times faster
+on a CPU and 90 times faster on a single GPU. For image
+inpainting, the mean squared errors of deepCR predictions are 20
+times lower in globular cluster fields, 5 times lower in
+resolved galaxy fields, and 2.5 times lower in extragalactic
+fields, compared with the best performing nonneural technique
+tested. We present our framework and the trained models as an
+open-source Python project , with a simple-to-use API. To
+facilitate reproducibility of the results we also provide a
+benchmarking codebase .},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2020ApJ...889...24Z},
+ archiveprefix = {arXiv},
+ author = {Zhang, Keming and Bloom, Joshua S.},
+ doi = {10.3847/1538-4357/ab3fa6},
+ eid = {24},
+ eprint = {1907.09500},
+ journal = {\apj},
+ keywords = {Astrophysics - Instrumentation and Methods for Astrophysics, Computer Science - Computer Vision and Pattern Recognition},
+ month = {January},
+ number = {1},
+ pages = {24},
+ primaryclass = {astro-ph.IM},
+ title = {deepCR: Cosmic Ray Rejection with Deep Learning},
+ volume = {889},
+ year = {2020}
+}
+
