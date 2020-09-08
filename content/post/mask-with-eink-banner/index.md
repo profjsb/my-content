@@ -8,7 +8,7 @@ featured: true
 image:
   caption: ""
   focal_point: ""
-tags : [#WearAMask, #weekendhack, Arduino, E-ink, wearables]
+tags : [Arduino, E-ink, wearables, WearAMask, weekendhack]
 ---
 
 <p>We wear masks out in public so often it occurred to me we should be able to dynamically customize them to suit our moods and maybe even sell advertising space! Masks also hide a good part of our facial expressions and so I wondered if I couldn't create a portion of a mask that lets people know how we're doing underneath. So I prototyped a wearable mask with a flexible e-ink display that can dynamically show content.</p>
@@ -16,7 +16,7 @@ tags : [#WearAMask, #weekendhack, Arduino, E-ink, wearables]
 
 <h2>Getting the Parts</h2>
 
-[Adafruit](https://www.adafruit.com) is my go-to place for electronics prototyping, especially when it comes to [arduino](https://www.arduino.cc/) tinkering. After some research, it looked like the Feather + E-ink Featherwing would be the right base for this project. I especially wanted something lightweight that could work on the go (ie. have a battery powered option and talk to my phone). Since I knew I wanted to wrap the display on my mask, the display needed to be flexible and big enough to read from at least 6 feet away.
+[Adafruit](https://www.adafruit.com) is my go-to place for electronics prototyping, especially when it comes to [Arduino](https://www.arduino.cc/) tinkering. After some research, it looked like the Feather + E-ink Featherwing would be the right base for this project. I especially wanted something lightweight that could work on the go (ie. have a battery-powered option and talk to my phone). Since I knew I wanted to wrap the display on my mask, the display needed to be flexible and big enough to read from at least 6 feet away.
 
 <video width="320" height="240" controls loop autoplay>
   <source src="https://cdn-shop.adafruit.com/product-videos/1024x768/4262-06.mp4" type="video/mp4">
@@ -62,9 +62,9 @@ I found a cloth mask with a few cotton layers that I could use to cut out a wind
 
 The prototype turned out pretty much as I had hoped (apologizes for the unkempt hair).
 
-<img src="featured.png">
+<img width="80%" src="featured.png">
 
-<img src="mask-assembled.png">
+<img width="80%"  src="mask-assembled.png">
 
 You can see a little demo here:
 
