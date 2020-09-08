@@ -68,9 +68,9 @@ The prototype turned out pretty much as I had hoped (apologizes for the unkempt 
 
 You can see a little demo here:
 
-<video  width="100%" controls>
-    <source src="https://drive.google.com/uc?export=download&id=1jbOwQiQzcUzJCiRZGSOM-D3WZ4klME7s" type='video/mp4'>
-</video>
+ <iframe width="420" height="315"
+src="https://www.youtube.com/embed/Ld6LPqmJSlg">
+</iframe> 
 
 <h2>Next Steps</h2>
 
