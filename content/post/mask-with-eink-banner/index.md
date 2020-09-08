@@ -44,7 +44,7 @@ $0.95
 
 <img src="assembled.png">
 
-Soldiering the header kit to the feather and featherwing was straightforward, after I dug up an old breadboard to keep the pins in place. The li ion battery attaches to the feather and is charged (slowly) when the microusb power supply/data cable is connected. A very nice feature of the feather design is the ability to jump over to battery power once the microusb is disconnected.
+Soldiering the header kit to the feather and featherwing was straightforward, after I dug up an old breadboard to keep the pins in place. The li ion battery attaches to the feather and is charged (slowly) when the micro-USB power supply/data cable is connected. A very nice feature of the feather design is the ability to jump over to battery power once the micro-USB is disconnected.
 
 The next step was to download the [latest Arduino IDE](https://www.arduino.cc/en/main/software) and install the [Bluetooth](https://learn.adafruit.com/adafruit-feather-32u4-bluefruit-le) and [Eink libraries](https://github.com/adafruit/Adafruit_EPD). The board can be interacted with via bluetooth and a mobile app called [BlueFruit Connect](https://apps.apple.com/us/app/adafruit-bluefruit-le-connect/id830125974).
 
@@ -74,4 +74,4 @@ You can see a little demo here:
 
 <h2>Next Steps</h2>
 
-I initially forgot to order the PIN extender for the ribbon cable, which means I currently have to place the electronics directly next to the mask, instead of around the back of the head (say under a hat). Also, I didn't yet manage to get images working (since that required an SD card). Perhaps the destiny is that we can sell our GPS location (and beacon IDs of people nearby) to companies and have them dynamically upload advertisements as we go about our business. Yeah, maybe that's too dystopic an idea even for 2020!
+I initially forgot to order the PIN extender for the ribbon cable, which means I currently have to place the electronics directly next to the mask, instead of around the back of the head (say under a hat). Also, I didn't yet manage to get images working (since that required an SD card). Perhaps the destiny is that we can sell our GPS location (and beacon IDs of people nearby) to companies and have them dynamically upload advertisements as we go about our business. Yeah, maybe that's too dystopic of an idea even for 2020!
