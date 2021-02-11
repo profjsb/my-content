@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Astronomy
+role: Dept. Chair; Professor of Astronomy
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: "https://berkeley.edu/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Astrophysics Prof at UC Berkeley, former Wise.io cofounder (acquired by GE); Inventor; Dad, Tennis everything. Anti [\#TransparentMoon](/post/lets-kill-the-transparent-moon/). Check out  his group activities at [ml4science.org](https://www.ml4science.org).
+bio: Department Chair, Astrophysics Prof at UC Berkeley, former Wise.io cofounder (acquired by GE); Inventor; Dad, Tennis everything. Anti [\#TransparentMoon](/post/lets-kill-the-transparent-moon/). Check out  his group activities at [ml4science.org](https://www.ml4science.org).
 
 interests:
 - Machine learning meets Physics
@@ -70,7 +70,7 @@ user_groups:
 - Researchers
 - Visitors
 ---
-Josh is an astronomy professor at the [University of California, Berkeley](https://berkeley.edu) teaching radiative processes, high-energy astrophysics, astronomy data lab, and a graduate-level "Python for Data Science" course. He has [published over 300 refereed articles](/publication) largely on time-domain transients events, artificial intelligence, and telescope/insight automation. His [book on gamma-ray bursts](https://www.amazon.com/Gamma-Ray-Bursts-Princeton-Frontiers-Physics/dp/0691145571), a technical introduction for physical scientists, was published by Princeton University Press. Josh has been awarded the Data-Driven Discovery prize from the Gordon and Betty Moore Foundation and the Pierce Prize from the American Astronomical Society; he is also a former Sloan Fellow, Junior Fellow at the Harvard Society, and Hertz Foundation Fellow. He was co-founder and CTO of Wise.io, an AI application startup, acquired by GE in 2016.
+Josh is the chair of the Astronomy Department and professor at the [University of California, Berkeley](https://berkeley.edu) teaching radiative processes, high-energy astrophysics, astronomy data lab, and a graduate-level "Python for Data Science" course. He has [published over 300 refereed articles](/publication) largely on time-domain transients events, artificial intelligence, and telescope/insight automation. His [book on gamma-ray bursts](https://www.amazon.com/Gamma-Ray-Bursts-Princeton-Frontiers-Physics/dp/0691145571), a technical introduction for physical scientists, was published by Princeton University Press. Josh has been awarded the Data-Driven Discovery prize from the Gordon and Betty Moore Foundation and the Pierce Prize from the American Astronomical Society; he is also a former Sloan Fellow, Junior Fellow at the Harvard Society, and Hertz Foundation Fellow. He was co-founder and CTO of Wise.io, an AI application startup, acquired by GE in 2016.
 
 Much of Josh's current group activities can be found at [ML4Science](https://www.ml4science.org).
 
