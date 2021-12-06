@@ -4,7 +4,6 @@ date: 2021-12-05
 draft: false
 tags : [machine learning, astronomy, mathematics, likelihood-free inference, microlensing, arxiv]
 ---
-# Just the Beginning for AI & Science
 
 Something very exciting is happening right now across the landscape of the physical and mathematical sciences: we are finally starting to learn **fundamentally** new things about how the universe works because of the direct and purposeful use of artificial intelligence/machine learning (AI/ML). Last week, two major results (discussed below) suggests that the long-sought, oft-discussed hope of an AI-driven revolution in science may now be coming to fruition.
 
