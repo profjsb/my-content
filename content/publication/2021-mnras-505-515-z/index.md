@@ -56,7 +56,7 @@ abstract: We present Cyclic-Permutation Invariant Neural Networks, a novel class
   Finding improvement on a non-astronomy benchmark, we suggest that the methodology
   introduced here should also be applicable to a wide range of science domains where
   periodic data abounds.
-publication: '*mnras*'
+publication: '*Monthly Notices of the Royal Astronomical Society*'
 doi: 10.1093/mnras/stab1248
 links:
 - name: arXiv

@@ -65,7 +65,7 @@ abstract: 'Fast and automated inference of binary-lens, single-source (2L1S) mic
   and automated inference. We show that the NDE also captures expected posterior degeneracies.
   The NDE posterior could then be refined into the exact posterior with a downstream
   MCMC sampler with minimal burn-in steps.'
-publication: '*aj*'
+publication: '*Astronomical Journal*'
 doi: 10.3847/1538-3881/abf42e
 links:
 - name: arXiv

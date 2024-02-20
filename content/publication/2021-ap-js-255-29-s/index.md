@@ -105,7 +105,7 @@ abstract: Several thousand core-collapse supernovae (CCSNe) of different flavors
   the photometric properties of their host galaxies from the far- ultraviolet to the
   mid-infrared and model the host-galaxy spectral energy distributions to derive physical
   properties. The galaxy mass function of Type Ic, Ib, IIb, II, and IIn SNe ranges
-  from 10$^5$ to 10$^11.5$ M$_ensuremathødot$, probing the entire mass range of star-forming
+  from 10$^5$ to 10$^11.5$ M$_ødot$, probing the entire mass range of star-forming
   galaxies down to the least-massive star-forming galaxies known. Moreover, the galaxy
   mass distributions are consistent with models of star- formation-weighted mass functions.
   Regular CCSNe are hence direct tracers of star formation. Small but notable differences
@@ -113,12 +113,12 @@ abstract: Several thousand core-collapse supernovae (CCSNe) of different flavors
   higher masses (i.e., higher metallicities) and star formation rates than Type IIb
   and II SNe. These differences are less pronounced than previously thought. H-poor
   superluminous supernovae (SLSNe) and SNe Ic-BL are scarce in galaxies above 10$^10$
-  M$_ensuremathødot$. Their progenitors require environments with metallicities of
+  M$_ødot$. Their progenitors require environments with metallicities of
   < 0.4 and < 1 solar, respectively. In addition, the hosts of H-poor SLSNe are dominated
   by a younger stellar population than all other classes of CCSNe. Our findings corroborate
   the notion that low metallicity and young age play an important role in the formation
   of SLSN progenitors.
-publication: '*apjs*'
+publication: '*Astrophysical Journal Supp.*'
 doi: 10.3847/1538-4365/abff5e
 links:
 - name: arXiv

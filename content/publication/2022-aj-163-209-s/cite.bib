@@ -1,0 +1,46 @@
+@article{2022AJ....163..209S,
+ abstract = {Efficient searches for electromagnetic counterparts to gravitational
+wave, high-energy neutrino, and gamma-ray burst events demand
+rapid processing of image arithmetic and geometry set operations
+in a database to cross-match galaxy catalogs, observation
+footprints, and all-sky images. Here we introduce HEALPix
+Alchemy, an open-source, pure Python implementation of a set of
+methods that enables rapid all-sky geometry calculations.
+HEALPix Alchemy is built upon HEALPix, a spatial indexing
+strategy that is widely used in astronomical databases as well
+as the native format of LIGO-Virgo-KAGRA gravitational-wave sky
+localization maps. Our approach leverages new multirange types
+built into the PostgreSQL 14 database engine. This enables fast
+all-sky queries against probabilistic multimessenger event
+localizations and telescope survey footprints. Questions such as
+``What are the galaxies contained within the 90% credible
+region of an event?'' and ``What is the rank-ordered list of the
+fields within an observing footprint with the highest
+probability of containing the event?'' can be performed in less
+than a few seconds on commodity hardware using off-the-shelf
+cloud-managed database implementations without server-side
+database extensions. Common queries scale roughly linearly with
+the number of telescope pointings. As the number of fields grows
+into the hundreds or thousands, HEALPix Alchemy is orders of
+magnitude faster than other implementations. HEALPix Alchemy is
+now used as the spatial geometry engine within SkyPortal, which
+forms the basis of the Zwicky Transient Facility transient
+marshal, called Fritz.},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2022AJ....163..209S},
+ archiveprefix = {arXiv},
+ author = {Singer, Leo P. and Parazin, B. and Coughlin, Michael W. and Bloom, Joshua S. and Crellin-Quick, Arien and Goldstein, Daniel A. and van der Walt, Stéfan},
+ doi = {10.3847/1538-3881/ac5ab8},
+ eid = {209},
+ eprint = {2112.06947},
+ journal = {\aj},
+ keywords = {Gravitational wave astronomy, Time domain astronomy, Virtual observatories, Cloud computing, Astronomy databases, 675, 2109, 1774, 1970, 83, Astrophysics - Instrumentation and Methods for Astrophysics, Astrophysics - High Energy Astrophysical Phenomena, General Relativity and Quantum Cosmology},
+ month = {May},
+ number = {5},
+ pages = {209},
+ primaryclass = {astro-ph.IM},
+ title = {HEALPix Alchemy: Fast All-Sky Geometry and Image Arithmetic in a Relational Database for Multimessenger Astronomy Brokers},
+ volume = {163},
+ year = {2022}
+}
+
