@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Dept. Chair; Professor of Astronomy
+role: Professor of Astronomy
 
 # Organizations/Affiliations
 organizations:
