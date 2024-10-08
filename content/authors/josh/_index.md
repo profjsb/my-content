@@ -18,7 +18,7 @@ organizations:
   url: "https://berkeley.edu/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Astrophysics Prof at UC Berkeley, former Wise.io cofounder (acquired by GE); Former Department Chair; Inventor; Dad, Tennis everything. Anti [\#TransparentMoon](/post/lets-kill-the-transparent-moon/). Check out  his group activities at [ml4science.org](https://www.ml4science.org) and art exhibition [CuratingAI.art](https://www.curatingai.art/) (Spring 2024). 
+bio: Astrophysics Prof at UC Berkeley, former Wise.io cofounder (acquired by GE); Previous Department Chair; Inventor; Dad, Tennis everything. Anti [\#TransparentMoon](/post/lets-kill-the-transparent-moon/). Check out his group activities at [ml4science.org](https://www.ml4science.org) and art exhibition [CuratingAI.art](https://www.curatingai.art/) (Spring 2024). 
 
 interests:
 - Machine learning meets Physics
@@ -74,7 +74,7 @@ Josh a Professor of Astronomy and Miller Professor at the [University of Califor
 
 Much of Josh's current group activities can be found at [ML4Science](https://www.ml4science.org).
 
-Josh is the founder and principal curator of the [CuratingAI art exhibition](https://www.curatingai.art/) starting April 19, 2024. 
+Josh is the founder and principal curator of the [CuratingAI art exhibition](https://www.curatingai.art/) which ran in April 2024. 
 
 <font size="-1">*Note on Speaking Invitations*: In the interest of fostering diverse representation, before inviting me to speak at a conference or the like, I ask that organizers pay particular attention to attracting women and those from underrepresented groups to be on the panel(s)/speaker list. I've served on too many academic and industry panels where the representation of such groups was nil or close to zero. If logistics work out, I'd be happy to participate so long as there are some assurances that it will be a diverse group on stage.</font>
 
