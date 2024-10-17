@@ -78,3 +78,27 @@ Josh is the founder and principal curator of the [CuratingAI art exhibition](htt
 
 <font size="-1">*Note on Speaking Invitations*: In the interest of fostering diverse representation, before inviting me to speak at a conference or the like, I ask that organizers pay particular attention to attracting women and those from underrepresented groups to be on the panel(s)/speaker list. I've served on too many academic and industry panels where the representation of such groups was nil or close to zero. If logistics work out, I'd be happy to participate so long as there are some assurances that it will be a diverse group on stage.</font>
 
+
+AI-generated podcast about a recent paper [An Earth-mass planet and a brown dwarf in orbit around a white dwarf](https://www.nature.com/articles/s41550-024-02375-9).
+<audio id="audioPlayer" controls>
+  <source src="files/WD_planet.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+<div>
+  <label for="speedControl">Speed:</label>
+  <input type="range" id="speedControl" min="0.5" max="3" value="1" step="0.1">
+  <span id="speedDisplay">1x</span>
+</div>
+
+<script>
+  const audio = document.getElementById('audioPlayer');
+  const speedControl = document.getElementById('speedControl');
+  const speedDisplay = document.getElementById('speedDisplay');
+
+  speedControl.addEventListener('input', function() {
+    const speed = parseFloat(this.value);
+    audio.playbackRate = speed;
+    speedDisplay.textContent = speed.toFixed(1) + 'x';
+  });
+</script>
