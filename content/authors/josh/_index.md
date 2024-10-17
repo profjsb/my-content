@@ -79,26 +79,5 @@ Josh is the founder and principal curator of the [CuratingAI art exhibition](htt
 <font size="-1">*Note on Speaking Invitations*: In the interest of fostering diverse representation, before inviting me to speak at a conference or the like, I ask that organizers pay particular attention to attracting women and those from underrepresented groups to be on the panel(s)/speaker list. I've served on too many academic and industry panels where the representation of such groups was nil or close to zero. If logistics work out, I'd be happy to participate so long as there are some assurances that it will be a diverse group on stage.</font>
 
 
-AI-generated podcast about a recent paper [An Earth-mass planet and a brown dwarf in orbit around a white dwarf](https://www.nature.com/articles/s41550-024-02375-9).
-<audio id="audioPlayer" controls>
-  <source src="files/WD_planet.wav" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
-
-<div>
-  <label for="speedControl">Speed:</label>
-  <input type="range" id="speedControl" min="0.5" max="3" value="1" step="0.1">
-  <span id="speedDisplay">1x</span>
-</div>
-
-<script>
-  const audio = document.getElementById('audioPlayer');
-  const speedControl = document.getElementById('speedControl');
-  const speedDisplay = document.getElementById('speedDisplay');
-
-  speedControl.addEventListener('input', function() {
-    const speed = parseFloat(this.value);
-    audio.playbackRate = speed;
-    speedDisplay.textContent = speed.toFixed(1) + 'x';
-  });
-</script>
+AI-generated podcast about a recent paper [An Earth-mass planet and a brown dwarf in orbit around a white dwarf](https://www.nature.com/articles/s41550-024-02375-9):
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1936918427&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/joshua-bloom-6" title="Joshua Bloom" target="_blank" style="color: #cccccc; text-decoration: none;">Joshua Bloom</a> · <a href="https://soundcloud.com/joshua-bloom-6/wd_planet" title="WD_planet" target="_blank" style="color: #cccccc; text-decoration: none;">WD_planet</a></div>
