@@ -8,7 +8,7 @@ location: "Las Vegas, NV"
 summary: "Keynote on building systems of intelligence - coupling machine learning with industrial data and workflows."
 topics: ["industry", "ai-ml"]
 talk_type: "Keynote"
-talk_number: 72
+talk_number: 86
 display_date: "May 2017"
 has_transcript: false
 ---

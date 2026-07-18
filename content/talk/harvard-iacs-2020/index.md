@@ -9,7 +9,7 @@ location: "Cambridge, MA (virtual)"
 summary: "ML across astronomy workflows: the Planet 9 search, new variable-source classes, semi-supervised VAEs generating realistic time series to optimize observing schedules, and deep-learning cosmic-ray detection and correction."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Seminar"
-talk_number: 87
+talk_number: 105
 display_date: "Oct 2020"
 url_video: "https://www.youtube.com/watch?v=j3upNhJXTdM"
 has_transcript: true

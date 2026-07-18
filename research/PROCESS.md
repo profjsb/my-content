@@ -250,6 +250,38 @@ Link health after merge: **119 ok, 7 walled, 4→2 dead of 130** (the two remain
 are the known BIDS 404s; a dead SLAC index was swapped to a Wayback snapshot and a
 never-archived KIPAC event link dropped).
 
+## Addendum — local slide-archive sweep (2026-07-18, PR #7)
+
+Scanned ~/Talks, ~/OldLaptop/Talks, and ~/OldLaptop/MoreOldTalk (~250 Keynote/PDF/PPT
+files; note `~/OldLaptop/*` are symlinks — `find` needs `-L`). Pipeline: filter
+non-talks (courses, backups, personal) → extract first-page text (pypdf) or the
+preview image embedded in each .key zip → vision agents read titles/venues/dates off
+the title slides → dedupe against the ledger → web-verify events. **100 → 124
+entries.**
+
+- **24 new talks** (1998–2024), highlights: Swift@5 2009 (archived program lists the
+  talk), COSPAR 2010 Bremen, SACNAS 2010, the Royal Society Kavli satellite meeting
+  2012 (archived page lists him as speaker), a second SIAM CSE13 talk (MS158), the
+  UC-HiPACC exascale workshop 2014, BASCD 2019 keynote, MLSE 2020, the CPAR/DREAM 2023
+  first delivery of the "Real AI Revolution" talk, AIRA splinter at AAS 241, and
+  C²OA²SE 2024 (Michigan Tech, Ann Arbor).
+- **Slide-derived corrections**: autoencoding-rnn-2018 pinned to Sep 11, 2018, Santa
+  Clara with the full workshop name; ncsa-2018 pinned to Oct 17, 2018 with the real
+  workshop title; simons-visions-2013 moved to May 30 per the deck. A slide dated
+  "AAS Austin Jan 2011" was corrected to AAS 219 (Jan 2012 — SN 2011fe postdates
+  Jan 2011); "IAU Oxford Sept 2011" matches no IAU meeting and is recorded as an
+  Oxford seminar with a caveat note.
+- **Privacy rule applied** (industry decks without venues are private): excluded
+  a16z academic roundtable, D. E. Shaw, Thomson Reuters, Vodafone, Fujitsu forum,
+  TCV CIO/CTO, WeWork, Arkadium, Orange Institute, and all wise.io product/client
+  decks (several marked "Confidential / Not for distribution"), plus Valency investor
+  decks. Also excluded: courses/guest lectures (INFO 296A), lab-internal decks (BAIR
+  retreat, Moore check-ins, group intros), student-authored decks, posters, and decks
+  whose first page carried no identifying metadata (amnh, davis, como, keck, cefalù —
+  the last could not be matched to any real Cefalù 2012 meeting).
+- 15 old-format Keynote bundles had no extractable preview (incl. citris2010,
+  i4science, gw) — unreadable without opening Keynote; left for a manual pass.
+
 ## Maintenance
 
 Two skills were added with this branch:

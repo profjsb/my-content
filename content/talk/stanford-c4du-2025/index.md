@@ -9,7 +9,7 @@ location: "Stanford, CA"
 summary: "Faculty talk in the opening session on time-domain astronomical data and anomaly detection — finding rare and novel transients and variables in large survey data streams with machine learning."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 95
+talk_number: 119
 display_date: "Jun 2025"
 url_video: "https://www.youtube.com/watch?v=RttowkdSL4Y"
 has_transcript: true

@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Statistical inference on massive time-domain astronomy datasets, for the algorithms-for-massive-data community."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 62
+talk_number: 73
 display_date: "Jun 2014"
 url_video: "https://www.youtube.com/watch?v=jmDc6kRuyek"
 has_transcript: false

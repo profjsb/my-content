@@ -9,7 +9,7 @@ location: "New York, NY"
 summary: "As Wise.io co-founder/CTO: what it takes to deploy machine learning in production enterprise settings, and how industrial ML practice differs from academic ML."
 topics: ["industry", "ai-ml"]
 talk_type: "Talk"
-talk_number: 65
+talk_number: 77
 display_date: "May 2015"
 url_video: "https://www.youtube.com/watch?v=Qe8HEiq-29k"
 url_slides: "https://www.slideshare.net/firstmarkcap/machine-learning-in-production-josh-bloom-wiseio-firstmarks-data-driven"

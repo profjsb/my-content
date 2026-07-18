@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "CITRIS Research Exchange seminar on ML pipelines for discovery and inference on streaming astronomical time-series data (variable stars, transients, synoptic surveys)."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 53
+talk_number: 63
 display_date: "2013"
 url_video: "https://www.youtube.com/watch?v=yUhPC24vThs"
 has_transcript: true

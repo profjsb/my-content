@@ -9,7 +9,7 @@ location: "Seattle, WA"
 summary: "Morning lecture on supervised ML for astronomers — classification and regression, random forests, and a scikit-learn demo on SDSS star/galaxy/quasar data — at the first Astro Hack Week."
 topics: ["astronomy", "ai-ml", "education"]
 talk_type: "Tutorial"
-talk_number: 63
+talk_number: 74
 display_date: "Sep 2014"
 url_slides: "https://drive.google.com/file/d/0B4vIeCR-xYNnUzlxZzZ4ZjdibW8/edit"
 has_transcript: false

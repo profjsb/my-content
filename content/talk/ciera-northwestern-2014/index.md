@@ -9,7 +9,7 @@ location: "Evanston, IL"
 summary: "Colloquium on applying statistical machine learning to large-scale astronomy datasets in batch and streaming modes, as co-chair of the LSST Transients and Variable Stars collaboration."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Colloquium"
-talk_number: 59
+talk_number: 70
 display_date: "May 2014"
 has_transcript: false
 ---

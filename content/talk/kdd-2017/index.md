@@ -9,7 +9,7 @@ location: "Halifax, Canada"
 summary: "Applied Data Science invited talk (as VP of Data & Analytics, GE Digital) on deploying machine learning against industrial data at scale."
 topics: ["industry", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 75
+talk_number: 89
 display_date: "Aug 2017"
 url_slides: "https://www.slideshare.net/JoshuaBloom/industrial-machine-learning-sigkdd17"
 has_transcript: false

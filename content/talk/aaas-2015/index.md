@@ -9,7 +9,7 @@ location: "San Jose, CA"
 summary: "How universities can train domain scientists in computation and data science, in the AAAS symposium on interdisciplinary data-intensive career paths."
 topics: ["education"]
 talk_type: "Talk"
-talk_number: 64
+talk_number: 75
 display_date: "Feb 2015"
 has_transcript: false
 ---

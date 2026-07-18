@@ -129,7 +129,7 @@
       "astronomy",
       "ai-ml"
     ],
-    "date": "2013-05-31",
+    "date": "2013-05-30",
     "location": "Berkeley, CA",
     "video_url": "https://www.youtube.com/watch?v=vGpqTbdBtu0",
     "slides_url": null,
@@ -137,7 +137,7 @@
     "audio_url": null,
     "transcript_url": null,
     "summary": "Talk on the automated, ML-driven software stack of modern time-domain astrophysics at the Simons Institute's inaugural public symposium; reportedly the earliest video on the Simons Institute YouTube channel.",
-    "notes": "Verify YouTube ID at build time."
+    "notes": "Deck title slide says May 30, 2013 (symposium ran May 29-31; ledger previously said May 31). Video in the Simons collection; verify YouTube ID at build time."
   },
   {
     "n": 8,
@@ -505,21 +505,21 @@
     "n": 26,
     "slug": "autoencoding-rnn-2018",
     "title": "Autoencoding RNNs for Inference on Unevenly Sampled Time-Series",
-    "event": "AI Workflows in Astronomy & Microscopy",
+    "event": "Workshop on Applying Advanced AI Workflows in Astronomy and Microscopy",
     "type": "Talk",
     "topics": [
       "astronomy",
       "ai-ml"
     ],
-    "date": "2018-09",
-    "location": "San Jose, CA",
+    "date": "2018-09-11",
+    "location": "Santa Clara, CA",
     "video_url": null,
     "slides_url": "https://www.slideshare.net/JoshuaBloom/autoencoding-rnn-for-inference-on-unevenly-sampled-timeseries-data",
     "event_url": "https://arxiv.org/abs/1711.10609",
     "audio_url": null,
     "transcript_url": null,
     "summary": "Presenting the recurrent autoencoder network for classifying unevenly sampled variable-star light curves (Naul, Bloom, Perez & van der Walt; Nature Astronomy 2018).",
-    "notes": "Venue per CV (invited); month approximate. Deck matches Naul, Bloom, Perez & van der Walt, Nature Astronomy 2, 151 (2018), arXiv:1711.10609. Also delivered at NCSA Oct 2018 (separate entry)."
+    "notes": "Exact date/venue from the deck title slide (11 Sep 2018, Santa Clara). Deck matches Naul, Bloom, Perez & van der Walt, Nature Astronomy 2, 151 (2018). Same talk also at #ML4Sci LBNL Sep 5 and NCSA Oct 17, 2018 (separate entries)."
   },
   {
     "n": 27,
@@ -1803,13 +1803,13 @@
     "n": 93,
     "slug": "ncsa-2018",
     "title": "An Autoencoding Recurrent Neural Network for Inference on Unevenly Sampled Time-Series Data",
-    "event": "NCSA, University of Illinois",
+    "event": "Deep Learning for Multimessenger Astrophysics: Real-Time Discovery at Scale, NCSA",
     "type": "Invited Talk",
     "topics": [
       "astronomy",
       "ai-ml"
     ],
-    "date": "2018-10",
+    "date": "2018-10-17",
     "location": "Champaign-Urbana, IL",
     "video_url": null,
     "slides_url": "https://www.slideshare.net/JoshuaBloom/autoencoding-rnn-for-inference-on-unevenly-sampled-timeseries-data",
@@ -1817,7 +1817,7 @@
     "audio_url": null,
     "transcript_url": null,
     "summary": "Autoencoding RNNs for classification and inference on irregularly sampled astronomical time series.",
-    "notes": "Per CV (invited); no public NCSA listing found. Deck (linked) matches Naul, Bloom, Perez & van der Walt, Nature Astronomy 2, 151 (2018). Same talk also given at AI Workflows in Astronomy & Microscopy, Sep 2018."
+    "notes": "Workshop name and exact date (17 Oct 2018) from the deck title slide; NCSA, University of Illinois."
   },
   {
     "n": 94,
@@ -1958,5 +1958,478 @@
     "transcript_url": null,
     "summary": "Founder and curator of the CuratingAI exhibition, leading the closing panel on whether artists working with generative AI tools are creators, curators, or collaborators (panelists including Fernando Perez).",
     "notes": "Exhibition Apr 20-27, 2024; closing panel Apr 27, 4:45-5:45pm (Eventbrite: eventbrite.com/e/887351852277). Own write-up: joshbloom.org/post/curatingai/. Confirmed by JSB (led the panel)."
+  },
+  {
+    "n": 101,
+    "slug": "swift5-2009",
+    "title": "A Redress of Short Bursts",
+    "event": "Swift Mission Conference: Celebrating 5 Years",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2009-11-18",
+    "location": "State College, PA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "http://web.archive.org/web/20110720035512/http://www.swift.psu.edu/swift-2009/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "The revised observational picture of short gamma-ray bursts five years into the Swift mission, with the Berkeley GRB group.",
+    "notes": "Swift@5 conference, Penn State, Nov 18-20 2009; archived program lists the talk in the GRBs II: Observations session. Deck in local archive."
+  },
+  {
+    "n": 102,
+    "slug": "cospar-2010",
+    "title": "EXIST: Probing the Epoch of Reionization with Gamma-Ray Bursts",
+    "event": "38th COSPAR Scientific Assembly",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2010-07-21",
+    "location": "Bremen, Germany",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://ui.adsabs.harvard.edu/abs/2010cosp...38.2351B/abstract",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "The proposed EXIST hard X-ray survey mission as a probe of the reionization epoch through high-redshift gamma-ray bursts, as chair of the GRB-EXIST working group.",
+    "notes": "Assembly Jul 18-25, 2010; day approximate. With Grindlay (PI) and the EXIST team; ADS abstract linked (also in the site publications). Deck in local archive."
+  },
+  {
+    "n": 103,
+    "slug": "sacnas-2010",
+    "title": "The Transient Universe",
+    "event": "SACNAS National Conference",
+    "type": "Talk",
+    "topics": [
+      "astronomy",
+      "education"
+    ],
+    "date": "2010-10-01",
+    "location": "Anaheim, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://www.sacnas.org/pastconferences",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "The dynamic sky - explosions, flares, and ephemeral events - for the SACNAS community of Chicano/Hispanic and Native American scientists in training.",
+    "notes": "2010 SACNAS National Conference, Anaheim, Sept 30-Oct 3. Deck in local archive."
+  },
+  {
+    "n": 104,
+    "slug": "lobster-2010",
+    "title": "High-Redshift GRBs with Lobster",
+    "event": "Lobster Collaboration Meeting",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2010-10-12",
+    "location": null,
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Using the proposed Lobster wide-field X-ray transient monitor to find the highest-redshift gamma-ray bursts.",
+    "notes": "Lobster-eye X-ray mission concept meeting; no public meeting page survives. Deck in local archive."
+  },
+  {
+    "n": 105,
+    "slug": "sasir-townhall-2010",
+    "title": "SASIR: A Wide-Field Synoptic Survey for this Decade",
+    "event": "AAS Town Hall Meeting, UC Berkeley",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2010-11-29",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "The Synoptic All-Sky Infrared Survey concept, presented at a post-decadal-survey community town hall (alongside an LSST status report from Tony Tyson).",
+    "notes": "Event as titled on the deck; a local community town hall at Berkeley after the Astro2010 decadal release - no public listing found. SASIR concept paper: arXiv:0905.1965. Deck in local archive."
+  },
+  {
+    "n": 106,
+    "slug": "oxford-2011",
+    "title": "Constraints on the Progenitor System of the Type Ia Supernova SN 2011fe/PTF11kly",
+    "event": "University of Oxford",
+    "type": "Seminar",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2011-09-20",
+    "location": "Oxford, UK",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Ruling out red-giant and most main-sequence companions for the nearest modern Type Ia supernova, weeks after its discovery (Li, Bloom et al., Nature 2011).",
+    "notes": "Deck title slide says 'IAU Oxford - 20 Sept 2011'; no matching formal IAU meeting exists, so most plausibly an Oxford departmental seminar (co-author Podsiadlowski is at Oxford). Result: Nature 480, 348 (arXiv:1109.1593). Deck in local archive."
+  },
+  {
+    "n": 107,
+    "slug": "aas-219-2012",
+    "title": "Constraints on the Progenitor System of the Type Ia Supernova SN 2011fe/PTF11kly",
+    "event": "AAS 219th Meeting",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2012-01-10",
+    "location": "Austin, TX",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://aas.org/meetings/aas219",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "The SN 2011fe progenitor constraints presented to the AAS winter meeting.",
+    "notes": "Deck footer reads 'AAS Austin - Jan 2011', a typo: AAS 219 was Jan 8-12, 2012 (SN 2011fe was discovered Aug 2011); day approximate. AAS page blocks bots but is live. Deck in local archive."
+  },
+  {
+    "n": 108,
+    "slug": "icecube-2012",
+    "title": "GRB Phenomenology & Neutrinos",
+    "event": "IceCube Collaboration Meeting",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2012-03-20",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Gamma-ray burst phenomenology and the prospects for coincident neutrino detection, for the IceCube collaboration.",
+    "notes": "IceCube Spring 2012 collaboration meeting, Berkeley (confirmed via IceCube M&O FY12 report); agenda is on a login-walled legacy Indico, so no public page. Deck in local archive."
+  },
+  {
+    "n": 109,
+    "slug": "royal-society-satellite-2012",
+    "title": "Co-ordinating Facilities",
+    "event": "Interpreting Signals from Astrophysical Transient Experiments, Kavli Royal Society Centre",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2012-04-25",
+    "location": "Chicheley, UK",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "http://web.archive.org/web/20120329120400/http://royalsociety.org/events/2012/interpreting-signals",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Discussion lead on coordinating follow-up facilities across transient experiments, at the Kavli satellite meeting following the Royal Society transients discussion meeting.",
+    "notes": "Satellite of the Apr 23-24 London meeting (see royal-society-2012); Chicheley Hall, Apr 25-26, 2012. Archived page lists him as a speaker; live royalsociety.org page is gone. Proceedings: Phil. Trans. R. Soc. A 371, 1992. Deck in local archive."
+  },
+  {
+    "n": 110,
+    "slug": "siam-cse13-catalogs-2013",
+    "title": "Extracting Novel Insight from Probabilistic Machine-Learned Classification Catalogs",
+    "event": "SIAM Conference on Computational Science & Engineering",
+    "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2013-02-27",
+    "location": "Boston, MA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://archive.siam.org/meetings/cse13/cse13_program.pdf",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Doing science with probabilistic machine-learned classification catalogs, in the Big Data minisymposium (MS158) - his second CSE13 talk besides the plenary.",
+    "notes": "MS158, Wed Feb 27, 2013, 6:00pm (program PDF linked; the plenary is siam-cse-2013). Deck in local archive."
+  },
+  {
+    "n": 111,
+    "slug": "hipacc-exascale-2014",
+    "title": "Data-Driven Astronomical Inference with Machine Learning",
+    "event": "Computational Astrophysics 2014-2020: Approaching Exascale (UC-HiPACC)",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2014-03-21",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://hipacc.ucsc.edu/ApproachingExascale2014.html",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Machine-learned inference for astronomical surveys, at the UC-HiPACC exascale computational astrophysics workshop at LBNL.",
+    "notes": "Workshop Mar 21-22, 2014, LBNL Bldg 66; agenda lists the talk (23 min). Workshop videos in a YouTube playlist linked from the page (per-talk links broken). Deck in local archive."
+  },
+  {
+    "n": 112,
+    "slug": "moore-ddd-2015",
+    "title": "Data Science Infrastructure & Time-Domain Inference",
+    "event": "Moore Foundation Data-Driven Discovery Investigator Symposium",
+    "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2015-07",
+    "location": "Seattle, WA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Data-science infrastructure and time-domain inference work, at the Moore Foundation DDD investigators meeting.",
+    "notes": "Invitation-only investigator symposium; no public agenda exists. Deck in local archive."
+  },
+  {
+    "n": 113,
+    "slug": "sf-ml-meetup-2015",
+    "title": "Machine Learning in Production: Trials, Tribulations & Triumphs",
+    "event": "SF Machine Learning Meetup",
+    "type": "Talk",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
+    "date": "2015-09-23",
+    "location": "San Francisco, CA",
+    "video_url": null,
+    "slides_url": "https://www.slideshare.net/firstmarkcap/machine-learning-in-production-josh-bloom-wiseio-firstmarks-data-driven",
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Lessons from putting machine learning into production at wise.io, for the SF Machine Learning meetup hosted at Instacart.",
+    "notes": "Meetup event page purged and never archived; linked deck is the same-material Data Driven NYC upload (cf. data-driven-nyc-2015). Deck in local archive."
+  },
+  {
+    "n": 114,
+    "slug": "simons-foundation-2015",
+    "title": "Astrophysical Insights in the Presence of Uncertainty & Under Duress",
+    "event": "Simons Foundation",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2015-05-15",
+    "location": "New York, NY",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Astrophysical inference under noise, uncertainty, and real-time pressure, at the Simons Foundation.",
+    "notes": "Deck title slide says 'May 15' without a year; ~2015 inferred from branding and not independently verifiable - no event page or video found. Deck in local archive."
+  },
+  {
+    "n": 115,
+    "slug": "moore-ddd-2018",
+    "title": "Time-Domain Inference, Data Science Tooling, & Industrial Machine Learning",
+    "event": "Moore Foundation Data-Driven Discovery Investigator Symposium",
+    "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml",
+      "industry"
+    ],
+    "date": "2018",
+    "location": null,
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Spanning time-domain astrophysics, open-source tooling, and industrial ML at GE, for the Moore DDD investigators meeting.",
+    "notes": "Invitation-only symposium; location/date beyond 2018 not publicly documented. Deck in local archive."
+  },
+  {
+    "n": 116,
+    "slug": "moore-ddd-2019",
+    "title": "Time-Domain Inference and Physics in ML",
+    "event": "Moore Foundation Data-Driven Discovery Investigator Symposium",
+    "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2019",
+    "location": null,
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Physics-informed machine learning for time-domain inference, at the Moore DDD investigators meeting.",
+    "notes": "Invitation-only symposium; location/date beyond 2019 not publicly documented. Deck in local archive."
+  },
+  {
+    "n": 117,
+    "slug": "ml4sci-lbl-2018",
+    "title": "Autoencoding RNN for Inference on Unevenly Sampled Time-Series Data",
+    "event": "#ML4Sci: Machine Learning for Science Workshop, LBNL",
+    "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2018-09-05",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "The autoencoding-RNN approach to irregular astronomical time series, at the LBNL machine-learning-for-science workshop.",
+    "notes": "First of three Sep-Oct 2018 deliveries of this material (see autoencoding-rnn-2018 and ncsa-2018); date/venue from the deck title slide. Deck in local archive."
+  },
+  {
+    "n": 118,
+    "slug": "bascd-2019",
+    "title": "Physics-Informed Astrophysical Machine Learning",
+    "event": "Bay Area Scientific Computing Day, LBNL",
+    "type": "Keynote",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2019-12-16",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://sites.google.com/lbl.gov/bascd2019",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Keynote on physics-informed ML across astrophysics: the Planet 9 search, variable-source detection, generative telescope scheduling, and cosmic-ray removal.",
+    "notes": "Listed as keynote on the BASCD 2019 page (linked). Deck in local archive."
+  },
+  {
+    "n": 119,
+    "slug": "mlse-2020",
+    "title": "Physics-Informed Machine Learning for Inference & Discovery",
+    "event": "MLSE 2020: Machine Learning in Science & Engineering",
+    "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2020-12-15",
+    "location": "Virtual",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://datascience.columbia.edu/event/mlse-2020-conference-machine-learning-in-science-and-engineering/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Physics-informed ML for inference and discovery, in the astronomy track of the Columbia-organized MLSE conference.",
+    "notes": "Virtual, Dec 14-15, 2020 (Columbia Data Science Institute); conference splash site blocks bots - Columbia listing linked. Deck in local archive."
+  },
+  {
+    "n": 120,
+    "slug": "cpar-dream-2023",
+    "title": "The Real AI Revolution in Astronomy Hasn't Happened Yet",
+    "event": "CITRIS People and Robots / DREAM Seminar, UC Berkeley",
+    "type": "Seminar",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2023-09-18",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://citris-uc.org/people-and-robots-seminar-series/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Why astronomy's AI transformation is still ahead - the earliest delivery of the argument later given as the A3D3/UW colloquium.",
+    "notes": "CITRIS+DREAM joint seminar (Mondays, Sutardja Dai Hall); series page blocks bots but is live. Earlier instance of the a3d3-2024 talk. Deck in local archive."
+  },
+  {
+    "n": 121,
+    "slug": "aira-aas241-2023",
+    "title": "A Surprising Discovery Using SBI in Exoplanets",
+    "event": "AIRA Splinter Meeting, AAS 241",
+    "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2023-01-11",
+    "location": "Seattle, WA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://aas.org/meetings/aas241",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "A simulation-based-inference result in exoplanet microlensing (with K. Zhang and collaborators), at the AI-in-astronomy splinter session of AAS 241.",
+    "notes": "AAS 241, Seattle, Jan 8-12, 2023; splinter session not separately listed online (AAS pages block bots). Deck in local archive."
+  },
+  {
+    "n": 122,
+    "slug": "c2oa2se-2024",
+    "title": "AI in Astrophysics",
+    "event": "C2OA2SE Workshop, Michigan Tech Research Institute",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2024-11-07",
+    "location": "Ann Arbor, MI",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://www.mtu.edu/mtri/research/project-areas/machine-learning/c2oa2se-workshop/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "AI across astrophysics, at the cross-disciplinary workshop on AI applications to science and engineering.",
+    "notes": "Workshop on Cross-Disciplinary Challenges and Opportunities in AI Applications to Science and Engineering, Nov 6-8, 2024 (MTRI, Ann Arbor); talk Nov 7, 1:30pm per the page. Deck in local archive."
+  },
+  {
+    "n": 123,
+    "slug": "berkeley-roundtable-2022",
+    "title": "Accelerating Discovery and Inference with Machine Learning",
+    "event": "Berkeley Astrophysics Roundtable",
+    "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2022-11-20",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Group overview of ML-accelerated discovery and inference, for the Berkeley astrophysics roundtable.",
+    "notes": "Internal multi-speaker Berkeley event (cf. berkeley-roundtable-2025); date from the deck title slide. Deck in local archive."
+  },
+  {
+    "n": 124,
+    "slug": "ls-roundtable-2023",
+    "title": "Astrophysical Machine Learning",
+    "event": "L&S Roundtable, UC Berkeley",
+    "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2023-10-19",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Astrophysical machine learning for a College of Letters & Science faculty roundtable.",
+    "notes": "Internal Berkeley L&S event; date from the deck title slide. Deck in local archive."
   }
 ]

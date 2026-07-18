@@ -9,7 +9,7 @@ location: "Reno, NV"
 summary: "Machine-learning pipelines for classifying astronomical events in real time, for the computational science community."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 38
+talk_number: 43
 display_date: "Mar 2011"
 has_transcript: false
 ---

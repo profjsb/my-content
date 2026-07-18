@@ -9,7 +9,7 @@ location: "Research Triangle Park, NC"
 summary: "Machine-learning challenges in automating discovery and classification for time-domain surveys, at the SAMSI massive-datasets program."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Lecture"
-talk_number: 48
+talk_number: 57
 display_date: "Sep 2012"
 has_transcript: false
 ---
