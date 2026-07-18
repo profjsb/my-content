@@ -19,8 +19,6 @@ Keynote at the Microsoft campus arguing that real-world ML must be understood as
 
 ## Transcript
 
-*Auto-generated captions; may contain transcription errors.*
-
 hello everyone um so when I talk about machine Learning Systems I'm thinking about those that are in production rather than those that are sort of one-off data science projects not to say anything bad about those but this is really the focus of this talk so what are machine Learning Systems uh in my view they're living systems both influencing uh and reacting to their environment uh at best they're valuable uh resilient functioning systems composed of many imperfect parts Arts with many weak contracts between them built by fallible individuals with broken communication channels amongst them living in a resource constrained world that's constantly changing the results of which are consumed by capricious and exacting individuals in short this is very hard stuff I'm very thankful uh to
 
 be here today it's a great honor to speak in front of you uh I also had the honor of being one of the Keynotes at the last P data so the organizers have presented a major challenge to me to essentially give a completely different talk to the same audience uh in the space of one year so I'll do my best you've heard a bit about me already from Fernando um I thought I'd leave you or at least start off with a graphic that would maybe shock you out of your lunch stuper uh this is uh does anyone have a guess what this is It's Pluto yeah one of the new Pluto images uh from the New Horizon Project run through Google's deep dream um and

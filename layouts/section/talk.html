@@ -1,13 +1,14 @@
 {{- define "main" -}}
 
-{{ partial "page_header.html" . }}
 {{ partial "talk_assets.html" . }}
 
 <div class="talks-wrapper">
 
+  <h1 class="talks-page-title">{{ .Title }}</h1>
+
   <div class="talks-intro">
     Talks, panels, and media appearances &mdash; from gamma-ray bursts to machine
-    learning at scale. Where available, each entry links to video, slides, and a transcript.
+    learning at scale. Where available, each entry links to video, audio, slides, and a transcript.
   </div>
 
   <div class="talks-section-label">Past Talks &amp; Media</div>
@@ -27,8 +28,9 @@
     <h3 class="talk-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
     <div class="talk-links">
       {{ with .Params.url_video }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Video</a>{{ end }}
+      {{ with .Params.url_audio }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Listen</a>{{ end }}
       {{ with .Params.url_slides }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Slides</a>{{ end }}
-      {{ if .Params.has_transcript }}<a class="talk-btn" href="{{ .RelPermalink }}#transcript">Transcript</a>{{ end }}
+      {{ if .Params.has_transcript }}<a class="talk-btn" href="{{ .RelPermalink }}#transcript">Transcript</a>{{ else }}{{ with .Params.url_transcript }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Transcript</a>{{ end }}{{ end }}
       {{ with .Params.event_url }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Event</a>{{ end }}
     </div>
   </div>

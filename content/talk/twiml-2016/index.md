@@ -10,14 +10,13 @@ talk_type: "Podcast"
 talk_number: 26
 display_date: "Sep 2016"
 url_video: "https://www.youtube.com/watch?v=B6gbGB_fWkM"
+url_audio: "https://traffic.megaphone.fm/MLN2676147306.mp3"
 has_transcript: true
 ---
 
 An 84-minute interview on pioneering ML for robotic-telescope imagery at Berkeley, the founding and evolution of Wise.io, its data-science pipeline, and open challenges in machine learning.
 
 ## Transcript
-
-*Auto-generated captions; may contain transcription errors.*
 
 [Music] hello everyone and welcome to another episode of twiml talk the podcast where I interview interesting people doing interesting things in machine learning and artificial intelligence I'm your host Sam charington I think you all are really going to get a kick out of this show my guest this time is Joshua Bloom professor of astronomy at the University of California Berkeley and co-founder and chief technology officer of machine learning startup wise. I was in California last week and Josh graciously agreed to host me in his company's office for this interview we had a wonderful discussion and as you might have guessed if you happen to have noticed the length of this episode we covered quite a lot of ground but I promise you that you'll find
 

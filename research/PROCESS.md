@@ -62,6 +62,10 @@ transcripts** (auto-generated captions, marked as such on each page).
   (keynote/panel/podcast/radio/interview/tutorial map to their own classes;
   colloquium/seminar/lecture share an "academic" class; everything else — including
   "Invited Talk" and "Plenary" — falls through to the default Talk style).
+- **Optional media fields** (added in the same-day restyle, see addendum):
+  `url_audio` (direct MP3 → Listen button), `url_transcript` (external transcript
+  page → Transcript button, shown only when `has_transcript` is false). A YouTube or
+  Vimeo `url_video` auto-embeds a player on the talk's own page.
 
 ## What went well
 
@@ -117,6 +121,11 @@ future sessions don't re-litigate them (and can retry the *recoverable* ones).
   that file is offline and no BBC archive page was found. The page has **zero links** —
   it is on the site purely as a record. *Recoverable if a personal copy of the MP3
   exists; it could be self-hosted in the page bundle.*
+- **#33 Masters of Data podcast (Mar 2019) — episode audio.** Confirmed unrecoverable
+  2026-07-18: the episode is delisted from Apple (GB and US), absent from the iTunes
+  episode index, has rolled off the show's current (Wistia) RSS feed, and has no
+  Wayback capture. The entry now links only to the show's live page. *Recoverable if
+  Sumo Logic re-publishes the archive or a personal copy exists.*
 
 ### Talk media never found (event/context link only)
 
@@ -164,8 +173,34 @@ All 82 outbound links were checked (GET with redirects; YouTube via oEmbed).
 | 12 | Berkeley Data Science Lecture 2013 | `event_url` (vcresearch.berkeley.edu/…) | 403 | Possibly bot-blocking — verify in a browser before replacing. |
 | 15 | Strata Santa Clara 2014 | `url_video` (oreilly.com/library/…) | 403 | Subscription wall (expected; not rot). |
 | 20 | Astro Hack Week 2014 | `url_slides` (drive.google.com/…) | 401 | Permissioned Drive file — dead for visitors. Wayback/re-host candidate. |
-| 33 | Masters of Data podcast 2019 | `event_url` (podcasts.apple.com/gb/…) | 404 | Episode delisted from the GB store; look for US-store or Sumo Logic page. |
+| 33 | Masters of Data podcast 2019 | `event_url` (podcasts.apple.com/gb/…) | 404 | **Repaired 2026-07-18:** episode delisted everywhere (Apple GB+US 404, absent from the iTunes episode index, rolled off the show's Wistia feed, no Wayback capture); `event_url` now points at the live show page (sumologic.com/podcast). The audio itself is unrecoverable — see the unreachable list. |
 | 34 | BIDS 2019 lecture | `event_url` (bids.berkeley.edu/events/…) | 404 | BIDS site restructured. Wayback candidate. |
+
+## Addendum — same-day restyle & audio pass (2026-07-18)
+
+A second pass the same day, modeled on wesmckinney.com's transcript pages
+(e.g. `/transcripts/2025-10-08-test-set-julia-silge-part1`):
+
+- **Fonts copied from that site** (its `styles.css`): Inter (headings/UI), Lora
+  (prose), IBM Plex Mono (the #N chip), loaded via Google Fonts, with its warm-cream
+  palette (`#FDF8F0` page background, light mode only) — scoped to `/talk/` pages via
+  the self-contained `talk_assets.html` partial.
+- **Single pages redesigned**: large title above a metadata card (uppercase
+  EVENT/LOCATION/DATE labels, type chip top-right, link buttons), auto-embedded
+  YouTube/Vimeo player (`talk_video_embed.html`), the AI disclaimer as a left-bordered
+  callout (template-rendered — the old per-page italic line under `## Transcript` was
+  removed from all 18 transcript pages), a template-provided `Summary` heading, and a
+  sticky "Contents" rail with scrollspy (transcript pages only, ≥1100px viewports).
+- **Listen buttons** (`url_audio`): direct audio recovered for 7 items — the three NPR
+  segments (direct `ondemand.npr.org` MP3s extracted from the story-page HTML), both
+  TWiML episodes and Software Engineering Daily (megaphone.fm enclosures), and Gradient
+  Dissent (captivate.fm enclosure via the show's RSS, found through the iTunes API).
+- **External transcript links** (`url_transcript`): the three NPR items link
+  `npr.org/transcripts/<storyId>` (shown for the two without embedded transcripts).
+- **Link repair**: Masters of Data `event_url` moved from the dead Apple GB page to the
+  live show page; the episode audio itself proved unrecoverable (see the unreachable
+  list). Post-pass link health: **87 ok, 3 walled, 2 dead of 92 links** (the two BIDS
+  404s remain the only rot).
 
 ## Maintenance
 

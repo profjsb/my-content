@@ -20,8 +20,6 @@ Astronomy has embraced AI for data analysis, but the real revolution will integr
 
 ## Transcript
 
-*Auto-generated captions; may contain transcription errors.*
-
 and he's going to tell us about the real AI revolution in astronomy that has not happened yet so take it away Josh thanks hi everyone uh well thanks very much for the uh introduction and thanks for the invitation to be here today I wanted to just show a couple of uh faces and names of some of the early career people that have been working with me on some of the topics that you'll be seeing here today uh I wanted to present this with somewhat provocative title um not to say that machine learning isn't already a part of a lot of what we do in astronomy but uh there are I think fairly large white spaces that I'll try to cover in parts of this talk
 
 um and I I hope to leave you with this sense that while we have been doing a lot and a lot of progress has been made uh in service of science uh using AI um there's just a lot more to do and a lot more that we're all very excited uh to be doing so thanks again for having me here um I know that there's a wide variety of interest and backgrounds on this um uh on on on this call so I wanted to maybe start off with a a motivating quote if you could call it that um from a I guess prototypical data scientist Jim Gray used to work at Microsoft formerly um at uh at Berkeley for his PhD and he has this

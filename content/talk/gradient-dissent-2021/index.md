@@ -10,14 +10,13 @@ talk_type: "Podcast"
 talk_number: 41
 display_date: "Jul 2021"
 url_video: "https://www.youtube.com/watch?v=0aOXOT2TvUc"
+url_audio: "https://podcasts.captivate.fm/media/f4fb8c29-5356-467e-9a15-935ede020e50/1109004070-wandb-gd-josh-bloom.mp3"
 has_transcript: true
 ---
 
 As Berkeley astronomy chair, with host Lukas Biewald: why astronomers were early ML adopters, real/bogus detection, uncertainty quantification, likelihood-free inference, and why ML hasn't displaced domain expertise.
 
 ## Transcript
-
-*Auto-generated captions; may contain transcription errors.*
 
 Josh: Astronomy and physics work in a world that's sensor-based, fundamentally, in terms of our observations. Because it's sensor-based, there's noise. So, unlike in the AlphaGo-Atari world where every pixel has a perfect measurement, if you take an image of the sky or you measure some time series, there's noise associated with it. Because there's noise and because there's a finite amount of training data, if you build models off of that, you get uncertainties in the models because of its lack of expressiveness or its overgeneralization or overfitting. Then, you also have a source of uncertainty in what it is that you're trying to understand, just because fundamentally you don't have a perfect measurement, your signal noise is imperfect. Lukas: You're listening to Gradient Dissent, a show about machine
 

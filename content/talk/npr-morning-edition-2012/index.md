@@ -9,6 +9,8 @@ summary: "Featured expert in Lauren Sommer's piece on NASA's newly launched NuST
 talk_type: "Radio"
 talk_number: 9
 display_date: "Jul 2012"
+url_audio: "https://ondemand.npr.org/anon.npr-mp3/npr/me/2012/07/20120731_me_18.mp3"
+url_transcript: "https://www.npr.org/transcripts/157595833"
 has_transcript: false
 ---
 

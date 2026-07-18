@@ -20,8 +20,6 @@ Invited talk on Python as the glue of the modern scientific workflow, from robot
 
 ## Transcript
 
-*Auto-generated captions; may contain transcription errors.*
-
 for the introduction Fernando and I want to thank the organizers and the sponsors but mostly I want to thank all of you for your efforts in making python really the engine of modern science this talk is really meant to highlight the sort of top of the stack of Scientific Python and to show you many of the results that make it to the popular press are actually results that are based on python so a lot of the science that you're seeing and your parents are asking you about you're reading about in the papers and seeing on the news so much of that has python inside and I thought it'd be useful for everyone here to to hear about that my name is Josh and I'm an
 
 astronomer I'm certainly not as badass as the most famous and outspoken astronomer so I apologize for that Neil deGrasse Tyson and I'm definitely nothing like vermeer's astronomer he's unlike any scientist I I know actually first he's clean-shaven second Optical astronomers really don't do a lot of their best work during the daytime you'll notice this is the middle of the day uh but most important this Eureka moment is something that he's having because it's been sort of handed to him on a silver platter in this case the celestial Globe that's been constructed by monks probably I think the important thing to recognize with modern science is that we're really working in the muck uh we're knee-deep in data and we're throwing every tool that we have

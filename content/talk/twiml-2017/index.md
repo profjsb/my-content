@@ -10,14 +10,13 @@ talk_type: "Podcast"
 talk_number: 28
 display_date: "Aug 2017"
 url_video: "https://www.youtube.com/watch?v=BJGMhXtWgF0"
+url_audio: "https://traffic.megaphone.fm/MLN6782313095.mp3"
 has_transcript: true
 ---
 
 Follow-up interview after the Wise.io acquisition: Industrial AI at GE Digital, autoencoders for building training datasets, and combining physics-based models with data-driven ML.
 
 ## Transcript
-
-*Auto-generated captions; may contain transcription errors.*
 
 [Music] hello and welcome to another episode of we'll talk the podcast where I interview interesting people doing interesting things in machine learning and artificial intelligence I'm your host Sam Charrington if you get my newsletter you already know this but last week we hit a major milestone for the podcast I'm excited to share that thanks to you we've served up over 500,000 plays of this show we're super grateful to everyone who's ever listening to the show send us feedback or engage with us via the site or social media thanks also to all of our gifts especially those who started out as listeners and later became guests like Evan Wright and Sarah throw we've come a long way in a short amount of time and we couldn't
 

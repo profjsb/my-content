@@ -26,7 +26,7 @@ TALKS_JSON = "research/talks.json"
 REQUIRED_FIELDS = ["title", "date", "event", "summary", "talk_type", "talk_number", "display_date"]
 FIELD_ORDER = ["title", "date", "publishDate", "draft", "event", "event_url", "location",
                "summary", "talk_type", "talk_number", "display_date", "url_video",
-               "url_slides", "has_transcript"]
+               "url_slides", "url_audio", "url_transcript", "has_transcript"]
 
 
 # ---------- front matter ----------
@@ -218,6 +218,8 @@ def cmd_scaffold(args):
         "talk_number": "0", "display_date": yq(display),
         "url_video": yq(args.video) if args.video else None,
         "url_slides": yq(args.slides) if args.slides else None,
+        "url_audio": yq(args.audio) if args.audio else None,
+        "url_transcript": yq(args.transcript_url) if args.transcript_url else None,
         "has_transcript": "false",
     }
     os.makedirs(f"{CONTENT}/{slug}", exist_ok=True)
@@ -230,6 +232,7 @@ def cmd_scaffold(args):
              "event": args.event, "type": args.type, "date": args.date,
              "location": args.location or None, "video_url": args.video or None,
              "slides_url": args.slides or None, "event_url": args.event_url or None,
+             "audio_url": args.audio or None, "transcript_url": args.transcript_url or None,
              "summary": args.summary or "", "notes": args.notes or ""}
     data.append(entry)
     save_json(data)
@@ -245,13 +248,23 @@ def cmd_scaffold(args):
 
 # ---------- linkcheck ----------
 
-def check_url(url):
+def check_url(url, is_audio=False):
+    m = re.search(r"youtube\.com/(?:live|embed|shorts)/([A-Za-z0-9_-]+)", url)
+    if m:  # normalize /live/, /embed/, /shorts/ forms so oEmbed accepts them
+        url = "https://www.youtube.com/watch?v=" + m.group(1)
     if "youtube.com/watch" in url or "youtu.be/" in url:
         import urllib.parse
         o = "https://www.youtube.com/oembed?url=" + urllib.parse.quote(url, safe="")
         r = subprocess.run(["curl", "-s", "-o", "/dev/null", "-w", "%{http_code}",
                             "--max-time", "15", o], capture_output=True, text=True)
         return r.stdout.strip() or "000", "yt-oembed"
+    if is_audio or url.split("?")[0].endswith((".mp3", ".m4a", ".ogg")):
+        # HEAD so we don't download the media; take the final status after redirects
+        r = subprocess.run(["curl", "-sIL", "-o", "/dev/null", "-w", "%{http_code}",
+                            "--max-time", "20", "-A",
+                            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)", url],
+                           capture_output=True, text=True)
+        return r.stdout.strip() or "000", "head"
     r = subprocess.run(["curl", "-sL", "-o", "/dev/null", "-w", "%{http_code}",
                         "--max-time", "20", "-A",
                         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)", url],
@@ -262,12 +275,12 @@ def check_url(url):
 def cmd_linkcheck(_args):
     jobs = []
     for slug, (p, fm, _) in pages().items():
-        for key in ("url_video", "url_slides", "event_url"):
+        for key in ("url_video", "url_slides", "url_audio", "url_transcript", "event_url"):
             if fm.get(key):
                 jobs.append((slug, key, fm[key]))
     def run(j):
         slug, key, url = j
-        code, how = check_url(url)
+        code, how = check_url(url, is_audio=(key == "url_audio"))
         return slug, key, url, code, how
     dead, walled, ok = [], [], 0
     with ThreadPoolExecutor(max_workers=12) as ex:
@@ -306,6 +319,10 @@ def main():
     sc.add_argument("--event-url", dest="event_url")
     sc.add_argument("--video")
     sc.add_argument("--slides")
+    sc.add_argument("--audio", help="direct audio URL (mp3) — rendered as a Listen button")
+    sc.add_argument("--transcript-url", dest="transcript_url",
+                    help="external transcript page (e.g. npr.org/transcripts/<id>); "
+                         "shown only when there is no embedded transcript")
     sc.add_argument("--summary")
     sc.add_argument("--notes")
     args = ap.parse_args()

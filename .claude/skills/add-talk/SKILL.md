@@ -40,13 +40,25 @@ python3 $T linkcheck    # verify all outbound links (YouTube via oEmbed)
    `Panel`, `Plenary`, `Podcast`, `Radio`, `Interview`.
 
 2. **Research the links.** Look for (a) video — YouTube/venue archive/institute site;
-   (b) slides — Speaker Deck, SlideShare, venue page; (c) an event page. Verify each
-   link actually resolves; for YouTube use oEmbed
-   (`https://www.youtube.com/oembed?url=<video-url>` — the watch page returns 200 even
-   for deleted videos). If media is known to exist but can't be found or is paywalled,
-   still add the talk with whatever links exist and record the situation in the ledger
-   `notes` — and append it to the "known but not linkable" list in
+   (b) slides — Speaker Deck, SlideShare, venue page; (c) an event page; (d) for radio
+   and podcasts, **direct audio** (`url_audio` → the Listen button) and an **external
+   transcript** (`url_transcript`). Verify each link actually resolves; for YouTube use
+   oEmbed (`https://www.youtube.com/oembed?url=<video-url>` — the watch page returns
+   200 even for deleted videos). If media is known to exist but can't be found or is
+   paywalled, still add the talk with whatever links exist and record the situation in
+   the ledger `notes` — and append it to the "known but not linkable" list in
    `research/PROCESS.md` so nobody re-hunts it later.
+
+   Audio-source recipes that worked:
+   - **NPR:** the story page HTML contains the direct MP3 — `curl -sL <story-url> |
+     grep -oE 'https://ondemand\.npr\.org[^"&?]*\.mp3'`; the transcript lives at
+     `https://www.npr.org/transcripts/<storyId>` (the number in the story URL).
+   - **Podcasts:** grep the episode page for `.mp3` (many embed the enclosure URL);
+     otherwise resolve the show's RSS via the iTunes API
+     (`https://itunes.apple.com/lookup?id=<podcastId>` → `feedUrl`, or
+     `.../search?term=<show>&entity=podcast`) and take the episode's `<enclosure>`.
+     Beware: feeds often truncate to recent episodes — old episodes may be gone from
+     every directory (that's how the 2019 Masters of Data episode was lost).
 
 3. **Scaffold** (from the repo root, on a branch — see step 6):
 
@@ -56,9 +68,15 @@ python3 $T linkcheck    # verify all outbound links (YouTube via oEmbed)
      --event "PyData Global 2026" --location "Online" \
      --video "https://www.youtube.com/watch?v=..." \
      --slides "https://speakerdeck.com/..." --event-url "https://..." \
+     --audio "https://.../episode.mp3" --transcript-url "https://.../transcripts/..." \
      --summary "One-to-two sentence summary for the card." \
      --notes "provenance/uncertainty notes for the ledger"
    ```
+
+   Link rendering rules: a YouTube or Vimeo `url_video` **auto-embeds a player** on the
+   talk's page (other hosts just get the Video button); `url_audio` renders a Listen
+   button; `url_transcript` renders an external Transcript button only when the page has
+   no embedded transcript (`has_transcript: false`).
 
    - Slug: short memorable kebab-case, usually `<venue>-<year>` (`iaifi-2025`,
      `npr-science-friday-2011`).

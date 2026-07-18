@@ -20,8 +20,6 @@ CITRIS Research Exchange seminar on ML pipelines for discovery and inference on 
 
 ## Transcript
 
-*Auto-generated captions; may contain transcription errors.*
-
 Great. Well, thanks very much for having me. Uh, Lauron ended his talk very nicely hinting at, well, not even hinting, essentially saying that some of the problems that he's encountering in in in one domain um is uh similar to the challenges that he's finding in other domains in genomics. And I I think this uh really speaks to a commonality of of challenges that that we all have on the application side of of big computation in in trying to um make the best out of a at a deluge of data uh and and come to um important scientific inferences that push our own um our own fields. uh my own field is in astrophysics uh and understanding in particular uh transient phenomena that is understanding objects
 
 which change and go bump in the night. Some of these are explosive events. Um some of the uh the changes are actually more much more subtle. But what we're seeing uh like Laurent is that there are um tools that are out there and some some algorithms that actually need to be refined and perhaps in some cases be created to make use of the data and to maximize the science um that comes from that data. What's interesting I think in the context of astrophysics and this adds uh an important wrinkle from a computational perspective is that when we're talking about um time domain data this is watching things change as a function of time in the sky uh there are a number of events a whole

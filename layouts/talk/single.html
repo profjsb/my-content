@@ -2,31 +2,85 @@
 
 {{ partial "talk_assets.html" . }}
 
-<div class="talks-wrapper talk-single">
+<div class="talks-wrapper talk-single{{ if .Params.has_transcript }} has-toc{{ end }}">
 
-  <div class="talk-single-header">
-    <div style="margin-top: 1.5rem;">
-      {{ partial "talk_badge.html" . }}
-      <span class="talk-num">#{{ .Params.talk_number }}</span>
-    </div>
+  {{ if .Params.has_transcript }}
+  <nav class="talk-toc" id="talk-toc" aria-label="Contents">
+    <div class="talk-toc-title">Contents</div>
+    <ul>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#transcript">Transcript</a></li>
+    </ul>
+  </nav>
+  {{ end }}
+
+  <div class="talk-main">
+
     <h1 class="talk-title-lg">{{ .Title }}</h1>
-    <div class="talk-single-meta">
-      {{ with .Params.event_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .Params.event }}{{ with .Params.event_url }}</a>{{ end }}
-      {{ with .Params.location }} &middot; {{ . }}{{ end }}
-      &middot; {{ .Params.display_date }}
-    </div>
-    <div class="talk-links">
-      {{ with .Params.url_video }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Video</a>{{ end }}
-      {{ with .Params.url_slides }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Slides</a>{{ end }}
-      {{ with .Params.event_url }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Event page</a>{{ end }}
-      <a class="talk-btn" href="{{ .Parent.RelPermalink }}">&larr; All talks</a>
-    </div>
-  </div>
 
-  <div class="article-style">
-    {{ .Content }}
+    <div class="talk-info-card">
+      {{ partial "talk_badge.html" . }}
+      <div class="talk-meta-row">
+        <span class="talk-meta-item">
+          <span class="talk-meta-label">Event</span>
+          <span class="talk-meta-value">{{ with .Params.event_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .Params.event }}{{ with .Params.event_url }}</a>{{ end }}</span>
+        </span>
+        {{ with .Params.location }}
+        <span class="talk-meta-item">
+          <span class="talk-meta-label">Location</span>
+          <span class="talk-meta-value">{{ . }}</span>
+        </span>
+        {{ end }}
+        <span class="talk-meta-item">
+          <span class="talk-meta-label">Date</span>
+          <span class="talk-meta-value">{{ .Params.display_date }}</span>
+        </span>
+      </div>
+      <div class="talk-links">
+        {{ with .Params.url_video }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Video</a>{{ end }}
+        {{ with .Params.url_audio }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Listen</a>{{ end }}
+        {{ with .Params.url_slides }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Slides</a>{{ end }}
+        {{ if not .Params.has_transcript }}{{ with .Params.url_transcript }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Transcript</a>{{ end }}{{ end }}
+        {{ with .Params.event_url }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Event page</a>{{ end }}
+        <a class="talk-btn" href="{{ .Parent.RelPermalink }}">&larr; All talks</a>
+      </div>
+    </div>
+
+    {{ partial "talk_video_embed.html" . }}
+
+    {{ if .Params.has_transcript }}
+    <div class="ai-disclaimer">This transcript and summary were AI-generated and may contain errors.</div>
+    {{ end }}
+
+    <h2 id="summary">Summary</h2>
+    <div class="talk-content">
+      {{ .Content }}
+    </div>
+
   </div>
 
 </div>
+
+{{ if .Params.has_transcript }}
+<script>
+(function () {
+  var toc = document.getElementById('talk-toc');
+  if (!toc) return;
+  var links = Array.prototype.slice.call(toc.querySelectorAll('a[href^="#"]'));
+  var targets = links.map(function (a) {
+    return document.getElementById(a.getAttribute('href').slice(1));
+  });
+  function onScroll() {
+    var current = 0;
+    for (var i = 0; i < targets.length; i++) {
+      if (targets[i] && targets[i].getBoundingClientRect().top < 130) current = i;
+    }
+    links.forEach(function (a, i) { a.classList.toggle('active', i === current); });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+{{ end }}
 
 {{- end -}}

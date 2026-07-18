@@ -20,8 +20,6 @@ At the Computer History Museum: building ML inference for astrophysics that resp
 
 ## Transcript
 
-*Auto-generated captions; may contain transcription errors.*
-
 well thanks very much I thought I'd start off with this quote from Jim Gray who was a consummate data scientist and he obviously had a very very good sense of humor he recognized something important decades ago that it was great working with astronomers in our data because our data is noisy it's messy it's streaming it's heterogeneous and it's dirty and if you made a mistake as a computer scientist or a statistician as you try out new algorithms or new approaches or new hardware on our data you're not leaking PII there's no billion dollars of damage to your company and nobody dies so indeed this is a wonderful thing about working with astronomers on the flip side astronomers love working with SATA stations and computer scientists
 
 really for two reasons number one the pace at which algorithms and new hardware are coming out that are able to directly impact what we do in our daily lives in discovery and inference which in some sense is a big part of this talk today is just wonderful and astronomers are very well known for co-opting tools so the most famous astronomer you might think of is Galileo who heard about this thing called the telescope which was meant to look over the horizon for enemy ships and he said what if I just do this and you know the rest of the story but also the second reason why we like working with computer scientists and statisticians is that with all deference to my academic friends oftentimes in

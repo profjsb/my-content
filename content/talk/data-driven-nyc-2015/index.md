@@ -21,8 +21,6 @@ As Wise.io co-founder/CTO: what it takes to deploy machine learning in productio
 
 ## Transcript
 
-*Auto-generated captions; may contain transcription errors.*
-
 hello everyone my name is Josh bloom I'm co-founder and CTO of wa's I oh I'm also a professor at UC Berkeley tonight I'd like to talk about machine learning in production and when I talk about machine learning in production what I'm actually trying to talk about as the data products and the interactions that all of you are applying to data that's unique to your own business and transactions that are unique to your own business but many of you are also thinking about building outside of the core of your business into some of the aspects that actually are very similar across multiple industries so the key question that I want to pose tonight is where is the AI build by decision boundary and many of you
 
 as data scientists are going to wind up having influence on that decision so I hope I can give you some thoughts that help you frame that question for yourself and your organization's my own point of departure oh it's not presented how are we doing there it's not up there yet yeah so my own point of departure is as an astronomer and astronomy in some sense had a big data problem 120 years ago and when we did I'll just flip through the slide so I can see them just in case one day they come up is that not working when we had this big data problem what we did is we hired people so we had what our pejoratively called computers these are mostly women who

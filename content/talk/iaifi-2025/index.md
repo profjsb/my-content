@@ -19,8 +19,6 @@ How the astrophysical data deluge has swamped traditional workflows and driven A
 
 ## Transcript
 
-*Auto-generated captions; may contain transcription errors.*
-
 All right, we're going to go ahead and get started. Hello everyone for joining. We're very excited this month to be hosting Josh Bloom for our IFI colloquium. Josh Bloom is the Miller Professor at UC Berkeley. He has been a pioneer in the use of and development of machine learning for time domain astrophysics. Broadly speaking, you can probably think of a time domain topic. He has probably written several papers on it. He's done work in SBI and optimization of telescope resources and is now a key player in the rapidly evolving field of multimmodal foundation models. Hopefully, we'll hear a little bit about that today. He also founded a startup in AI over a decade ago before that meant uh writing a wrapper around API calls to
 
 OpenAI when it actually meant something. Today he's going to be talking a lot about the various uh projects that he and his group have been working on in accelerating inquiry and insight in astrophysics through AI. Great. Go ahead, Josh. Thank you. Uh thanks for the introduction. Thanks. All right. I've been told to mention that if you have a question, then please raise your hand and I'll run the mic over so that the folks on Zoom can hear you. Thanks. Um thanks for the introduction and thanks for the invitation to be here. I realized when I was getting this together that the last time I gave a cloium at MIT was the day they announced the discovery of the Nobel Prize for the accelerating uh universe.

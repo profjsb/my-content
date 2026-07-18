@@ -9,6 +9,8 @@ summary: "Ira Flatow interviews Bloom about the origin of short gamma-ray bursts
 talk_type: "Radio"
 talk_number: 1
 display_date: "Jun 2005"
+url_audio: "https://ondemand.npr.org/anon.npr-mp3/npr/totn/2005/06/20050603_totn_02.mp3"
+url_transcript: "https://www.npr.org/transcripts/4679036"
 has_transcript: false
 ---
 

@@ -20,8 +20,6 @@ How statistical ML applies to astronomy in batch and streaming contexts: feature
 
 ## Transcript
 
-*Auto-generated captions; may contain transcription errors.*
-
 [PETER] --cs math side of things. He is touching upon second of our talks today in astrophysics here, machine learning time domain for time domain astrophysics and the interesting part about this is it's really gonna answer one of the questions. Uh, it's an approach to answer one of the questions that Eric brought up in the previous talk, which is, what do you do when you have sparse incomplete data from a survey like LSST whe-- when you're trying to sort through these millions of objects every single day? So, Josh? Thank you. [JOSH BLOOM] Thank you, Peter and thanks to the Simons Institute, and to the Moore and the Sloan Foundations for their support in the past and, and currently. I think it's worth saying at the outset
 
 that the fundamental reason why we actually do the work we do to innovate on the algorithmic side and computationally is to do novel science. In this case, it'll be in astrophysics, but what you're gonna hear throughout the week is a broad interest in using these tools and building new tools to do some novel work in the physical domains. We also use this because of the fire hose that you just heard about in the previous talk just to be able to handle that onslaught and be able to make the best use of the data that's coming at us. And I think increasingly what we're seeing is that because this is a very powerful set of tools, i.e. machine learning and astronomy, it's also becoming a competitive

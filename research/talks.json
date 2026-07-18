@@ -10,6 +10,8 @@
     "video_url": null,
     "slides_url": null,
     "event_url": "https://proceedings.scipy.org/articles/PFVC8793",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "A Python-based pipeline connecting synoptic-survey telescope data streams to real-time machine classification and event broadcast, from the Berkeley Transients Classification Pipeline project (with Dan Starr and John Brewer).",
     "notes": "Proceedings paper; talk co-presented with first author Dan Starr."
   },
@@ -24,6 +26,8 @@
     "video_url": null,
     "slides_url": null,
     "event_url": "https://wiki.ivoa.net/twiki/bin/view/IVOA/HotwiredWorkshop",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Session talk on the machine-learning classification engine behind Palomar Transient Factory discoveries, in the event-classification session alongside LSST and Caltech colleagues.",
     "notes": "Agenda archived on the IVOA TWiki."
   },
@@ -38,6 +42,8 @@
     "video_url": null,
     "slides_url": "https://www.slideshare.net/JoshuaBloom/joshua-bloom-machine-learning-and-classification-in-the-synoptic-survey-era",
     "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "ML-driven discovery and classification of transients and variable stars in the era of synoptic surveys (PTF to LSST): real/bogus discrimination, probabilistic variable-star catalogs, and automating the discovery loop.",
     "notes": "51-slide deck on SlideShare; exact venue/date uncertain (estimated from related 2011-2012 work)."
   },
@@ -52,6 +58,8 @@
     "video_url": null,
     "slides_url": "https://speakerdeck.com/profjsb/data-mining-and-machine-learning-in-the-lsst-era",
     "event_url": "https://royalsociety.org/science-events-and-lectures/2012/transients-universe/",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Invited discussion-meeting talk on machine learning as a surrogate for rapid human analysis at LSST data volumes: discovery algorithms, classification methodologies, and real-time transient identification.",
     "notes": "Deck on Speaker Deck confirms event and date."
   },
@@ -66,6 +74,8 @@
     "video_url": "https://www.youtube.com/watch?v=mLuIB8aW2KA",
     "slides_url": null,
     "event_url": "https://pyvideo.org/scipy-2012/python-as-super-glue-for-the-modern-scientific-wo.html",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Invited talk on Python as the glue of the modern scientific workflow, from robotic-telescope automation and real-time transient-discovery pipelines to machine learning in astronomy.",
     "notes": "Listed on PyVideo; verify YouTube ID at build time."
   },
@@ -80,6 +90,8 @@
     "video_url": null,
     "slides_url": "https://speakerdeck.com/profjsb/classification-challenges",
     "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "ML approaches to astronomical classification for LSST: real/bogus candidate discrimination, variable-star classification, and probabilistic cataloging, with examples from the Palomar Transient Factory including SN 2011fe.",
     "notes": "Deck on Speaker Deck (LSST AHM, Aug 13-17 2012); he was LSST Transients & Variable Stars co-chair."
   },
@@ -94,6 +106,8 @@
     "video_url": "https://www.youtube.com/watch?v=vGpqTbdBtu0",
     "slides_url": null,
     "event_url": "https://simons.berkeley.edu/workshops/symposium-visions-theory-computing",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Talk on the automated, ML-driven software stack of modern time-domain astrophysics at the Simons Institute's inaugural public symposium; reportedly the earliest video on the Simons Institute YouTube channel.",
     "notes": "Verify YouTube ID at build time."
   },
@@ -108,6 +122,8 @@
     "video_url": "https://bids.berkeley.edu/resources/videos/extracting-actionable-insight-dirty-time-series-data",
     "slides_url": null,
     "event_url": "https://vcresearch.berkeley.edu/2013-14-data-science-lectures",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "How to extract real-time, actionable insight from noisy, incomplete streaming sensor data (earthquakes, supernovae, traffic), and the interplay between domain scientists, statisticians, and computer scientists.",
     "notes": "Webcast archived on the BIDS video resources page."
   },
@@ -122,6 +138,8 @@
     "video_url": "https://www.youtube.com/watch?v=jmDc6kRuyek",
     "slides_url": "https://www.slideshare.net/JoshuaBloom/large-scale-inference-in-time-domain-astrophysics",
     "event_url": "https://simons.berkeley.edu/workshops/big-data-boot-camp",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Boot-camp lecture on large-scale statistical inference for time-domain astronomy, during the Simons Institute's Theoretical Foundations of Big Data Analysis program.",
     "notes": ""
   },
@@ -136,6 +154,8 @@
     "video_url": "https://www.youtube.com/watch?v=yUhPC24vThs",
     "slides_url": null,
     "event_url": "https://citris-uc.org/news-events/citris-research-exchange/",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "CITRIS Research Exchange seminar on ML pipelines for discovery and inference on streaming astronomical time-series data (variable stars, transients, synoptic surveys).",
     "notes": "Exact date within 2013 unconfirmed."
   },
@@ -150,6 +170,8 @@
     "video_url": "https://www.oreilly.com/library/view/hardcore-data-science/9781491901984/",
     "slides_url": "https://speakerdeck.com/brinkar/overcoming-the-barriers-to-production-ready-machine-learning",
     "event_url": "https://conferences.oreilly.com/strata/strata2014/public/schedule/detail/32314",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "With Wise.io co-founder Henrik Brink: practical obstacles to deploying ML in production, including data preprocessing, scaling models to growing data, and deployment into production pipelines.",
     "notes": ""
   },
@@ -164,6 +186,8 @@
     "video_url": null,
     "slides_url": "https://www.slideshare.net/JoshuaBloom/computational-training-and-data-literacy-for-domain-scientists",
     "event_url": "https://www.nationalacademies.org/our-work/training-students-to-extract-value-from-big-data-a-workshop",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Invited lecture at the NAS workshop on big-data education, drawing on the Berkeley 'Python for Data Science' bootcamps and course, and what domain scientists need in computational training; proceedings published by National Academies Press.",
     "notes": "Slides title matched to this event (probable)."
   },
@@ -178,6 +202,8 @@
     "video_url": "https://www.youtube.com/watch?v=qiydAZdB-o0",
     "slides_url": "https://www.slideshare.net/JoshuaBloom/pydata-bloom-16x9",
     "event_url": "https://pydata.org/sv2014/keynotes/",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Keynote at Facebook HQ on the emergence of data science at UC Berkeley: training, the newly founded Berkeley Institute for Data Science, and the interplay of theory-driven and data-driven inference in scientific practice.",
     "notes": ""
   },
@@ -192,6 +218,8 @@
     "video_url": null,
     "slides_url": null,
     "event_url": "https://ciera.northwestern.edu/2014/05/08/josh-bloom-presents-ciera-spring-interdisciplinary-colloquium-on-machine-learning-in-astronomy/",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Colloquium on applying statistical machine learning to large-scale astronomy datasets in batch and streaming modes, as co-chair of the LSST Transients and Variable Stars collaboration.",
     "notes": ""
   },
@@ -206,6 +234,8 @@
     "video_url": null,
     "slides_url": null,
     "event_url": "https://dataedge.ischool.berkeley.edu/2014/speakers/josh-bloom-0.html",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Panelist (as co-founder of Wise.io) discussing the wave of data-science startups emerging from UC Berkeley research.",
     "notes": ""
   },
@@ -220,6 +250,8 @@
     "video_url": null,
     "slides_url": "https://drive.google.com/file/d/0B4vIeCR-xYNnUzlxZzZ4ZjdibW8/edit",
     "event_url": "https://github.com/AstroHackWeek/AstroHackWeek2014/tree/master/day4",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Morning lecture on supervised ML for astronomers — classification and regression, random forests, and a scikit-learn demo on SDSS star/galaxy/quasar data — at the first Astro Hack Week.",
     "notes": ""
   },
@@ -234,6 +266,8 @@
     "video_url": null,
     "slides_url": "https://www.slideshare.net/JoshuaBloom/data-science-education-needs-opportunities-in-astronomy",
     "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "On the growing need for data-science training in astronomy curricula and the opportunities for cross-disciplinary education, from Berkeley bootcamps to institute-scale efforts.",
     "notes": "25-slide deck on SlideShare; exact venue/date uncertain."
   },
@@ -248,6 +282,8 @@
     "video_url": "https://www.youtube.com/watch?v=Qe8HEiq-29k",
     "slides_url": "https://www.slideshare.net/firstmarkcap/machine-learning-in-production-josh-bloom-wiseio-firstmarks-data-driven",
     "event_url": "https://firstmark.com/community/data-driven/",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "As Wise.io co-founder/CTO: what it takes to deploy machine learning in production enterprise settings, and how industrial ML practice differs from academic ML.",
     "notes": "Month per FirstMark slide upload (May 2015); one listing says Nov 2015."
   },
@@ -262,6 +298,8 @@
     "video_url": "https://www.youtube.com/watch?v=i-1UmCYyzi4",
     "slides_url": "https://www.slideshare.net/JoshuaBloom/a-systems-view-of-machine-learnipydata-2015",
     "event_url": "https://pydata.org/seattle2015/speaker/profile/96/",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Keynote at the Microsoft campus arguing that real-world ML must be understood as an end-to-end system — data ingestion, featurization, modeling, deployment, and feedback — not just algorithms.",
     "notes": ""
   },
@@ -276,6 +314,8 @@
     "video_url": null,
     "slides_url": null,
     "event_url": "https://softwareengineeringdaily.com/2016/01/19/machine-learning-for-businesses-with-joshua-bloom/",
+    "audio_url": "https://traffic.megaphone.fm/SED8173170005.mp3",
+    "transcript_url": null,
     "summary": "On deploying ML in enterprise software: why ML is not a drop-in module, data-scientist stratification, abstraction layers for ML applications, and technical debt in ML systems.",
     "notes": ""
   },
@@ -290,6 +330,8 @@
     "video_url": "https://www.youtube.com/watch?v=9Tn5l96a6Ag",
     "slides_url": null,
     "event_url": "http://astrohackweek.org/2016/",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Tutorial lecture on machine-learning methods for astronomers (classification, regression, feature engineering) at Astro Hack Week 2016, hosted at UC Berkeley and recorded by BIDS.",
     "notes": "Exact day within Aug 29-Sep 2 approximate."
   },
@@ -304,6 +346,8 @@
     "video_url": "https://www.youtube.com/watch?v=B6gbGB_fWkM",
     "slides_url": null,
     "event_url": "https://twimlai.com/podcast/twimlai/machine-learning-for-the-stars-productizing-ai/",
+    "audio_url": "https://traffic.megaphone.fm/MLN2676147306.mp3",
+    "transcript_url": null,
     "summary": "An 84-minute interview on pioneering ML for robotic-telescope imagery at Berkeley, the founding and evolution of Wise.io, its data-science pipeline, and open challenges in machine learning.",
     "notes": ""
   },
@@ -318,6 +362,8 @@
     "video_url": "https://www.youtube.com/watch?v=lH8mkQKRRq0",
     "slides_url": "https://www.slideshare.net/JoshuaBloom/industrial-machine-learning-at-ge",
     "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Guest lecture at Berkeley Haas on industrial-scale machine learning — deploying ML against industrial data at GE Digital after the Wise.io acquisition, and the gaps between academic, startup, and enterprise ML.",
     "notes": "Year approximate."
   },
@@ -332,6 +378,8 @@
     "video_url": "https://www.youtube.com/watch?v=BJGMhXtWgF0",
     "slides_url": null,
     "event_url": "https://twimlai.com/podcast/twimlai/marrying-physics-based-and-data-driven-ml-models/",
+    "audio_url": "https://traffic.megaphone.fm/MLN6782313095.mp3",
+    "transcript_url": null,
     "summary": "Follow-up interview after the Wise.io acquisition: Industrial AI at GE Digital, autoencoders for building training datasets, and combining physics-based models with data-driven ML.",
     "notes": ""
   },
@@ -346,6 +394,8 @@
     "video_url": null,
     "slides_url": "https://www.slideshare.net/JoshuaBloom/industrial-machine-learning-sigkdd17",
     "event_url": "https://www.kdd.org/kdd2017/applied-data-science-invited-talks/view/dr.-josh-bloom",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Applied Data Science invited talk (as VP of Data & Analytics, GE Digital) on deploying machine learning against industrial data at scale.",
     "notes": "Day within Aug 13-17 approximate."
   },
@@ -360,6 +410,8 @@
     "video_url": null,
     "slides_url": "https://www.slideshare.net/JoshuaBloom/autoencoding-rnn-for-inference-on-unevenly-sampled-timeseries-data",
     "event_url": "https://arxiv.org/abs/1711.10609",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Presenting the recurrent autoencoder network for classifying unevenly sampled variable-star light curves (Naul, Bloom, Perez & van der Walt; Nature Astronomy 2018).",
     "notes": "Deck-only; venue unknown, dated from the paper posting."
   },
@@ -374,6 +426,8 @@
     "video_url": "https://www.youtube.com/watch?v=QGg63rWS9nU",
     "slides_url": null,
     "event_url": "https://www.oreilly.com/radar/industrial-machine-learning/",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Keynote arguing that the real machine-learning revolution — in improved and saved lives — will come when ML automation is coupled with industrial data.",
     "notes": ""
   },
@@ -388,6 +442,8 @@
     "video_url": "https://www.youtube.com/watch?v=iLBNeWnqnkQ",
     "slides_url": null,
     "event_url": "https://simons.berkeley.edu/talks/machine-learning-time-domain-astrophysics",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "How statistical ML applies to astronomy in batch and streaming contexts: feature-engineered supernova identification and variable-star characterization, and autoencoder/RNN architectures that learn without hand-built features.",
     "notes": "He also co-organized this semester-long program."
   },
@@ -401,9 +457,11 @@
     "location": null,
     "video_url": null,
     "slides_url": null,
-    "event_url": "https://podcasts.apple.com/gb/podcast/industrial-grade-machine-learning-guest-joshua-bloom/id1363415303?i=1000433300577",
+    "event_url": "https://www.sumologic.com/podcast",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "From astrophysics to industrial ML at GE Digital: bridging physics-driven and data-driven models, bias, trustworthy deployment, and ML on private data across competing customers.",
-    "notes": "Month approximate."
+    "notes": "Month approximate. Episode delisted everywhere as of 2026-07-18 (Apple 404 in GB and US, absent from iTunes episode index, rolled off the Wistia feed, no Wayback capture) — audio unrecoverable; event_url now points at the show page (old Apple GB link dead)."
   },
   {
     "n": 30,
@@ -416,6 +474,8 @@
     "video_url": null,
     "slides_url": null,
     "event_url": "https://bids.berkeley.edu/events/astrophysical-machine-learning",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "How time-domain astronomers use ML on streaming, noisy, distorted images of the sky — the search for Planet 9, discovery of new variable sources, data-driven emulators — and building physics-informed learning architectures.",
     "notes": ""
   },
@@ -430,6 +490,8 @@
     "video_url": null,
     "slides_url": "https://speakerdeck.com/profjsb/optimizing-desi-for-the-time-domain-opportunities",
     "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Plenary on how the DESI spectroscopic survey could benefit time-domain astronomy — variable stars, transients, circumnuclear events, unusual supernovae, and multimessenger follow-up — with proposed fiber-allocation and data-access strategies.",
     "notes": ""
   },
@@ -444,6 +506,8 @@
     "video_url": null,
     "slides_url": "https://speakerdeck.com/profjsb/machine-learning-at-scale-astrophysics",
     "event_url": "https://www.osti.gov/biblio/1604756",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Plenary at the DOE 'AI for Science' town hall on scaling ML for astrophysics — real-time discovery, classification, and inference over massive survey data streams — feeding into the 2020 DOE AI for Science report.",
     "notes": ""
   },
@@ -458,6 +522,8 @@
     "video_url": "https://www.youtube.com/watch?v=qI0-r4c2UKQ",
     "slides_url": "https://speakerdeck.com/profjsb/physics-informed-and-informative-generative-modelling-in-astronomy",
     "event_url": "https://www.ipam.ucla.edu/abstract/?tid=16152",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Practical generative neural models in astronomy: semi-supervised VAEs mapping physical parameters to latent space for telescope scheduling, cosmic-ray artifact detection and inpainting (deepCR), and autoencoder-based semantic indexing for compressed sensing.",
     "notes": ""
   },
@@ -472,6 +538,8 @@
     "video_url": "https://www.youtube.com/watch?v=37zS7o84Rc4",
     "slides_url": null,
     "event_url": "https://info.matroid.com/scaledml-media-archive-2020",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "At the Computer History Museum: building ML inference for astrophysics that respects and exploits physical models, with applications to time-domain surveys.",
     "notes": "Day within Feb 26-27 approximate."
   },
@@ -486,6 +554,8 @@
     "video_url": "https://www.youtube.com/watch?v=j3upNhJXTdM",
     "slides_url": null,
     "event_url": "https://events.seas.harvard.edu/event/guest_speaker_josh_bloom_berkeley",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "ML across astronomy workflows: the Planet 9 search, new variable-source classes, semi-supervised VAEs generating realistic time series to optimize observing schedules, and deep-learning cosmic-ray detection and correction.",
     "notes": "Originally scheduled Apr 17, 2020 in person (cancelled); delivered virtually."
   },
@@ -500,6 +570,8 @@
     "video_url": null,
     "slides_url": "https://speakerdeck.com/profjsb/ml-club-josh-bloom-intro-slides",
     "event_url": "https://mlclub.net",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Overview of ML in astronomical surveys framed around Rubin/LSST: real-bogus classification, inpainting for artifact removal, anomaly detection, calibrated Bayesian classification, similarity search at scale, and MLOps for reproducible science.",
     "notes": ""
   },
@@ -514,6 +586,8 @@
     "video_url": "https://www.youtube.com/watch?v=0aOXOT2TvUc",
     "slides_url": null,
     "event_url": "https://wandb.ai/wandb_fc/gradient-dissent/reports/Josh-Bloom-The-Link-Between-Astronomy-and-ML--Vmlldzo4NDk5NjA",
+    "audio_url": "https://podcasts.captivate.fm/media/f4fb8c29-5356-467e-9a15-935ede020e50/1109004070-wandb-gd-josh-bloom.mp3",
+    "transcript_url": null,
     "summary": "As Berkeley astronomy chair, with host Lukas Biewald: why astronomers were early ML adopters, real/bogus detection, uncertainty quantification, likelihood-free inference, and why ML hasn't displaced domain expertise.",
     "notes": ""
   },
@@ -528,6 +602,8 @@
     "video_url": "https://www.simonsfoundation.org/video/cosmic-connections-day-2-session-1/",
     "slides_url": "https://speakerdeck.com/profjsb/ai-assisted-discovery-from-ux-to-eureka",
     "event_url": "https://www.simonsfoundation.org/event/cosmic-connections-a-ml-x-astrophysics-symposium/",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "How AI/ML has uniquely contributed to novel science in astronomy across three assistive modes: circumventing human-centric bottlenecks, accelerating physics-based computation, and hypothesis generation — including LLMs for UX and a simulation-based-inference breakthrough in microlensing degeneracy theory.",
     "notes": "At the Flatiron Institute's Ingrid Daubechies Auditorium; video in Day 2 Session 1 recording."
   },
@@ -542,6 +618,8 @@
     "video_url": "https://www.youtube.com/watch?v=5q4vfZQUwgk",
     "slides_url": null,
     "event_url": "https://indico.cern.ch/event/1365684/",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Astronomy has embraced AI for data analysis, but the real revolution will integrate AI across the full scientific workflow — telescope design and real-time control upstream, hypothesis generation downstream — via simulation-based inference, self-supervised learning, foundation models, neural compression, and RL.",
     "notes": "Given as both the A3D3 seminar and UW Physics colloquium the same day."
   },
@@ -556,6 +634,8 @@
     "video_url": "https://www.youtube.com/live/k3uFxpjM0EA",
     "slides_url": "https://www.dropbox.com/scl/fi/d1ck3rciocyysqjp8bfqe/2025_05_09_IAIFI_Colloquium_Bloom.pdf?rlkey=cbzmibua65se29fxnpmeilcc2&st=hcoknoh4&dl=0",
     "event_url": "https://iaifi.org/events",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "How the astrophysical data deluge has swamped traditional workflows and driven AI/ML tooling: real-time telescope control, survey optimization, simulation-based inference, multimodal foundation models (AstroM3), active optics, and neural compression (AstroCompress).",
     "notes": ""
   },
@@ -570,6 +650,8 @@
     "video_url": "https://www.youtube.com/watch?v=RttowkdSL4Y",
     "slides_url": null,
     "event_url": "https://datascience.stanford.edu/events/center-decoding-universe/c4du-annual-conference/center-decoding-universe-annual-conference",
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "Faculty talk in the opening session on time-domain astronomical data and anomaly detection — finding rare and novel transients and variables in large survey data streams with machine learning.",
     "notes": "Day within June 5-6 approximate."
   },
@@ -584,8 +666,10 @@
     "video_url": null,
     "slides_url": null,
     "event_url": "https://www.npr.org/2005/06/03/4679036/gamma-ray-bursters",
+    "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/totn/2005/06/20050603_totn_02.mp3",
+    "transcript_url": "https://www.npr.org/transcripts/4679036",
     "summary": "Ira Flatow interviews Bloom about the origin of short gamma-ray bursts, following the first localization of a short GRB (GRB 050509b): the evidence that short bursts come from merging neutron stars rather than the deaths of massive stars.",
-    "notes": "NPR transcript available."
+    "notes": "NPR transcript available. Direct NPR MP3 and npr.org/transcripts page linked (recovered 2026-07-18)."
   },
   {
     "n": 43,
@@ -598,8 +682,10 @@
     "video_url": null,
     "slides_url": null,
     "event_url": "https://www.npr.org/2011/06/17/137250819/in-a-flash-of-gamma-rays-a-star-is-gone",
+    "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/totn/2011/06/20110617_totn_01.mp3",
+    "transcript_url": "https://www.npr.org/transcripts/137250819",
     "summary": "The day after publication of the Science paper on Swift J1644+57, Ira Flatow interviews Bloom (with Lawrence Krauss) on the gamma-ray outburst interpreted as a supermassive black hole shredding and swallowing a star 3.8 billion light-years away.",
-    "notes": "12-minute segment; NPR transcript available."
+    "notes": "12-minute segment; NPR transcript available. Direct NPR MP3 and npr.org/transcripts page linked (recovered 2026-07-18)."
   },
   {
     "n": 44,
@@ -612,6 +698,8 @@
     "video_url": null,
     "slides_url": null,
     "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
     "summary": "BBC Newshour interview on the discovery of a possible relativistic jetted outburst from a massive black hole fed by a tidally disrupted star.",
     "notes": "Linked as MP3 from his old Berkeley homepage; original audio link now offline."
   },
@@ -626,7 +714,9 @@
     "video_url": null,
     "slides_url": null,
     "event_url": "https://www.npr.org/2012/07/31/157595833/telescope-targets-black-holes-binges-and-burps",
+    "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2012/07/20120731_me_18.mp3",
+    "transcript_url": "https://www.npr.org/transcripts/157595833",
     "summary": "Featured expert in Lauren Sommer's piece on NASA's newly launched NuSTAR X-ray telescope, explaining black-hole 'binges and burps' and debunking the vacuum-cleaner misconception.",
-    "notes": ""
+    "notes": "Direct NPR MP3 and npr.org/transcripts page linked (recovered 2026-07-18)."
   }
 ]

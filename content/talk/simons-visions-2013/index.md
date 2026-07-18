@@ -20,8 +20,6 @@ Talk on the automated, ML-driven software stack of modern time-domain astrophysi
 
 ## Transcript
 
-*Auto-generated captions; may contain transcription errors.*
-
 maybe a little bit darker oh good that's good so those of you that knew jim gray knows that this was a an endearing quote he meant this in the best of all possible terms astronomy's data is big there's no privacy concerns per se and unlike satellite imaging or with medical data if you make an incorrect statement about it because you're trying out some new algorithm no one dies and we don't go to war unnecessarily um jim uh was a computer scientist at microsoft and an alumni at berkeley and he saw astronomy as a sandbox to develop new formalisms of fundamental computer science research in some sense we're trying to reach back uh the other way and astronomers are starting to play around with some of
 
 the new concepts in computer science and and view view all of that as our own sandbox and we're trying to do something novel with it i want to thank the organizers and thank all of the other speakers it's been an absolutely amazing couple of days in some sense as a way to end this workshop i wanted to try to make this talk fundamentally about a conversation between computer scientists and astronomers or physical scientists in general our stack really ends with uh with insights about the universe um but it starts with the things that that you all do and i hope as you'll see throughout the talk and especially towards the end i hope there's something that astronomy is bringing to the kinds of thoughts that

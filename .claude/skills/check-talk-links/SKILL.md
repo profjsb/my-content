@@ -11,7 +11,8 @@ description: >-
 # Check & repair Talks & Media links
 
 Runs against the front matter of every `content/talk/*/index.md`
-(`url_video`, `url_slides`, `event_url`). The engine lives in the companion skill:
+(`url_video`, `url_slides`, `url_audio`, `url_transcript`, `event_url`; audio is
+checked with HEAD so MP3s aren't downloaded). The engine lives in the companion skill:
 
 ```bash
 python3 .claude/skills/add-talk/scripts/talks.py linkcheck
@@ -30,7 +31,10 @@ python3 .claude/skills/add-talk/scripts/talks.py linkcheck
 
 1. **Look for the moved original first**: site search on the host (BIDS, venue,
    podcast platform), the speaker's other platforms, or an alternate store/region for
-   podcast episodes. A live original beats an archive copy.
+   podcast episodes. For podcast audio, resolve the show's current RSS via the iTunes
+   API (`itunes.apple.com/lookup?id=<podcastId>` or `/search?term=<show>&entity=podcast`)
+   and take the episode `<enclosure>` — but note feeds truncate, so old episodes may be
+   gone from every directory. A live original beats an archive copy.
 2. **Fall back to the Wayback Machine**: check
    `https://web.archive.org/web/<original-url>` and link a **dated snapshot**
    (`https://web.archive.org/web/<timestamp>/<original-url>`) that actually renders the

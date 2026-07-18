@@ -20,8 +20,6 @@ Faculty talk in the opening session on time-domain astronomical data and anomaly
 
 ## Transcript
 
-*Auto-generated captions; may contain transcription errors.*
-
 Thanks everyone. Um, so I I think it should be obvious by now that the onus on astronomers when working with data in the context of anomalies is not for us to write papers about how to find anomalies, but to actually find them and then show that the physics of the objects that we are identifying as anomalous from the data are actually different than uh some common objects that we already know about. And so it it's beyond the methodology. Um and when we actually go from applying these methodologies to data, you wind up seeing just how absolutely hard it is to be working in the anomaly space um in in astronomy. So my talk hopefully will give some context to that. Um this is one of
 
 the ways that we can think about the explosive universe. uh in the time domain on the x- axis uh is time on the on the y- axis is terrible astronomer units for brightness. Um, and you know the stuff in the middle, type 1 A supernovi, type 2 P supernovi, very common. You heard from Ashley, you know, once every second or two in the universe. These things happen. They're very interesting for some types of astrophysics. People have made a cottage industry out of finding these things and studying these things, but they're very boring uh because they happen all the time. This is the hay stack that people talk about when they say we're going to classify uh the hay stack of transients so that we can

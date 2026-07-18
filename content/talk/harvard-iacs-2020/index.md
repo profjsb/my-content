@@ -20,8 +20,6 @@ ML across astronomy workflows: the Planet 9 search, new variable-source classes,
 
 ## Transcript
 
-*Auto-generated captions; may contain transcription errors.*
-
 - Admit all. - Pavlos, would you like me to stop sharing my screen just for a bit while we're waiting for people to come in, or just keep this? - Up to you, Josh. If you like, I usually start without it and then I share. But whatever you like. Think we can start Natasha, can we start the course? - I'm letting people in. Whenever you guys want to go. - I'll start with this slide. I'm all set when you are. - All right. Natasha, recording? - Yes, it is. - Recording, okay. Welcome. Good afternoon. Good morning, and good evening to everyone. My name is Pavlos Protopapas. I am the scientific program director for the Institute for Applied Computational Science. You're here for the seminar. We
 
 have about six, seven seminars every semester. So today, it's my special pleasure to introduce Josh. Been working with him for awhile. Josh started from Harvard College, then he went to the other side of the pool, Cambridge. He did his master's there. PhD at Caltech, and now he's a professor and chair of the Astronomy Department at Berkeley. He's also a senior fellow at the Division of Data Science Berkeley. And if I'm not mistaken, he was instrumental in the creation of that division. He was one of the first people to start data science at Berkeley. His research is largely time domain astronomy, transient events, or telescope insight automation, and AI. He's also in the cusp between astronomy and machine learning. He teaches radiated process, high-energy astrophysics and

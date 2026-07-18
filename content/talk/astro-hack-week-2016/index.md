@@ -20,8 +20,6 @@ Tutorial lecture on machine-learning methods for astronomers (classification, re
 
 ## Transcript
 
-*Auto-generated captions; may contain transcription errors.*
-
 JOSH BLOOM: So I'm Josh Bloom. Hi. Welcome to UC Berkeley. Welcome to Doe Library. Welcome to the Berkeley Institute for Data Science. And welcome to day two of Astro Hack Week. So I hope you had a wonderful day yesterday. Today, we're going to talk about machine learning. And I wanted to try to put machine learning into the context of an inference space that's certainly not rigorous, but one that hopefully helps you level set a bit relative to the types of things that you were hearing yesterday and to give you a sense of how I want you to start thinking about bringing machine learning into your into your daily work. What I should say from the outset is that start thinking about machine learning as just
 
 another tool in your toolkit for doing inference. This is not like, oh, now that I know machine learning, I'm not going to do Bayesian statistics, or I'm going to stop learning physics because, boy, machine learning is so awesomely data-driven that I don't need anything anymore. So there's a time and a place for applying different tools. And what I'll teach you today is some of the at least pythonic ways of approaching some astronomy types of questions around inference using machine learning. But let's unpack this a little bit. I've got three axes. I've drawn them as orthogonal from each other. But for those that are reading ahead, you probably see that they're probably not that orthogonal. One is the statistical space, which is going in the left

@@ -19,8 +19,6 @@ Boot-camp lecture on large-scale statistical inference for time-domain astronomy
 
 ## Transcript
 
-*Auto-generated captions; may contain transcription errors.*
-
 [Music] um so I love this quote uh from Jim Gray he he meant this in I think the nicest way you could possibly uh take it um in the sense that when people get to work with astronomy data and in particular uh people working on large scale algorithms uh and sort of novel computation um they get to do so in a sandbox that um is a lot easier to work with and work in than uh some of the other types of data that are large and streaming and noisy and dirty like astronomy data is so he saw this as this wonderful playground uh for Microsoft and uh and more generally um for people like yourselves um to be asking questions uh of of scientific importance
 
 um but not so much on the physical side side more on the computational algorithmic side and of course if you make mistakes with astronomy data um you don't start wars you don't uh blow up your company um you don't have uh privacy leaks Etc so there is something um very special about that um and of course from the physical science side we think our Pursuits are you know reasonably orthogonal to commercial ones I won't try to claim more consequential um so I'm very excited to be be here and want to thank the organizers uh for the invitation uh to speak um so while while our data is uh maybe you know what you could consider a fertile ground for interdisciplinary work um between sort of

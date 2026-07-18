@@ -19,8 +19,6 @@ Practical generative neural models in astronomy: semi-supervised VAEs mapping ph
 
 ## Transcript
 
-*Auto-generated captions; may contain transcription errors.*
-
 hi everybody thanks having me here see if I can do this I thought it's up quote from a computer scientist Jim Gray who recognized decades ago that astronomers really fun to work with if you're a computer scientists or mathematicians that decision because our data is worthless and if you make a mistake nobody dies there's no PII that gets leaked out and causes billions of dollars of damage and he loved working with astronomers and we loved working with him it it's there's sort of two reasons why it's great to work with computer scientists as as an astronomer number one there's incredible tools that are being created all the time and in the sort of grand tradition of Galileo who said oh there's this thing called the
 
 telescope that's meant to point on the horizon to look for enemy ships what if I just did this pointing new algorithms and new approaches at our data with the kinds of inference problems that we have has been tremendously fruitful for us for centuries so we've been sort of watching the machine learning world develop and we started taking a lot of those techniques and bringing it and making it our own but then also the second reason why it's interesting to work with computer scientist is because they're pretty clueless about important problems to work on and they need our help in understanding what are the important questions to be asked right rather than optimizing twitter sentiment right they should be helping us understand how the universe works
