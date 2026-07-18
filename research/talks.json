@@ -1,6 +1,7 @@
 [
   {
     "n": 1,
+    "slug": "scipy-2008",
     "title": "Real-time Astronomical Time-series Classification and Broadcast Pipeline",
     "event": "SciPy 2008",
     "type": "Talk",
@@ -14,6 +15,7 @@
   },
   {
     "n": 2,
+    "slug": "hotwired-2009",
     "title": "Building a Classification Engine for the Palomar Transient Factory",
     "event": "Hot-wiring the Transient Universe II",
     "type": "Talk",
@@ -27,6 +29,7 @@
   },
   {
     "n": 3,
+    "slug": "synoptic-survey-ml-2011",
     "title": "Machine Learning and Classification in the Synoptic Survey Era",
     "event": "Workshop talk",
     "type": "Talk",
@@ -40,6 +43,7 @@
   },
   {
     "n": 4,
+    "slug": "royal-society-2012",
     "title": "Data-Mining and Machine Learning in the LSST Era",
     "event": "Royal Society Discussion Meeting: New Windows on Transients Across the Universe",
     "type": "Invited Talk",
@@ -53,6 +57,7 @@
   },
   {
     "n": 5,
+    "slug": "scipy-2012",
     "title": "Python as Super Glue for the Modern Scientific Workflow",
     "event": "SciPy 2012",
     "type": "Invited Talk",
@@ -66,6 +71,7 @@
   },
   {
     "n": 6,
+    "slug": "lsst-ahm-2012",
     "title": "Classification Challenges",
     "event": "LSST All-Hands Meeting 2012",
     "type": "Talk",
@@ -79,6 +85,7 @@
   },
   {
     "n": 7,
+    "slug": "simons-visions-2013",
     "title": "The Modern Astrophysics Stack: Automated Action and Insight",
     "event": "Symposium on Visions of the Theory of Computing, Simons Institute",
     "type": "Invited Talk",
@@ -92,6 +99,7 @@
   },
   {
     "n": 8,
+    "slug": "berkeley-data-science-lecture-2013",
     "title": "Extracting Actionable Insight from Dirty Time-Series Data",
     "event": "UC Berkeley Data Science Lecture Series",
     "type": "Lecture",
@@ -105,6 +113,7 @@
   },
   {
     "n": 9,
+    "slug": "big-data-boot-camp-2013",
     "title": "Large-Scale Inference in Time Domain Astrophysics",
     "event": "Big Data Boot Camp, Simons Institute",
     "type": "Lecture",
@@ -118,6 +127,7 @@
   },
   {
     "n": 10,
+    "slug": "citris-2013",
     "title": "Astrophysics of Streaming Time-Series Data: Discovery and Inference",
     "event": "CITRIS Research Exchange, UC Berkeley",
     "type": "Talk",
@@ -131,6 +141,7 @@
   },
   {
     "n": 11,
+    "slug": "strata-santa-clara-2014",
     "title": "Overcoming the Barriers to Production-Ready Machine-Learning Workflows",
     "event": "Strata Conference (Hardcore Data Science track)",
     "type": "Talk",
@@ -144,6 +155,7 @@
   },
   {
     "n": 12,
+    "slug": "nas-big-data-2014",
     "title": "Computational Training and Data Literacy for Domain Scientists",
     "event": "Training Students to Extract Value from Big Data, National Academy of Sciences",
     "type": "Invited Talk",
@@ -157,6 +169,7 @@
   },
   {
     "n": 13,
+    "slug": "pydata-sv-2014",
     "title": "Data Science at Berkeley",
     "event": "PyData Silicon Valley 2014",
     "type": "Keynote",
@@ -170,6 +183,7 @@
   },
   {
     "n": 14,
+    "slug": "ciera-northwestern-2014",
     "title": "Machine Learning in Astronomy",
     "event": "CIERA Interdisciplinary Colloquium, Northwestern University",
     "type": "Colloquium",
@@ -183,6 +197,7 @@
   },
   {
     "n": 15,
+    "slug": "dataedge-2014",
     "title": "UC Berkeley Data Science Startups",
     "event": "DataEDGE Conference, UC Berkeley School of Information",
     "type": "Panel",
@@ -196,6 +211,7 @@
   },
   {
     "n": 16,
+    "slug": "astro-hack-week-2014",
     "title": "Supervised Machine Learning",
     "event": "Astro Hack Week 2014",
     "type": "Tutorial",
@@ -209,6 +225,7 @@
   },
   {
     "n": 17,
+    "slug": "data-science-education-astronomy",
     "title": "Data Science Education: Needs & Opportunities in Astronomy",
     "event": "Seminar/workshop talk",
     "type": "Talk",
@@ -222,6 +239,7 @@
   },
   {
     "n": 18,
+    "slug": "data-driven-nyc-2015",
     "title": "Machine Learning in Production",
     "event": "Data Driven NYC (FirstMark)",
     "type": "Talk",
@@ -235,6 +253,7 @@
   },
   {
     "n": 19,
+    "slug": "pydata-seattle-2015",
     "title": "A Systems View of Machine Learning",
     "event": "PyData Seattle 2015",
     "type": "Keynote",
@@ -248,6 +267,7 @@
   },
   {
     "n": 20,
+    "slug": "software-engineering-daily-2016",
     "title": "Machine Learning for Businesses",
     "event": "Software Engineering Daily",
     "type": "Podcast",
@@ -261,6 +281,7 @@
   },
   {
     "n": 21,
+    "slug": "astro-hack-week-2016",
     "title": "Machine Learning (lecture)",
     "event": "Astro Hack Week 2016",
     "type": "Tutorial",
@@ -274,6 +295,7 @@
   },
   {
     "n": 22,
+    "slug": "twiml-2016",
     "title": "Machine Learning for the Stars & Productizing AI",
     "event": "TWIML AI Podcast (#5)",
     "type": "Podcast",
@@ -287,6 +309,7 @@
   },
   {
     "n": 23,
+    "slug": "haas-industrial-ml",
     "title": "Industrial Machine Learning",
     "event": "UC Berkeley Haas School of Business",
     "type": "Lecture",
@@ -300,6 +323,7 @@
   },
   {
     "n": 24,
+    "slug": "twiml-2017",
     "title": "Marrying Physics-Based and Data-Driven ML Models",
     "event": "TWIML AI Podcast (#42)",
     "type": "Podcast",
@@ -313,6 +337,7 @@
   },
   {
     "n": 25,
+    "slug": "kdd-2017",
     "title": "Industrial Machine Learning",
     "event": "KDD 2017, Applied Data Science Invited Talks",
     "type": "Invited Talk",
@@ -326,6 +351,7 @@
   },
   {
     "n": 26,
+    "slug": "autoencoding-rnn-2017",
     "title": "Autoencoding RNNs for Inference on Unevenly Sampled Time-Series",
     "event": "Seminar talk",
     "type": "Talk",
@@ -339,6 +365,7 @@
   },
   {
     "n": 27,
+    "slug": "strata-singapore-2017",
     "title": "Industrial Machine Learning",
     "event": "Strata Data Conference Singapore",
     "type": "Keynote",
@@ -352,6 +379,7 @@
   },
   {
     "n": 28,
+    "slug": "simons-rtdm-2018",
     "title": "Machine Learning for Time-Domain Astrophysics",
     "event": "Real-Time Decision Making program, Simons Institute",
     "type": "Talk",
@@ -365,6 +393,7 @@
   },
   {
     "n": 29,
+    "slug": "masters-of-data-2019",
     "title": "Industrial-Grade Machine Learning",
     "event": "Masters of Data Podcast (Sumo Logic)",
     "type": "Podcast",
@@ -378,6 +407,7 @@
   },
   {
     "n": 30,
+    "slug": "bids-2019",
     "title": "Astrophysical Machine Learning",
     "event": "Berkeley Institute for Data Science (BIDS) Data Science Lecture",
     "type": "Lecture",
@@ -391,6 +421,7 @@
   },
   {
     "n": 31,
+    "slug": "desi-2019",
     "title": "Optimizing DESI for the Time-Domain Opportunities",
     "event": "DESI Collaboration Meeting",
     "type": "Plenary",
@@ -404,6 +435,7 @@
   },
   {
     "n": 32,
+    "slug": "doe-ai-for-science-2019",
     "title": "Machine Learning at Scale: Astrophysics",
     "event": "DOE AI for Science Town Hall, Lawrence Berkeley National Laboratory",
     "type": "Plenary",
@@ -417,6 +449,7 @@
   },
   {
     "n": 33,
+    "slug": "ipam-2019",
     "title": "Physics-Informed (and -Informative) Generative Modelling in Astronomy",
     "event": "Machine Learning for Physics and the Physics of Learning, IPAM (UCLA)",
     "type": "Talk",
@@ -430,6 +463,7 @@
   },
   {
     "n": 34,
+    "slug": "scaledml-2020",
     "title": "Towards Physics-Informed ML Inference in Astrophysics",
     "event": "ScaledML 2020",
     "type": "Invited Talk",
@@ -443,6 +477,7 @@
   },
   {
     "n": 35,
+    "slug": "harvard-iacs-2020",
     "title": "Physics-Informed Machine Learning in Astronomy",
     "event": "Harvard IACS Seminar",
     "type": "Seminar",
@@ -456,6 +491,7 @@
   },
   {
     "n": 36,
+    "slug": "ml-club-2021",
     "title": "Machine Learning in Astronomical Surveys (ML Club intro)",
     "event": "MLClub.net",
     "type": "Talk",
@@ -469,6 +505,7 @@
   },
   {
     "n": 37,
+    "slug": "gradient-dissent-2021",
     "title": "The Link Between Astronomy and ML",
     "event": "Gradient Dissent (Weights & Biases)",
     "type": "Podcast",
@@ -482,6 +519,7 @@
   },
   {
     "n": 38,
+    "slug": "cosmic-connections-2023",
     "title": "AI Assisted Discovery: from UX to Eureka!",
     "event": "Cosmic Connections: ML X Astrophysics Symposium, Simons Foundation",
     "type": "Invited Talk",
@@ -495,6 +533,7 @@
   },
   {
     "n": 39,
+    "slug": "a3d3-2024",
     "title": "The Real AI Revolution in Astronomy Hasn't Happened Yet",
     "event": "A3D3 Institute Seminar / UW Physics Colloquium",
     "type": "Colloquium",
@@ -508,6 +547,7 @@
   },
   {
     "n": 40,
+    "slug": "iaifi-2025",
     "title": "AI Accelerating Inquiry and Insight in Astrophysics",
     "event": "IAIFI Colloquium, MIT",
     "type": "Colloquium",
@@ -521,6 +561,7 @@
   },
   {
     "n": 41,
+    "slug": "stanford-c4du-2025",
     "title": "Time-Domain Data and Anomaly Detection",
     "event": "Center for Decoding the Universe Annual Conference, Stanford",
     "type": "Talk",
@@ -534,6 +575,7 @@
   },
   {
     "n": 42,
+    "slug": "npr-science-friday-2005",
     "title": "Gamma Ray Bursters",
     "event": "NPR Science Friday",
     "type": "Radio",
@@ -547,6 +589,7 @@
   },
   {
     "n": 43,
+    "slug": "npr-science-friday-2011",
     "title": "In a Flash of Gamma-Rays, a Star Is Gone",
     "event": "NPR Science Friday",
     "type": "Radio",
@@ -560,6 +603,7 @@
   },
   {
     "n": 44,
+    "slug": "bbc-newshour-2011",
     "title": "Black Hole Swallows a Star (Swift J1644+57)",
     "event": "BBC Newshour",
     "type": "Radio",
@@ -573,6 +617,7 @@
   },
   {
     "n": 45,
+    "slug": "npr-morning-edition-2012",
     "title": "Telescope Targets Black Holes' Binges and Burps",
     "event": "NPR Morning Edition",
     "type": "Radio",
