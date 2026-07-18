@@ -19,6 +19,16 @@ At the Computer History Museum: building ML inference for astrophysics that resp
 
 *Day within Feb 26-27 approximate.*
 
+## Key Quotes
+
+> "What could be more important than understanding the universe? And doing this with ML actually, as we'll wind up seeing, pushes the envelope of what is needed algorithmically and potentially even from the hardware perspective." – Joshua Bloom
+
+> "What we decided to do is replace grad students and experts, because they don't scale, with ML." – Joshua Bloom
+
+> "How do we impose our knowledge of physics into the learning process directly into the architecture?" – Joshua Bloom
+
+> "It's important for astronomers and domain scientists in general to be connected deeply with the cutting-edge work of computer scientists and statisticians, but it is also tremendously important, I think, for computer scientists and statisticians to learn from us the kinds of questions we ask of our data, because our data looks different." – Joshua Bloom
+
 ## Transcript
 
 Well, thanks very much. I thought I'd start off with this quote from Jim Gray, who was a consummate data scientist and obviously had a very good sense of humor. He recognized something important decades ago: that it was great working with astronomers and our data, because our data is noisy, it's messy, it's streaming, it's heterogeneous, and it's dirty. And if you made a mistake as a computer scientist or a statistician as you try out new algorithms or new approaches or new hardware on our data, you're not leaking PII, there's no billion dollars of damage to your company, and nobody dies. So indeed this is a wonderful thing about working with astronomers. On the flip side, astronomers love working with statisticians and computer scientists

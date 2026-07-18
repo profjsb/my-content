@@ -19,6 +19,16 @@ Talk on the automated, ML-driven software stack of modern time-domain astrophysi
 
 *Verify YouTube ID at build time.*
 
+## Key Quotes
+
+> "It's easy to think about astronomers as portrait artists, but we like to think of ourselves as celestial cinematographers, because for us time is a very important axis in understanding the physics of what's happening." – Joshua Bloom
+
+> "It's of course preposterous to think about scaling up, say, 10 to the 6 Jodie Fosters to listen for what it is that we think we may hear in the sky… observing and listening to the universe doesn't guarantee discovery, and discovery of course doesn't guarantee insight." – Joshua Bloom
+
+> "We have to learn as astronomers to say goodbye to black-and-white catalogs, because these catalogs, if we're getting lots and lots of data, have to be made in this probabilistic way." – Joshua Bloom
+
+> "Even though we're using machine learning to really automate the whole astrophysics stack and remove people from the loop, can machines be taught to ask the questions that we haven't, or we can't? Will machine intelligence ever replace the eureka moments by people?" – Joshua Bloom
+
 ## Transcript
 
 Maybe a little bit darker — oh good, that's good. Those of you that knew Jim Gray know that this was an endearing quote; he meant this in the best of all possible terms. Astronomy's data is big, there's no privacy concerns per se, and unlike satellite imaging or with medical data, if you make an incorrect statement about it because you're trying out some new algorithm, no one dies and we don't go to war unnecessarily. Jim was a computer scientist at Microsoft and an alumni at Berkeley, and he saw astronomy as a sandbox to develop new formalisms of fundamental computer science research. In some sense we're trying to reach back the other way: astronomers are starting to play around with some of the new concepts in computer science and view all of that as our own sandbox, and we're trying to do something novel with it.

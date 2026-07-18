@@ -19,6 +19,16 @@ ML across astronomy workflows: the Planet 9 search, new variable-source classes,
 
 *Originally scheduled Apr 17, 2020 in person (cancelled); delivered virtually.*
 
+## Key Quotes
+
+> "There's obviously a lot of interest in optimizing ad clicks, and understanding Twitter sentiment perhaps, but understanding how the universe works I think is pretty interesting and pretty fundamental." – Joshua Bloom
+
+> "It's a little bit like Anna Karenina: all real objects all look the same. All bogus objects are all different in their own way." – Joshua Bloom
+
+> "When it comes to machine learning, it turns out we have very few examples or exemplars of the objects that we care about. So we have a big data problem, but we also have a small label problem." – Joshua Bloom
+
+> "With machine learning, you always get an answer. And that is a wonderful thing, but it is also an extremely dangerous thing. Always getting an answer means if you've put something into production, you're getting a result that hasn't been vetted by people." – Joshua Bloom
+
 ## Transcript
 
 - Admit all.

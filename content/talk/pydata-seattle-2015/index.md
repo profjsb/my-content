@@ -18,6 +18,16 @@ has_transcript: true
 
 Keynote at the Microsoft campus arguing that real-world ML must be understood as an end-to-end system — data ingestion, featurization, modeling, deployment, and feedback — not just algorithms.
 
+## Key Quotes
+
+> "What are machine learning systems? In my view they're living systems, both influencing and reacting to their environment. At best they're valuable, resilient, functioning systems composed of many imperfect parts, with many weak contracts between them, built by fallible individuals with broken communication channels amongst them." – Joshua Bloom
+
+> "If you can't define your loss function you can't optimize, and if you can't optimize then basically you're fishing." – Joshua Bloom
+
+> "Real data is not platonic, it's plutonic… It's ugly, it's a dusty snowball with mountains and warts and geysers, and it's got NaNs and missing quotes and all that stuff. It is incredibly ugly, but at the same time it's incredibly rich." – Joshua Bloom
+
+> "When it comes to ML systems, it takes a village. Or another way to say this is, data science as a team sport. You have to have interdisciplinary teams." – Joshua Bloom
+
 ## Transcript
 
 Hello everyone. So when I talk about machine learning systems, I'm thinking about those that are in production rather than those that are one-off data science projects. Not to say anything bad about those, but this is really the focus of this talk. So what are machine learning systems? In my view they're living systems, both influencing and reacting to their environment. At best they're valuable, resilient, functioning systems composed of many imperfect parts, with many weak contracts between them, built by fallible individuals with broken communication channels amongst them, living in a resource constrained world that's constantly changing, the results of which are consumed by capricious and exacting individuals. In short, this is very hard stuff.

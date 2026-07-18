@@ -18,6 +18,16 @@ has_transcript: true
 
 Practical generative neural models in astronomy: semi-supervised VAEs mapping physical parameters to latent space for telescope scheduling, cosmic-ray artifact detection and inpainting (deepCR), and autoencoder-based semantic indexing for compressed sensing.
 
+## Key Quotes
+
+> "The second reason why it's interesting to work with computer scientists is because they're pretty clueless about important problems to work on, and they need our help in understanding what are the important questions to be asked, rather than optimizing Twitter sentiment. They should be helping us understand how the universe works." – Joshua Bloom
+
+> "Up until about a decade ago the state of the art was to hire more grad students to look at these images and go no no no no, yes yes yes." – Joshua Bloom
+
+> "Imbuing some notion of the physical constraints that we'd like to have into our networks is a way of learning more quickly, which is another way of saying it allows us to learn with far less data." – Joshua Bloom
+
+> "I don't hand you this 1.2 terabyte catalog, I hand you a 12 megabyte file, and with that 12 megabyte file you could produce whatever catalogs you want. How much compression can we have that would actually preserve scientific inquiry?" – Joshua Bloom
+
 ## Transcript
 
 Hi everybody, thanks for having me here. See if I can do this. I thought I'd put up a quote from a computer scientist, Jim Gray, who recognized decades ago that astronomers are really fun to work with if you're a computer scientist or mathematician. That's because our data is worthless, and if you make a mistake nobody dies. There's no PII that gets leaked out and causes billions of dollars of damage. He loved working with astronomers and we loved working with him. There's sort of two reasons why it's great to work with computer scientists as an astronomer. Number one, there's incredible tools that are being created all the time, and in the grand tradition of Galileo who said, oh, there's this thing called the telescope that's meant to point on the horizon to look for enemy ships, what if I just did this, pointing new algorithms and new approaches at our data with the kinds of inference problems that we have has been tremendously fruitful for us for centuries.

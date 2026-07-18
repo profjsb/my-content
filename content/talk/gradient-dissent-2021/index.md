@@ -17,6 +17,16 @@ has_transcript: true
 
 As Berkeley astronomy chair, with host Lukas Biewald: why astronomers were early ML adopters, real/bogus detection, uncertainty quantification, likelihood-free inference, and why ML hasn't displaced domain expertise.
 
+## Key Quotes
+
+> "Astronomers are quite good at using and co-opting tools that are built elsewhere to get our work done. Maybe the most famous example is this guy named Galileo who heard about this thing called the telescope and instead of pointing at the horizon looking for enemy ships, he pointed up that way, and the rest is history." – Joshua Bloom
+
+> "We have objects like neutron stars, which are extremely compact stars that have the same mass thereabouts of our sun, but are the size of San Francisco. So that density, we can't reproduce that in the lab." – Joshua Bloom
+
+> "Right now, physics, astronomy, chemistry, for the most part we're working in a world where machine learning is this really big important tool in our toolbox but it's not become the fundamental driver of how new insights happen." – Joshua Bloom
+
+> "Doing inference and doing interpretability on the models that we build requires a fundamental understanding of the noise model of the data. And without that, nothing of what we do is going to be believable." – Joshua Bloom
+
 ## Transcript
 
 Josh: Astronomy and physics work in a world that's sensor-based, fundamentally, in terms of our observations. Because it's sensor-based, there's noise. So, unlike in the AlphaGo-Atari world where every pixel has a perfect measurement, if you take an image of the sky or you measure some time series, there's noise associated with it. Because there's noise and because there's a finite amount of training data, if you build models off of that, you get uncertainties in the models because of its lack of expressiveness or its overgeneralization or overfitting. Then, you also have a source of uncertainty in what it is that you're trying to understand, just because fundamentally you don't have a perfect measurement, your signal noise is imperfect.

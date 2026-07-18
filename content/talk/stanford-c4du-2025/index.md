@@ -19,6 +19,16 @@ Faculty talk in the opening session on time-domain astronomical data and anomaly
 
 *Day within June 5-6 approximate.*
 
+## Key Quotes
+
+> "The onus on astronomers when working with data in the context of anomalies is not for us to write papers about how to find anomalies, but to actually find them." – Joshua Bloom
+
+> "If we're cursed by dimensionality, we're really damned when we have real data." – Joshua Bloom
+
+> "We don't really care about anomalies. What we care about is uncovering new physics, and anomalies are just really a stepping stone, a means to an end." – Joshua Bloom
+
+> "Way out into the distant future, like in 2027, we're probably going to be in this world where this is the query that we all learn as grad students: please develop a plausible physical model using MHD, nuclear astrophysics, GR, that explains all the data we have on this collection of sources." – Joshua Bloom
+
 ## Transcript
 
 Thanks everyone. So I think it should be obvious by now that the onus on astronomers when working with data in the context of anomalies is not for us to write papers about how to find anomalies, but to actually find them and then show that the physics of the objects that we are identifying as anomalous from the data are actually different than some common objects that we already know about. And so it's beyond the methodology. And when we actually go from applying these methodologies to data, you wind up seeing just how absolutely hard it is to be working in the anomaly space in astronomy. So my talk hopefully will give some context to that.

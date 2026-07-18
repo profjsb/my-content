@@ -20,6 +20,16 @@ As Wise.io co-founder/CTO: what it takes to deploy machine learning in productio
 
 *Month per FirstMark slide upload (May 2015); one listing says Nov 2015.*
 
+## Key Quotes
+
+> "Astronomy in some sense had a big data problem 120 years ago. When we had this big data problem, what we did is we hired people." – Joshua Bloom
+
+> "When you're deep in the weeds in a data science organization that isn't highly connected to the product… you can lose sight of the fact that what you build and what you put in production has to be useful." – Joshua Bloom
+
+> "Netflix and Google, some of the best machine learning companies in the world, and these are their core products, and they still make mistakes. Yet these are not fatal mistakes. They've built fault tolerance into the machine learning." – Joshua Bloom
+
+> "We don't really see ourselves as a big data AI company… we're solving interesting problems that don't show up in the academic literature, more around featurization than it is around the actual model building itself." – Joshua Bloom
+
 ## Transcript
 
 Hello everyone. My name is Josh Bloom. I'm co-founder and CTO of wise.io. I'm also a professor at UC Berkeley. Tonight I'd like to talk about machine learning in production. And when I talk about machine learning in production, what I'm actually trying to talk about is the data products and the interactions that all of you are applying to data that's unique to your own business and transactions that are unique to your own business. But many of you are also thinking about building outside of the core of your business into some of the aspects that actually are very similar across multiple industries. So the key question that I want to pose tonight is: where is the AI build-buy decision boundary? And many of you as data scientists are going to wind up having influence on that decision. So I hope I can give you some thoughts that help you frame that question for yourself and your organizations.

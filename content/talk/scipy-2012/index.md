@@ -19,6 +19,16 @@ Invited talk on Python as the glue of the modern scientific workflow, from robot
 
 *Listed on PyVideo; verify YouTube ID at build time.*
 
+## Key Quotes
+
+> "We are not, in some sense, portrait artists of the sky; we are celestial cinematographers, and time is a very important component of us understanding what's happening out there in this vast and dynamic universe." – Joshua Bloom
+
+> "We can't be listening to all of our data, we can't be observing all of our data as a person, we can't scale Jodie Foster to ten-to-the-six people; that just doesn't make sense at all." – Joshua Bloom
+
+> "My view of doing probabilistic classification with machine learning is that the way you find needles is that you get very good at identifying hay." – Joshua Bloom
+
+> "Python is this incredibly wonderful super glue. And I think, although I haven't heard it said here yet, I think it's poised to become the de facto engine for modern science, and I think we should all be very excited and very proud about that." – Joshua Bloom
+
 ## Transcript
 
 Thanks for the introduction, Fernando, and I want to thank the organizers and the sponsors, but mostly I want to thank all of you for your efforts in making Python really the engine of modern science. This talk is really meant to highlight the top of the stack of Scientific Python and to show you that many of the results that make it to the popular press are actually results that are based on Python. So a lot of the science that you're seeing, that your parents are asking you about, that you're reading about in the papers and seeing on the news, so much of that has Python inside, and I thought it'd be useful for everyone here to hear about that. My name is Josh and I'm an astronomer.

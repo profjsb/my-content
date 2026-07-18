@@ -18,6 +18,16 @@ has_transcript: true
 
 Boot-camp lecture on large-scale statistical inference for time-domain astronomy, during the Simons Institute's Theoretical Foundations of Big Data Analysis program.
 
+## Key Quotes
+
+> "Make no mistake, computation is not our goal. Instead, the novel computation and algorithmic techniques are enabling what we do, which is fundamentally to conduct physical science." – Joshua Bloom
+
+> "We'll find more supernovae, which are basically big explosions from dying stars in various different ways; we'll get more of those types of supernovae in the first two weeks or so once the survey turns on than mankind has found throughout all of history." – Joshua Bloom
+
+> "We haven't quite got to the point of having machines write the papers for us, but that's maybe one of the ambitions." – Joshua Bloom
+
+> "Very few people actually talk to botanists and ask whether they care about classifying irises; if they go out in the fields, is that the thing that they really want to know?" – Joshua Bloom
+
 ## Transcript
 
 [Music] So I love this quote from Jim Gray. He meant this in, I think, the nicest way you could possibly take it, in the sense that when people get to work with astronomy data, and in particular people working on large-scale algorithms and sort of novel computation, they get to do so in a sandbox that is a lot easier to work with and work in than some of the other types of data that are large and streaming and noisy and dirty, like astronomy data is. So he saw this as this wonderful playground for Microsoft, and more generally for people like yourselves, to be asking questions of scientific importance,

@@ -18,6 +18,18 @@ has_transcript: true
 
 How the astrophysical data deluge has swamped traditional workflows and driven AI/ML tooling: real-time telescope control, survey optimization, simulation-based inference, multimodal foundation models (AstroM3), active optics, and neural compression (AstroCompress).
 
+## Key Quotes
+
+> "When people talk about astronomy being a big data place, it's true we have a lot of data, but we also have small numbers of labels, and we are label starved." – Joshua Bloom
+
+> "The end goal of doing AI in our work is not to do AI in our work — it's to enable novel science." – Joshua Bloom
+
+> "We're not just looking at simulated data to find simulated results. We're actually stumbling upon something that's actually fairly deep in nature." – Joshua Bloom
+
+> "The best chess player is not you anymore as a human, nor is it a computer; it's you plus a computer. And I think that's where we're all hoping to go with this AI-assisted science." – Joshua Bloom
+
+> "Ultimately I think we need to stop building foundation models for foundation model building's sake and start putting them into the hands of people that don't build foundation models." – Joshua Bloom
+
 ## Transcript
 
 All right, we're going to go ahead and get started. Hello everyone, thanks for joining. We're very excited this month to be hosting Josh Bloom for our IAIFI colloquium. Josh Bloom is the Miller Professor at UC Berkeley. He has been a pioneer in the use of and development of machine learning for time domain astrophysics. Broadly speaking, you can probably think of a time domain topic; he has probably written several papers on it. He's done work in SBI and optimization of telescope resources and is now a key player in the rapidly evolving field of multimodal foundation models. Hopefully, we'll hear a little bit about that today. He also founded a startup in AI over a decade ago, before that meant writing a wrapper around API calls to OpenAI, when it actually meant something. Today he's going to be talking a lot about the various projects that he and his group have been working on in accelerating inquiry and insight in astrophysics through AI. Great. Go ahead, Josh.

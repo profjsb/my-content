@@ -17,6 +17,16 @@ has_transcript: true
 
 Follow-up interview after the Wise.io acquisition: Industrial AI at GE Digital, autoencoders for building training datasets, and combining physics-based models with data-driven ML.
 
+## Key Quotes
+
+> "One of the distinctions I make between the consumer Internet of Things and the industrial Internet of Things is that when your Fitbit breaks you call up customer support and you sort of complain, but when your jet engine has a problem that can have some serious consequences. And so the stakes are a lot higher." – Joshua Bloom
+
+> "You're in this very interesting dance where it's lots of data, yet in some sense it's a small data problem because you only get the sort of bad or rare anomaly events every now and then. And even when you get those, they're all sort of Anna Karenina, like they're all unhappy families, they're all different in their own way." – Joshua Bloom
+
+> "I think of it as physics models only getting us 90% of the way there to a great answer, and then adding a sort of data-driven layer on top of that is the path that we're seeking." – Joshua Bloom
+
+> "Your life as a person depends upon the industrial Internet of Things, and it's a great time to be part of that, and there's a massive amount of work to be done." – Joshua Bloom
+
 ## Transcript
 
 [Music] Hello and welcome to another episode of TWiML Talk, the podcast where I interview interesting people doing interesting things in machine learning and artificial intelligence. I'm your host Sam Charrington. If you get my newsletter you already know this, but last week we hit a major milestone for the podcast. I'm excited to share that thanks to you, we've served up over 500,000 plays of this show. We're super grateful to everyone who's ever listening to the show, send us feedback, or engage with us via the site or social media. Thanks also to all of our guests, especially those who started out as listeners and later became guests like Evan Wright and Sarah Guo. We've come a long way in a short amount of time and we couldn't have done it without you.
