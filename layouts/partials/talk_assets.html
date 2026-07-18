@@ -1,0 +1,149 @@
+<style>
+/* Talks & Media — list + single styles (self-contained) */
+.talks-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.talk-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  padding: 1rem 1.25rem 1.1rem;
+  margin-bottom: 1.1rem;
+  transition: box-shadow 0.15s ease-in-out;
+}
+.talk-card .talk-num {
+  position: absolute;
+  top: 0.85rem;
+  right: 1rem;
+}
+.talk-card .talk-card-top {
+  padding-right: 3.2rem;
+}
+.talk-card:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
+}
+.talk-card-top {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+}
+.talk-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.55rem;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.talk-badge-talk { background: #e3f2fd; color: #1565c0; }
+.talk-badge-keynote { background: #fff3e0; color: #e65100; }
+.talk-badge-panel { background: #e0f2f1; color: #00695c; }
+.talk-badge-podcast { background: #f3e5f5; color: #6a1b9a; }
+.talk-badge-radio { background: #e8f5e9; color: #2e7d32; }
+.talk-badge-tutorial { background: #fce4ec; color: #ad1457; }
+.talk-badge-academic { background: #e8eaf6; color: #283593; }
+.talk-event {
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: #2b2b2b;
+}
+.talk-event a { color: inherit; }
+.talk-event a:hover { color: #2962ff; text-decoration: none; }
+.talk-meta {
+  margin-left: auto;
+  font-size: 0.85rem;
+  color: #8c8c8c;
+}
+.talk-num {
+  font-family: SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  color: #9a9a9a;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 0.15rem 0.4rem;
+  white-space: nowrap;
+}
+.talk-title {
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 500;
+  margin: 0.45rem 0 0.55rem;
+  line-height: 1.35;
+}
+.talk-title a { color: #2b2b2b; }
+.talk-title a:hover { color: #2962ff; text-decoration: none; }
+.talk-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+.talk-btn {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #444 !important;
+  background: #f5f2ec;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 7px;
+  padding: 0.28rem 0.75rem;
+  text-decoration: none !important;
+}
+.talk-btn:hover {
+  background: #ece7dd;
+  color: #2b2b2b !important;
+}
+.talks-intro {
+  margin-bottom: 1.6rem;
+  color: #555;
+}
+.talks-section-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #a08c5b;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+/* single page */
+.talk-single-header .talk-title-lg {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0.4rem;
+  line-height: 1.3;
+}
+.talk-single-meta {
+  color: #777;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+.talk-single-meta a { color: #555; }
+.talk-single .talk-links { margin-bottom: 1.5rem; }
+/* dark mode (Academic adds body.dark) */
+body.dark .talk-card { background: #212121; border-color: rgba(255, 255, 255, 0.1); }
+body.dark .talk-event, body.dark .talk-title a { color: #eee; }
+body.dark .talk-title a:hover, body.dark .talk-event a:hover { color: #82b1ff; }
+body.dark .talk-meta { color: #999; }
+body.dark .talk-num { background: rgba(255, 255, 255, 0.08); color: #aaa; }
+body.dark .talk-btn { background: #333; border-color: rgba(255, 255, 255, 0.1); color: #ddd !important; }
+body.dark .talk-btn:hover { background: #3d3d3d; }
+body.dark .talk-badge-talk { background: rgba(21, 101, 192, 0.25); color: #90caf9; }
+body.dark .talk-badge-keynote { background: rgba(230, 81, 0, 0.25); color: #ffb74d; }
+body.dark .talk-badge-panel { background: rgba(0, 105, 92, 0.25); color: #80cbc4; }
+body.dark .talk-badge-podcast { background: rgba(106, 27, 154, 0.3); color: #ce93d8; }
+body.dark .talk-badge-radio { background: rgba(46, 125, 50, 0.25); color: #a5d6a7; }
+body.dark .talk-badge-tutorial { background: rgba(173, 20, 87, 0.25); color: #f48fb1; }
+body.dark .talk-badge-academic { background: rgba(40, 53, 147, 0.35); color: #9fa8da; }
+body.dark .talks-intro { color: #bbb; }
+@media (max-width: 575px) {
+  .talk-meta { margin-left: 0; }
+}
+</style>
