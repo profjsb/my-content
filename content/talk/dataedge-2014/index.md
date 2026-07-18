@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Panelist (as co-founder of Wise.io) discussing the wave of data-science startups emerging from UC Berkeley research."
 topics: ["industry", "education"]
 talk_type: "Panel"
-talk_number: 60
+talk_number: 71
 display_date: "May 2014"
 has_transcript: false
 ---

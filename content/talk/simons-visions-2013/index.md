@@ -1,7 +1,7 @@
 ---
 title: "The Modern Astrophysics Stack: Automated Action and Insight"
-date: 2013-05-31
-publishDate: 2013-05-31
+date: 2013-05-30
+publishDate: 2013-05-30
 draft: false
 event: "Symposium on Visions of the Theory of Computing, Simons Institute"
 event_url: "https://simons.berkeley.edu/workshops/symposium-visions-theory-computing"
@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Talk on the automated, ML-driven software stack of modern time-domain astrophysics at the Simons Institute's inaugural public symposium; reportedly the earliest video on the Simons Institute YouTube channel."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 51
+talk_number: 61
 display_date: "May 2013"
 url_video: "https://www.youtube.com/watch?v=vGpqTbdBtu0"
 has_transcript: true

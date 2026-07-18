@@ -9,7 +9,7 @@ location: "Los Angeles, CA"
 summary: "Practical generative neural models in astronomy: semi-supervised VAEs mapping physical parameters to latent space for telescope scheduling, cosmic-ray artifact detection and inpainting (deepCR), and autoencoder-based semantic indexing for compressed sensing."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 85
+talk_number: 102
 display_date: "Sep 2019"
 url_video: "https://www.youtube.com/watch?v=qI0-r4c2UKQ"
 url_slides: "https://speakerdeck.com/profjsb/physics-informed-and-informative-generative-modelling-in-astronomy"

@@ -9,7 +9,7 @@ location: "Atlanta, GA"
 summary: "How AI/ML tooling is reshaping astrophysical workflows swamped by the data deluge, from discovery to inference at scale."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Seminar"
-talk_number: 96
+talk_number: 120
 display_date: "Sep 2025"
 has_transcript: false
 ---

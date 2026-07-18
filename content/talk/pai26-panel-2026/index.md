@@ -9,7 +9,7 @@ location: "Stanford, CA"
 summary: "Panel on foundation models and AI agents for physics, with Mariel Pettee and Ioana Ciuca."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Panel"
-talk_number: 100
+talk_number: 124
 display_date: "Jun 2026"
 url_video: "https://www.youtube.com/watch?v=sf9-P2BeUOY"
 has_transcript: true

@@ -8,7 +8,7 @@ event_url: "https://www.npr.org/2011/06/17/137250819/in-a-flash-of-gamma-rays-a-
 summary: "The day after publication of the Science paper on Swift J1644+57, Ira Flatow interviews Bloom (with Lawrence Krauss) on the gamma-ray outburst interpreted as a supermassive black hole shredding and swallowing a star 3.8 billion light-years away."
 topics: ["astronomy"]
 talk_type: "Radio"
-talk_number: 40
+talk_number: 45
 display_date: "Jun 2011"
 url_audio: "https://ondemand.npr.org/anon.npr-mp3/npr/totn/2011/06/20110617_totn_01.mp3"
 url_transcript: "https://www.npr.org/transcripts/137250819"

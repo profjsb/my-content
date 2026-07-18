@@ -9,7 +9,7 @@ location: "Seattle, WA"
 summary: "Keynote at the Microsoft campus arguing that real-world ML must be understood as an end-to-end system — data ingestion, featurization, modeling, deployment, and feedback — not just algorithms."
 topics: ["industry", "ai-ml"]
 talk_type: "Keynote"
-talk_number: 67
+talk_number: 80
 display_date: "Jul 2015"
 url_video: "https://www.youtube.com/watch?v=i-1UmCYyzi4"
 url_slides: "https://www.slideshare.net/JoshuaBloom/a-systems-view-of-machine-learnipydata-2015"

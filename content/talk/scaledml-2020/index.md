@@ -9,7 +9,7 @@ location: "Mountain View, CA"
 summary: "At the Computer History Museum: building ML inference for astrophysics that respects and exploits physical models, with applications to time-domain surveys."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 86
+talk_number: 104
 display_date: "Feb 2020"
 url_video: "https://www.youtube.com/watch?v=37zS7o84Rc4"
 has_transcript: true

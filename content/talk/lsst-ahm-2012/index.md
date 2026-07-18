@@ -8,7 +8,7 @@ location: "Tucson, AZ"
 summary: "ML approaches to astronomical classification for LSST: real/bogus candidate discrimination, variable-star classification, and probabilistic cataloging, with examples from the Palomar Transient Factory including SN 2011fe."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 47
+talk_number: 56
 display_date: "Aug 2012"
 url_slides: "https://speakerdeck.com/profjsb/classification-challenges"
 has_transcript: false

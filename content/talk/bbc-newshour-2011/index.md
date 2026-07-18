@@ -7,7 +7,7 @@ event: "BBC Newshour"
 summary: "BBC Newshour interview on the discovery of a possible relativistic jetted outburst from a massive black hole fed by a tidally disrupted star."
 topics: ["astronomy"]
 talk_type: "Radio"
-talk_number: 39
+talk_number: 44
 display_date: "Jun 2011"
 has_transcript: false
 ---

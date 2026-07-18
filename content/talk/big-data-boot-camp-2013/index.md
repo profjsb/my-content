@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Boot-camp lecture on large-scale statistical inference for time-domain astronomy, during the Simons Institute's Theoretical Foundations of Big Data Analysis program."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Lecture"
-talk_number: 55
+talk_number: 65
 display_date: "Sep 2013"
 url_video: "https://www.youtube.com/watch?v=jmDc6kRuyek"
 url_slides: "https://www.slideshare.net/JoshuaBloom/large-scale-inference-in-time-domain-astrophysics"

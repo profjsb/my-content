@@ -8,7 +8,7 @@ event_url: "https://wandb.ai/wandb_fc/gradient-dissent/reports/Josh-Bloom-The-Li
 summary: "As Berkeley astronomy chair, with host Lukas Biewald: why astronomers were early ML adopters, real/bogus detection, uncertainty quantification, likelihood-free inference, and why ML hasn't displaced domain expertise."
 topics: ["astronomy", "industry", "ai-ml"]
 talk_type: "Podcast"
-talk_number: 89
+talk_number: 108
 display_date: "Jul 2021"
 url_video: "https://www.youtube.com/watch?v=0aOXOT2TvUc"
 url_audio: "https://podcasts.captivate.fm/media/f4fb8c29-5356-467e-9a15-935ede020e50/1109004070-wandb-gd-josh-bloom.mp3"

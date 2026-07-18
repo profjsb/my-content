@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Founder and curator of the CuratingAI exhibition, leading the closing panel on whether artists working with generative AI tools are creators, curators, or collaborators (panelists including Fernando Perez)."
 topics: ["ai-ml"]
 talk_type: "Panel"
-talk_number: 91
+talk_number: 114
 display_date: "Apr 2024"
 has_transcript: false
 ---

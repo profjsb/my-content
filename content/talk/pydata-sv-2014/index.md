@@ -9,7 +9,7 @@ location: "Menlo Park, CA"
 summary: "Keynote at Facebook HQ on the emergence of data science at UC Berkeley: training, the newly founded Berkeley Institute for Data Science, and the interplay of theory-driven and data-driven inference in scientific practice."
 topics: ["education", "ai-ml"]
 talk_type: "Keynote"
-talk_number: 58
+talk_number: 69
 display_date: "May 2014"
 url_video: "https://www.youtube.com/watch?v=qiydAZdB-o0"
 url_slides: "https://www.slideshare.net/JoshuaBloom/pydata-bloom-16x9"

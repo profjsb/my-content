@@ -9,7 +9,7 @@ location: "Phoenix, AZ"
 summary: "IPDPS keynote on machine learning for astronomical discovery under real-time and scale constraints."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Keynote"
-talk_number: 61
+talk_number: 72
 display_date: "May 2014"
 has_transcript: false
 ---

@@ -8,7 +8,7 @@ event_url: "https://twimlai.com/podcast/twimlai/marrying-physics-based-and-data-
 summary: "Follow-up interview after the Wise.io acquisition: Industrial AI at GE Digital, autoencoders for building training datasets, and combining physics-based models with data-driven ML."
 topics: ["industry", "ai-ml"]
 talk_type: "Podcast"
-talk_number: 74
+talk_number: 88
 display_date: "Aug 2017"
 url_video: "https://www.youtube.com/watch?v=BJGMhXtWgF0"
 url_audio: "https://traffic.megaphone.fm/MLN6782313095.mp3"
