@@ -1838,5 +1838,106 @@
     "transcript_url": null,
     "summary": "Deploying astronomical foundation models in production settings, at the Flatiron workshop on foundation models for astrophysics.",
     "notes": "Invite-only workshop; no public page or recording found (2026-07 search)."
+  },
+  {
+    "n": 95,
+    "slug": "gatech-ai4science-2025",
+    "title": "AI Accelerating Astrophysics",
+    "event": "AI4Science Center Seminar, Georgia Tech",
+    "type": "Seminar",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2025-09-30",
+    "location": "Atlanta, GA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://ai4science.ai.gatech.edu/seminars-fall-2025/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "How AI/ML tooling is reshaping astrophysical workflows swamped by the data deluge, from discovery to inference at scale.",
+    "notes": "Invited seminar; host Dimitrios Psaltis. Listed on the GT AI4Science fall 2025 archive; no recording posted. Identified via correspondence (2026-07 Gmail/Calendar sweep)."
+  },
+  {
+    "n": 96,
+    "slug": "berkeley-roundtable-2025",
+    "title": "AI in Astronomy, a Primer",
+    "event": "Berkeley Astrophysics Roundtable",
+    "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml",
+      "education"
+    ],
+    "date": "2025-12-11",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "A primer on how astronomy came to lean on AI/ML for discovery and inference at scale, for a multi-speaker Berkeley roundtable.",
+    "notes": "Internal multi-speaker event (with P. Ma, P. Nugent, J. Somalwar, U. Seljak); no public page. Identified via correspondence (2026-07 sweep)."
+  },
+  {
+    "n": 97,
+    "slug": "kipac-colloquium-2026",
+    "title": "Circumventing Bottlenecks and Taking Better Data in the Time Domain",
+    "event": "KIPAC Astrophysics Colloquium, Stanford",
+    "type": "Colloquium",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2026-04-16",
+    "location": "Stanford, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://kipac.stanford.edu/events/astrophysics-colloquium/astrophysics-colloquium-circumventing-bottlenecks-and-taking-better",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "ML across the time-domain pipeline: relieving discovery and follow-up bottlenecks and actively taking better data with Rubin/LSST-era surveys.",
+    "notes": "Invited; KIPAC colloquium committee (S.E. Clark). A recording exists as a passcode-gated Zoom share (not publicly linkable). Identified via correspondence (2026-07 sweep)."
+  },
+  {
+    "n": 98,
+    "slug": "cmu-kaai-2026",
+    "title": "Time-Domain Astrophysics, Accelerated with AI",
+    "event": "Inaugural Keystone Astronomy & AI (KAAI) / Simons Colloquium, Carnegie Mellon",
+    "type": "Colloquium",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2026-04-27",
+    "location": "Pittsburgh, PA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://www.cmu.edu/astro-cosmology/research/simons-kaai-fellows/index.html",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Inaugural KAAI colloquium: simulation-based inference, self-supervised multi-modal foundation models, Rubin/LSST active optics, and reinforcement learning for gravitational-wave target-of-opportunity scheduling.",
+    "notes": "Inaugural talk of the Simons-funded KAAI series at the McWilliams Center (hosts Di Matteo & Palmese); Wean Hall 8330, 3:30pm. No video posted. Identified via correspondence (2026-07 sweep)."
+  },
+  {
+    "n": 99,
+    "slug": "pai26-panel-2026",
+    "title": "Foundation Models and Agents for Physics",
+    "event": "PAI26: 2026 Conference on Physics and AI, Stanford",
+    "type": "Panel",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2026-06-11",
+    "location": "Stanford, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://datascience.stanford.edu/events/center-decoding-universe/c4du-annual-conference/2026-conference-physics-and-ai-pai26",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Panel on foundation models and AI agents for physics, with Mariel Pettee and Ioana Ciuca.",
+    "notes": "Listed as Josh Bloom (Valency/UC Berkeley); panel June 11, 1:45pm. Conference June 10-12; proceedings community on Zenodo. Identified via correspondence (2026-07 sweep)."
   }
 ]
