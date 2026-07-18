@@ -9,7 +9,7 @@ location: "Pittsburgh, PA"
 summary: "Inaugural KAAI colloquium: simulation-based inference, self-supervised multi-modal foundation models, Rubin/LSST active optics, and reinforcement learning for gravitational-wave target-of-opportunity scheduling."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Colloquium"
-talk_number: 98
+talk_number: 99
 display_date: "Apr 2026"
 has_transcript: false
 ---

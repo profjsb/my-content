@@ -1939,5 +1939,24 @@
     "transcript_url": null,
     "summary": "Panel on foundation models and AI agents for physics, with Mariel Pettee and Ioana Ciuca.",
     "notes": "Listed as Josh Bloom (Valency/UC Berkeley); panel June 11, 1:45pm. Conference June 10-12; proceedings community on Zenodo. Identified via correspondence (2026-07 sweep)."
+  },
+  {
+    "n": 100,
+    "slug": "curatingai-panel-2024",
+    "title": "CuratingAI Art Exhibition: Closing Panel",
+    "event": "CuratingAI, 120710 Gallery",
+    "type": "Panel",
+    "topics": [
+      "ai-ml"
+    ],
+    "date": "2024-04-27",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://www.120710.art/show/7/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Founder and curator of the CuratingAI exhibition, leading the closing panel on whether artists working with generative AI tools are creators, curators, or collaborators (panelists including Fernando Perez).",
+    "notes": "Exhibition Apr 20-27, 2024; closing panel Apr 27, 4:45-5:45pm (Eventbrite: eventbrite.com/e/887351852277). Own write-up: joshbloom.org/post/curatingai/. Confirmed by JSB (led the panel)."
   }
 ]

@@ -9,7 +9,7 @@ location: "Stanford, CA"
 summary: "ML across the time-domain pipeline: relieving discovery and follow-up bottlenecks and actively taking better data with Rubin/LSST-era surveys."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Colloquium"
-talk_number: 97
+talk_number: 98
 display_date: "Apr 2026"
 has_transcript: false
 ---
