@@ -201,6 +201,15 @@ A second pass the same day, modeled on wesmckinney.com's transcript pages
   live show page; the episode audio itself proved unrecoverable (see the unreachable
   list). Post-pass link health: **87 ok, 3 walled, 2 dead of 92 links** (the two BIDS
   404s remain the only rot).
+- **Transcript cleanup** (parallel editing agents, same day): all 18 transcripts
+  de-filler-ed (um/uh/"you know"/"kind of"), stutters collapsed, punctuation and
+  capitalization fixed, reflowed into paragraphs at speaker turns/topic shifts, and
+  obvious proper-name mis-transcriptions corrected (Charrington, Filippenko, RR Lyrae,
+  Palomar Transient Factory, U-Net, Kaggle, …). 170k → 160k words (93.8% retained —
+  filler only, no content cut; per-file floor 87.5%). The page callout now says
+  "auto-generated and lightly edited for readability". List-page typography was also
+  matched to wesmckinney.com/presentations' exact card CSS (tighter cards, serif
+  section label, smaller normal-weight italic titles, Wes's #N chip styling).
 
 ## Maintenance
 
