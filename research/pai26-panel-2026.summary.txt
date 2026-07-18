@@ -1,0 +1,1 @@
+PAI26 (Stanford) panel on foundation models and AI agents for physics: Josh Bloom, Mariel Pettee, and Ioana Ciuca debate whether foundation models revolutionize physics, plus agents, trust, reproducibility, and the future of scientific work.

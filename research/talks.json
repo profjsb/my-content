@@ -1892,13 +1892,13 @@
     ],
     "date": "2026-04-16",
     "location": "Stanford, CA",
-    "video_url": null,
+    "video_url": "https://stanford.zoom.us/rec/share/rzsq01ZnUefVSHQAmNpkt0njUeHydRD7s9WNYGEgi_XDSya_DYtvwBL2oUIsDDZj.WxiCCg6BLIg6oE0X?startTime=1776362537000",
     "slides_url": null,
     "event_url": "https://kipac.stanford.edu/events/astrophysics-colloquium/astrophysics-colloquium-circumventing-bottlenecks-and-taking-better",
     "audio_url": null,
     "transcript_url": null,
     "summary": "ML across the time-domain pipeline: relieving discovery and follow-up bottlenecks and actively taking better data with Rubin/LSST-era surveys.",
-    "notes": "Invited; KIPAC colloquium committee (S.E. Clark). A recording exists as a passcode-gated Zoom share (not publicly linkable). Identified via correspondence (2026-07 sweep)."
+    "notes": "Invited; KIPAC colloquium committee (S.E. Clark). Video is a Zoom recording share, passcode $50FQK3L (published on the page per JSB). Identified via correspondence (2026-07 sweep)."
   },
   {
     "n": 98,
@@ -1932,13 +1932,13 @@
     ],
     "date": "2026-06-11",
     "location": "Stanford, CA",
-    "video_url": null,
+    "video_url": "https://www.youtube.com/watch?v=sf9-P2BeUOY",
     "slides_url": null,
     "event_url": "https://datascience.stanford.edu/events/center-decoding-universe/c4du-annual-conference/2026-conference-physics-and-ai-pai26",
     "audio_url": null,
     "transcript_url": null,
     "summary": "Panel on foundation models and AI agents for physics, with Mariel Pettee and Ioana Ciuca.",
-    "notes": "Listed as Josh Bloom (Valency/UC Berkeley); panel June 11, 1:45pm. Conference June 10-12; proceedings community on Zenodo. Identified via correspondence (2026-07 sweep)."
+    "notes": "Listed as Josh Bloom (Valency/UC Berkeley); panel June 11, 1:45pm. Conference June 10-12. Video: Stanford HAI YouTube (\"2026 Conference on Physics and AI: Panel 2\", playlist PLYLBSCrrqNXwkVgUzHusgyRSuJWJz6HEs). Transcript from auto-captions."
   },
   {
     "n": 100,
