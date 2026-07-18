@@ -167,8 +167,7 @@
     "type": "Lecture",
     "topics": [
       "astronomy",
-      "ai-ml",
-      "education"
+      "ai-ml"
     ],
     "date": "2013-09",
     "location": "Berkeley, CA",
@@ -709,8 +708,7 @@
     "type": "Talk",
     "topics": [
       "astronomy",
-      "ai-ml",
-      "education"
+      "ai-ml"
     ],
     "date": "2021-02-03",
     "location": "Virtual",

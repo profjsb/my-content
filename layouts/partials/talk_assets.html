@@ -99,6 +99,27 @@ body:not(.dark) { background-color: #FDF8F0; }
   padding: 24px 0;
 }
 body.dark .talks-filter-pill:hover { background: #333; }
+.talk-links .talk-topics { margin-left: auto; display: flex; align-items: center; gap: 4px; }
+.talk-topic-chip {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  font-family: var(--t-sans);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: #8B7D6B;
+  background: #F0E8DA;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 3px 6px;
+  transition: all 0.15s ease;
+}
+.talk-topic-chip:hover { color: var(--t-heading); border-color: #C4B8A8; }
+body.dark .talk-topic-chip { color: #a0a0a0; background: #333; }
+@media (max-width: 575px) { .talk-links .talk-topics { margin-left: 0; } }
 .talk-card {
   position: relative;
   background: var(--t-card-bg);

@@ -37,12 +37,25 @@ python3 $T linkcheck    # verify all outbound links (YouTube via oEmbed)
 1. **Gather facts.** Title, event, type, date (whatever precision is known), location,
    and any links the user already has. Valid types (drive badge colors):
    `Talk`, `Invited Talk`, `Keynote`, `Colloquium`, `Seminar`, `Lecture`, `Tutorial`,
-   `Panel`, `Plenary`, `Podcast`, `Radio`, `Interview`. Also pick one or more **topics**
-   for the list-page filter — vocabulary: `astronomy`, `industry`, `ai-ml`, `education`
-   (most talks get 2; e.g. an astro-ML colloquium is `astronomy,ai-ml`). For the filter's
-   Type row, types fold into six buckets in `talk_filter_type.html`: Invited Talk /
-   Plenary / Colloquium / Seminar count as Talk; Lecture and Tutorial share one bucket;
-   Interview counts as Radio.
+   `Panel`, `Plenary`, `Podcast`, `Radio`, `Interview`. Also assign one or more **topics**
+   (they power the list-page Topic filter and render as small square chips on the card,
+   bottom right). Vocabulary: `astronomy`, `industry`, `ai-ml`, `education`. **Derive
+   topics from the content, not the venue name:**
+   - If a transcript or recording exists, judge from what is actually discussed and
+     include every topic that is a major theme (roughly ≥15–20% of the content;
+     1–3 topics typical — e.g. an astro-ML colloquium is `astronomy,ai-ml`).
+   - Otherwise fall back to title + summary + venue signals (Strata/KDD → industry;
+     a hands-on hack-week tutorial → education; an NPR science segment → usually
+     astronomy alone).
+   - Definitions: `astronomy` = substantive astrophysics (surveys, transients,
+     telescopes, cosmology); `ai-ml` = substantive ML/AI methods; `industry` =
+     commercial/startup/productization angle; `education` = instructional content or a
+     talk substantially about teaching/training. A university colloquium or a
+     "lecture series" venue is NOT automatically education — the content must be.
+
+   For the filter's Type row, types fold into six buckets in `talk_filter_type.html`:
+   Invited Talk / Plenary / Colloquium / Seminar count as Talk; Lecture and Tutorial
+   share one bucket; Interview counts as Radio.
 
 2. **Research the links.** Look for (a) video — YouTube/venue archive/institute site;
    (b) slides — Speaker Deck, SlideShare, venue page; (c) an event page; (d) for radio

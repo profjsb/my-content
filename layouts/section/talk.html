@@ -34,6 +34,7 @@
 
   <div class="talks-section-label">Past Talks &amp; Media</div>
 
+  {{ $topicLabels := dict "astronomy" "Astronomy" "industry" "Industry" "ai-ml" "AI/ML" "education" "Education" }}
   {{ range .Pages.ByDate.Reverse }}
   <div class="talk-card" data-topics="{{ delimit (.Params.topics | default (slice)) " " }}" data-type="{{ partial "talk_filter_type.html" . }}">
     <div class="talk-card-top">
@@ -53,6 +54,7 @@
       {{ with .Params.url_slides }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Slides</a>{{ end }}
       {{ if .Params.has_transcript }}<a class="talk-btn" href="{{ .RelPermalink }}#transcript">Transcript</a>{{ else }}{{ with .Params.url_transcript }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Transcript</a>{{ end }}{{ end }}
       {{ with .Params.event_url }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Event</a>{{ end }}
+      {{ with .Params.topics }}<span class="talk-topics">{{ range . }}<button type="button" class="talk-topic-chip" data-topic="{{ . }}" title="Filter by {{ index $topicLabels . | default . }}">{{ index $topicLabels . | default . }}</button>{{ end }}</span>{{ end }}
     </div>
   </div>
   {{ end }}
@@ -87,6 +89,12 @@
         btn.classList.add('active');
         apply();
       });
+    });
+  });
+  Array.prototype.slice.call(document.querySelectorAll('.talk-topic-chip')).forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var pill = document.querySelector('.talks-filter-row[data-filter-group="topic"] .talks-filter-pill[data-filter="' + chip.getAttribute('data-topic') + '"]');
+      if (pill) pill.click();
     });
   });
 })();
