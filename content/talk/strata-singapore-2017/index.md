@@ -7,6 +7,7 @@ event: "Strata Data Conference Singapore"
 event_url: "https://www.oreilly.com/radar/industrial-machine-learning/"
 location: "Singapore"
 summary: "Keynote arguing that the real machine-learning revolution — in improved and saved lives — will come when ML automation is coupled with industrial data."
+topics: ["industry", "ai-ml"]
 talk_type: "Keynote"
 talk_number: 31
 display_date: "Dec 2017"

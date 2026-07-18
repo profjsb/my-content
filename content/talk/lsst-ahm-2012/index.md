@@ -6,6 +6,7 @@ draft: false
 event: "LSST All-Hands Meeting 2012"
 location: "Tucson, AZ"
 summary: "ML approaches to astronomical classification for LSST: real/bogus candidate discrimination, variable-star classification, and probabilistic cataloging, with examples from the Palomar Transient Factory including SN 2011fe."
+topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
 talk_number: 10
 display_date: "Aug 2012"

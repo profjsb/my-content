@@ -7,6 +7,7 @@ event: "IAIFI Colloquium, MIT"
 event_url: "https://iaifi.org/events"
 location: "Cambridge, MA"
 summary: "How the astrophysical data deluge has swamped traditional workflows and driven AI/ML tooling: real-time telescope control, survey optimization, simulation-based inference, multimodal foundation models (AstroM3), active optics, and neural compression (AstroCompress)."
+topics: ["astronomy", "ai-ml"]
 talk_type: "Colloquium"
 talk_number: 44
 display_date: "May 2025"

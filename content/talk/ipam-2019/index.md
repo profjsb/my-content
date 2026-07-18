@@ -7,6 +7,7 @@ event: "Machine Learning for Physics and the Physics of Learning, IPAM (UCLA)"
 event_url: "https://www.ipam.ucla.edu/abstract/?tid=16152"
 location: "Los Angeles, CA"
 summary: "Practical generative neural models in astronomy: semi-supervised VAEs mapping physical parameters to latent space for telescope scheduling, cosmic-ray artifact detection and inpainting (deepCR), and autoencoder-based semantic indexing for compressed sensing."
+topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
 talk_number: 37
 display_date: "Sep 2019"

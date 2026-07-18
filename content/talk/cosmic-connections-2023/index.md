@@ -7,6 +7,7 @@ event: "Cosmic Connections: ML X Astrophysics Symposium, Simons Foundation"
 event_url: "https://www.simonsfoundation.org/event/cosmic-connections-a-ml-x-astrophysics-symposium/"
 location: "New York, NY"
 summary: "How AI/ML has uniquely contributed to novel science in astronomy across three assistive modes: circumventing human-centric bottlenecks, accelerating physics-based computation, and hypothesis generation — including LLMs for UX and a simulation-based-inference breakthrough in microlensing degeneracy theory."
+topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
 talk_number: 42
 display_date: "May 2023"

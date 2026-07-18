@@ -7,6 +7,7 @@ event: "Astro Hack Week 2016"
 event_url: "http://astrohackweek.org/2016/"
 location: "Berkeley, CA"
 summary: "Tutorial lecture on machine-learning methods for astronomers (classification, regression, feature engineering) at Astro Hack Week 2016, hosted at UC Berkeley and recorded by BIDS."
+topics: ["astronomy", "ai-ml", "education"]
 talk_type: "Tutorial"
 talk_number: 25
 display_date: "Aug 2016"

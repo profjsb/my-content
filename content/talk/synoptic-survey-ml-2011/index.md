@@ -5,6 +5,7 @@ publishDate: 2011-07-01
 draft: false
 event: "Workshop talk"
 summary: "ML-driven discovery and classification of transients and variable stars in the era of synoptic surveys (PTF to LSST): real/bogus discrimination, probabilistic variable-star catalogs, and automating the discovery loop."
+topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
 talk_number: 6
 display_date: "2011"

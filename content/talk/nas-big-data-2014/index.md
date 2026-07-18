@@ -7,6 +7,7 @@ event: "Training Students to Extract Value from Big Data, National Academy of Sc
 event_url: "https://www.nationalacademies.org/our-work/training-students-to-extract-value-from-big-data-a-workshop"
 location: "Washington, DC"
 summary: "Invited lecture at the NAS workshop on big-data education, drawing on the Berkeley 'Python for Data Science' bootcamps and course, and what domain scientists need in computational training; proceedings published by National Academies Press."
+topics: ["education"]
 talk_type: "Invited Talk"
 talk_number: 16
 display_date: "Apr 2014"

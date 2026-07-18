@@ -37,7 +37,12 @@ python3 $T linkcheck    # verify all outbound links (YouTube via oEmbed)
 1. **Gather facts.** Title, event, type, date (whatever precision is known), location,
    and any links the user already has. Valid types (drive badge colors):
    `Talk`, `Invited Talk`, `Keynote`, `Colloquium`, `Seminar`, `Lecture`, `Tutorial`,
-   `Panel`, `Plenary`, `Podcast`, `Radio`, `Interview`.
+   `Panel`, `Plenary`, `Podcast`, `Radio`, `Interview`. Also pick one or more **topics**
+   for the list-page filter — vocabulary: `astronomy`, `industry`, `ai-ml`, `education`
+   (most talks get 2; e.g. an astro-ML colloquium is `astronomy,ai-ml`). For the filter's
+   Type row, types fold into six buckets in `talk_filter_type.html`: Invited Talk /
+   Plenary / Colloquium / Seminar count as Talk; Lecture and Tutorial share one bucket;
+   Interview counts as Radio.
 
 2. **Research the links.** Look for (a) video — YouTube/venue archive/institute site;
    (b) slides — Speaker Deck, SlideShare, venue page; (c) an event page; (d) for radio
@@ -66,6 +71,7 @@ python3 $T linkcheck    # verify all outbound links (YouTube via oEmbed)
    python3 $T scaffold --slug pydata-global-2026 \
      --title "The Talk Title" --date 2026-03-14 --type "Invited Talk" \
      --event "PyData Global 2026" --location "Online" \
+     --topics "industry,ai-ml" \
      --video "https://www.youtube.com/watch?v=..." \
      --slides "https://speakerdeck.com/..." --event-url "https://..." \
      --audio "https://.../episode.mp3" --transcript-url "https://.../transcripts/..." \

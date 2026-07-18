@@ -7,6 +7,7 @@ event: "Strata Conference (Hardcore Data Science track)"
 event_url: "https://conferences.oreilly.com/strata/strata2014/public/schedule/detail/32314"
 location: "Santa Clara, CA"
 summary: "With Wise.io co-founder Henrik Brink: practical obstacles to deploying ML in production, including data preprocessing, scaling models to growing data, and deployment into production pipelines."
+topics: ["industry", "ai-ml"]
 talk_type: "Talk"
 talk_number: 15
 display_date: "Feb 2014"

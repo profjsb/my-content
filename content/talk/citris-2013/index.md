@@ -7,6 +7,7 @@ event: "CITRIS Research Exchange, UC Berkeley"
 event_url: "https://citris-uc.org/news-events/citris-research-exchange/"
 location: "Berkeley, CA"
 summary: "CITRIS Research Exchange seminar on ML pipelines for discovery and inference on streaming astronomical time-series data (variable stars, transients, synoptic surveys)."
+topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
 talk_number: 13
 display_date: "2013"

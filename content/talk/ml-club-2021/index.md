@@ -7,6 +7,7 @@ event: "MLClub.net"
 event_url: "https://mlclub.net"
 location: "Virtual"
 summary: "Overview of ML in astronomical surveys framed around Rubin/LSST: real-bogus classification, inpainting for artifact removal, anomaly detection, calibrated Bayesian classification, similarity search at scale, and MLOps for reproducible science."
+topics: ["astronomy", "ai-ml", "education"]
 talk_type: "Talk"
 talk_number: 40
 display_date: "Feb 2021"

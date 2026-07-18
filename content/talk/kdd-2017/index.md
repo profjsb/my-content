@@ -7,6 +7,7 @@ event: "KDD 2017, Applied Data Science Invited Talks"
 event_url: "https://www.kdd.org/kdd2017/applied-data-science-invited-talks/view/dr.-josh-bloom"
 location: "Halifax, Canada"
 summary: "Applied Data Science invited talk (as VP of Data & Analytics, GE Digital) on deploying machine learning against industrial data at scale."
+topics: ["industry", "ai-ml"]
 talk_type: "Invited Talk"
 talk_number: 29
 display_date: "Aug 2017"

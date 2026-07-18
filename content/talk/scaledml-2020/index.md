@@ -7,6 +7,7 @@ event: "ScaledML 2020"
 event_url: "https://info.matroid.com/scaledml-media-archive-2020"
 location: "Mountain View, CA"
 summary: "At the Computer History Museum: building ML inference for astrophysics that respects and exploits physical models, with applications to time-domain surveys."
+topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
 talk_number: 38
 display_date: "Feb 2020"

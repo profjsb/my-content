@@ -7,6 +7,7 @@ event: "PyData Seattle 2015"
 event_url: "https://pydata.org/seattle2015/speaker/profile/96/"
 location: "Seattle, WA"
 summary: "Keynote at the Microsoft campus arguing that real-world ML must be understood as an end-to-end system — data ingestion, featurization, modeling, deployment, and feedback — not just algorithms."
+topics: ["industry", "ai-ml"]
 talk_type: "Keynote"
 talk_number: 23
 display_date: "Jul 2015"

@@ -62,6 +62,11 @@ transcripts** (auto-generated captions, marked as such on each page).
   (keynote/panel/podcast/radio/interview/tutorial map to their own classes;
   colloquium/seminar/lecture share an "academic" class; everything else — including
   "Invited Talk" and "Plenary" — falls through to the default Talk style).
+- **`topics`** (added with the filter bar, Jul 18): required list field powering the
+  list-page Topic filter — vocabulary `astronomy` / `industry` / `ai-ml` / `education`
+  (`talks.py validate` enforces it). The Type filter folds `talk_type` into six buckets
+  via `layouts/partials/talk_filter_type.html` (Invited Talk/Plenary/Colloquium/Seminar
+  → Talk; Lecture+Tutorial share a bucket; Interview → Radio).
 - **Optional media fields** (added in the same-day restyle, see addendum):
   `url_audio` (direct MP3 → Listen button), `url_transcript` (external transcript
   page → Transcript button, shown only when `has_transcript` is false). A YouTube or

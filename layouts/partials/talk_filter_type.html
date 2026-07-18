@@ -1,0 +1,14 @@
+{{- /* Map talk_type to one of the six filter buckets:
+       talk | panel | podcast | radio | lecture | keynote.
+       Invited Talk, Plenary, Colloquium, and Seminar fold into "talk";
+       Lecture and Tutorial share the "lecture" bucket; Interview counts as radio. */ -}}
+{{- $t := lower (.Params.talk_type | default "talk") -}}
+{{- if in $t "keynote" }}keynote
+{{- else if in $t "panel" }}panel
+{{- else if in $t "podcast" }}podcast
+{{- else if in $t "radio" }}radio
+{{- else if in $t "interview" }}radio
+{{- else if in $t "lecture" }}lecture
+{{- else if in $t "tutorial" }}lecture
+{{- else }}talk
+{{- end -}}

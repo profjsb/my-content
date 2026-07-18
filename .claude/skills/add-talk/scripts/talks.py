@@ -23,10 +23,12 @@ from concurrent.futures import ThreadPoolExecutor
 CONTENT = "content/talk"
 TALKS_JSON = "research/talks.json"
 
-REQUIRED_FIELDS = ["title", "date", "event", "summary", "talk_type", "talk_number", "display_date"]
+REQUIRED_FIELDS = ["title", "date", "event", "summary", "topics", "talk_type", "talk_number",
+                   "display_date"]
 FIELD_ORDER = ["title", "date", "publishDate", "draft", "event", "event_url", "location",
-               "summary", "talk_type", "talk_number", "display_date", "url_video",
+               "summary", "topics", "talk_type", "talk_number", "display_date", "url_video",
                "url_slides", "url_audio", "url_transcript", "has_transcript"]
+TOPICS = {"astronomy", "industry", "ai-ml", "education"}  # /talk/ filter vocabulary
 
 
 # ---------- front matter ----------
@@ -104,6 +106,12 @@ def cmd_validate(_args):
             errs.append(f"{p}: has_transcript true but no '## Transcript' section")
         if fm.get("has_transcript") != "true" and "## Transcript" in body:
             errs.append(f"{p}: transcript present but has_transcript is not true")
+        if "topics" in fm:
+            vals = set(re.findall(r'"([^"]+)"', fm["topics"]))
+            if not vals:
+                errs.append(f"{p}: topics is empty")
+            elif not vals <= TOPICS:
+                errs.append(f"{p}: unknown topics {sorted(vals - TOPICS)} (allowed: {sorted(TOPICS)})")
         if not any(fm.get(k) for k in ("url_video", "url_slides", "event_url")):
             warns.append(f"{p}: no links at all (known-unreachable item?)")
     # numbering = chronological rank
@@ -209,12 +217,17 @@ def cmd_scaffold(args):
     if os.path.exists(path):
         raise SystemExit(f"{path} already exists")
     date, display = normalize_date(args.date)
+    topics = [t.strip() for t in (args.topics or "").split(",") if t.strip()]
+    if not topics or not set(topics) <= TOPICS:
+        raise SystemExit(f"--topics must be a comma-separated subset of {sorted(TOPICS)}")
     fm = {
         "title": yq(args.title), "date": date, "publishDate": date, "draft": "false",
         "event": yq(args.event),
         "event_url": yq(args.event_url) if args.event_url else None,
         "location": yq(args.location) if args.location else None,
-        "summary": yq(args.summary or ""), "talk_type": yq(args.type),
+        "summary": yq(args.summary or ""),
+        "topics": "[" + ", ".join(f'"{t}"' for t in topics) + "]",
+        "talk_type": yq(args.type),
         "talk_number": "0", "display_date": yq(display),
         "url_video": yq(args.video) if args.video else None,
         "url_slides": yq(args.slides) if args.slides else None,
@@ -229,7 +242,7 @@ def cmd_scaffold(args):
 
     data = load_json()
     entry = {"n": max(t["n"] for t in data) + 1, "slug": slug, "title": args.title,
-             "event": args.event, "type": args.type, "date": args.date,
+             "event": args.event, "type": args.type, "topics": topics, "date": args.date,
              "location": args.location or None, "video_url": args.video or None,
              "slides_url": args.slides or None, "event_url": args.event_url or None,
              "audio_url": args.audio or None, "transcript_url": args.transcript_url or None,
@@ -314,6 +327,8 @@ def main():
     sc.add_argument("--type", required=True,
                     help="Talk/Invited Talk/Keynote/Colloquium/Seminar/Lecture/Tutorial/"
                          "Panel/Plenary/Podcast/Radio/Interview")
+    sc.add_argument("--topics", required=True,
+                    help="comma-separated filter topics: astronomy,industry,ai-ml,education")
     sc.add_argument("--event", required=True)
     sc.add_argument("--location")
     sc.add_argument("--event-url", dest="event_url")

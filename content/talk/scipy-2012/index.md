@@ -7,6 +7,7 @@ event: "SciPy 2012"
 event_url: "https://pyvideo.org/scipy-2012/python-as-super-glue-for-the-modern-scientific-wo.html"
 location: "Austin, TX"
 summary: "Invited talk on Python as the glue of the modern scientific workflow, from robotic-telescope automation and real-time transient-discovery pipelines to machine learning in astronomy."
+topics: ["astronomy", "education"]
 talk_type: "Invited Talk"
 talk_number: 8
 display_date: "Jul 2012"
