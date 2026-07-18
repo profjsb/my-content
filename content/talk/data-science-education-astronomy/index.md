@@ -7,7 +7,7 @@ event: "Seminar/workshop talk"
 summary: "On the growing need for data-science training in astronomy curricula and the opportunities for cross-disciplinary education, from Berkeley bootcamps to institute-scale efforts."
 topics: ["astronomy", "education"]
 talk_type: "Talk"
-talk_number: 22
+talk_number: 66
 display_date: "2015"
 url_slides: "https://www.slideshare.net/JoshuaBloom/data-science-education-needs-opportunities-in-astronomy"
 has_transcript: false

@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Plenary at the DOE 'AI for Science' town hall on scaling ML for astrophysics — real-time discovery, classification, and inference over massive survey data streams — feeding into the 2020 DOE AI for Science report."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Plenary"
-talk_number: 36
+talk_number: 84
 display_date: "Sep 2019"
 url_slides: "https://speakerdeck.com/profjsb/machine-learning-at-scale-astrophysics"
 has_transcript: false

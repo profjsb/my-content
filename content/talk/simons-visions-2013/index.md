@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Talk on the automated, ML-driven software stack of modern time-domain astrophysics at the Simons Institute's inaugural public symposium; reportedly the earliest video on the Simons Institute YouTube channel."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 11
+talk_number: 51
 display_date: "May 2013"
 url_video: "https://www.youtube.com/watch?v=vGpqTbdBtu0"
 has_transcript: true

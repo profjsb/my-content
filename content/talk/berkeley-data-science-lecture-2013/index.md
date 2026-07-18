@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "How to extract real-time, actionable insight from noisy, incomplete streaming sensor data (earthquakes, supernovae, traffic), and the interplay between domain scientists, statisticians, and computer scientists."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Lecture"
-talk_number: 12
+talk_number: 52
 display_date: "Jun 2013"
 url_video: "https://bids.berkeley.edu/resources/videos/extracting-actionable-insight-dirty-time-series-data"
 has_transcript: false

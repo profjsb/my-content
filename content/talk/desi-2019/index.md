@@ -8,7 +8,7 @@ location: "Berkeley, CA"
 summary: "Plenary on how the DESI spectroscopic survey could benefit time-domain astronomy — variable stars, transients, circumnuclear events, unusual supernovae, and multimessenger follow-up — with proposed fiber-allocation and data-access strategies."
 topics: ["astronomy"]
 talk_type: "Plenary"
-talk_number: 35
+talk_number: 83
 display_date: "Jul 2019"
 url_slides: "https://speakerdeck.com/profjsb/optimizing-desi-for-the-time-domain-opportunities"
 has_transcript: false

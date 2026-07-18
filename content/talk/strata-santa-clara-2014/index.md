@@ -9,7 +9,7 @@ location: "Santa Clara, CA"
 summary: "With Wise.io co-founder Henrik Brink: practical obstacles to deploying ML in production, including data preprocessing, scaling models to growing data, and deployment into production pipelines."
 topics: ["industry", "ai-ml"]
 talk_type: "Talk"
-talk_number: 15
+talk_number: 56
 display_date: "Feb 2014"
 url_video: "https://www.oreilly.com/library/view/hardcore-data-science/9781491901984/"
 url_slides: "https://speakerdeck.com/brinkar/overcoming-the-barriers-to-production-ready-machine-learning"

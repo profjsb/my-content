@@ -9,7 +9,7 @@ location: "Singapore"
 summary: "Keynote arguing that the real machine-learning revolution — in improved and saved lives — will come when ML automation is coupled with industrial data."
 topics: ["industry", "ai-ml"]
 talk_type: "Keynote"
-talk_number: 31
+talk_number: 76
 display_date: "Dec 2017"
 url_video: "https://www.youtube.com/watch?v=QGg63rWS9nU"
 has_transcript: false

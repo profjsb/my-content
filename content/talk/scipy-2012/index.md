@@ -9,7 +9,7 @@ location: "Austin, TX"
 summary: "Invited talk on Python as the glue of the modern scientific workflow, from robotic-telescope automation and real-time transient-discovery pipelines to machine learning in astronomy."
 topics: ["astronomy", "education"]
 talk_type: "Invited Talk"
-talk_number: 8
+talk_number: 45
 display_date: "Jul 2012"
 url_video: "https://www.youtube.com/watch?v=mLuIB8aW2KA"
 has_transcript: true

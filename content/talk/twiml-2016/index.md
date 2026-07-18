@@ -8,7 +8,7 @@ event_url: "https://twimlai.com/podcast/twimlai/machine-learning-for-the-stars-p
 summary: "An 84-minute interview on pioneering ML for robotic-telescope imagery at Berkeley, the founding and evolution of Wise.io, its data-science pipeline, and open challenges in machine learning."
 topics: ["astronomy", "industry", "ai-ml"]
 talk_type: "Podcast"
-talk_number: 26
+talk_number: 70
 display_date: "Sep 2016"
 url_video: "https://www.youtube.com/watch?v=B6gbGB_fWkM"
 url_audio: "https://traffic.megaphone.fm/MLN2676147306.mp3"

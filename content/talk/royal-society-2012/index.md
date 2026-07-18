@@ -9,7 +9,7 @@ location: "London, UK"
 summary: "Invited discussion-meeting talk on machine learning as a surrogate for rapid human analysis at LSST data volumes: discovery algorithms, classification methodologies, and real-time transient identification."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 7
+talk_number: 44
 display_date: "Apr 2012"
 url_slides: "https://speakerdeck.com/profjsb/data-mining-and-machine-learning-in-the-lsst-era"
 has_transcript: false

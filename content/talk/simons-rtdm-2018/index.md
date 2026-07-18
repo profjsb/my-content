@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "How statistical ML applies to astronomy in batch and streaming contexts: feature-engineered supernova identification and variable-star characterization, and autoencoder/RNN architectures that learn without hand-built features."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 32
+talk_number: 77
 display_date: "Feb 2018"
 url_video: "https://www.youtube.com/watch?v=iLBNeWnqnkQ"
 has_transcript: true
