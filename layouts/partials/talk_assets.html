@@ -59,6 +59,67 @@ body:not(.dark) { background-color: #FDF8F0; }
   padding-bottom: 10px;
   margin: 32px 0 20px;
 }
+.talks-filter { display: flex; flex-direction: column; gap: 8px; margin: 20px 0 4px; }
+.talks-filter-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.talks-filter-label {
+  font-family: var(--t-sans);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--t-secondary);
+  width: 46px;
+  flex-shrink: 0;
+}
+.talks-filter-pill {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  font-family: var(--t-sans);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--t-secondary);
+  background: var(--t-btn-bg);
+  border: 1px solid var(--t-btn-border);
+  border-radius: 999px;
+  padding: 4px 12px;
+  transition: all 0.15s ease;
+}
+.talks-filter-pill:hover { background: #EBE3D6; border-color: #C4B8A8; color: var(--t-heading); }
+.talks-filter-pill.active {
+  background: var(--t-heading);
+  border-color: var(--t-heading);
+  color: var(--t-card-bg);
+}
+.talks-empty {
+  font-family: var(--t-serif);
+  font-style: italic;
+  color: var(--t-secondary);
+  padding: 24px 0;
+}
+body.dark .talks-filter-pill:hover { background: #333; }
+.talk-links .talk-topics { margin-left: auto; display: flex; align-items: center; gap: 4px; }
+.talk-topic-chip {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  font-family: var(--t-sans);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: #8B7D6B;
+  background: #F0E8DA;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 3px 6px;
+  transition: all 0.15s ease;
+}
+.talk-topic-chip:hover { color: var(--t-heading); border-color: #C4B8A8; }
+body.dark .talk-topic-chip { color: #a0a0a0; background: #333; }
+@media (max-width: 575px) { .talk-links .talk-topics { margin-left: 0; } }
 .talk-card {
   position: relative;
   background: var(--t-card-bg);

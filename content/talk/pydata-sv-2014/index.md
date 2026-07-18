@@ -7,6 +7,7 @@ event: "PyData Silicon Valley 2014"
 event_url: "https://pydata.org/sv2014/keynotes/"
 location: "Menlo Park, CA"
 summary: "Keynote at Facebook HQ on the emergence of data science at UC Berkeley: training, the newly founded Berkeley Institute for Data Science, and the interplay of theory-driven and data-driven inference in scientific practice."
+topics: ["education", "ai-ml"]
 talk_type: "Keynote"
 talk_number: 17
 display_date: "May 2014"

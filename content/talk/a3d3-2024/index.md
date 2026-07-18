@@ -7,6 +7,7 @@ event: "A3D3 Institute Seminar / UW Physics Colloquium"
 event_url: "https://indico.cern.ch/event/1365684/"
 location: "Seattle, WA & virtual"
 summary: "Astronomy has embraced AI for data analysis, but the real revolution will integrate AI across the full scientific workflow — telescope design and real-time control upstream, hypothesis generation downstream — via simulation-based inference, self-supervised learning, foundation models, neural compression, and RL."
+topics: ["astronomy", "ai-ml"]
 talk_type: "Colloquium"
 talk_number: 43
 display_date: "May 2024"

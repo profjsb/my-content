@@ -6,6 +6,7 @@ draft: false
 event: "TWIML AI Podcast (#42)"
 event_url: "https://twimlai.com/podcast/twimlai/marrying-physics-based-and-data-driven-ml-models/"
 summary: "Follow-up interview after the Wise.io acquisition: Industrial AI at GE Digital, autoencoders for building training datasets, and combining physics-based models with data-driven ML."
+topics: ["industry", "ai-ml"]
 talk_type: "Podcast"
 talk_number: 28
 display_date: "Aug 2017"

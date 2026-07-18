@@ -7,6 +7,7 @@ event: "Real-Time Decision Making program, Simons Institute"
 event_url: "https://simons.berkeley.edu/talks/machine-learning-time-domain-astrophysics"
 location: "Berkeley, CA"
 summary: "How statistical ML applies to astronomy in batch and streaming contexts: feature-engineered supernova identification and variable-star characterization, and autoencoder/RNN architectures that learn without hand-built features."
+topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
 talk_number: 32
 display_date: "Feb 2018"

@@ -6,6 +6,7 @@ draft: false
 event: "UC Berkeley Haas School of Business"
 location: "Berkeley, CA"
 summary: "Guest lecture at Berkeley Haas on industrial-scale machine learning — deploying ML against industrial data at GE Digital after the Wise.io acquisition, and the gaps between academic, startup, and enterprise ML."
+topics: ["industry", "ai-ml"]
 talk_type: "Lecture"
 talk_number: 27
 display_date: "2017"

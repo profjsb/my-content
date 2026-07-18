@@ -7,6 +7,7 @@ event: "CIERA Interdisciplinary Colloquium, Northwestern University"
 event_url: "https://ciera.northwestern.edu/2014/05/08/josh-bloom-presents-ciera-spring-interdisciplinary-colloquium-on-machine-learning-in-astronomy/"
 location: "Evanston, IL"
 summary: "Colloquium on applying statistical machine learning to large-scale astronomy datasets in batch and streaming modes, as co-chair of the LSST Transients and Variable Stars collaboration."
+topics: ["astronomy", "ai-ml"]
 talk_type: "Colloquium"
 talk_number: 18
 display_date: "May 2014"

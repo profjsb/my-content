@@ -6,6 +6,7 @@ draft: false
 event: "DESI Collaboration Meeting"
 location: "Berkeley, CA"
 summary: "Plenary on how the DESI spectroscopic survey could benefit time-domain astronomy — variable stars, transients, circumnuclear events, unusual supernovae, and multimessenger follow-up — with proposed fiber-allocation and data-access strategies."
+topics: ["astronomy"]
 talk_type: "Plenary"
 talk_number: 35
 display_date: "Jul 2019"

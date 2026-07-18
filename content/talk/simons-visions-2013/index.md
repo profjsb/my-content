@@ -7,6 +7,7 @@ event: "Symposium on Visions of the Theory of Computing, Simons Institute"
 event_url: "https://simons.berkeley.edu/workshops/symposium-visions-theory-computing"
 location: "Berkeley, CA"
 summary: "Talk on the automated, ML-driven software stack of modern time-domain astrophysics at the Simons Institute's inaugural public symposium; reportedly the earliest video on the Simons Institute YouTube channel."
+topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
 talk_number: 11
 display_date: "May 2013"

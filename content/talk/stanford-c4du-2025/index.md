@@ -7,6 +7,7 @@ event: "Center for Decoding the Universe Annual Conference, Stanford"
 event_url: "https://datascience.stanford.edu/events/center-decoding-universe/c4du-annual-conference/center-decoding-universe-annual-conference"
 location: "Stanford, CA"
 summary: "Faculty talk in the opening session on time-domain astronomical data and anomaly detection — finding rare and novel transients and variables in large survey data streams with machine learning."
+topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
 talk_number: 45
 display_date: "Jun 2025"

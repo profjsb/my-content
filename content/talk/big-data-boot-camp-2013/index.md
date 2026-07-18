@@ -7,6 +7,7 @@ event: "Big Data Boot Camp, Simons Institute"
 event_url: "https://simons.berkeley.edu/workshops/big-data-boot-camp"
 location: "Berkeley, CA"
 summary: "Boot-camp lecture on large-scale statistical inference for time-domain astronomy, during the Simons Institute's Theoretical Foundations of Big Data Analysis program."
+topics: ["astronomy", "ai-ml"]
 talk_type: "Lecture"
 talk_number: 14
 display_date: "Sep 2013"

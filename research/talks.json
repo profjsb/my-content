@@ -5,6 +5,10 @@
     "title": "Real-time Astronomical Time-series Classification and Broadcast Pipeline",
     "event": "SciPy 2008",
     "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2008-08",
     "location": "Pasadena, CA",
     "video_url": null,
@@ -21,6 +25,10 @@
     "title": "Building a Classification Engine for the Palomar Transient Factory",
     "event": "Hot-wiring the Transient Universe II",
     "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2009",
     "location": "Santa Fe, NM",
     "video_url": null,
@@ -37,6 +45,10 @@
     "title": "Machine Learning and Classification in the Synoptic Survey Era",
     "event": "Workshop talk",
     "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2011",
     "location": null,
     "video_url": null,
@@ -53,6 +65,10 @@
     "title": "Data-Mining and Machine Learning in the LSST Era",
     "event": "Royal Society Discussion Meeting: New Windows on Transients Across the Universe",
     "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2012-04-24",
     "location": "London, UK",
     "video_url": null,
@@ -69,6 +85,10 @@
     "title": "Python as Super Glue for the Modern Scientific Workflow",
     "event": "SciPy 2012",
     "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "education"
+    ],
     "date": "2012-07-19",
     "location": "Austin, TX",
     "video_url": "https://www.youtube.com/watch?v=mLuIB8aW2KA",
@@ -85,6 +105,10 @@
     "title": "Classification Challenges",
     "event": "LSST All-Hands Meeting 2012",
     "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2012-08",
     "location": "Tucson, AZ",
     "video_url": null,
@@ -101,6 +125,10 @@
     "title": "The Modern Astrophysics Stack: Automated Action and Insight",
     "event": "Symposium on Visions of the Theory of Computing, Simons Institute",
     "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2013-05-31",
     "location": "Berkeley, CA",
     "video_url": "https://www.youtube.com/watch?v=vGpqTbdBtu0",
@@ -117,6 +145,10 @@
     "title": "Extracting Actionable Insight from Dirty Time-Series Data",
     "event": "UC Berkeley Data Science Lecture Series",
     "type": "Lecture",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2013-06-21",
     "location": "Berkeley, CA",
     "video_url": "https://bids.berkeley.edu/resources/videos/extracting-actionable-insight-dirty-time-series-data",
@@ -133,6 +165,10 @@
     "title": "Large-Scale Inference in Time Domain Astrophysics",
     "event": "Big Data Boot Camp, Simons Institute",
     "type": "Lecture",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2013-09",
     "location": "Berkeley, CA",
     "video_url": "https://www.youtube.com/watch?v=jmDc6kRuyek",
@@ -149,6 +185,10 @@
     "title": "Astrophysics of Streaming Time-Series Data: Discovery and Inference",
     "event": "CITRIS Research Exchange, UC Berkeley",
     "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2013",
     "location": "Berkeley, CA",
     "video_url": "https://www.youtube.com/watch?v=yUhPC24vThs",
@@ -165,6 +205,10 @@
     "title": "Overcoming the Barriers to Production-Ready Machine-Learning Workflows",
     "event": "Strata Conference (Hardcore Data Science track)",
     "type": "Talk",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
     "date": "2014-02-11",
     "location": "Santa Clara, CA",
     "video_url": "https://www.oreilly.com/library/view/hardcore-data-science/9781491901984/",
@@ -181,6 +225,9 @@
     "title": "Computational Training and Data Literacy for Domain Scientists",
     "event": "Training Students to Extract Value from Big Data, National Academy of Sciences",
     "type": "Invited Talk",
+    "topics": [
+      "education"
+    ],
     "date": "2014-04-11",
     "location": "Washington, DC",
     "video_url": null,
@@ -197,6 +244,10 @@
     "title": "Data Science at Berkeley",
     "event": "PyData Silicon Valley 2014",
     "type": "Keynote",
+    "topics": [
+      "education",
+      "ai-ml"
+    ],
     "date": "2014-05-02",
     "location": "Menlo Park, CA",
     "video_url": "https://www.youtube.com/watch?v=qiydAZdB-o0",
@@ -213,6 +264,10 @@
     "title": "Machine Learning in Astronomy",
     "event": "CIERA Interdisciplinary Colloquium, Northwestern University",
     "type": "Colloquium",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2014-05-07",
     "location": "Evanston, IL",
     "video_url": null,
@@ -229,6 +284,10 @@
     "title": "UC Berkeley Data Science Startups",
     "event": "DataEDGE Conference, UC Berkeley School of Information",
     "type": "Panel",
+    "topics": [
+      "industry",
+      "education"
+    ],
     "date": "2014-05-08",
     "location": "Berkeley, CA",
     "video_url": null,
@@ -245,6 +304,11 @@
     "title": "Supervised Machine Learning",
     "event": "Astro Hack Week 2014",
     "type": "Tutorial",
+    "topics": [
+      "astronomy",
+      "ai-ml",
+      "education"
+    ],
     "date": "2014-09-18",
     "location": "Seattle, WA",
     "video_url": null,
@@ -261,6 +325,10 @@
     "title": "Data Science Education: Needs & Opportunities in Astronomy",
     "event": "Seminar/workshop talk",
     "type": "Talk",
+    "topics": [
+      "astronomy",
+      "education"
+    ],
     "date": "2015",
     "location": null,
     "video_url": null,
@@ -277,6 +345,10 @@
     "title": "Machine Learning in Production",
     "event": "Data Driven NYC (FirstMark)",
     "type": "Talk",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
     "date": "2015-05",
     "location": "New York, NY",
     "video_url": "https://www.youtube.com/watch?v=Qe8HEiq-29k",
@@ -293,6 +365,10 @@
     "title": "A Systems View of Machine Learning",
     "event": "PyData Seattle 2015",
     "type": "Keynote",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
     "date": "2015-07-26",
     "location": "Seattle, WA",
     "video_url": "https://www.youtube.com/watch?v=i-1UmCYyzi4",
@@ -309,6 +385,10 @@
     "title": "Machine Learning for Businesses",
     "event": "Software Engineering Daily",
     "type": "Podcast",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
     "date": "2016-01-19",
     "location": null,
     "video_url": null,
@@ -325,6 +405,11 @@
     "title": "Machine Learning (lecture)",
     "event": "Astro Hack Week 2016",
     "type": "Tutorial",
+    "topics": [
+      "astronomy",
+      "ai-ml",
+      "education"
+    ],
     "date": "2016-08-30",
     "location": "Berkeley, CA",
     "video_url": "https://www.youtube.com/watch?v=9Tn5l96a6Ag",
@@ -341,6 +426,11 @@
     "title": "Machine Learning for the Stars & Productizing AI",
     "event": "TWIML AI Podcast (#5)",
     "type": "Podcast",
+    "topics": [
+      "astronomy",
+      "industry",
+      "ai-ml"
+    ],
     "date": "2016-09-22",
     "location": null,
     "video_url": "https://www.youtube.com/watch?v=B6gbGB_fWkM",
@@ -357,6 +447,10 @@
     "title": "Industrial Machine Learning",
     "event": "UC Berkeley Haas School of Business",
     "type": "Lecture",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
     "date": "2017",
     "location": "Berkeley, CA",
     "video_url": "https://www.youtube.com/watch?v=lH8mkQKRRq0",
@@ -373,6 +467,10 @@
     "title": "Marrying Physics-Based and Data-Driven ML Models",
     "event": "TWIML AI Podcast (#42)",
     "type": "Podcast",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
     "date": "2017-08-14",
     "location": null,
     "video_url": "https://www.youtube.com/watch?v=BJGMhXtWgF0",
@@ -389,6 +487,10 @@
     "title": "Industrial Machine Learning",
     "event": "KDD 2017, Applied Data Science Invited Talks",
     "type": "Invited Talk",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
     "date": "2017-08-15",
     "location": "Halifax, Canada",
     "video_url": null,
@@ -405,6 +507,10 @@
     "title": "Autoencoding RNNs for Inference on Unevenly Sampled Time-Series",
     "event": "Seminar talk",
     "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2017-11",
     "location": null,
     "video_url": null,
@@ -421,6 +527,10 @@
     "title": "Industrial Machine Learning",
     "event": "Strata Data Conference Singapore",
     "type": "Keynote",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
     "date": "2017-12-06",
     "location": "Singapore",
     "video_url": "https://www.youtube.com/watch?v=QGg63rWS9nU",
@@ -437,6 +547,10 @@
     "title": "Machine Learning for Time-Domain Astrophysics",
     "event": "Real-Time Decision Making program, Simons Institute",
     "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2018-02-26",
     "location": "Berkeley, CA",
     "video_url": "https://www.youtube.com/watch?v=iLBNeWnqnkQ",
@@ -453,6 +567,10 @@
     "title": "Industrial-Grade Machine Learning",
     "event": "Masters of Data Podcast (Sumo Logic)",
     "type": "Podcast",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
     "date": "2019-03",
     "location": null,
     "video_url": null,
@@ -469,6 +587,10 @@
     "title": "Astrophysical Machine Learning",
     "event": "Berkeley Institute for Data Science (BIDS) Data Science Lecture",
     "type": "Lecture",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2019-04-18",
     "location": "Berkeley, CA",
     "video_url": null,
@@ -485,6 +607,9 @@
     "title": "Optimizing DESI for the Time-Domain Opportunities",
     "event": "DESI Collaboration Meeting",
     "type": "Plenary",
+    "topics": [
+      "astronomy"
+    ],
     "date": "2019-07-10",
     "location": "Berkeley, CA",
     "video_url": null,
@@ -501,6 +626,10 @@
     "title": "Machine Learning at Scale: Astrophysics",
     "event": "DOE AI for Science Town Hall, Lawrence Berkeley National Laboratory",
     "type": "Plenary",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2019-09-11",
     "location": "Berkeley, CA",
     "video_url": null,
@@ -517,6 +646,10 @@
     "title": "Physics-Informed (and -Informative) Generative Modelling in Astronomy",
     "event": "Machine Learning for Physics and the Physics of Learning, IPAM (UCLA)",
     "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2019-09-23",
     "location": "Los Angeles, CA",
     "video_url": "https://www.youtube.com/watch?v=qI0-r4c2UKQ",
@@ -533,6 +666,10 @@
     "title": "Towards Physics-Informed ML Inference in Astrophysics",
     "event": "ScaledML 2020",
     "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2020-02-26",
     "location": "Mountain View, CA",
     "video_url": "https://www.youtube.com/watch?v=37zS7o84Rc4",
@@ -549,6 +686,10 @@
     "title": "Physics-Informed Machine Learning in Astronomy",
     "event": "Harvard IACS Seminar",
     "type": "Seminar",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2020",
     "location": "Cambridge, MA (virtual)",
     "video_url": "https://www.youtube.com/watch?v=j3upNhJXTdM",
@@ -565,6 +706,10 @@
     "title": "Machine Learning in Astronomical Surveys (ML Club intro)",
     "event": "MLClub.net",
     "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2021-02-03",
     "location": "Virtual",
     "video_url": null,
@@ -581,6 +726,11 @@
     "title": "The Link Between Astronomy and ML",
     "event": "Gradient Dissent (Weights & Biases)",
     "type": "Podcast",
+    "topics": [
+      "astronomy",
+      "industry",
+      "ai-ml"
+    ],
     "date": "2021-07-14",
     "location": null,
     "video_url": "https://www.youtube.com/watch?v=0aOXOT2TvUc",
@@ -597,6 +747,10 @@
     "title": "AI Assisted Discovery: from UX to Eureka!",
     "event": "Cosmic Connections: ML X Astrophysics Symposium, Simons Foundation",
     "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2023-05-23",
     "location": "New York, NY",
     "video_url": "https://www.simonsfoundation.org/video/cosmic-connections-day-2-session-1/",
@@ -613,6 +767,10 @@
     "title": "The Real AI Revolution in Astronomy Hasn't Happened Yet",
     "event": "A3D3 Institute Seminar / UW Physics Colloquium",
     "type": "Colloquium",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2024-05-13",
     "location": "Seattle, WA & virtual",
     "video_url": "https://www.youtube.com/watch?v=5q4vfZQUwgk",
@@ -629,6 +787,10 @@
     "title": "AI Accelerating Inquiry and Insight in Astrophysics",
     "event": "IAIFI Colloquium, MIT",
     "type": "Colloquium",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2025-05-09",
     "location": "Cambridge, MA",
     "video_url": "https://www.youtube.com/live/k3uFxpjM0EA",
@@ -645,6 +807,10 @@
     "title": "Time-Domain Data and Anomaly Detection",
     "event": "Center for Decoding the Universe Annual Conference, Stanford",
     "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
     "date": "2025-06-05",
     "location": "Stanford, CA",
     "video_url": "https://www.youtube.com/watch?v=RttowkdSL4Y",
@@ -661,6 +827,9 @@
     "title": "Gamma Ray Bursters",
     "event": "NPR Science Friday",
     "type": "Radio",
+    "topics": [
+      "astronomy"
+    ],
     "date": "2005-06-03",
     "location": null,
     "video_url": null,
@@ -677,6 +846,9 @@
     "title": "In a Flash of Gamma-Rays, a Star Is Gone",
     "event": "NPR Science Friday",
     "type": "Radio",
+    "topics": [
+      "astronomy"
+    ],
     "date": "2011-06-17",
     "location": null,
     "video_url": null,
@@ -693,6 +865,9 @@
     "title": "Black Hole Swallows a Star (Swift J1644+57)",
     "event": "BBC Newshour",
     "type": "Radio",
+    "topics": [
+      "astronomy"
+    ],
     "date": "2011-06",
     "location": null,
     "video_url": null,
@@ -709,6 +884,9 @@
     "title": "Telescope Targets Black Holes' Binges and Burps",
     "event": "NPR Morning Edition",
     "type": "Radio",
+    "topics": [
+      "astronomy"
+    ],
     "date": "2012-07-31",
     "location": null,
     "video_url": null,

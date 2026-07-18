@@ -7,6 +7,7 @@ event: "Data Driven NYC (FirstMark)"
 event_url: "https://firstmark.com/community/data-driven/"
 location: "New York, NY"
 summary: "As Wise.io co-founder/CTO: what it takes to deploy machine learning in production enterprise settings, and how industrial ML practice differs from academic ML."
+topics: ["industry", "ai-ml"]
 talk_type: "Talk"
 talk_number: 21
 display_date: "May 2015"

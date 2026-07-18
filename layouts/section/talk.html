@@ -11,10 +11,32 @@
     learning at scale. Where available, each entry links to video, audio, slides, and a transcript.
   </div>
 
+  <div class="talks-filter">
+    <div class="talks-filter-row" data-filter-group="topic">
+      <span class="talks-filter-label">Topic</span>
+      <button type="button" class="talks-filter-pill active" data-filter="all">All</button>
+      <button type="button" class="talks-filter-pill" data-filter="astronomy">Astronomy</button>
+      <button type="button" class="talks-filter-pill" data-filter="industry">Industry</button>
+      <button type="button" class="talks-filter-pill" data-filter="ai-ml">AI/ML</button>
+      <button type="button" class="talks-filter-pill" data-filter="education">Education</button>
+    </div>
+    <div class="talks-filter-row" data-filter-group="type">
+      <span class="talks-filter-label">Type</span>
+      <button type="button" class="talks-filter-pill active" data-filter="all">All</button>
+      <button type="button" class="talks-filter-pill" data-filter="talk">Talk</button>
+      <button type="button" class="talks-filter-pill" data-filter="panel">Panel</button>
+      <button type="button" class="talks-filter-pill" data-filter="podcast">Podcast</button>
+      <button type="button" class="talks-filter-pill" data-filter="radio">Radio</button>
+      <button type="button" class="talks-filter-pill" data-filter="lecture">Lecture/Tutorial</button>
+      <button type="button" class="talks-filter-pill" data-filter="keynote">Keynote</button>
+    </div>
+  </div>
+
   <div class="talks-section-label">Past Talks &amp; Media</div>
 
+  {{ $topicLabels := dict "astronomy" "Astronomy" "industry" "Industry" "ai-ml" "AI/ML" "education" "Education" }}
   {{ range .Pages.ByDate.Reverse }}
-  <div class="talk-card">
+  <div class="talk-card" data-topics="{{ delimit (.Params.topics | default (slice)) " " }}" data-type="{{ partial "talk_filter_type.html" . }}">
     <div class="talk-card-top">
       {{ partial "talk_badge.html" . }}
       <span class="talk-event">
@@ -32,10 +54,50 @@
       {{ with .Params.url_slides }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Slides</a>{{ end }}
       {{ if .Params.has_transcript }}<a class="talk-btn" href="{{ .RelPermalink }}#transcript">Transcript</a>{{ else }}{{ with .Params.url_transcript }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Transcript</a>{{ end }}{{ end }}
       {{ with .Params.event_url }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Event</a>{{ end }}
+      {{ with .Params.topics }}<span class="talk-topics">{{ range . }}<button type="button" class="talk-topic-chip" data-topic="{{ . }}" title="Filter by {{ index $topicLabels . | default . }}">{{ index $topicLabels . | default . }}</button>{{ end }}</span>{{ end }}
     </div>
   </div>
   {{ end }}
 
+  <div class="talks-empty" id="talks-empty" hidden>No entries match the selected filters.</div>
+
 </div>
+
+<script>
+(function () {
+  var state = { topic: 'all', type: 'all' };
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.talk-card'));
+  var empty = document.getElementById('talks-empty');
+  function apply() {
+    var shown = 0;
+    cards.forEach(function (c) {
+      var topics = (c.getAttribute('data-topics') || '').split(' ');
+      var ok = (state.topic === 'all' || topics.indexOf(state.topic) !== -1) &&
+               (state.type === 'all' || c.getAttribute('data-type') === state.type);
+      c.style.display = ok ? '' : 'none';
+      if (ok) shown++;
+    });
+    if (empty) empty.hidden = shown !== 0;
+  }
+  Array.prototype.slice.call(document.querySelectorAll('.talks-filter-row')).forEach(function (row) {
+    var group = row.getAttribute('data-filter-group');
+    var pills = Array.prototype.slice.call(row.querySelectorAll('.talks-filter-pill'));
+    pills.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        state[group] = btn.getAttribute('data-filter');
+        pills.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        apply();
+      });
+    });
+  });
+  Array.prototype.slice.call(document.querySelectorAll('.talk-topic-chip')).forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var pill = document.querySelector('.talks-filter-row[data-filter-group="topic"] .talks-filter-pill[data-filter="' + chip.getAttribute('data-topic') + '"]');
+      if (pill) pill.click();
+    });
+  });
+})();
+</script>
 
 {{- end -}}

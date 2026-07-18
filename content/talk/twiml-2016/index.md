@@ -6,6 +6,7 @@ draft: false
 event: "TWIML AI Podcast (#5)"
 event_url: "https://twimlai.com/podcast/twimlai/machine-learning-for-the-stars-productizing-ai/"
 summary: "An 84-minute interview on pioneering ML for robotic-telescope imagery at Berkeley, the founding and evolution of Wise.io, its data-science pipeline, and open challenges in machine learning."
+topics: ["astronomy", "industry", "ai-ml"]
 talk_type: "Podcast"
 talk_number: 26
 display_date: "Sep 2016"

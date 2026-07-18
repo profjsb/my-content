@@ -6,6 +6,7 @@ draft: false
 event: "NPR Science Friday"
 event_url: "https://www.npr.org/2011/06/17/137250819/in-a-flash-of-gamma-rays-a-star-is-gone"
 summary: "The day after publication of the Science paper on Swift J1644+57, Ira Flatow interviews Bloom (with Lawrence Krauss) on the gamma-ray outburst interpreted as a supermassive black hole shredding and swallowing a star 3.8 billion light-years away."
+topics: ["astronomy"]
 talk_type: "Radio"
 talk_number: 5
 display_date: "Jun 2011"

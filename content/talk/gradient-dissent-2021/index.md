@@ -6,6 +6,7 @@ draft: false
 event: "Gradient Dissent (Weights & Biases)"
 event_url: "https://wandb.ai/wandb_fc/gradient-dissent/reports/Josh-Bloom-The-Link-Between-Astronomy-and-ML--Vmlldzo4NDk5NjA"
 summary: "As Berkeley astronomy chair, with host Lukas Biewald: why astronomers were early ML adopters, real/bogus detection, uncertainty quantification, likelihood-free inference, and why ML hasn't displaced domain expertise."
+topics: ["astronomy", "industry", "ai-ml"]
 talk_type: "Podcast"
 talk_number: 41
 display_date: "Jul 2021"

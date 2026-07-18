@@ -7,6 +7,7 @@ event: "Royal Society Discussion Meeting: New Windows on Transients Across the U
 event_url: "https://royalsociety.org/science-events-and-lectures/2012/transients-universe/"
 location: "London, UK"
 summary: "Invited discussion-meeting talk on machine learning as a surrogate for rapid human analysis at LSST data volumes: discovery algorithms, classification methodologies, and real-time transient identification."
+topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
 talk_number: 7
 display_date: "Apr 2012"
