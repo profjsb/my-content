@@ -1,0 +1,24 @@
+{{- /* Embed a watch frame when url_video is a YouTube or Vimeo link; other hosts get no embed (the Video button still links out). */ -}}
+{{- $v := .Params.url_video | default "" -}}
+{{- if $v -}}
+{{- $yt := "" -}}
+{{- if findRE `youtube\.com/watch` $v -}}
+  {{- $yt = replaceRE `^.*[?&]v=([A-Za-z0-9_-]+).*$` "$1" $v -}}
+{{- else if findRE `youtube\.com/(live|embed|shorts)/` $v -}}
+  {{- $yt = replaceRE `^.*youtube\.com/(?:live|embed|shorts)/([A-Za-z0-9_-]+).*$` "$1" $v -}}
+{{- else if findRE `youtu\.be/` $v -}}
+  {{- $yt = replaceRE `^.*youtu\.be/([A-Za-z0-9_-]+).*$` "$1" $v -}}
+{{- end -}}
+{{- if and $yt (ne $yt $v) -}}
+<div class="video-container">
+  <iframe src="https://www.youtube-nocookie.com/embed/{{ $yt }}" title="{{ .Title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+{{- else if findRE `vimeo\.com/\d+` $v -}}
+{{- $vm := replaceRE `^.*vimeo\.com/(\d+).*$` "$1" $v -}}
+{{- if ne $vm $v -}}
+<div class="video-container">
+  <iframe src="https://player.vimeo.com/video/{{ $vm }}" title="{{ .Title }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</div>
+{{- end -}}
+{{- end -}}
+{{- end -}}

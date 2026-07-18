@@ -1,0 +1,13 @@
+{{- $t := lower (.Params.talk_type | default "talk") -}}
+{{- $cls := "talk" -}}
+{{- if in $t "keynote" }}{{ $cls = "keynote" }}
+{{- else if in $t "panel" }}{{ $cls = "panel" }}
+{{- else if in $t "podcast" }}{{ $cls = "podcast" }}
+{{- else if in $t "radio" }}{{ $cls = "radio" }}
+{{- else if in $t "interview" }}{{ $cls = "radio" }}
+{{- else if in $t "tutorial" }}{{ $cls = "tutorial" }}
+{{- else if in $t "colloquium" }}{{ $cls = "academic" }}
+{{- else if in $t "seminar" }}{{ $cls = "academic" }}
+{{- else if in $t "lecture" }}{{ $cls = "academic" }}
+{{- end -}}
+<span class="talk-badge talk-badge-{{ $cls }}">{{ .Params.talk_type | default "Talk" }}</span>
