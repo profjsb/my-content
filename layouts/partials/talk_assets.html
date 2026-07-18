@@ -1,7 +1,10 @@
 <style>
 /* Talks & Media — list + single styles (self-contained).
    Design after wesmckinney.com/presentations + /transcripts: Inter for headings/UI,
-   Lora for prose, IBM Plex Mono for the #N chip, warm-cream palette. */
+   Lora for prose, IBM Plex Mono for the #N chip, warm-cream palette.
+   NOTE: all sizes are in px, not rem — this theme sets html{font-size:21px}
+   (Academic font_size "L"), so rem values copied from Wes's 16px-base site would
+   render ~31% oversized. px pins the design to Wes's intended scale. */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 .talks-wrapper {
@@ -20,8 +23,9 @@
   --t-accent: #2a9d8f;
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 16px;
   font-family: var(--t-sans);
+  font-size: 16px;
   color: var(--t-text);
 }
 body:not(.dark) { background-color: #FDF8F0; }
@@ -29,30 +33,30 @@ body:not(.dark) { background-color: #FDF8F0; }
 /* ---------- list page ---------- */
 .talks-page-title {
   font-family: var(--t-sans);
-  font-size: 2.2rem;
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.2;
   color: var(--t-heading);
-  margin: 2rem 0 1rem;
+  margin: 32px 0 16px;
 }
 .talks-intro {
   font-family: var(--t-serif);
-  font-size: 1.02rem;
+  font-size: 16px;
   line-height: 1.7;
-  margin-bottom: 1.6rem;
+  margin-bottom: 26px;
   color: var(--t-secondary);
 }
 .talks-section-label {
   font-family: var(--t-serif);
-  font-size: 0.85rem;
+  font-size: 13.5px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--t-secondary);
   border-bottom: 2px solid var(--t-border);
-  padding-bottom: 0.6rem;
-  margin: 2rem 0 1.25rem;
+  padding-bottom: 10px;
+  margin: 32px 0 20px;
 }
 .talk-card {
   position: relative;
@@ -60,27 +64,27 @@ body:not(.dark) { background-color: #FDF8F0; }
   border: 1px solid var(--t-card-border);
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  padding: 1rem 1.1rem;
-  margin-bottom: 0.75rem;
+  padding: 16px 18px;
+  margin-bottom: 12px;
   transition: all 0.2s ease;
 }
 .talk-card:hover { border-color: #C4B8A8; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); }
-.talk-card .talk-num { position: absolute; top: 0.75rem; right: 0.75rem; }
-.talk-card .talk-card-top { padding-right: 3rem; }
+.talk-card .talk-num { position: absolute; top: 12px; right: 12px; }
+.talk-card .talk-card-top { padding-right: 48px; }
 .talk-card-top {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.35rem 0.5rem;
+  gap: 6px 8px;
 }
 .talk-badge {
   display: inline-block;
   font-family: var(--t-sans);
-  font-size: 0.65rem;
+  font-size: 10.5px;
   font-weight: 600;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 0.2rem 0.5rem;
+  padding: 3px 8px;
   border-radius: 4px;
   white-space: nowrap;
 }
@@ -91,41 +95,42 @@ body:not(.dark) { background-color: #FDF8F0; }
 .talk-badge-radio { background: #e8f5e9; color: #2e7d32; }
 .talk-badge-tutorial { background: #fce4ec; color: #ad1457; }
 .talk-badge-academic { background: #e8eaf6; color: #283593; }
-.talk-event { font-weight: 600; font-size: 1rem; color: var(--t-heading); }
+.talk-event { font-family: var(--t-sans); font-weight: 600; font-size: 16px; color: var(--t-heading); }
 .talk-event a { color: inherit; }
 .talk-event a:hover { color: var(--t-link); text-decoration: none; }
-.talk-meta { margin-left: auto; font-size: 0.8rem; color: var(--t-secondary); white-space: nowrap; flex-shrink: 0; }
+.talk-meta { margin-left: auto; font-family: var(--t-sans); font-size: 13px; color: var(--t-secondary); white-space: nowrap; flex-shrink: 0; }
 .talk-num {
   font-family: var(--t-mono);
-  font-size: 0.7rem;
+  font-size: 11px;
   font-weight: 600;
   color: #8B7D6B;
   background: #F0E8DA;
   border-radius: 4px;
-  padding: 0.2rem 0.45rem;
+  padding: 3px 7px;
   white-space: nowrap;
 }
 .talk-title {
   font-family: var(--t-serif);
-  font-size: 1.05rem;
+  font-size: 17px;
   font-style: italic;
   font-weight: 400;
-  margin: 0.2rem 0 0.5rem;
+  margin: 3px 0 8px;
   line-height: 1.4;
 }
 .talk-title a { color: var(--t-text); }
 .talk-title a:hover { color: var(--t-link); text-decoration: none; }
-.talk-links { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.talk-links { display: flex; flex-wrap: wrap; gap: 10px; }
 .talk-btn {
   display: inline-block;
   font-family: var(--t-sans);
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: 500;
+  line-height: 1.5;
   color: var(--t-secondary) !important;
   background: var(--t-btn-bg);
   border: 1px solid var(--t-btn-border);
   border-radius: 5px;
-  padding: 0.35rem 0.7rem;
+  padding: 6px 11px;
   text-decoration: none !important;
   transition: all 0.15s ease;
 }
@@ -138,18 +143,18 @@ body:not(.dark) { background-color: #FDF8F0; }
 /* ---------- single page ---------- */
 .talk-single.has-toc {
   display: flex;
-  gap: 2.5rem;
+  gap: 40px;
   max-width: 1150px;
 }
 .talk-single .talk-main { flex: 1 1 auto; min-width: 0; max-width: 900px; margin: 0 auto; }
 .talk-title-lg {
   font-family: var(--t-sans);
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.15;
   color: var(--t-heading);
-  margin: 2rem 0 1.5rem;
+  margin: 32px 0 24px;
 }
 .talk-info-card {
   position: relative;
@@ -157,35 +162,35 @@ body:not(.dark) { background-color: #FDF8F0; }
   border: 1px solid var(--t-card-border);
   border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
-  padding: 1.5rem 1.75rem;
-  margin-bottom: 2rem;
+  padding: 24px 28px;
+  margin-bottom: 32px;
 }
-.talk-info-card .talk-badge { position: absolute; top: 1.5rem; right: 1.75rem; }
+.talk-info-card .talk-badge { position: absolute; top: 24px; right: 28px; }
 .talk-meta-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem 1.5rem;
-  padding-right: 7rem;
-  margin-bottom: 0.25rem;
+  gap: 8px 24px;
+  padding-right: 112px;
+  margin-bottom: 4px;
 }
-.talk-meta-item { display: flex; align-items: baseline; gap: 0.4rem; }
+.talk-meta-item { display: flex; align-items: baseline; gap: 6px; }
 .talk-meta-label {
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--t-secondary);
 }
-.talk-meta-value { font-size: 0.95rem; font-weight: 500; color: var(--t-text); }
+.talk-meta-value { font-size: 15px; font-weight: 500; color: var(--t-text); }
 .talk-meta-value a { color: inherit; text-decoration: none; }
 .talk-meta-value a:hover { text-decoration: underline; }
-.talk-info-card .talk-links { margin-top: 1rem; }
+.talk-info-card .talk-links { margin-top: 16px; }
 .video-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
   border-radius: 8px;
   overflow: hidden;
   background: #000;
@@ -200,41 +205,43 @@ body:not(.dark) { background-color: #FDF8F0; }
 .ai-disclaimer {
   background-color: var(--t-btn-bg);
   border-left: 3px solid #C4B8A8;
-  padding: 0.75rem 1rem;
-  margin: 0 0 2rem 0;
+  padding: 12px 16px;
+  margin: 0 0 32px 0;
   font-family: var(--t-sans);
-  font-size: 0.85rem;
+  font-size: 13.5px;
+  line-height: 1.6;
   color: var(--t-secondary);
   border-radius: 0 6px 6px 0;
 }
 .talk-main h2 {
   font-family: var(--t-sans);
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--t-heading);
-  margin: 2rem 0 0.75rem;
-  padding-bottom: 0.5rem;
+  margin: 32px 0 12px;
+  padding-bottom: 8px;
   border-bottom: 1px solid var(--t-border);
 }
 .talk-main h2#transcript {
-  margin-top: 3rem;
-  padding-top: 2rem;
+  margin-top: 48px;
+  padding-top: 32px;
   border-top: 2px solid var(--t-border);
   border-bottom: none;
 }
 .talk-content { font-family: var(--t-serif); }
 .talk-content p {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.75;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   color: var(--t-text);
 }
+.talk-content h2#transcript ~ p { font-size: 15px; }
 .talk-content a { color: var(--t-link); }
 .talk-content blockquote {
   border-left: 3px solid var(--t-link);
-  padding-left: 1.25rem;
-  margin: 1.5rem 0;
+  padding-left: 20px;
+  margin: 24px 0;
 }
 
 /* ---------- contents rail ---------- */
@@ -244,26 +251,26 @@ body:not(.dark) { background-color: #FDF8F0; }
   position: sticky;
   top: 90px;
   align-self: flex-start;
-  padding-top: 2.5rem;
+  padding-top: 40px;
 }
 .talk-toc-title {
   font-family: var(--t-sans);
-  font-size: 0.8rem;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--t-secondary);
-  margin-bottom: 0.6rem;
+  margin-bottom: 10px;
 }
 .talk-toc ul { list-style: none; margin: 0; padding: 0; }
 .talk-toc li { margin: 0; padding: 0; }
 .talk-toc a {
   display: block;
   font-family: var(--t-serif);
-  font-size: 0.95rem;
+  font-size: 15px;
   color: var(--t-secondary);
   text-decoration: none;
-  padding: 0.2rem 0 0.2rem 0.75rem;
+  padding: 3px 0 3px 12px;
   border-left: 2px solid var(--t-border);
 }
 .talk-toc a:hover { color: var(--t-heading); }
@@ -297,13 +304,13 @@ body.dark .talk-badge-tutorial { background: rgba(173, 20, 87, 0.25); color: #f4
 body.dark .talk-badge-academic { background: rgba(40, 53, 147, 0.35); color: #9fa8da; }
 
 @media (max-width: 768px) {
-  .talk-title-lg { font-size: 1.6rem; margin-top: 1.2rem; }
-  .talk-info-card { padding: 1.25rem; }
-  .talk-info-card .talk-badge { position: static; display: inline-block; margin-bottom: 0.75rem; }
-  .talk-meta-row { flex-direction: column; align-items: flex-start; gap: 0.4rem; padding-right: 0; }
+  .talk-title-lg { font-size: 26px; margin-top: 20px; }
+  .talk-info-card { padding: 20px; }
+  .talk-info-card .talk-badge { position: static; display: inline-block; margin-bottom: 12px; }
+  .talk-meta-row { flex-direction: column; align-items: flex-start; gap: 6px; padding-right: 0; }
 }
 @media (max-width: 575px) {
   .talk-meta { margin-left: 0; }
-  .talks-page-title { font-size: 1.7rem; }
+  .talks-page-title { font-size: 28px; }
 }
 </style>
