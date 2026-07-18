@@ -1,7 +1,7 @@
 ---
 title: "Physics-Informed Machine Learning in Astronomy"
-date: 2020-07-01
-publishDate: 2020-07-01
+date: 2020-10-15
+publishDate: 2020-10-15
 draft: false
 event: "Harvard IACS Seminar"
 event_url: "https://events.seas.harvard.edu/event/guest_speaker_josh_bloom_berkeley"
@@ -9,8 +9,8 @@ location: "Cambridge, MA (virtual)"
 summary: "ML across astronomy workflows: the Planet 9 search, new variable-source classes, semi-supervised VAEs generating realistic time series to optimize observing schedules, and deep-learning cosmic-ray detection and correction."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Seminar"
-talk_number: 39
-display_date: "2020"
+talk_number: 87
+display_date: "Oct 2020"
 url_video: "https://www.youtube.com/watch?v=j3upNhJXTdM"
 has_transcript: true
 ---

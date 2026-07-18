@@ -218,6 +218,38 @@ A second pass the same day, modeled on wesmckinney.com's transcript pages
   matched to wesmckinney.com/presentations' exact card CSS (tighter cards, serif
   section label, smaller normal-weight italic titles, Wes's #N chip styling).
 
+## Addendum — CV merge (2026-07-18, PR #6)
+
+Merged the talks list from the CV (TeX), including entries commented out there for
+space. **45 → 94 entries; range now 1995–2025.** Process: parsed the CV, deduped
+against existing entries, fanned out research agents (ADS/arXiv for proceedings-era
+talks, Wayback for dead workshop sites, venue archives) — links were found for many,
+and per the explicit decision, **talks with no surviving links/media still get entries**
+(16 of 94 are link-less records).
+
+Corrections that came out of the research (CV vs web, web wins where verifiable):
+- Hot-wiring the Transient Universe: the classification-engine talk was at **HTU-I,
+  Tucson, June 5 2007** (renamed `hotwired-2009` → `hotwired-2007`); a separate
+  **HTU-II (Santa Cruz, Apr 27 2009)** talk "The Synoptic Infrared Imaging Survey"
+  was added.
+- `autoencoding-rnn-2017` → `autoencoding-rnn-2018`: venue found (AI Workflows in
+  Astronomy & Microscopy, San Jose, Sep 2018); an NCSA Oct 2018 delivery added.
+- IPDPS 2014 keynote was **Phoenix** (CV said Flagstaff), official title "…at Scale
+  and Under Duress"; Gehrels memorial was at **NASA Goddard** (CV said NAS); AAS 191
+  was **Jan 1998** (CV said Jan 1997); 4th Huntsville was **Sept 1997** (CV said Oct);
+  AAAS talk was **Feb 15 2015** (CV said Jan); STScI colloquium **Nov 9 2011** (CV said
+  Nov 11); IPAM date confirmed Sep 23 2019 (CV's Nov 2019 wrong); `stanford-c4du-2025`
+  retitled to the CV's "Eurekaizing Anomalies"; `harvard-iacs-2020` dated Oct 2020 per CV.
+- Media recovered for old talks: KIPAC@10 2013 and MMDS 2014 videos (YouTube),
+  VOEvent 2005 slides PDF + QuickTime movie (live on the IVOA wiki), Barcelona 2001
+  slides (Wayback capture of his old Caltech pages).
+- Pre-2010 colloquia/seminars generally have no surviving media — they are on the page
+  as records with `notes` documenting the search.
+
+Link health after merge: **119 ok, 7 walled, 4→2 dead of 130** (the two remaining dead
+are the known BIDS 404s; a dead SLAC index was swapped to a Wayback snapshot and a
+never-archived KIPAC event link dropped).
+
 ## Maintenance
 
 Two skills were added with this branch:

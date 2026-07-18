@@ -9,7 +9,7 @@ location: "Seattle, WA & virtual"
 summary: "Astronomy has embraced AI for data analysis, but the real revolution will integrate AI across the full scientific workflow — telescope design and real-time control upstream, hypothesis generation downstream — via simulation-based inference, self-supervised learning, foundation models, neural compression, and RL."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Colloquium"
-talk_number: 43
+talk_number: 91
 display_date: "May 2024"
 url_video: "https://www.youtube.com/watch?v=5q4vfZQUwgk"
 has_transcript: true

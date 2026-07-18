@@ -9,7 +9,7 @@ location: "Virtual"
 summary: "Overview of ML in astronomical surveys framed around Rubin/LSST: real-bogus classification, inpainting for artifact removal, anomaly detection, calibrated Bayesian classification, similarity search at scale, and MLOps for reproducible science."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 40
+talk_number: 88
 display_date: "Feb 2021"
 url_slides: "https://speakerdeck.com/profjsb/ml-club-josh-bloom-intro-slides"
 has_transcript: false

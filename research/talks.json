@@ -21,23 +21,23 @@
   },
   {
     "n": 2,
-    "slug": "hotwired-2009",
+    "slug": "hotwired-2007",
     "title": "Building a Classification Engine for the Palomar Transient Factory",
-    "event": "Hot-wiring the Transient Universe II",
+    "event": "Hot-wiring the Transient Universe",
     "type": "Talk",
     "topics": [
       "astronomy",
       "ai-ml"
     ],
-    "date": "2009",
-    "location": "Santa Fe, NM",
+    "date": "2007-06-05",
+    "location": "Tucson, AZ",
     "video_url": null,
     "slides_url": null,
     "event_url": "https://wiki.ivoa.net/twiki/bin/view/IVOA/HotwiredWorkshop",
     "audio_url": null,
     "transcript_url": null,
     "summary": "Session talk on the machine-learning classification engine behind Palomar Transient Factory discoveries, in the event-classification session alongside LSST and Caltech colleagues.",
-    "notes": "Agenda archived on the IVOA TWiki."
+    "notes": "HTU-I, Tucson, June 4-7 2007; talk June 5 in the Event Classification session (IVOA TWiki agenda). Previously mislabeled as HTU-II 2009."
   },
   {
     "n": 3,
@@ -503,23 +503,23 @@
   },
   {
     "n": 26,
-    "slug": "autoencoding-rnn-2017",
+    "slug": "autoencoding-rnn-2018",
     "title": "Autoencoding RNNs for Inference on Unevenly Sampled Time-Series",
-    "event": "Seminar talk",
+    "event": "AI Workflows in Astronomy & Microscopy",
     "type": "Talk",
     "topics": [
       "astronomy",
       "ai-ml"
     ],
-    "date": "2017-11",
-    "location": null,
+    "date": "2018-09",
+    "location": "San Jose, CA",
     "video_url": null,
     "slides_url": "https://www.slideshare.net/JoshuaBloom/autoencoding-rnn-for-inference-on-unevenly-sampled-timeseries-data",
     "event_url": "https://arxiv.org/abs/1711.10609",
     "audio_url": null,
     "transcript_url": null,
     "summary": "Presenting the recurrent autoencoder network for classifying unevenly sampled variable-star light curves (Naul, Bloom, Perez & van der Walt; Nature Astronomy 2018).",
-    "notes": "Deck-only; venue unknown, dated from the paper posting."
+    "notes": "Venue per CV (invited); month approximate. Deck matches Naul, Bloom, Perez & van der Walt, Nature Astronomy 2, 151 (2018), arXiv:1711.10609. Also delivered at NCSA Oct 2018 (separate entry)."
   },
   {
     "n": 27,
@@ -658,7 +658,7 @@
     "audio_url": null,
     "transcript_url": null,
     "summary": "Practical generative neural models in astronomy: semi-supervised VAEs mapping physical parameters to latent space for telescope scheduling, cosmic-ray artifact detection and inpainting (deepCR), and autoencoder-based semantic indexing for compressed sensing.",
-    "notes": ""
+    "notes": "IPAM 'From Passive to Active' workshop Sep 23-27, 2019; talk Sep 23 (CV's Nov 2019 is incorrect)."
   },
   {
     "n": 34,
@@ -690,7 +690,7 @@
       "astronomy",
       "ai-ml"
     ],
-    "date": "2020",
+    "date": "2020-10",
     "location": "Cambridge, MA (virtual)",
     "video_url": "https://www.youtube.com/watch?v=j3upNhJXTdM",
     "slides_url": null,
@@ -698,7 +698,7 @@
     "audio_url": null,
     "transcript_url": null,
     "summary": "ML across astronomy workflows: the Planet 9 search, new variable-source classes, semi-supervised VAEs generating realistic time series to optimize observing schedules, and deep-learning cosmic-ray detection and correction.",
-    "notes": "Originally scheduled Apr 17, 2020 in person (cancelled); delivered virtually."
+    "notes": "Originally scheduled Apr 17, 2020 in person (cancelled, COVID); delivered virtually Oct 2020 per CV. IACS listing title confirmed."
   },
   {
     "n": 36,
@@ -804,7 +804,7 @@
   {
     "n": 41,
     "slug": "stanford-c4du-2025",
-    "title": "Time-Domain Data and Anomaly Detection",
+    "title": "Eurekaizing Anomalies",
     "event": "Center for Decoding the Universe Annual Conference, Stanford",
     "type": "Talk",
     "topics": [
@@ -819,7 +819,7 @@
     "audio_url": null,
     "transcript_url": null,
     "summary": "Faculty talk in the opening session on time-domain astronomical data and anomaly detection — finding rare and novel transients and variables in large survey data streams with machine learning.",
-    "notes": "Day within June 5-6 approximate."
+    "notes": "CV title; video was researched under working title 'Time-Domain Data and Anomaly Detection'. Day within June 5-6 approximate."
   },
   {
     "n": 42,
@@ -896,5 +896,947 @@
     "transcript_url": "https://www.npr.org/transcripts/157595833",
     "summary": "Featured expert in Lauren Sommer's piece on NASA's newly launched NuSTAR X-ray telescope, explaining black-hole 'binges and burps' and debunking the vacuum-cleaner misconception.",
     "notes": "Direct NPR MP3 and npr.org/transcripts page linked (recovered 2026-07-18)."
+  },
+  {
+    "n": 46,
+    "slug": "huntsville-grb-1995",
+    "title": "The Corrected Log N–Log Fluence Distribution of Cosmological Gamma-Ray Bursts",
+    "event": "3rd Huntsville Gamma-Ray Burst Symposium",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "1995-10",
+    "location": "Huntsville, AL",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://arxiv.org/abs/astro-ph/9604099",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "With Fenimore and in 't Zand: correcting the observed log N-log fluence distribution of BATSE bursts for detection biases, an early constraint on the cosmological burst population.",
+    "notes": "Proceedings: AIP Conf. Proc. 384, 321 (1996), DOI 10.1063/1.51552; arXiv linked."
+  },
+  {
+    "n": 47,
+    "slug": "elba-1997",
+    "title": "Extragalactic Hosts",
+    "event": "Latest Developments in Gamma-Ray Bursts Workshop",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "1997-05-27",
+    "location": "Elba, Italy",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://heasarc.gsfc.nasa.gov/docs/sax/press/elbagrb.html",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "On the extragalactic host galaxies of gamma-ray bursts, in the first post-BeppoSAX year as afterglows and hosts were first being identified.",
+    "notes": "Workshop May 26-27, 1997, Marciana Marina, Elba (~80 attendees); no proceedings published. Program page live at HEASARC."
+  },
+  {
+    "n": 48,
+    "slug": "huntsville-grb-1997",
+    "title": "The Host to GRB 970508: A High-Redshift Dwarf Galaxy?",
+    "event": "4th Huntsville Gamma-Ray Burst Symposium",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "1997-09",
+    "location": "Huntsville, AL",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://doi.org/10.1016/S1384-1076(97)00033-X",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Evidence that the host of GRB 970508 - the first burst with a measured redshift - is a distant dwarf galaxy, tying bursts to faint star-forming hosts.",
+    "notes": "Symposium Sept 15-20, 1997 (CV said Oct). Result published as Natarajan, Bloom, Sigurdsson et al. 1997, New Astronomy 2, 471 (linked; no arXiv version)."
+  },
+  {
+    "n": 49,
+    "slug": "aas-191-1998",
+    "title": "The Spatial Distribution of Coalescing Neutron Star Binaries: Implications for Gamma-Ray Bursts",
+    "event": "AAS 191st Meeting",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "1998-01-10",
+    "location": "Washington, DC",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://arxiv.org/abs/astro-ph/9805222",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Population-synthesis predictions for where merging neutron-star binaries occur relative to their host galaxies, and what burst offsets imply for the merger progenitor model.",
+    "notes": "CV lists 10 Jan 1997, but AAS 191 was Jan 6-10, 1998 in DC (AAS 189 was Jan 1997 Toronto). Linked arXiv is the refereed version (Bloom, Sigurdsson & Pols 1999, MNRAS 305, 763)."
+  },
+  {
+    "n": 50,
+    "slug": "grb-afterglow-1-1998",
+    "title": "The Discovery and Broad-Band Follow-Up of the Transient Afterglow of GRB 980703",
+    "event": "Gamma-Ray Bursts in the Afterglow Era, 1st Workshop",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "1998-11-02",
+    "location": "Rome, Italy",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://arxiv.org/abs/astro-ph/9808319",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "The discovery and multi-wavelength follow-up of GRB 980703's afterglow and its dusty star-forming host galaxy.",
+    "notes": "Talk title matches Bloom et al. 1998, ApJ 508, L21 (linked); no separate proceedings version."
+  },
+  {
+    "n": 51,
+    "slug": "huntsville-grb-1999",
+    "title": "GRBs & SNe: Investigation of GRB 980519 and GRB 980329",
+    "event": "5th Huntsville Gamma-Ray Burst Symposium",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "1999-10-20",
+    "location": "Huntsville, AL",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://gammaray.nsstc.nasa.gov/events/5hgrbs/program/program.html",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Searching for supernova signatures underlying the afterglows of GRB 980519 and GRB 980329, early evidence bearing on the burst-supernova connection.",
+    "notes": "Symposium Oct 18-22, 1999; session A-11. Live NASA program page linked; Wayback abstract also exists."
+  },
+  {
+    "n": 52,
+    "slug": "ipac-2000",
+    "title": "Emerging Trends in Gamma-Ray Bursts",
+    "event": "IPAC Astronomy Lunch Seminar",
+    "type": "Seminar",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2000-02-23",
+    "location": "Pasadena, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Survey of the rapidly moving observational GRB field for the IPAC astronomy community.",
+    "notes": "No surviving listing found (2026-07 search)."
+  },
+  {
+    "n": 53,
+    "slug": "marcel-grossmann-2000",
+    "title": "GRB Host Galaxies: Hints for the Models",
+    "event": "9th Marcel Grossmann Meeting",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2000-07-04",
+    "location": "Rome, Italy",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://arxiv.org/abs/astro-ph/0106574",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "What the properties of GRB host galaxies imply for progenitor models, at the relativistic-astrophysics meeting.",
+    "notes": "Own parallel-session talk was never separately indexed; linked arXiv is the co-authored MG9 GRB review (Djorgovski, Frail, Kulkarni, Sari, Bloom et al., pp. 315-346)."
+  },
+  {
+    "n": 54,
+    "slug": "grb-afterglow-2-2000",
+    "title": "The Observed Offset Distribution of GRBs About Their Hosts",
+    "event": "Gamma-Ray Bursts in the Afterglow Era, 2nd Workshop",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2000-10",
+    "location": "Rome, Italy",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://doi.org/10.1007/10853853_57",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "The measured offsets of gamma-ray bursts from their host galaxies as a direct test of progenitor models - massive stars versus compact-object mergers.",
+    "notes": "Proceedings: Bloom & Kulkarni 2001, pp. 209-211 (Springer DOI linked); full study is Bloom, Kulkarni & Djorgovski 2002, AJ 123, 1111 (arXiv:astro-ph/0010176)."
+  },
+  {
+    "n": 55,
+    "slug": "harvard-cfa-2001",
+    "title": "Toward the Progenitors of Gamma-Ray Bursts",
+    "event": "Harvard/CfA OIR Lunch Seminar",
+    "type": "Seminar",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2001-05-03",
+    "location": "Cambridge, MA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "http://web.archive.org/web/20030113042911/http://cfa-www.harvard.edu/cfa/oir/lunch/2001spring/lunch20010503.html",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Progenitor evidence for long and short gamma-ray bursts from afterglow positions, host demographics, and supernova signatures.",
+    "notes": "CfA OIR lunch seminar (not a departmental colloquium); live page gone, Wayback snapshot linked."
+  },
+  {
+    "n": 56,
+    "slug": "ias-2001",
+    "title": "Toward the Progenitors of Gamma-Ray Bursts",
+    "event": "Institute for Advanced Study",
+    "type": "Seminar",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2001-05-18",
+    "location": "Princeton, NJ",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Progenitor evidence for gamma-ray bursts - offsets, hosts, and the emerging supernova connection - presented at the IAS.",
+    "notes": "Invited. Not on the archived IAS formal seminar list (a Friday); likely an informal astrophysics talk; no recoverable listing."
+  },
+  {
+    "n": 57,
+    "slug": "barcelona-2001",
+    "title": "The Progenitors of Gamma-Ray Bursts",
+    "event": "Universitat de Barcelona",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2001-06-28",
+    "location": "Barcelona, Spain",
+    "video_url": null,
+    "slides_url": "http://web.archive.org/web/20020928175307/http://www.astro.caltech.edu/~jsb/UBtalk/siframes.htm",
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Invited review of gamma-ray burst progenitor evidence: afterglow offsets, host galaxies, and supernova bumps.",
+    "notes": "Slides survive only as a Wayback capture of the 43-slide web export from his old Caltech pages (linked); his archived talks page lists the title as 'Towards the Progenitors...'."
+  },
+  {
+    "n": 58,
+    "slug": "sackler-grb-2002",
+    "title": "Optical/IR Afterglow Observations",
+    "event": "Sackler GRB Conference",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2002-05-20",
+    "location": "Cambridge, MA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Review of optical and infrared afterglow observations at the Harvard Sackler conference on gamma-ray bursts.",
+    "notes": "Conference May 20-23, 2002. Old slides at astro.caltech.edu/~jsb/sackler-review were never archived (Wayback 404s); no recoverable page."
+  },
+  {
+    "n": 59,
+    "slug": "grb-afterglow-3-2002",
+    "title": "The Case for Late Optical Bumps as Associated Supernovae",
+    "event": "Gamma-Ray Bursts in the Afterglow Era, 3rd Workshop",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2002-09-18",
+    "location": "Rome, Italy",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://arxiv.org/abs/astro-ph/0303478",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Solicited case that late-time optical bumps in GRB afterglows are underlying supernovae - the photometric argument for the massive-star origin of long bursts.",
+    "notes": "Proceedings version on arXiv (Bloom 2003) linked."
+  },
+  {
+    "n": 60,
+    "slug": "santa-fe-grb-2003",
+    "title": "Energetics and the GRB Hubble Diagram",
+    "event": "Gamma-Ray Bursts: 30 Years of Discovery",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2003-09-11",
+    "location": "Santa Fe, NM",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://arxiv.org/abs/astro-ph/0302210",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Standardizing gamma-ray burst energies and the promises and limitations of a GRB Hubble diagram for cosmology.",
+    "notes": "Proceedings: AIP Conf. Proc. 727, 497 (2004); arXiv version linked ('GRB Energetics and the GRB Hubble Diagram: Promises and Limitations')."
+  },
+  {
+    "n": 61,
+    "slug": "utexas-2003",
+    "title": "Optical/Infrared Observations of Gamma-Ray Bursts and X-Ray Flash Transients",
+    "event": "University of Texas at Austin Colloquium",
+    "type": "Colloquium",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2003-10-28",
+    "location": "Austin, TX",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Colloquium on optical/IR follow-up of gamma-ray bursts and the newly identified X-ray flashes.",
+    "notes": "No surviving listing found."
+  },
+  {
+    "n": 62,
+    "slug": "berkeley-colloquium-2003",
+    "title": "Cosmological Gamma-Ray Bursts: Perspectives and Prospects",
+    "event": "UC Berkeley Astronomy Colloquium",
+    "type": "Colloquium",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2003-11-06",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Colloquium on the state of cosmological gamma-ray burst studies, delivered shortly before joining the Berkeley faculty.",
+    "notes": "No surviving listing found."
+  },
+  {
+    "n": 63,
+    "slug": "mit-colloquium-2003",
+    "title": "Optical/IR Observations of GRB & XRF Transients",
+    "event": "MIT Astrophysics Colloquium",
+    "type": "Colloquium",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2003-11-25",
+    "location": "Cambridge, MA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Colloquium on optical and infrared observations of gamma-ray burst and X-ray flash transients.",
+    "notes": "No surviving listing found."
+  },
+  {
+    "n": 64,
+    "slug": "texas-stanford-2004",
+    "title": "GRB-Supernova Connection: Evidence and Implications",
+    "event": "22nd Texas Symposium on Relativistic Astrophysics",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2004-12-15",
+    "location": "Palo Alto, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "http://web.archive.org/web/20101018232043/http://www.slac.stanford.edu/econf/C041213/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "The observational case connecting long gamma-ray bursts to supernovae and its implications for progenitors.",
+    "notes": "'Texas @ Stanford', Dec 13-17, 2004; SLAC eConf proceedings index linked (individual contribution not identified). slac.stanford.edu rejects non-browser fetches; Wayback snapshot linked instead."
+  },
+  {
+    "n": 65,
+    "slug": "ucsc-2005",
+    "title": "New Perspectives on Gamma-Ray Bursts",
+    "event": "UC Santa Cruz Astronomy Colloquium",
+    "type": "Colloquium",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2005-04-06",
+    "location": "Santa Cruz, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Colloquium on gamma-ray bursts in the first months of the Swift era.",
+    "notes": "No surviving listing found."
+  },
+  {
+    "n": 66,
+    "slug": "voevents-2005",
+    "title": "Implementing a Real-Time VOEvent Messaging Network",
+    "event": "1st VOEvent Workshop",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2005-04-13",
+    "location": "Pasadena, CA",
+    "video_url": "https://wiki.ivoa.net/internal/IVOA/VOEventSchedule/VOEvents_Bloom.mov",
+    "slides_url": "https://wiki.ivoa.net/internal/IVOA/VOEventSchedule/VOEvents_Bloom.pdf",
+    "event_url": "https://wiki.ivoa.net/twiki/bin/view/IVOA/VOEventSchedule",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Design and implementation of a real-time astronomical event messaging network, at the workshop that launched the VOEvent standard.",
+    "notes": "Caltech CACR, April 13-14, 2005. Slides PDF and QuickTime talk movie both still live on the IVOA wiki."
+  },
+  {
+    "n": 67,
+    "slug": "pairitel-2005",
+    "title": "PAIRITEL Science Overview and Commissioning Update",
+    "event": "1st PAIRITEL Workshop",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2005-04-19",
+    "location": "Cambridge, MA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Science goals and commissioning status of PAIRITEL, the robotic 1.3-m infrared telescope for transient follow-up.",
+    "notes": "No workshop page survives (pairitel.org Wayback captures lack it)."
+  },
+  {
+    "n": 68,
+    "slug": "ipna-2005",
+    "title": "Shedding Light on Short Gamma-Ray Burst Progenitors",
+    "event": "INPA Seminar, Lawrence Berkeley National Laboratory",
+    "type": "Seminar",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2005-07-22",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "The first afterglow localizations of short gamma-ray bursts and what they reveal about compact-merger progenitors, weeks after the breakthrough events.",
+    "notes": "CV lists 'IPNA'; presumably the LBNL INPA (Institute for Nuclear and Particle Astrophysics) seminar. No listing found."
+  },
+  {
+    "n": 69,
+    "slug": "maryland-2005",
+    "title": "Gamma-Ray Bursts and Their Hosts",
+    "event": "16th Maryland Astrophysics Conference: Gamma-Ray Bursts in the Swift Era",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2005-12-01",
+    "location": "Washington, DC",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://arxiv.org/abs/astro-ph/0602058",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Invited review of gamma-ray burst host galaxies and large-scale environments as progenitor diagnostics, in the first year of Swift.",
+    "notes": "Conference Nov 29-Dec 2, 2005. Proceedings: Bloom & Prochaska 2006, AIP Conf. Proc. 836, 473 (arXiv linked)."
+  },
+  {
+    "n": 70,
+    "slug": "venice-2006",
+    "title": "The Hosts of (Short) Gamma-Ray Bursts",
+    "event": "SWIFT and GRBs: Unveiling the Relativistic Universe",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2006-06-09",
+    "location": "Venice, Italy",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://arxiv.org/abs/astro-ph/0510022",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Solicited talk on the galaxy hosts and environments of short gamma-ray bursts and the case for an old-population progenitor.",
+    "notes": "Conference June 5-9, 2006; no separate proceedings contribution - linked arXiv is the closely related Bloom et al. 2006, ApJ 642, 989."
+  },
+  {
+    "n": 71,
+    "slug": "aas-head-2006",
+    "title": "The Host Galaxies of Short Gamma-Ray Bursts",
+    "event": "9th AAS High Energy Astrophysics Division Meeting",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2006-10-06",
+    "location": "San Francisco, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Invited review of short-burst host galaxies at the HEAD meeting, cementing the demographic case for compact-object mergers.",
+    "notes": "No program page or ADS abstract recoverable for this HEAD meeting talk."
+  },
+  {
+    "n": 72,
+    "slug": "princeton-colloquium-2007",
+    "title": "Gamma-Ray Bursts: The Long and the Short of Them",
+    "event": "Princeton University Astrophysics Colloquium",
+    "type": "Colloquium",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2007-03-27",
+    "location": "Princeton, NJ",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Colloquium on the two burst populations - collapsars and mergers - and the evidence separating them.",
+    "notes": "No archived spring-2007 Princeton colloquium schedule exists."
+  },
+  {
+    "n": 73,
+    "slug": "leiden-2008",
+    "title": "GRBs in a Cosmological Context",
+    "event": "Leiden Observatory Colloquium",
+    "type": "Colloquium",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2008-09-25",
+    "location": "Leiden, The Netherlands",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://local.strw.leidenuniv.nl/annual-reports/annrep08/annrep08.pdf",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Colloquium on using gamma-ray bursts as probes of the distant universe.",
+    "notes": "Listed in the Leiden Observatory 2008 annual report (linked, colloquia appendix), printed there as 'GRBs in a Cosmology Context'."
+  },
+  {
+    "n": 74,
+    "slug": "iaa-sasir-2008",
+    "title": "SASIR: The Synoptic All-Sky Infrared Imaging Survey Concept",
+    "event": "Instituto de Astrofisica de Andalucia Seminar",
+    "type": "Seminar",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2008-09-23",
+    "location": "Granada, Spain",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://arxiv.org/abs/0905.1965",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "The concept for a synoptic all-sky infrared imaging survey (SASIR), a proposed 6.5-m IR survey telescope.",
+    "notes": "Invited. No IAA seminar page survives; linked arXiv is the SASIR concept paper (Bloom et al. 2009)."
+  },
+  {
+    "n": 75,
+    "slug": "sackler-21cm-2008",
+    "title": "GRBs as Cosmological Probes",
+    "event": "Sackler Conference on 21cm Cosmology",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2008-05",
+    "location": "Cambridge, MA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://itc.cfa.harvard.edu/sackler-conference",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Gamma-ray bursts as probes of reionization and the high-redshift universe, at the Harvard Sackler 21-cm cosmology conference.",
+    "notes": "Month per CV. Linked page is the Sackler series page (2008 program subpage not recoverable; blocks bots but live in browser)."
+  },
+  {
+    "n": 76,
+    "slug": "petrosianfest-2009",
+    "title": "The Future of Gamma-Ray Bursts",
+    "event": "PetrosianFest",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2009-04-18",
+    "location": "Stanford, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Where gamma-ray burst science is headed, at the symposium honoring Vahe Petrosian.",
+    "notes": "Event confirmed via participant CVs; no program page survives."
+  },
+  {
+    "n": 77,
+    "slug": "hotwired-2009",
+    "title": "The Synoptic Infrared Imaging Survey",
+    "event": "Hot-wiring the Transient Universe II",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2009-04-27",
+    "location": "Santa Cruz, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "http://web.archive.org/web/20160226060300/http://www.cacr.caltech.edu/hotwired2/program/index.cfm",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "The SASIR synoptic infrared survey concept, presented at the second Hot-wiring the Transient Universe workshop.",
+    "notes": "HTU-II at UCO/Lick, UC Santa Cruz, April 26-30, 2009; talk opened Session 1 on April 27. Original site dead - Wayback program page linked; his slides PDF was never archived."
+  },
+  {
+    "n": 78,
+    "slug": "aspen-wfd-2009",
+    "title": "Real-Time Classification in the Petascale Epoch: Ramping Up with PTF",
+    "event": "Aspen Workshop on Wide-Fast-Deep Surveys",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2009-06-25",
+    "location": "Aspen, CO",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://aspenphys.org/summer/past-workshops/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Machine-learned real-time classification of Palomar Transient Factory events as the ramp toward petascale synoptic surveys.",
+    "notes": "Aspen Center for Physics summer workshop 'Wide-Fast-Deep Surveys: New Astrophysics Frontier', June 14-July 5, 2009; no per-talk agenda survives (workshop listed inline on linked page)."
+  },
+  {
+    "n": 79,
+    "slug": "aas-pierce-prize-2010",
+    "title": "Finding Utility in the Diverse Origins of Gamma-Ray Bursts",
+    "event": "AAS 215th Meeting - Newton Lacy Pierce Prize Lecture",
+    "type": "Keynote",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2010-01-04",
+    "location": "Washington, DC",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://aas.org/meetings/aas215",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "The Pierce Prize lecture: what the diverse progenitors of gamma-ray bursts - collapsars, mergers, and oddballs - teach us, and how bursts became tools for cosmology.",
+    "notes": "2009 Pierce Prize, delivered at AAS 215 (Jan 3-7, 2010), Session 103. AAS meeting page blocks bots but is live."
+  },
+  {
+    "n": 80,
+    "slug": "siam-cse-2011",
+    "title": "Real-Time Classification of Astronomical Events",
+    "event": "SIAM Conference on Computational Science & Engineering",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2011-03-02",
+    "location": "Reno, NV",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://archive.siam.org/meetings/cse11/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Machine-learning pipelines for classifying astronomical events in real time, for the computational science community.",
+    "notes": "CSE11, Feb 28-Mar 4, 2011; minisymposium invited talk (not a plenary). Site blocks bots but is live."
+  },
+  {
+    "n": 81,
+    "slug": "mit-colloquium-2011",
+    "title": "Relativistic Tidal Disruption Events",
+    "event": "MIT Astrophysics Colloquium",
+    "type": "Colloquium",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2011-10-04",
+    "location": "Cambridge, MA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Colloquium on Swift J1644+57 and the discovery of relativistic tidal disruption events, months after the Science paper.",
+    "notes": "No archived fall-2011 MIT colloquium schedule found."
+  },
+  {
+    "n": 82,
+    "slug": "stsci-2011",
+    "title": "Relativistic Black Hole Tidal Disruption Events",
+    "event": "Space Telescope Science Institute Colloquium",
+    "type": "Colloquium",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2011-11-09",
+    "location": "Baltimore, MD",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://gazette.jhu.edu/2011/11/07/calendar-november-7-2011/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Colloquium on relativistic tidal disruption events at STScI.",
+    "notes": "CV says Nov 11; JHU Gazette listing (linked; blocks bots but live) gives Wed Nov 9, 2011, Bahcall Auditorium. No recording located in the STScI webcast archive."
+  },
+  {
+    "n": 83,
+    "slug": "yale-colloquium-2012",
+    "title": "Relativistic Tidal Disruption Events",
+    "event": "Yale Physics Club",
+    "type": "Colloquium",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2012-12-03",
+    "location": "New Haven, CT",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://physics.yale.edu/events/physics-club/archive",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Yale Physics Club colloquium on relativistic tidal disruption events.",
+    "notes": "CV says Dec 2012; Yale archive (linked) confirms Dec 3, 2012, host Nikhil Padmanabhan."
+  },
+  {
+    "n": 84,
+    "slug": "samsi-2012",
+    "title": "Automating Science in the Time-Domain Survey Era: Machine-Learning Challenges",
+    "event": "SAMSI Astrostatistics Workshop",
+    "type": "Lecture",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2012-09-21",
+    "location": "Research Triangle Park, NC",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://web.archive.org/web/20221226065810/http://www.samsi.info/workshop/astrostatistics-september-19-21-2012/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Machine-learning challenges in automating discovery and classification for time-domain surveys, at the SAMSI massive-datasets program.",
+    "notes": "Workshop Sept 19-21, 2012; talk Sept 21. samsi.info is dead (domain squatted) - Wayback page linked; no slides posted for this talk."
+  },
+  {
+    "n": 85,
+    "slug": "siam-cse-2013",
+    "title": "Automated Astrophysics in the Big Data Era",
+    "event": "SIAM Conference on Computational Science & Engineering",
+    "type": "Keynote",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2013-02-27",
+    "location": "Boston, MA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://www.pathlms.com/siam/courses/2368/sections/2966/video_presentations/24128",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Invited plenary (IP6) on automating astrophysical discovery, classification, and follow-up at survey scale.",
+    "notes": "CSE13, Feb 25-Mar 1, 2013; day approximate. Linked SIAM talk page requires a SIAM sign-in for the recording; the old direct slides PDF is dead with no Wayback copy."
+  },
+  {
+    "n": 86,
+    "slug": "kipac10-2013",
+    "title": "Big Machine Learning",
+    "event": "KIPAC@10 Symposium",
+    "type": "Lecture",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2013-09-05",
+    "location": "Stanford, CA",
+    "video_url": "https://www.youtube.com/watch?v=VgW3kRmZ1zg",
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Machine learning at astronomical scale, in the Big Data session of KIPAC's tenth-anniversary symposium.",
+    "notes": "KIPAC@10, Sept 3-6, 2013; talk Sept 5 in the 'How Will We Know What We Know?' Big Data session. KIPAC video linked; original event page via Wayback. Original event page has no Wayback capture; event_url dropped."
+  },
+  {
+    "n": 87,
+    "slug": "ieee-ipdps-2014",
+    "title": "Astrophysical Applications of Machine Learning at Scale and Under Duress",
+    "event": "IEEE International Parallel & Distributed Processing Symposium",
+    "type": "Keynote",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2014-05-22",
+    "location": "Phoenix, AZ",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://www.ipdps.org/ipdps2014/2014_advance_program.html",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "IPDPS keynote on machine learning for astronomical discovery under real-time and scale constraints.",
+    "notes": "Keynote Thursday May 22, 2014, 8:30am. CV lists Flagstaff and a shorter title; official program (linked) says Phoenix and the full title. No video or slides posted."
+  },
+  {
+    "n": 88,
+    "slug": "mmds-2014",
+    "title": "Large-Scale Inference in Time Domain Astrophysics",
+    "event": "MMDS Workshop on Algorithms for Modern Massive Data Sets",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2014-06-19",
+    "location": "Berkeley, CA",
+    "video_url": "https://www.youtube.com/watch?v=jmDc6kRuyek",
+    "slides_url": null,
+    "event_url": "http://web.archive.org/web/20140829104401/http://mmds-data.org/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Statistical inference on massive time-domain astronomy datasets, for the algorithms-for-massive-data community.",
+    "notes": "MMDS 2014, June 17-20, UC Berkeley; talk June 19. Video on the MMDS Foundation channel; mmds-data.org is currently down - Wayback linked. Slides were never successfully posted."
+  },
+  {
+    "n": 89,
+    "slug": "aaas-2015",
+    "title": "Computational and Data Literacy for Domain Scientists",
+    "event": "AAAS Annual Meeting",
+    "type": "Talk",
+    "topics": [
+      "education"
+    ],
+    "date": "2015-02-15",
+    "location": "San Jose, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://www.washington.edu/news/2015/02/13/aaas-symposium-looks-at-how-to-bring-big-data-skills-to-academia/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "How universities can train domain scientists in computation and data science, in the AAAS symposium on interdisciplinary data-intensive career paths.",
+    "notes": "CV says Jan 2015; the 2015 AAAS meeting ran Feb 12-16, San Jose - talk Feb 15 in 'Advancing University Career Paths in Interdisciplinary Data-Intensive Science' (with Lazowska, Aragon, Freire, Perez, Howe)."
+  },
+  {
+    "n": 90,
+    "slug": "nas-data-intensive-2017",
+    "title": "Emerging Needs and Opportunities in Data-Intensive Domains: Astronomy",
+    "event": "National Academies Roundtable on Data Science Postsecondary Education",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "education"
+    ],
+    "date": "2017-03-20",
+    "location": "Irvine, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://www.ncbi.nlm.nih.gov/books/NBK562960/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Astronomy's data-science needs and opportunities, for the National Academies roundtable on data science education.",
+    "notes": "Meeting #2 of the roundtable, Beckman Center, March 20, 2017; closed session - only the written proceedings (linked) exist."
+  },
+  {
+    "n": 91,
+    "slug": "interop-itx-2017",
+    "title": "Systems of Intelligence",
+    "event": "Interop ITX",
+    "type": "Keynote",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
+    "date": "2017-05",
+    "location": "Las Vegas, NV",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Keynote on building systems of intelligence - coupling machine learning with industrial data and workflows.",
+    "notes": "Interop ITX 2017, May 15-19, MGM Grand. The keynote itself was not published; the only footage featuring him is the 'Future of Data' lightning-talks video (youtube.com/watch?v=h1GWKcBD2-I). Official presentations portal is dead with no Wayback copy."
+  },
+  {
+    "n": 92,
+    "slug": "gehrels-memorial-2018",
+    "title": "50 Years of Gamma-Ray Bursts",
+    "event": "Gehrels Memorial Meeting, NASA Goddard Space Flight Center",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2018-05-21",
+    "location": "Greenbelt, MD",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://asd.gsfc.nasa.gov/conferences/gehrels_memorial/program.html",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "A half-century of gamma-ray burst science, honoring Neil Gehrels at the Goddard memorial meeting.",
+    "notes": "CV lists 'Gehrels Memorial Lecture, NAS' - the meeting was at GSFC May 21-22, 2018 (meals at NAS); talk May 21 AM. No video posted."
+  },
+  {
+    "n": 93,
+    "slug": "ncsa-2018",
+    "title": "An Autoencoding Recurrent Neural Network for Inference on Unevenly Sampled Time-Series Data",
+    "event": "NCSA, University of Illinois",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2018-10",
+    "location": "Champaign-Urbana, IL",
+    "video_url": null,
+    "slides_url": "https://www.slideshare.net/JoshuaBloom/autoencoding-rnn-for-inference-on-unevenly-sampled-timeseries-data",
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Autoencoding RNNs for classification and inference on irregularly sampled astronomical time series.",
+    "notes": "Per CV (invited); no public NCSA listing found. Deck (linked) matches Naul, Bloom, Perez & van der Walt, Nature Astronomy 2, 151 (2018). Same talk also given at AI Workflows in Astronomy & Microscopy, Sep 2018."
+  },
+  {
+    "n": 94,
+    "slug": "foundation-models-2025",
+    "title": "Foundation Models in Production",
+    "event": "Foundation Models for Astrophysics Workshop, Flatiron Institute",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2025-05",
+    "location": "New York, NY",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Deploying astronomical foundation models in production settings, at the Flatiron workshop on foundation models for astrophysics.",
+    "notes": "Invite-only workshop; no public page or recording found (2026-07 search)."
   }
 ]

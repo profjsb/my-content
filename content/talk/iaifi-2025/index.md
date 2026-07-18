@@ -9,7 +9,7 @@ location: "Cambridge, MA"
 summary: "How the astrophysical data deluge has swamped traditional workflows and driven AI/ML tooling: real-time telescope control, survey optimization, simulation-based inference, multimodal foundation models (AstroM3), active optics, and neural compression (AstroCompress)."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Colloquium"
-talk_number: 44
+talk_number: 92
 display_date: "May 2025"
 url_video: "https://www.youtube.com/live/k3uFxpjM0EA"
 url_slides: "https://www.dropbox.com/scl/fi/d1ck3rciocyysqjp8bfqe/2025_05_09_IAIFI_Colloquium_Bloom.pdf?rlkey=cbzmibua65se29fxnpmeilcc2&st=hcoknoh4&dl=0"
