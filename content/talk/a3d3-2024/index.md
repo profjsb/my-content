@@ -19,6 +19,16 @@ Astronomy has embraced AI for data analysis, but the real revolution will integr
 
 *Given as both the A3D3 seminar and UW Physics colloquium the same day.*
 
+## Key Quotes
+
+> "We can think of astronomy as this sandbox where computer scientists and astronomers can work together to build new algorithms and to learn new things." – Joshua Bloom
+
+> "If we think about the north star of why we're doing AI in astronomy, it's not because AI is fun or easy… it's because we're trying to do novel science. And when we stop at things like making catalogs and we don't actually get to new insights about the universe, that's where I think we fall short." – Joshua Bloom
+
+> "I can't say that I know how to reproduce that workflow that led us to this insight, but I think it is one of the moments in astronomy meets AI where AI has really taught us something fundamentally new, or at least helped us learn something fundamentally new about how the universe works." – Joshua Bloom
+
+> "It's not going to be replacing people with AI, it's going to be augmenting them to do their very best." – Joshua Bloom
+
 ## Transcript
 
 And he's going to tell us about the real AI revolution in astronomy that has not happened yet. So take it away, Josh.

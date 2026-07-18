@@ -19,6 +19,16 @@ CITRIS Research Exchange seminar on ML pipelines for discovery and inference on 
 
 *Exact date within 2013 unconfirmed.*
 
+## Key Quotes
+
+> "My own field is in astrophysics, and understanding in particular transient phenomena, that is, understanding objects which change and go bump in the night." – Joshua Bloom
+
+> "Basically Kepler is able to see incredibly small changes. It'd be the equivalent of flying over New York City and looking at the Chrysler Building and noticing that one light was out on somebody's desk through looking at all the windows." – Joshua Bloom
+
+> "The greatest insights in astronomy… come only when we do great follow-up, but follow-up is incredibly expensive." – Joshua Bloom
+
+> "The manifest destiny of where astronomy is heading is this full abstraction of the discovery steps and even the scientific inference steps, allowing us to sit in our armchair during the daytime and make strong statements, and perhaps transformative statements, about how the universe works." – Joshua Bloom
+
 ## Transcript
 
 Great. Well, thanks very much for having me. Lauren ended his talk very nicely hinting at, well, not even hinting, essentially saying that some of the problems that he's encountering in one domain are similar to the challenges that he's finding in other domains in genomics. And I think this really speaks to a commonality of challenges that we all have on the application side of big computation, in trying to make the best out of a deluge of data and come to important scientific inferences that push our own fields. My own field is in astrophysics, and understanding in particular transient phenomena, that is, understanding objects which change and go bump in the night. Some of these are explosive events. Some of the changes are actually much more subtle. But what we're seeing, like Lauren, is that there are tools that are out there and some algorithms that actually need to be refined and perhaps in some cases be created, to make use of the data and to maximize the science that comes from that data.

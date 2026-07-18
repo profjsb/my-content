@@ -19,6 +19,18 @@ How statistical ML applies to astronomy in batch and streaming contexts: feature
 
 *He also co-organized this semester-long program.*
 
+## Key Quotes
+
+> "We're now entering this age of what I'll call cheap discovery, where we're gonna be getting literally 10 million transient alerts per night from LSST… But we have a very, very expensive follow-up." – Joshua Bloom
+
+> "In astronomy, we don't have that many labels. For things that we're really interested in, we only have one exemplar of a real object that is a neutron star-neutron star merger. One." – Joshua Bloom
+
+> "It turns the time-domain surveys like ZTF and LSST into these sort of low-resolution spectrographs. The way I think about that is: if you heard an opera singer on the other side of the door, you could guess their gender — that one's pretty easy, that's like temperature — you could guess their weight, and you could guess their age." – Joshua Bloom
+
+> "We shouldn't want to win the lottery as astronomers. We want to guarantee a nightly annuity of essentially guaranteed payoff, and have that be optimized not only over our facility but globally." – Joshua Bloom
+
+> "The only real testing data is data that hasn't been created yet… The only real machine learning system in astronomy that you can trust is one that's actually been put into production." – Joshua Bloom
+
 ## Transcript
 
 [PETER] --CS math side of things. He is touching upon the second of our talks today in astrophysics here, machine learning for time-domain astrophysics, and the interesting part about this is it's really gonna answer one of the questions — it's an approach to answer one of the questions that Eric brought up in the previous talk, which is: what do you do when you have sparse, incomplete data from a survey like LSST when you're trying to sort through these millions of objects every single day? So, Josh? Thank you.

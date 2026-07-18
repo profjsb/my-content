@@ -17,6 +17,16 @@ has_transcript: true
 
 Panel on foundation models and AI agents for physics, with Mariel Pettee and Ioana Ciuca.
 
+## Key Quotes
+
+> "The only real test set is data that hasn't been observed yet. The only real test of the efficacy of foundation models is when they're applied in production to data that wasn't in the can at the time those models were created." – Joshua Bloom
+
+> "The idea of using a very large foundation model that's good at looking at images from telescopes and then somehow plugging that into some little downstream task and then actuating a billion-dollar facility is kind of preposterous. It's even more preposterous when you realize we only have access to one CPU and a tiny amount of RAM at runtime." – Joshua Bloom
+
+> "Now we're in this mode where it's not just you and your grad students and your collaborators putting your names on papers; it's you and your collaborators and your students and your agents putting names on papers. And so the trust still ultimately comes back to us." – Joshua Bloom
+
+> "It is hard to see how any of us really go back to the way that we worked before LLMs came into our lives… It's changing and upending how we live and how we work professionally." – Joshua Bloom
+
 ## Transcript
 
 MODERATOR: So our first panelist will be Josh Bloom. Josh is a professor of astronomy at UC Berkeley and he's a highly decorated pioneer at the intersection of AI and the physical sciences, and I heard that with his talk he's going to give us a very unique perspective on foundational models. Please welcome. [applause]

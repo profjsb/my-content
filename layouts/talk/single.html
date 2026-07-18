@@ -9,6 +9,7 @@
     <div class="talk-toc-title">Contents</div>
     <ul>
       <li><a href="#summary">Summary</a></li>
+      {{ if in .RawContent "## Key Quotes" }}<li><a href="#key-quotes">Key Quotes</a></li>{{ end }}
       <li><a href="#transcript">Transcript</a></li>
     </ul>
   </nav>

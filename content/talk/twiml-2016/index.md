@@ -17,6 +17,18 @@ has_transcript: true
 
 An 84-minute interview on pioneering ML for robotic-telescope imagery at Berkeley, the founding and evolution of Wise.io, its data-science pipeline, and open challenges in machine learning.
 
+## Key Quotes
+
+> "The classic example I go back to is Galileo, who said, hey, there's this new thing that's been invented to look at the horizon for ships coming towards us — what if I just took it and pointed it to the stars? What could I do with that?" – Joshua Bloom
+
+> "In some sense, the way I view this now is that algorithms, and the accuracy that they can produce, and the ability to optimize them around a loss function, is really only table stakes for the utility of these in a real environment." – Joshua Bloom
+
+> "We even got to the point where we were finding interesting objects in the sky without any humans in the loop… So by the time people woke up in the morning, we not only had the discovery, we not only had the initial inference, we then also had real follow-up — scientific follow-up." – Joshua Bloom
+
+> "Your brain is a 30-watt supercomputer, unrivaled — at least for now — by anything else that's out there, and anything else that's out there is likely going to take megawatts or hundreds of megawatts to get anywhere close to that computational capability." – Joshua Bloom
+
+> "Doing machine learning for machine learning's sake really doesn't make sense. It's probably the last thing you want to do if somebody hands you data — you do it because you have to do it." – Joshua Bloom
+
 ## Transcript
 
 Sam: Hello everyone, and welcome to another episode of TWiML Talk, the podcast where I interview interesting people doing interesting things in machine learning and artificial intelligence. I'm your host, Sam Charrington. I think you all are really going to get a kick out of this show. My guest this time is Joshua Bloom, professor of astronomy at the University of California, Berkeley, and co-founder and chief technology officer of machine learning startup Wise.io. I was in California last week, and Josh graciously agreed to host me in his company's office for this interview. We had a wonderful discussion, and as you might have guessed if you happen to have noticed the length of this episode, we covered quite a lot of ground. But I promise you that you'll find this 84-minute interview to be jam-packed with great information, ideas, and war stories.

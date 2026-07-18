@@ -19,6 +19,18 @@ Tutorial lecture on machine-learning methods for astronomers (classification, re
 
 *Exact day within Aug 29-Sep 2 approximate.*
 
+## Key Quotes
+
+> "Start thinking about machine learning as just another tool in your toolkit for doing inference… There's a time and a place for applying different tools." – Joshua Bloom
+
+> "There's been this almost Cambrian explosion of different algorithms and approaches… it can often be very noisy and very difficult to figure out what's hype and what's actually very useful." – Joshua Bloom
+
+> "You have to look at your data before you start throwing it into these frameworks. Just because these frameworks are nice and easy to use doesn't mean that you're allowed to get away with not actually looking at the data." – Joshua Bloom
+
+> "If you get a perfect classifier and you see a confusion matrix that has no power off the diagonal and all the power in the diagonal, you've overfit. I guarantee it." – Joshua Bloom
+
+> "There are lots of ways to hammer your thumb with your new tool. And you may think you're building this amazing house, but in the end, you've built complete crap… Machine learning is fraught with places where you're introducing biases that you didn't know about." – Joshua Bloom
+
 ## Transcript
 
 JOSH BLOOM: I'm Josh Bloom. Hi. Welcome to UC Berkeley. Welcome to Doe Library. Welcome to the Berkeley Institute for Data Science. And welcome to day two of Astro Hack Week. I hope you had a wonderful day yesterday. Today, we're going to talk about machine learning. I wanted to try to put machine learning into the context of an inference space that's certainly not rigorous, but one that hopefully helps you level set a bit relative to the types of things that you were hearing yesterday, and to give you a sense of how I want you to start thinking about bringing machine learning into your daily work.
