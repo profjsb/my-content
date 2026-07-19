@@ -6,6 +6,27 @@
 
   <h1 class="talks-page-title">{{ .Title }}</h1>
 
+  {{ $quotes := slice }}
+  {{ range .Pages }}
+    {{ $p := . }}
+    {{ range findRE `(?m)^> ".+" – Joshua Bloom$` .RawContent }}
+      {{ $q := replaceRE `^> "` "" . }}
+      {{ $q = replaceRE `" – Joshua Bloom$` "" $q }}
+      {{ $quotes = $quotes | append (dict "q" $q "t" $p.Title "u" $p.RelPermalink "d" (or $p.Params.display_date "")) }}
+    {{ end }}
+  {{ end }}
+  {{ $quotes = shuffle $quotes }}
+  {{ if gt (len $quotes) 0 }}
+  {{ $first := index $quotes 0 }}
+  <div class="quote-carousel" id="quote-carousel">
+    <button type="button" class="qc-refresh" id="qc-refresh" aria-label="Show another quote" title="Show another quote">&#x21bb;</button>
+    <div class="qc-inner" id="qc-inner">
+      <div class="qc-text" id="qc-text">&ldquo;{{ replace $first.q "'" "’" }}&rdquo;</div>
+      <div class="qc-source" id="qc-source">&mdash; <a href="{{ $first.u }}">{{ $first.t }}{{ with $first.d }} ({{ . }}){{ end }}</a></div>
+    </div>
+  </div>
+  {{ end }}
+
   <div class="talks-intro">
     Talks, panels, and media appearances &mdash; from gamma-ray bursts to machine
     learning at scale. Where available, each entry links to video, audio, slides, and a transcript.
@@ -99,5 +120,63 @@
   });
 })();
 </script>
+
+{{ if gt (len $quotes) 0 }}
+<script>
+var TALK_QUOTES = {{ $quotes | jsonify | safeJS }};
+(function () {
+  var quotes = TALK_QUOTES || [];
+  var box = document.getElementById('quote-carousel');
+  if (!box || quotes.length < 1) return;
+  var textEl = document.getElementById('qc-text');
+  var srcEl = document.getElementById('qc-source');
+  var btn = document.getElementById('qc-refresh');
+  var idx = 0; /* the server renders quotes[0] */
+  var timer = null;
+  var paused = false;
+  var pendingAdvance = false;
+
+  function durationFor(q) { return q.q.length > 160 ? 20000 : 15000; }
+  function pick() {
+    if (quotes.length === 1) return idx;
+    var i;
+    do { i = Math.floor(Math.random() * quotes.length); } while (i === idx);
+    return i;
+  }
+  function render(q) {
+    textEl.textContent = '“' + q.q.replace(/'/g, '’') + '”';
+    srcEl.textContent = '— ';
+    var a = document.createElement('a');
+    a.href = q.u;
+    a.textContent = q.t + (q.d ? ' (' + q.d + ')' : '');
+    srcEl.appendChild(a);
+  }
+  function show(i) {
+    idx = i;
+    var q = quotes[i];
+    box.classList.add('qc-fading');
+    window.setTimeout(function () {
+      render(q);
+      box.classList.remove('qc-fading');
+    }, 250);
+    schedule(durationFor(q));
+  }
+  function schedule(ms) {
+    if (timer) window.clearTimeout(timer);
+    timer = window.setTimeout(function () {
+      if (paused) { pendingAdvance = true; return; }
+      show(pick());
+    }, ms);
+  }
+  btn.addEventListener('click', function () { show(pick()); });
+  box.addEventListener('mouseenter', function () { paused = true; });
+  box.addEventListener('mouseleave', function () {
+    paused = false;
+    if (pendingAdvance) { pendingAdvance = false; show(pick()); }
+  });
+  schedule(durationFor(quotes[idx]));
+})();
+</script>
+{{ end }}
 
 {{- end -}}
