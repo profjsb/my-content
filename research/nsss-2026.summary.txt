@@ -1,0 +1,1 @@
+Five-minute Day 1 sponsor session at the fully remote 5th Neuro-Symbolic AI Summer School introducing Valency Bond — a fresh 45M-paper, 450M-citation grounded corpus exposed as 38 MCP tools (plus packaged skills) for Claude, Codex, and other LLM agents, with free beta access for attendees — positioning Valency as the data layer for agentic science.
