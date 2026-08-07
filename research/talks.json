@@ -2451,5 +2451,25 @@
     "transcript_url": null,
     "summary": "Sponsor session introducing Valency Bond — deep literature search over a fresh 45M-paper corpus backed by a 450M-edge citation graph, delivered as MCP tools inside Claude, Codex, or any agent — as the grounding data layer for open science in the agentic era.",
     "notes": "Sponsor session on Day 1 of the 5th Neuro-Symbolic AI Summer School (fully remote, Aug 6-7, 2026; theme 'Beyond Current LLMs'), scheduled 9:25-9:30 ET; ran 27:39-34:21 in the Day 1 livestream. Video link starts at t=1635s (tail of Alexander Gray's introduction). Slides are a live interactive deck on valency-oss.github.io."
+  },
+  {
+    "n": 126,
+    "slug": "alignai-2026",
+    "title": "AI and the Future of Science",
+    "event": "ALIGN: AI 2026",
+    "type": "Keynote",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
+    "date": "2026-07-23",
+    "location": "Washington, DC",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://www.eventcreate.com/e/alignai-2026",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Opening keynote on AI and the future of science at ALIGN: AI 2026, a Washington, DC summit convening travel-industry leaders and AI innovators around generative AI's reshaping of the traveler's journey.",
+    "notes": "Opening keynote (9:15-10:15 slot, right after opening remarks) at the Bonafide-organized ALIGN: AI summit, Grand Hyatt Washington, July 23, 2026; billed as 'Joshua Bloom, Co-Founder and CEO, Valency; Professor, UC Berkeley (BAIR)'. No public recording or slides found as of Aug 2026 (not on YouTube or the open web); the EventCreate event page is the only link."
   }
 ]
