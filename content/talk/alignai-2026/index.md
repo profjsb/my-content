@@ -7,7 +7,7 @@ event: "ALIGN: AI 2026"
 event_url: "https://www.eventcreate.com/e/alignai-2026"
 location: "Washington, DC"
 summary: "Opening keynote on AI and the future of science at ALIGN: AI 2026, a Washington, DC summit convening travel-industry leaders and AI innovators around generative AI's reshaping of the traveler's journey."
-topics: ["industry", "ai-ml"]
+topics: ["astronomy", "industry", "ai-ml"]
 talk_type: "Keynote"
 talk_number: 125
 display_date: "Jul 2026"
