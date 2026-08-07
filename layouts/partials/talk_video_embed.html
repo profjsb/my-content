@@ -1,4 +1,4 @@
-{{- /* Embed a watch frame when url_video is a YouTube or Vimeo link; other hosts get no embed (the Video button still links out). */ -}}
+{{- /* Embed a watch frame when url_video is a YouTube or Vimeo link; other hosts get no embed (the Video button still links out). A t=/start= seconds param on YouTube links (e.g. ?t=1635s) carries into the embed, so talks buried in long livestreams start at the right offset. */ -}}
 {{- $v := .Params.url_video | default "" -}}
 {{- if $v -}}
 {{- $yt := "" -}}
@@ -10,8 +10,12 @@
   {{- $yt = replaceRE `^.*youtu\.be/([A-Za-z0-9_-]+).*$` "$1" $v -}}
 {{- end -}}
 {{- if and $yt (ne $yt $v) -}}
+{{- $start := "" -}}
+{{- if findRE `[?&](t|start)=\d+` $v -}}
+  {{- $start = replaceRE `^.*[?&](?:t|start)=(\d+).*$` "$1" $v -}}
+{{- end -}}
 <div class="video-container">
-  <iframe src="https://www.youtube-nocookie.com/embed/{{ $yt }}" title="{{ .Title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/{{ $yt }}{{ with $start }}?start={{ . }}{{ end }}" title="{{ .Title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 {{- else if findRE `vimeo\.com/\d+` $v -}}
 {{- $vm := replaceRE `^.*vimeo\.com/(\d+).*$` "$1" $v -}}
