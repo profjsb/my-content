@@ -2431,5 +2431,25 @@
     "transcript_url": null,
     "summary": "Astrophysical machine learning for a College of Letters & Science faculty roundtable.",
     "notes": "Internal Berkeley L&S event; date from the deck title slide. Deck in local archive."
+  },
+  {
+    "n": 125,
+    "slug": "nsss-2026",
+    "title": "Grounding AI-Accelerated Research",
+    "event": "Neuro-Symbolic AI Summer School 2026, Centaur AI Institute",
+    "type": "Talk",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
+    "date": "2026-08-06",
+    "location": "Online",
+    "video_url": "https://www.youtube.com/live/PFhD1phK5Z4?t=1635s",
+    "slides_url": "https://valency-oss.github.io/talks/ns2026/",
+    "event_url": "https://www.centaurinstitute.org/nsss26",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Sponsor session introducing Valency Bond — deep literature search over a fresh 45M-paper corpus backed by a 450M-edge citation graph, delivered as MCP tools inside Claude, Codex, or any agent — as the grounding data layer for open science in the agentic era.",
+    "notes": "Sponsor session on Day 1 of the 5th Neuro-Symbolic AI Summer School (fully remote, Aug 6-7, 2026; theme 'Beyond Current LLMs'), scheduled 9:25-9:30 ET; ran 27:39-34:21 in the Day 1 livestream. Video link starts at t=1635s (tail of Alexander Gray's introduction). Slides are a live interactive deck on valency-oss.github.io."
   }
 ]
