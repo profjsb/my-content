@@ -91,7 +91,11 @@
   var hl = null;
   try { hl = new URLSearchParams(location.search).get('hl'); } catch (err) {}
   if (!hl) return;
-  var terms = hl.toLowerCase().split(/\s+/).filter(function (t) { return t.length > 1; });
+  /* hl is user-controlled: bound the scan (terms x text nodes) so a crafted
+     URL can't hang the page */
+  var terms = hl.toLowerCase().split(/\s+/).filter(function (t) {
+    return t.length > 1 && t.length <= 40;
+  }).slice(0, 8);
   var root = document.querySelector('.talk-content');
   if (!terms.length || !root) return;
   var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
