@@ -33,6 +33,13 @@
   </div>
 
   <div class="talks-filter">
+    <div class="talks-search" role="search">
+      <svg class="talks-search-icon" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="talks-search-input" type="search" placeholder="Search {{ len .Pages }} talks &mdash; titles, venues, transcripts&hellip;" aria-label="Search talks, transcripts, and venues" autocomplete="off" spellcheck="false">
+      <span class="talks-search-count" id="talks-search-count" aria-live="polite"></span>
+      <button type="button" class="talks-search-clear" id="talks-search-clear" aria-label="Clear search" hidden>&times;</button>
+      <kbd class="talks-search-kbd" aria-hidden="true">/</kbd>
+    </div>
     <div class="talks-filter-row" data-filter-group="topic">
       <span class="talks-filter-label">Topic</span>
       <button type="button" class="talks-filter-pill active" data-filter="all">All</button>
@@ -57,7 +64,8 @@
 
   {{ $topicLabels := dict "astronomy" "Astronomy" "industry" "Industry" "ai-ml" "AI/ML" "education" "Education" }}
   {{ range .Pages.ByDate.Reverse }}
-  <div class="talk-card" data-topics="{{ delimit (.Params.topics | default (slice)) " " }}" data-type="{{ partial "talk_filter_type.html" . }}">
+  {{ $search := printf "%s %s %s %s %s %s %s %s" .Title (or .Params.event "") (or .Params.location "") (or .Params.display_date "") (.Date.Format "2006") (or .Params.talk_type "") (delimit (.Params.topics | default (slice)) " ") (or .Params.summary "") | lower }}
+  <div class="talk-card" data-topics="{{ delimit (.Params.topics | default (slice)) " " }}" data-type="{{ partial "talk_filter_type.html" . }}" data-search="{{ $search }}">
     <div class="talk-card-top">
       {{ partial "talk_badge.html" . }}
       <span class="talk-event">
@@ -80,26 +88,135 @@
   </div>
   {{ end }}
 
-  <div class="talks-empty" id="talks-empty" hidden>No entries match the selected filters.</div>
+  <div class="talks-empty" id="talks-empty" hidden>No entries match your search and filters.</div>
 
 </div>
 
 <script>
+var TALKS_INDEX_URL = {{ with .OutputFormats.Get "JSON" }}{{ .RelPermalink | jsonify | safeJS }}{{ else }}null{{ end }};
 (function () {
-  var state = { topic: 'all', type: 'all' };
+  var state = { topic: 'all', type: 'all', tokens: [] };
   var cards = Array.prototype.slice.call(document.querySelectorAll('.talk-card'));
   var empty = document.getElementById('talks-empty');
+  var input = document.getElementById('talks-search-input');
+  var clearBtn = document.getElementById('talks-search-clear');
+  var countEl = document.getElementById('talks-search-count');
+  var bodyIndex = null;      /* permalink -> {orig, low} full page text, from /talk/index.json */
+  var indexState = 'idle';   /* idle | loading | ready | failed */
+
+  cards.forEach(function (c) {
+    var link = c.querySelector('.talk-title a');
+    c._url = link ? link.getAttribute('href') : '';
+    c._meta = c.getAttribute('data-search') || '';
+    c._snip = null;
+  });
+
+  function loadIndex() {
+    if (indexState !== 'idle' || !TALKS_INDEX_URL || !window.fetch) return;
+    indexState = 'loading';
+    fetch(TALKS_INDEX_URL).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).then(function (data) {
+      bodyIndex = {};
+      data.forEach(function (d) { bodyIndex[d.u] = { orig: d.b, low: d.b.toLowerCase() }; });
+      indexState = 'ready';
+      apply();
+    }).catch(function () {
+      indexState = 'failed'; /* degrade to metadata-only search */
+      apply();
+    });
+  }
+
+  function tokenize(q) {
+    return q.toLowerCase().split(/\s+/).filter(function (t) { return t.length > 1; });
+  }
+
+  function removeSnippet(card) {
+    if (card._snip) { card.removeChild(card._snip); card._snip = null; }
+  }
+
+  /* Excerpt around the first token that matched only in the page body
+     (i.e. the transcript/notes), with every query token <mark>ed. */
+  function renderSnippet(card, token) {
+    var body = bodyIndex[card._url];
+    var pos = body.low.indexOf(token);
+    var start = Math.max(0, pos - 70);
+    var end = Math.min(body.orig.length, pos + token.length + 90);
+    if (start > 0) {
+      var sp = body.orig.indexOf(' ', start);
+      if (sp !== -1 && sp < pos) start = sp + 1;
+    }
+    if (end < body.orig.length) {
+      var ep = body.orig.lastIndexOf(' ', end);
+      if (ep > pos) end = ep;
+    }
+    var win = body.orig.slice(start, end);
+    var winLow = body.low.slice(start, end);
+    var el = card._snip;
+    if (!el) {
+      el = document.createElement('div');
+      el.className = 'talk-snippet';
+      card.appendChild(el);
+      card._snip = el;
+    }
+    while (el.firstChild) el.removeChild(el.firstChild);
+    if (start > 0) el.appendChild(document.createTextNode('…'));
+    var i = 0;
+    while (i < win.length) {
+      var best = -1, bestLen = 0;
+      for (var k = 0; k < state.tokens.length; k++) {
+        var p = winLow.indexOf(state.tokens[k], i);
+        if (p !== -1 && (best === -1 || p < best || (p === best && state.tokens[k].length > bestLen))) {
+          best = p; bestLen = state.tokens[k].length;
+        }
+      }
+      if (best === -1) { el.appendChild(document.createTextNode(win.slice(i))); break; }
+      if (best > i) el.appendChild(document.createTextNode(win.slice(i, best)));
+      var m = document.createElement('mark');
+      m.textContent = win.slice(best, best + bestLen);
+      el.appendChild(m);
+      i = best + bestLen;
+    }
+    if (end < body.orig.length) el.appendChild(document.createTextNode('…'));
+  }
+
+  function updateCount(shown, searching) {
+    if (!countEl) return;
+    var active = searching || state.topic !== 'all' || state.type !== 'all';
+    if (!active) { countEl.textContent = ''; return; }
+    var txt = shown + ' of ' + cards.length;
+    if (searching && indexState === 'loading') txt += ' · searching transcripts…';
+    countEl.textContent = txt;
+  }
+
   function apply() {
     var shown = 0;
-    cards.forEach(function (c) {
-      var topics = (c.getAttribute('data-topics') || '').split(' ');
+    var searching = state.tokens.length > 0;
+    cards.forEach(function (card) {
+      var topics = (card.getAttribute('data-topics') || '').split(' ');
       var ok = (state.topic === 'all' || topics.indexOf(state.topic) !== -1) &&
-               (state.type === 'all' || c.getAttribute('data-type') === state.type);
-      c.style.display = ok ? '' : 'none';
+               (state.type === 'all' || card.getAttribute('data-type') === state.type);
+      var snippetTok = null;
+      if (ok && searching) {
+        var body = bodyIndex && bodyIndex[card._url];
+        for (var i = 0; i < state.tokens.length; i++) {
+          var t = state.tokens[i];
+          var inMeta = card._meta.indexOf(t) !== -1;
+          if (!inMeta && !(body && body.low.indexOf(t) !== -1)) { ok = false; break; }
+          if (!inMeta && snippetTok === null) snippetTok = t;
+        }
+      }
+      if (ok && searching && snippetTok !== null) renderSnippet(card, snippetTok);
+      else removeSnippet(card);
+      card.style.display = ok ? '' : 'none';
       if (ok) shown++;
     });
     if (empty) empty.hidden = shown !== 0;
+    updateCount(shown, searching);
+    if (clearBtn && input) clearBtn.hidden = input.value === '';
   }
+
   Array.prototype.slice.call(document.querySelectorAll('.talks-filter-row')).forEach(function (row) {
     var group = row.getAttribute('data-filter-group');
     var pills = Array.prototype.slice.call(row.querySelectorAll('.talks-filter-pill'));
@@ -118,6 +235,48 @@
       if (pill) pill.click();
     });
   });
+
+  if (!input) return;
+
+  var debounce = null;
+  function onQuery() {
+    var q = input.value;
+    if (q.length > 1) loadIndex();
+    state.tokens = tokenize(q);
+    apply();
+    /* param is "s", not "q": the theme's academic-search.js opens its own
+       fullscreen overlay on any page load whose URL matches *q=... */
+    if (window.history && history.replaceState) {
+      history.replaceState(null, '', location.pathname + (q ? '?s=' + encodeURIComponent(q) : '') + location.hash);
+    }
+  }
+  input.addEventListener('input', function () {
+    if (debounce) window.clearTimeout(debounce);
+    debounce = window.setTimeout(onQuery, 120);
+  });
+  input.addEventListener('focus', loadIndex); /* prefetch on intent */
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && input.value !== '') {
+      input.value = '';
+      onQuery();
+      e.stopPropagation();
+    }
+  });
+  if (clearBtn) clearBtn.addEventListener('click', function () { input.value = ''; onQuery(); input.focus(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== '/' || e.ctrlKey || e.metaKey || e.altKey) return;
+    var a = document.activeElement;
+    if (a && (a.tagName === 'INPUT' || a.tagName === 'TEXTAREA' || a.isContentEditable)) return;
+    e.preventDefault();
+    /* registered before the theme's ready-time handler, so this keeps "/" on
+       the talks page for the talks search instead of the site-wide overlay */
+    e.stopImmediatePropagation();
+    input.focus();
+  });
+
+  var initQ = null;
+  try { initQ = new URLSearchParams(location.search).get('s'); } catch (err) {}
+  if (initQ) { input.value = initQ; onQuery(); }
 })();
 </script>
 
