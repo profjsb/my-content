@@ -103,13 +103,17 @@ var TALKS_INDEX_URL = {{ with .OutputFormats.Get "JSON" }}{{ .RelPermalink | jso
   var countEl = document.getElementById('talks-search-count');
   var bodyIndex = null;      /* permalink -> {orig, low} full page text, from /talk/index.json */
   var indexState = 'idle';   /* idle | loading | ready | failed */
+  var vocab = null;          /* corpus word -> frequency, for typo resolution */
+  var variantCache = Object.create(null);
 
   cards.forEach(function (c) {
     var link = c.querySelector('.talk-title a');
     c._url = link ? link.getAttribute('href') : '';
+    c._titleA = link;
     c._meta = c.getAttribute('data-search') || '';
     c._snip = null;
   });
+  buildVocab();
 
   function loadIndex() {
     if (indexState !== 'idle' || !TALKS_INDEX_URL || !window.fetch) return;
@@ -121,6 +125,7 @@ var TALKS_INDEX_URL = {{ with .OutputFormats.Get "JSON" }}{{ .RelPermalink | jso
       bodyIndex = {};
       data.forEach(function (d) { bodyIndex[d.u] = { orig: d.b, low: d.b.toLowerCase() }; });
       indexState = 'ready';
+      buildVocab();
       apply();
     }).catch(function () {
       indexState = 'failed'; /* degrade to metadata-only search */
@@ -132,17 +137,94 @@ var TALKS_INDEX_URL = {{ with .OutputFormats.Get "JSON" }}{{ .RelPermalink | jso
     return q.toLowerCase().split(/\s+/).filter(function (t) { return t.length > 1; });
   }
 
+  /* ---- fuzzy matching: resolve typos against the corpus vocabulary ---- */
+
+  function addWords(text) {
+    var words = text.split(/[^a-z0-9']+/);
+    for (var i = 0; i < words.length; i++) {
+      if (words[i].length > 2) vocab[words[i]] = (vocab[words[i]] || 0) + 1;
+    }
+  }
+
+  function buildVocab() {
+    vocab = Object.create(null);
+    cards.forEach(function (c) { addWords(c._meta); });
+    if (bodyIndex) { for (var u in bodyIndex) addWords(bodyIndex[u].low); }
+    variantCache = Object.create(null); /* resolutions improve with the fuller vocab */
+  }
+
+  /* OSA edit distance (Levenshtein + adjacent transposition), early-abandoned at max */
+  function editDistLe(a, b, max) {
+    var la = a.length, lb = b.length;
+    if (la - lb > max || lb - la > max) return max + 1;
+    var p2 = null, prev = [], cur, i, j, t;
+    for (j = 0; j <= lb; j++) prev[j] = j;
+    for (i = 1; i <= la; i++) {
+      cur = [i];
+      var rowMin = i;
+      for (j = 1; j <= lb; j++) {
+        var v = Math.min(prev[j] + 1, cur[j - 1] + 1,
+                         prev[j - 1] + (a.charAt(i - 1) === b.charAt(j - 1) ? 0 : 1));
+        if (p2 && j > 1 && a.charAt(i - 1) === b.charAt(j - 2) && a.charAt(i - 2) === b.charAt(j - 1)) {
+          t = p2[j - 2] + 1;
+          if (t < v) v = t;
+        }
+        cur[j] = v;
+        if (v < rowMin) rowMin = v;
+      }
+      if (rowMin > max) return max + 1;
+      p2 = prev; prev = cur;
+    }
+    return prev[lb];
+  }
+
+  /* token -> [token, closest corpus words...]: distance 1 for 4+ chars, 2 for 7+.
+     The exact token stays first so exact matches always win over corrections. */
+  function variantsFor(token) {
+    var cached = variantCache[token];
+    if (cached) return cached;
+    var out = [token];
+    var max = token.length >= 7 ? 2 : token.length >= 4 ? 1 : 0;
+    if (max > 0 && vocab) {
+      var cands = [];
+      for (var w in vocab) {
+        if (w !== token) {
+          var d = editDistLe(token, w, max);
+          if (d <= max) cands.push({ w: w, d: d, f: vocab[w] });
+        }
+      }
+      cands.sort(function (x, y) { return x.d - y.d || y.f - x.f; });
+      for (var i = 0; i < cands.length && i < 4; i++) out.push(cands[i].w);
+    }
+    variantCache[token] = out;
+    return out;
+  }
+
+  /* deep link into the talk page: ?hl= carries the resolved matched terms */
+  function hlHref(card, hits) {
+    var seen = Object.create(null), terms = [];
+    for (var i = 0; i < hits.length; i++) {
+      if (!seen[hits[i].v]) { seen[hits[i].v] = 1; terms.push(hits[i].v); }
+    }
+    return card._url + '?hl=' + encodeURIComponent(terms.join(' '));
+  }
+
+  function setTitleHref(card, hits) {
+    if (card._titleA) card._titleA.setAttribute('href', hits ? hlHref(card, hits) : card._url);
+  }
+
   function removeSnippet(card) {
     if (card._snip) { card.removeChild(card._snip); card._snip = null; }
   }
 
-  /* Excerpt around the first token that matched only in the page body
-     (i.e. the transcript/notes), with every query token <mark>ed. */
-  function renderSnippet(card, token) {
+  /* Clickable excerpt around the first term that matched only in the page body
+     (i.e. the transcript/notes), with every resolved term <mark>ed; links to
+     the talk page positioned at the match via ?hl=. */
+  function renderSnippet(card, anchor, hits) {
     var body = bodyIndex[card._url];
-    var pos = body.low.indexOf(token);
+    var pos = body.low.indexOf(anchor);
     var start = Math.max(0, pos - 70);
-    var end = Math.min(body.orig.length, pos + token.length + 90);
+    var end = Math.min(body.orig.length, pos + anchor.length + 90);
     if (start > 0) {
       var sp = body.orig.indexOf(' ', start);
       if (sp !== -1 && sp < pos) start = sp + 1;
@@ -153,22 +235,26 @@ var TALKS_INDEX_URL = {{ with .OutputFormats.Get "JSON" }}{{ .RelPermalink | jso
     }
     var win = body.orig.slice(start, end);
     var winLow = body.low.slice(start, end);
+    var vars = [], seen = Object.create(null);
+    hits.forEach(function (h) { if (!seen[h.v]) { seen[h.v] = 1; vars.push(h.v); } });
     var el = card._snip;
     if (!el) {
-      el = document.createElement('div');
+      el = document.createElement('a');
       el.className = 'talk-snippet';
+      el.title = 'Open the talk at this passage';
       card.appendChild(el);
       card._snip = el;
     }
+    el.setAttribute('href', hlHref(card, hits));
     while (el.firstChild) el.removeChild(el.firstChild);
     if (start > 0) el.appendChild(document.createTextNode('…'));
     var i = 0;
     while (i < win.length) {
       var best = -1, bestLen = 0;
-      for (var k = 0; k < state.tokens.length; k++) {
-        var p = winLow.indexOf(state.tokens[k], i);
-        if (p !== -1 && (best === -1 || p < best || (p === best && state.tokens[k].length > bestLen))) {
-          best = p; bestLen = state.tokens[k].length;
+      for (var k = 0; k < vars.length; k++) {
+        var p = winLow.indexOf(vars[k], i);
+        if (p !== -1 && (best === -1 || p < best || (p === best && vars[k].length > bestLen))) {
+          best = p; bestLen = vars[k].length;
         }
       }
       if (best === -1) { el.appendChild(document.createTextNode(win.slice(i))); break; }
@@ -179,13 +265,20 @@ var TALKS_INDEX_URL = {{ with .OutputFormats.Get "JSON" }}{{ .RelPermalink | jso
       i = best + bestLen;
     }
     if (end < body.orig.length) el.appendChild(document.createTextNode('…'));
+    var go = document.createElement('span');
+    go.className = 'talk-snippet-go';
+    go.textContent = 'Jump to passage →';
+    el.appendChild(go);
   }
 
-  function updateCount(shown, searching) {
+  function updateCount(shown, searching, fuzzy) {
     if (!countEl) return;
     var active = searching || state.topic !== 'all' || state.type !== 'all';
     if (!active) { countEl.textContent = ''; return; }
     var txt = shown + ' of ' + cards.length;
+    if (searching && fuzzy && fuzzy.length) {
+      txt += ' · also matching “' + fuzzy.slice(0, 2).join('”, “') + '”';
+    }
     if (searching && indexState === 'loading') txt += ' · searching transcripts…';
     countEl.textContent = txt;
   }
@@ -193,27 +286,45 @@ var TALKS_INDEX_URL = {{ with .OutputFormats.Get "JSON" }}{{ .RelPermalink | jso
   function apply() {
     var shown = 0;
     var searching = state.tokens.length > 0;
+    var fuzzyTerms = Object.create(null);
     cards.forEach(function (card) {
       var topics = (card.getAttribute('data-topics') || '').split(' ');
       var ok = (state.topic === 'all' || topics.indexOf(state.topic) !== -1) &&
                (state.type === 'all' || card.getAttribute('data-type') === state.type);
-      var snippetTok = null;
+      var hits = null;
       if (ok && searching) {
         var body = bodyIndex && bodyIndex[card._url];
+        hits = [];
         for (var i = 0; i < state.tokens.length; i++) {
-          var t = state.tokens[i];
-          var inMeta = card._meta.indexOf(t) !== -1;
-          if (!inMeta && !(body && body.low.indexOf(t) !== -1)) { ok = false; break; }
-          if (!inMeta && snippetTok === null) snippetTok = t;
+          var vs = variantsFor(state.tokens[i]);
+          var hit = null;
+          /* variants are ordered exact-first, so a correction only wins when
+             the typed token matches nowhere on this card */
+          for (var k = 0; k < vs.length && !hit; k++) {
+            if (card._meta.indexOf(vs[k]) !== -1) hit = { v: vs[k], body: false, fuzzy: k > 0 };
+            else if (body && body.low.indexOf(vs[k]) !== -1) hit = { v: vs[k], body: true, fuzzy: k > 0 };
+          }
+          if (!hit) { ok = false; break; }
+          hits.push(hit);
         }
       }
-      if (ok && searching && snippetTok !== null) renderSnippet(card, snippetTok);
+      var anchor = null;
+      if (ok && searching) {
+        for (var j = 0; j < hits.length; j++) {
+          if (hits[j].body) { anchor = hits[j].v; break; }
+        }
+        hits.forEach(function (h) { if (h.fuzzy) fuzzyTerms[h.v] = 1; });
+      }
+      if (ok && searching && anchor !== null) renderSnippet(card, anchor, hits);
       else removeSnippet(card);
+      setTitleHref(card, ok && searching ? hits : null);
       card.style.display = ok ? '' : 'none';
       if (ok) shown++;
     });
     if (empty) empty.hidden = shown !== 0;
-    updateCount(shown, searching);
+    var fuzzyList = [];
+    for (var f in fuzzyTerms) fuzzyList.push(f);
+    updateCount(shown, searching, fuzzyList);
     if (clearBtn && input) clearBtn.hidden = input.value === '';
   }
 
