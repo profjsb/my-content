@@ -241,13 +241,19 @@ var TALKS_INDEX_URL = {{ with .OutputFormats.Get "JSON" }}{{ .RelPermalink | jso
   var debounce = null;
   function onQuery() {
     var q = input.value;
-    if (q.length > 1) loadIndex();
     state.tokens = tokenize(q);
+    if (state.tokens.length > 0) loadIndex();
     apply();
     /* param is "s", not "q": the theme's academic-search.js opens its own
        fullscreen overlay on any page load whose URL matches *q=... */
     if (window.history && history.replaceState) {
-      history.replaceState(null, '', location.pathname + (q ? '?s=' + encodeURIComponent(q) : '') + location.hash);
+      var qs = q ? 's=' + encodeURIComponent(q) : '';
+      try {
+        var params = new URLSearchParams(location.search);
+        if (q) params.set('s', q); else params.delete('s');
+        qs = params.toString();
+      } catch (err) {}
+      history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '') + location.hash);
     }
   }
   input.addEventListener('input', function () {
