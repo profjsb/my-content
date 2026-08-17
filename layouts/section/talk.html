@@ -257,10 +257,12 @@ var TALKS_INDEX_URL = {{ with .OutputFormats.Get "JSON" }}{{ .RelPermalink | jso
     }
   }
   input.addEventListener('input', function () {
+    /* start the index fetch as soon as a usable token exists — ahead of the
+       debounce so transcript results are usually ready by the first onQuery */
+    if (tokenize(input.value).length > 0) loadIndex();
     if (debounce) window.clearTimeout(debounce);
     debounce = window.setTimeout(onQuery, 120);
   });
-  input.addEventListener('focus', loadIndex); /* prefetch on intent */
   input.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && input.value !== '') {
       input.value = '';
