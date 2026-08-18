@@ -1,0 +1,10 @@
+{{- /* Full-text search index for the Talks & Media page: one entry per talk,
+       u = permalink (matches the card link href on the list page),
+       b = rendered page text (summary, key quotes, transcript) with
+           whitespace collapsed. Fetched lazily by the list-page search. */ -}}
+{{- $idx := slice -}}
+{{- range .Pages.ByDate.Reverse -}}
+{{- $body := .Plain | htmlUnescape | replaceRE `\s+` " " -}}
+{{- $idx = $idx | append (dict "u" .RelPermalink "b" $body) -}}
+{{- end -}}
+{{- jsonify $idx -}}

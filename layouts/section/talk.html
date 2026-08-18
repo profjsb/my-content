@@ -33,6 +33,13 @@
   </div>
 
   <div class="talks-filter">
+    <div class="talks-search" role="search">
+      <svg class="talks-search-icon" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="talks-search-input" type="search" placeholder="Search {{ len .Pages }} talks &mdash; titles, venues, transcripts&hellip;" aria-label="Search talks, transcripts, and venues" autocomplete="off" spellcheck="false">
+      <span class="talks-search-count" id="talks-search-count" aria-live="polite"></span>
+      <button type="button" class="talks-search-clear" id="talks-search-clear" aria-label="Clear search" hidden>&times;</button>
+      <kbd class="talks-search-kbd" aria-hidden="true">/</kbd>
+    </div>
     <div class="talks-filter-row" data-filter-group="topic">
       <span class="talks-filter-label">Topic</span>
       <button type="button" class="talks-filter-pill active" data-filter="all">All</button>
@@ -57,7 +64,8 @@
 
   {{ $topicLabels := dict "astronomy" "Astronomy" "industry" "Industry" "ai-ml" "AI/ML" "education" "Education" }}
   {{ range .Pages.ByDate.Reverse }}
-  <div class="talk-card" data-topics="{{ delimit (.Params.topics | default (slice)) " " }}" data-type="{{ partial "talk_filter_type.html" . }}">
+  {{ $search := printf "%s %s %s %s %s %s %s %s" .Title (or .Params.event "") (or .Params.location "") (or .Params.display_date "") (.Date.Format "2006") (or .Params.talk_type "") (delimit (.Params.topics | default (slice)) " ") (or .Params.summary "") | lower }}
+  <div class="talk-card" data-topics="{{ delimit (.Params.topics | default (slice)) " " }}" data-type="{{ partial "talk_filter_type.html" . }}" data-search="{{ $search }}">
     <div class="talk-card-top">
       {{ partial "talk_badge.html" . }}
       <span class="talk-event">
@@ -80,26 +88,246 @@
   </div>
   {{ end }}
 
-  <div class="talks-empty" id="talks-empty" hidden>No entries match the selected filters.</div>
+  <div class="talks-empty" id="talks-empty" hidden>No entries match your search and filters.</div>
 
 </div>
 
 <script>
+var TALKS_INDEX_URL = {{ with .OutputFormats.Get "JSON" }}{{ .RelPermalink | jsonify | safeJS }}{{ else }}null{{ end }};
 (function () {
-  var state = { topic: 'all', type: 'all' };
+  var state = { topic: 'all', type: 'all', tokens: [] };
   var cards = Array.prototype.slice.call(document.querySelectorAll('.talk-card'));
   var empty = document.getElementById('talks-empty');
+  var input = document.getElementById('talks-search-input');
+  var clearBtn = document.getElementById('talks-search-clear');
+  var countEl = document.getElementById('talks-search-count');
+  var bodyIndex = null;      /* permalink -> {orig, low} full page text, from /talk/index.json */
+  var indexState = 'idle';   /* idle | loading | ready | failed */
+  var vocab = null;          /* corpus word -> frequency, for typo resolution */
+  var variantCache = Object.create(null);
+
+  cards.forEach(function (c) {
+    var link = c.querySelector('.talk-title a');
+    c._url = link ? link.getAttribute('href') : '';
+    c._titleA = link;
+    c._meta = c.getAttribute('data-search') || '';
+    c._snip = null;
+  });
+  buildVocab();
+
+  function loadIndex() {
+    if (indexState !== 'idle' || !TALKS_INDEX_URL || !window.fetch) return;
+    indexState = 'loading';
+    fetch(TALKS_INDEX_URL).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).then(function (data) {
+      bodyIndex = {};
+      data.forEach(function (d) { bodyIndex[d.u] = { orig: d.b, low: d.b.toLowerCase() }; });
+      indexState = 'ready';
+      buildVocab();
+      apply();
+    }).catch(function () {
+      indexState = 'failed'; /* degrade to metadata-only search */
+      apply();
+    });
+  }
+
+  function tokenize(q) {
+    return q.toLowerCase().split(/\s+/).filter(function (t) { return t.length > 1; });
+  }
+
+  /* ---- fuzzy matching: resolve typos against the corpus vocabulary ---- */
+
+  function addWords(text) {
+    var words = text.split(/[^a-z0-9']+/);
+    for (var i = 0; i < words.length; i++) {
+      if (words[i].length > 2) vocab[words[i]] = (vocab[words[i]] || 0) + 1;
+    }
+  }
+
+  function buildVocab() {
+    vocab = Object.create(null);
+    cards.forEach(function (c) { addWords(c._meta); });
+    if (bodyIndex) { for (var u in bodyIndex) addWords(bodyIndex[u].low); }
+    variantCache = Object.create(null); /* resolutions improve with the fuller vocab */
+  }
+
+  /* OSA edit distance (Levenshtein + adjacent transposition), early-abandoned at max */
+  function editDistLe(a, b, max) {
+    var la = a.length, lb = b.length;
+    if (la - lb > max || lb - la > max) return max + 1;
+    var p2 = null, prev = [], cur, i, j, t;
+    for (j = 0; j <= lb; j++) prev[j] = j;
+    for (i = 1; i <= la; i++) {
+      cur = [i];
+      var rowMin = i;
+      for (j = 1; j <= lb; j++) {
+        var v = Math.min(prev[j] + 1, cur[j - 1] + 1,
+                         prev[j - 1] + (a.charAt(i - 1) === b.charAt(j - 1) ? 0 : 1));
+        if (p2 && j > 1 && a.charAt(i - 1) === b.charAt(j - 2) && a.charAt(i - 2) === b.charAt(j - 1)) {
+          t = p2[j - 2] + 1;
+          if (t < v) v = t;
+        }
+        cur[j] = v;
+        if (v < rowMin) rowMin = v;
+      }
+      if (rowMin > max) return max + 1;
+      p2 = prev; prev = cur;
+    }
+    return prev[lb];
+  }
+
+  /* token -> [token, closest corpus words...]: distance 1 for 4+ chars, 2 for 7+.
+     The exact token stays first so exact matches always win over corrections. */
+  function variantsFor(token) {
+    var cached = variantCache[token];
+    if (cached) return cached;
+    var out = [token];
+    var max = token.length >= 7 ? 2 : token.length >= 4 ? 1 : 0;
+    if (max > 0 && vocab) {
+      var cands = [];
+      for (var w in vocab) {
+        if (w !== token) {
+          var d = editDistLe(token, w, max);
+          if (d <= max) cands.push({ w: w, d: d, f: vocab[w] });
+        }
+      }
+      cands.sort(function (x, y) { return x.d - y.d || y.f - x.f; });
+      for (var i = 0; i < cands.length && i < 4; i++) out.push(cands[i].w);
+    }
+    variantCache[token] = out;
+    return out;
+  }
+
+  /* deep link into the talk page: ?hl= carries the resolved matched terms */
+  function hlHref(card, hits) {
+    var seen = Object.create(null), terms = [];
+    for (var i = 0; i < hits.length; i++) {
+      if (!seen[hits[i].v]) { seen[hits[i].v] = 1; terms.push(hits[i].v); }
+    }
+    return card._url + '?hl=' + encodeURIComponent(terms.join(' '));
+  }
+
+  function setTitleHref(card, hits) {
+    if (card._titleA) card._titleA.setAttribute('href', hits ? hlHref(card, hits) : card._url);
+  }
+
+  function removeSnippet(card) {
+    if (card._snip) { card.removeChild(card._snip); card._snip = null; }
+  }
+
+  /* Clickable excerpt around the first term that matched only in the page body
+     (i.e. the transcript/notes), with every resolved term <mark>ed; links to
+     the talk page positioned at the match via ?hl=. */
+  function renderSnippet(card, anchor, hits) {
+    var body = bodyIndex[card._url];
+    var pos = body.low.indexOf(anchor);
+    var start = Math.max(0, pos - 70);
+    var end = Math.min(body.orig.length, pos + anchor.length + 90);
+    if (start > 0) {
+      var sp = body.orig.indexOf(' ', start);
+      if (sp !== -1 && sp < pos) start = sp + 1;
+    }
+    if (end < body.orig.length) {
+      var ep = body.orig.lastIndexOf(' ', end);
+      if (ep > pos) end = ep;
+    }
+    var win = body.orig.slice(start, end);
+    var winLow = body.low.slice(start, end);
+    var vars = [], seen = Object.create(null);
+    hits.forEach(function (h) { if (!seen[h.v]) { seen[h.v] = 1; vars.push(h.v); } });
+    var el = card._snip;
+    if (!el) {
+      el = document.createElement('a');
+      el.className = 'talk-snippet';
+      el.title = 'Open the talk at this passage';
+      card.appendChild(el);
+      card._snip = el;
+    }
+    el.setAttribute('href', hlHref(card, hits));
+    while (el.firstChild) el.removeChild(el.firstChild);
+    if (start > 0) el.appendChild(document.createTextNode('…'));
+    var i = 0;
+    while (i < win.length) {
+      var best = -1, bestLen = 0;
+      for (var k = 0; k < vars.length; k++) {
+        var p = winLow.indexOf(vars[k], i);
+        if (p !== -1 && (best === -1 || p < best || (p === best && vars[k].length > bestLen))) {
+          best = p; bestLen = vars[k].length;
+        }
+      }
+      if (best === -1) { el.appendChild(document.createTextNode(win.slice(i))); break; }
+      if (best > i) el.appendChild(document.createTextNode(win.slice(i, best)));
+      var m = document.createElement('mark');
+      m.textContent = win.slice(best, best + bestLen);
+      el.appendChild(m);
+      i = best + bestLen;
+    }
+    if (end < body.orig.length) el.appendChild(document.createTextNode('…'));
+    var go = document.createElement('span');
+    go.className = 'talk-snippet-go';
+    go.textContent = 'Jump to passage →';
+    el.appendChild(go);
+  }
+
+  function updateCount(shown, searching, fuzzy) {
+    if (!countEl) return;
+    var active = searching || state.topic !== 'all' || state.type !== 'all';
+    if (!active) { countEl.textContent = ''; return; }
+    var txt = shown + ' of ' + cards.length;
+    if (searching && fuzzy && fuzzy.length) {
+      txt += ' · also matching “' + fuzzy.slice(0, 2).join('”, “') + '”';
+    }
+    if (searching && indexState === 'loading') txt += ' · searching transcripts…';
+    countEl.textContent = txt;
+  }
+
   function apply() {
     var shown = 0;
-    cards.forEach(function (c) {
-      var topics = (c.getAttribute('data-topics') || '').split(' ');
+    var searching = state.tokens.length > 0;
+    var fuzzyTerms = Object.create(null);
+    cards.forEach(function (card) {
+      var topics = (card.getAttribute('data-topics') || '').split(' ');
       var ok = (state.topic === 'all' || topics.indexOf(state.topic) !== -1) &&
-               (state.type === 'all' || c.getAttribute('data-type') === state.type);
-      c.style.display = ok ? '' : 'none';
+               (state.type === 'all' || card.getAttribute('data-type') === state.type);
+      var hits = null;
+      if (ok && searching) {
+        var body = bodyIndex && bodyIndex[card._url];
+        hits = [];
+        for (var i = 0; i < state.tokens.length; i++) {
+          var vs = variantsFor(state.tokens[i]);
+          var hit = null;
+          /* variants are ordered exact-first, so a correction only wins when
+             the typed token matches nowhere on this card */
+          for (var k = 0; k < vs.length && !hit; k++) {
+            if (card._meta.indexOf(vs[k]) !== -1) hit = { v: vs[k], body: false, fuzzy: k > 0 };
+            else if (body && body.low.indexOf(vs[k]) !== -1) hit = { v: vs[k], body: true, fuzzy: k > 0 };
+          }
+          if (!hit) { ok = false; break; }
+          hits.push(hit);
+        }
+      }
+      var anchor = null;
+      if (ok && searching) {
+        for (var j = 0; j < hits.length; j++) {
+          if (hits[j].body) { anchor = hits[j].v; break; }
+        }
+        hits.forEach(function (h) { if (h.fuzzy) fuzzyTerms[h.v] = 1; });
+      }
+      if (ok && searching && anchor !== null) renderSnippet(card, anchor, hits);
+      else removeSnippet(card);
+      setTitleHref(card, ok && searching ? hits : null);
+      card.style.display = ok ? '' : 'none';
       if (ok) shown++;
     });
     if (empty) empty.hidden = shown !== 0;
+    var fuzzyList = [];
+    for (var f in fuzzyTerms) fuzzyList.push(f);
+    updateCount(shown, searching, fuzzyList);
+    if (clearBtn && input) clearBtn.hidden = input.value === '';
   }
+
   Array.prototype.slice.call(document.querySelectorAll('.talks-filter-row')).forEach(function (row) {
     var group = row.getAttribute('data-filter-group');
     var pills = Array.prototype.slice.call(row.querySelectorAll('.talks-filter-pill'));
@@ -118,6 +346,56 @@
       if (pill) pill.click();
     });
   });
+
+  if (!input) return;
+
+  var debounce = null;
+  function onQuery() {
+    var q = input.value;
+    state.tokens = tokenize(q);
+    if (state.tokens.length > 0) loadIndex();
+    apply();
+    /* param is "s", not "q": the theme's academic-search.js opens its own
+       fullscreen overlay on any page load whose URL matches *q=... */
+    if (window.history && history.replaceState) {
+      var qs = q ? 's=' + encodeURIComponent(q) : '';
+      try {
+        var params = new URLSearchParams(location.search);
+        if (q) params.set('s', q); else params.delete('s');
+        qs = params.toString();
+      } catch (err) {}
+      history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '') + location.hash);
+    }
+  }
+  input.addEventListener('input', function () {
+    /* start the index fetch as soon as a usable token exists — ahead of the
+       debounce so transcript results are usually ready by the first onQuery */
+    if (tokenize(input.value).length > 0) loadIndex();
+    if (debounce) window.clearTimeout(debounce);
+    debounce = window.setTimeout(onQuery, 120);
+  });
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && input.value !== '') {
+      input.value = '';
+      onQuery();
+      e.stopPropagation();
+    }
+  });
+  if (clearBtn) clearBtn.addEventListener('click', function () { input.value = ''; onQuery(); input.focus(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== '/' || e.ctrlKey || e.metaKey || e.altKey) return;
+    var a = document.activeElement;
+    if (a && (a.tagName === 'INPUT' || a.tagName === 'TEXTAREA' || a.isContentEditable)) return;
+    e.preventDefault();
+    /* registered before the theme's ready-time handler, so this keeps "/" on
+       the talks page for the talks search instead of the site-wide overlay */
+    e.stopImmediatePropagation();
+    input.focus();
+  });
+
+  var initQ = null;
+  try { initQ = new URLSearchParams(location.search).get('s'); } catch (err) {}
+  if (initQ) { input.value = initQ; onQuery(); }
 })();
 </script>
 

@@ -84,4 +84,64 @@
 </script>
 {{ end }}
 
+<script>
+/* ?hl=term1 term2 — set by the Talks list search: mark each term wherever it
+   appears in the rendered content and scroll to the first occurrence. */
+(function () {
+  var hl = null;
+  try { hl = new URLSearchParams(location.search).get('hl'); } catch (err) {}
+  if (!hl) return;
+  /* hl is user-controlled: bound the scan (terms x text nodes) so a crafted
+     URL can't hang the page */
+  var terms = hl.toLowerCase().split(/\s+/).filter(function (t) {
+    return t.length > 1 && t.length <= 40;
+  }).slice(0, 8);
+  var root = document.querySelector('.talk-content');
+  if (!terms.length || !root) return;
+  var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+  var nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+  var first = null;
+  var marks = 0;
+  nodes.forEach(function (node) {
+    if (marks >= 300) return;
+    var text = node.nodeValue;
+    var low = text.toLowerCase();
+    var ranges = [];
+    terms.forEach(function (t) {
+      var i = low.indexOf(t);
+      while (i !== -1) { ranges.push([i, i + t.length]); i = low.indexOf(t, i + t.length); }
+    });
+    if (!ranges.length) return;
+    ranges.sort(function (a, b) { return a[0] - b[0]; });
+    var merged = [ranges[0]];
+    for (var i = 1; i < ranges.length; i++) {
+      var last = merged[merged.length - 1];
+      if (ranges[i][0] <= last[1]) { if (ranges[i][1] > last[1]) last[1] = ranges[i][1]; }
+      else merged.push(ranges[i]);
+    }
+    var frag = document.createDocumentFragment();
+    var pos = 0;
+    merged.forEach(function (r) {
+      if (r[0] > pos) frag.appendChild(document.createTextNode(text.slice(pos, r[0])));
+      var m = document.createElement('mark');
+      m.className = 'talk-hl';
+      m.textContent = text.slice(r[0], r[1]);
+      frag.appendChild(m);
+      if (!first) first = m;
+      marks++;
+      pos = r[1];
+    });
+    if (pos < text.length) frag.appendChild(document.createTextNode(text.slice(pos)));
+    node.parentNode.replaceChild(frag, node);
+  });
+  if (first) {
+    window.setTimeout(function () {
+      first.scrollIntoView({ block: 'center' });
+      first.classList.add('talk-hl-focus');
+    }, 100);
+  }
+})();
+</script>
+
 {{- end -}}
