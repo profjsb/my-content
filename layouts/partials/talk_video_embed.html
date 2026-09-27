@@ -1,4 +1,4 @@
-{{- /* Embed a watch frame when url_video is a YouTube or Vimeo link; other hosts get no embed (the Video button still links out). A t=/start= seconds param on YouTube links (e.g. ?t=1635s) carries into the embed, so talks buried in long livestreams start at the right offset. */ -}}
+{{- /* Embed a watch frame when url_video is a YouTube or Vimeo link, or a native player when it is a direct video file (.mp4/.m4v/.webm, e.g. the AAS's own meeting recordings); other hosts get no embed (the Video button still links out). A t=/start= seconds param on YouTube links (e.g. ?t=1635s) carries into the embed, so talks buried in long livestreams start at the right offset. */ -}}
 {{- $v := .Params.url_video | default "" -}}
 {{- if $v -}}
 {{- $yt := "" -}}
@@ -24,5 +24,9 @@
   <iframe src="https://player.vimeo.com/video/{{ $vm }}" title="{{ .Title }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </div>
 {{- end -}}
+{{- else if findRE `\.(mp4|m4v|webm)([?#]|$)` $v -}}
+<div class="video-container">
+  <video src="{{ $v }}" title="{{ .Title }}" controls preload="metadata" playsinline></video>
+</div>
 {{- end -}}
 {{- end -}}
