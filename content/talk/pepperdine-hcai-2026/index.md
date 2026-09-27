@@ -7,8 +7,8 @@ event: "Human-Centered AI Conference 2026, Pepperdine University"
 event_url: "https://seaver.pepperdine.edu/events/human-centered-ai-conference/"
 location: "Malibu, CA"
 summary: "From real-time transient discovery to physics-informed inference, how astronomy turned to AI at scale — and why, as reasoning models take on the conduct of science itself, the questions, trust, and credit remain fundamentally human."
-topics: ["astronomy", "ai-ml"]
-talk_type: "Invited Talk"
+topics: ["astronomy", "industry", "ai-ml"]
+talk_type: "Keynote"
 talk_number: 127
 display_date: "Sep 2026"
 has_transcript: false

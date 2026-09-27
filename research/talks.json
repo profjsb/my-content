@@ -2478,9 +2478,10 @@
     "slug": "pepperdine-hcai-2026",
     "title": "AI-Accelerated Science Will Always Be a Human Endeavor",
     "event": "Human-Centered AI Conference 2026, Pepperdine University",
-    "type": "Invited Talk",
+    "type": "Keynote",
     "topics": [
       "astronomy",
+      "industry",
       "ai-ml"
     ],
     "date": "2026-09-26",
@@ -2491,6 +2492,6 @@
     "audio_url": null,
     "transcript_url": null,
     "summary": "From real-time transient discovery to physics-informed inference, how astronomy turned to AI at scale — and why, as reasoning models take on the conduct of science itself, the questions, trust, and credit remain fundamentally human.",
-    "notes": "Program (seaver.pepperdine.edu/events/human-centered-ai-conference/program/) lists it Day 2, Sat Sep 26 2026, 10:30-11 AM, Elkins Auditorium, with JB's abstract; the conference ran alongside the inaugural Global Summit on Faith in AI. Slides: JB's Keynote PDF export (28 slides) rendered to 2400px WebP images (talks.py slides) and shown in the embedded viewer on the talk page — the first embedded deck. Per JB the deck should not be downloadable, so the PDF itself is deliberately kept off the site and out of the repo. No recording found 2026-09-26, the day the conference ended; recheck Pepperdine's channels later. Topics: astronomy + ai-ml; the Valency segment (~2 of 28 slides) was judged below the industry threshold."
+    "notes": "Program (seaver.pepperdine.edu/events/human-centered-ai-conference/program/) lists it Day 2, Sat Sep 26 2026, 10:30-11 AM, Elkins Auditorium, with JB's abstract; the conference ran alongside the inaugural Global Summit on Faith in AI. Slides: JB's Keynote PDF export (28 slides) rendered to 2400px WebP images (talks.py slides) and shown in the embedded viewer on the talk page — the first embedded deck. Per JB the deck should not be downloadable, so the PDF itself is deliberately kept off the site and out of the repo. No recording found 2026-09-26, the day the conference ended; recheck Pepperdine's channels later. Topics: astronomy + industry + ai-ml (industry per JB, for the Valency segment). Type: Keynote per JB (the program lists the slot without a label)."
   }
 ]
