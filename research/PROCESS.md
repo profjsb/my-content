@@ -299,7 +299,8 @@ entries.**
   Jan 2011); "IAU Oxford Sept 2011" matches no IAU meeting and is recorded as an
   Oxford seminar with a caveat note.
 - **Privacy rule applied** (industry decks without venues are private): excluded
-  a16z academic roundtable, D. E. Shaw, Thomson Reuters, Vodafone, Fujitsu forum,
+  a16z academic roundtable (deck only; a16z's public interview from it was added
+  2026-09-26, see that addendum), D. E. Shaw, Thomson Reuters, Vodafone, Fujitsu forum,
   TCV CIO/CTO, WeWork, Arkadium, Orange Institute, and all wise.io product/client
   decks (several marked "Confidential / Not for distribution"), plus Valency investor
   decks. Also excluded: courses/guest lectures (INFO 296A), lab-internal decks (BAIR
@@ -361,6 +362,21 @@ YouTube recordings, and all three now have embedded transcripts, Key Quotes and
   of the event (mostly the Q&A) is about training students, the Python boot camp and new
   courses. The other two stay `astronomy`/`ai-ml`. The HiPACC card summary, previously a
   placeholder, was rewritten from the transcript.
+
+## Addendum — a16z Academic Roundtable interview (2026-09-26)
+
+JB asked for a16z's "Supernovas and Novel Insight: Where Machine Learning is Headed Next"
+(a16z.com, Jan 2015) to be added (`a16z-roundtable-2014`). It is **an interview a16z filmed
+at its second annual Academic Roundtable** (Sep 25–27, 2014, at the firm's Menlo Park
+offices), not a recording of his roundtable talk, so it is typed `Interview` and dated to
+the talk day (27 Sep 2014, from the deck's title slide; he refers back to "my talk"). The
+a16z page's Vimeo embed is dead (the page prints the raw `[vimeo]` shortcode), but a16z's
+own YouTube re-upload (`6hQqpQ3IZlY`) is live and now embedded, with a transcript cleaned
+from its auto-captions (2,845 → 2,629 words, 92%). **Transcript pages: 23 → 24.**
+
+The privacy rule above still covers the talk itself ("Practicable Machine Intelligence in
+Science & Industry"): no public recording was found, and the deck stays private and off
+the site.
 
 ## Maintenance
 

@@ -8,7 +8,7 @@ location: "Berkeley, CA"
 summary: "The autoencoding-RNN approach to irregular astronomical time series, at the LBNL machine-learning-for-science workshop."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 95
+talk_number: 96
 display_date: "Sep 2018"
 has_transcript: false
 ---

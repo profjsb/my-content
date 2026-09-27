@@ -2513,5 +2513,26 @@
     "transcript_url": null,
     "summary": "Evidence that gamma-ray bursts come from massive stars, not neutron-star mergers — supernova bumps in afterglows, an HST/Keck host survey — plus JCAM, a new rapid-response imager on the Palomar 200-inch.",
     "notes": "Program (aasarchives.blob.core.windows.net, BAAS v33n4): session 26 'Gamma Ray Bursts', oral (contributed — no invited/special marking), Mon Jan 7 2002, 10:00-11:30am, International Ballroom West, Hilton Washington; talk 2 of 5, after Gehrels's Swift MIDEX talk. Abstract 26.02 = ADS 2001AAS...199.2602B (supplied by JB; the bibcode year is the BAAS volume year). Same title as the 2001 Harvard/CfA and IAS seminars. No slides, video, or press coverage found (Speaker Deck, SlideShare, YouTube, Wayback of the Caltech talks page, which stops before this talk)."
+  },
+  {
+    "n": 129,
+    "slug": "a16z-roundtable-2014",
+    "title": "Supernovas and Novel Insight: Where Machine Learning is Headed Next",
+    "event": "a16z Academic Roundtable 2014",
+    "type": "Interview",
+    "topics": [
+      "astronomy",
+      "industry",
+      "ai-ml"
+    ],
+    "date": "2014-09-27",
+    "location": "Menlo Park, CA",
+    "video_url": "https://www.youtube.com/watch?v=6hQqpQ3IZlY",
+    "slides_url": null,
+    "event_url": "https://a16z.com/supernovas-and-novel-insight-where-machine-learning-is-headed-next/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Filmed at a16z's 2014 Academic Roundtable: how machine learning became a discovery engine for astronomy, sifting real transients from roughly a thousand bogus candidates apiece and catching the nearby Type Ia SN 2011fe about 11 hours after explosion, and why running ML in production led to Wise.io and to products with machine intelligence baked in.",
+    "notes": "a16z-produced interview video, not a recording of the talk: filmed at a16z's second annual Academic Roundtable (Sep 25-27, 2014, at the firm's Sand Hill Road offices in Menlo Park, per a16z's attendee confirmation), where JB also gave a talk, 'Practicable Machine Intelligence in Science & Industry' (27 Sep 2014 per the deck's title slide; deck in local archive, kept private under the industry-deck privacy rule in PROCESS.md). He refers back to 'my talk' in the interview, so it is dated to the talk day. a16z published it 2015-01-07 at the event_url with a Vimeo embed (116019972) that is now dead (player 404, and the page prints the raw [vimeo] shortcode); a16z's own YouTube re-upload (6hQqpQ3IZlY, 14:26, uploaded 2017-07-15) is the video_url. No public recording of the talk itself found. Embedded transcript (2026-09-26) from the YouTube auto-captions; the interviewer's prompts are edited out of the video, so it reads as a monologue. Topics from the transcript: astronomy (first half: real-bogus discovery, SN 2011fe), industry (second half: Wise.io, churn, spam filters, analytics), ai-ml throughout. Added at JB's request 2026-09-26."
   }
 ]
