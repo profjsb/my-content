@@ -8,7 +8,7 @@ location: "Cambridge, MA"
 summary: "Colloquium on optical and infrared observations of gamma-ray burst and X-ray flash transients."
 topics: ["astronomy"]
 talk_type: "Colloquium"
-talk_number: 18
+talk_number: 19
 display_date: "Nov 2003"
 has_transcript: false
 ---

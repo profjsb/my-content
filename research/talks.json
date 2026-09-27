@@ -958,7 +958,7 @@
   {
     "n": 49,
     "slug": "aas-191-1998",
-    "title": "The Spatial Distribution of Coalescing Neutron Star Binaries: Implications for Gamma-Ray Bursts",
+    "title": "The Spatial Distribution of Coalescing Neutron Star Binaries",
     "event": "AAS 191st Meeting",
     "type": "Talk",
     "topics": [
@@ -968,11 +968,11 @@
     "location": "Washington, DC",
     "video_url": null,
     "slides_url": null,
-    "event_url": "https://arxiv.org/abs/astro-ph/9805222",
+    "event_url": "https://aasarchives.blob.core.windows.net/archives/BAAS/v29n5/aas191/tocSaturday.html#Sess113",
     "audio_url": null,
     "transcript_url": null,
     "summary": "Population-synthesis predictions for where merging neutron-star binaries occur relative to their host galaxies, and what burst offsets imply for the merger progenitor model.",
-    "notes": "CV lists 10 Jan 1997, but AAS 191 was Jan 6-10, 1998 in DC (AAS 189 was Jan 1997 Toronto). Linked arXiv is the refereed version (Bloom, Sigurdsson & Pols 1999, MNRAS 305, 763)."
+    "notes": "CV lists 10 Jan 1997, but AAS 191 was Jan 6-10, 1998 in DC (AAS 189 was Jan 1997 Toronto). Linked arXiv is the refereed version (Bloom, Sigurdsson & Pols 1999, MNRAS 305, 763). 2026-09-26: program (aasarchives.blob.core.windows.net, BAAS v29n5) confirms session 113 'Neutron Stars & Pulsars', oral (contributed), Sat Jan 10 1998, 10:00-11:30am, International Ballroom East, Washington Hilton; talk 4 of 8. Title set to the official abstract title (the ': Implications for Gamma-Ray Bursts' subtitle is the MNRAS paper's; the arXiv link moved into the page body). Abstract from ADS 1997AAS...19111304B, supplied by JB."
   },
   {
     "n": 50,
@@ -1386,11 +1386,11 @@
     "location": "San Francisco, CA",
     "video_url": null,
     "slides_url": null,
-    "event_url": null,
+    "event_url": "https://web.archive.org/web/20061026041446/http://www.confcon.com/head2006/head06.php",
     "audio_url": null,
     "transcript_url": null,
     "summary": "Invited review of short-burst host galaxies at the HEAD meeting, cementing the demographic case for compact-object mergers.",
-    "notes": "No program page or ADS abstract recoverable for this HEAD meeting talk."
+    "notes": "Meeting: Oct 4-7 2006, Stanford Court Hotel, San Francisco (head.aas.org/past_meetings; the meeting's own site survives only on Wayback). Abstract 16.01 = ADS 2006HEAD....9.1601B, supplied by JB (the ADS 'Sep 2006' date is the BAAS issue). Session 16 was a GRB oral session (16.02 O'Brien & Willingale, 16.06 Hartmann et al.); its day was never archived, so Fri Oct 6 is inferred from the session numbering. 'Invited' comes from the CV; no surviving program confirms it. No slides, video, or press found."
   },
   {
     "n": 72,
@@ -1537,13 +1537,13 @@
     ],
     "date": "2010-01-04",
     "location": "Washington, DC",
-    "video_url": null,
+    "video_url": "https://aasfiles.blob.core.windows.net/files/aas215/aas_215_103_pierce_prize_finding_utility_in_the_diverse_origins_of_gamma_ray_bursts.mp4",
     "slides_url": null,
     "event_url": "https://aas.org/meetings/aas215",
     "audio_url": null,
     "transcript_url": null,
-    "summary": "The Pierce Prize lecture: what the diverse progenitors of gamma-ray bursts - collapsars, mergers, and oddballs - teach us, and how bursts became tools for cosmology.",
-    "notes": "2009 Pierce Prize, delivered at AAS 215 (Jan 3-7, 2010), Session 103. AAS meeting page blocks bots but is live."
+    "summary": "The Pierce Prize lecture: what the diverse progenitors of gamma-ray bursts — collapsars, mergers, and oddballs — teach us, and how bursts became tools for cosmology.",
+    "notes": "2009 Pierce Prize, delivered at AAS 215 (Jan 3-7, 2010), Session 103. AAS meeting page blocks bots but is live. 2026-09-26: AAS block program (Wayback, Dec 23 2009) lists Invited Session 103, Mon Jan 4, 3:40-4:20pm, Marriott Ballroom. Video: the AAS's own recording (52.5 min, 480x360 MP4 on aasfiles.blob.core.windows.net, listed under Meeting Videos on aas.org/meetings/aas215; not on YouTube), embedded on the page. Prize page: aas.org/grants-and-prizes/newton-lacy-pierce-prize-astronomy (2009, Joshua Bloom). Abstract from ADS 2010AAS...21510301B, supplied by JB. No slides online; the Keynote deck survives locally (~/Talks/GRBs/pierce_aas_2010.key)."
   },
   {
     "n": 80,
@@ -2473,5 +2473,45 @@
     "transcript_url": null,
     "summary": "Opening keynote on AI and the future of science at ALIGN: AI 2026, a Washington, DC summit convening travel-industry leaders and AI innovators around generative AI's reshaping of the traveler's journey.",
     "notes": "Opening keynote (9:15-10:15 slot, right after opening remarks) at the Bonafide-organized ALIGN: AI summit, Grand Hyatt Washington, July 23, 2026; billed as 'Joshua Bloom, Co-Founder and CEO, Valency; Professor, UC Berkeley (BAIR)'. No public recording or slides found as of Aug 2026 (not on YouTube or the open web); the EventCreate event page is the only link. Per JB, the talk also had substantive astronomy content (hence the astronomy topic; no recording to cite)."
+  },
+  {
+    "n": 127,
+    "slug": "pepperdine-hcai-2026",
+    "title": "AI-Accelerated Science Will Always Be a Human Endeavor",
+    "event": "Human-Centered AI Conference 2026, Pepperdine University",
+    "type": "Keynote",
+    "topics": [
+      "astronomy",
+      "industry",
+      "ai-ml"
+    ],
+    "date": "2026-09-26",
+    "location": "Malibu, CA",
+    "video_url": null,
+    "slides_url": "/talk/pepperdine-hcai-2026/#slides",
+    "event_url": "https://seaver.pepperdine.edu/events/human-centered-ai-conference/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "From real-time transient discovery to physics-informed inference, how astronomy turned to AI at scale — and why, as reasoning models take on the conduct of science itself, the questions, trust, and credit remain fundamentally human.",
+    "notes": "Program (seaver.pepperdine.edu/events/human-centered-ai-conference/program/) lists it Day 2, Sat Sep 26 2026, 10:30-11 AM, Elkins Auditorium, with JB's abstract; the conference ran alongside the inaugural Global Summit on Faith in AI. Slides: JB's Keynote PDF export (28 slides) rendered to 2400px WebP images (talks.py slides) and shown in the embedded viewer on the talk page — the first embedded deck. Per JB the deck should not be downloadable, so the PDF itself is deliberately kept off the site and out of the repo. No recording found 2026-09-26, the day the conference ended; recheck Pepperdine's channels later. Topics: astronomy + industry + ai-ml (industry per JB, for the Valency segment). Type: Keynote per JB (the program lists the slot without a label)."
+  },
+  {
+    "n": 128,
+    "slug": "aas-199-2002",
+    "title": "Toward the Progenitors of Gamma-Ray Bursts",
+    "event": "AAS 199th Meeting",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2002-01-07",
+    "location": "Washington, DC",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://aasarchives.blob.core.windows.net/archives/BAAS/v33n4/aas199/S260.htm",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Evidence that gamma-ray bursts come from massive stars, not neutron-star mergers — supernova bumps in afterglows, an HST/Keck host survey — plus JCAM, a new rapid-response imager on the Palomar 200-inch.",
+    "notes": "Program (aasarchives.blob.core.windows.net, BAAS v33n4): session 26 'Gamma Ray Bursts', oral (contributed — no invited/special marking), Mon Jan 7 2002, 10:00-11:30am, International Ballroom West, Hilton Washington; talk 2 of 5, after Gehrels's Swift MIDEX talk. Abstract 26.02 = ADS 2001AAS...199.2602B (supplied by JB; the bibcode year is the BAAS volume year). Same title as the 2001 Harvard/CfA and IAS seminars. No slides, video, or press coverage found (Speaker Deck, SlideShare, YouTube, Wayback of the Caltech talks page, which stops before this talk)."
   }
 ]

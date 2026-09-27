@@ -197,15 +197,15 @@ browser before repair. `#` is the current `talk_number`.
 
 | # | Item | Link | Status | Diagnosis | Repair |
 |---|------|------|--------|-----------|--------|
-| 62 | `berkeley-data-science-lecture-2013` | `url_video` (bids.berkeley.edu/resources/videos/…) | 404 | BIDS site restructured (July row 12). | **Moved original:** the CITRIS YouTube upload the BIDS page embedded (`4mBUX47YtSE`); its captions introduce Bloom as the series' first speaker. |
-| 62 | `berkeley-data-science-lecture-2013` | `event_url` (vcresearch.berkeley.edu/2013-14-data-science-lectures) | 504 (July: 403) | Not bot-blocking: a browser gets Pantheon's 504 or Drupal "Access denied" — the page is unpublished; the site root is live. | Wayback snapshot (2021-06-20). |
-| 98 | `bids-2019` | `event_url` (bids.berkeley.edu/events/…) | 404 | BIDS site restructured (July row 34). | Wayback snapshot (2023-03-29). It embeds the lecture video, still live on the BIDS YouTube channel (`kf8a-NnjVQY`) — **added as `url_video`**. |
-| 39 | `cospar-2010` | `event_url` (ui.adsabs.harvard.edu/abs/…) | 405 | AWS WAF bot challenge (`x-amzn-waf-action: captcha`); a fresh browser gets a "confirm you are human" CAPTCHA. The record exists (site publication `2010-cosp-38-2351-b`). | **No change** — not rot. `linkcheck` now reports WAF challenges as WALLED. |
-| 67 | `hipacc-exascale-2014` | `event_url` (hipacc.ucsc.edu/…) | 000 | TLS certificate expired 2026-07-23 (browsers warn); `http://` redirects to a 404. The page itself is still on UCSC's legacy server. | Wayback snapshot (2024-11-06; talk under the Program tab). Talk video found in the workshop's YouTube playlist (`jkj8U5rxRMw`) — **added as `url_video`**. The slides PDF is behind the same certificate and was never archived. |
-| 52 | `royal-society-2012` | `event_url` (royalsociety.org/…/2012/transients-universe/) | 404 | Page gone, though the Royal Society's own site search still lists it. | Wayback snapshot (2021-10-20) — later captures are the 2022 redesign without the programme; the talk is under Session 4. The programme's MP3 is unrecoverable (host gone, never archived). |
-| 58 | `yale-colloquium-2012` | `event_url` (physics.yale.edu/events/physics-club/archive) | 404 | Yale Physics site relaunch; the pre-Fall-2016 Physics Club archive was not migrated. | Wayback snapshot (2026-03-12). |
+| 63 | `berkeley-data-science-lecture-2013` | `url_video` (bids.berkeley.edu/resources/videos/…) | 404 | BIDS site restructured (July row 12). | **Moved original:** the CITRIS YouTube upload the BIDS page embedded (`4mBUX47YtSE`); its captions introduce Bloom as the series' first speaker. |
+| 63 | `berkeley-data-science-lecture-2013` | `event_url` (vcresearch.berkeley.edu/2013-14-data-science-lectures) | 504 (July: 403) | Not bot-blocking: a browser gets Pantheon's 504 or Drupal "Access denied" — the page is unpublished; the site root is live. | Wayback snapshot (2021-06-20). |
+| 99 | `bids-2019` | `event_url` (bids.berkeley.edu/events/…) | 404 | BIDS site restructured (July row 34). | Wayback snapshot (2023-03-29). It embeds the lecture video, still live on the BIDS YouTube channel (`kf8a-NnjVQY`) — **added as `url_video`**. |
+| 40 | `cospar-2010` | `event_url` (ui.adsabs.harvard.edu/abs/…) | 405 | AWS WAF bot challenge (`x-amzn-waf-action: captcha`); a fresh browser gets a "confirm you are human" CAPTCHA. The record exists (site publication `2010-cosp-38-2351-b`). | **No change** — not rot. `linkcheck` now reports WAF challenges as WALLED. |
+| 68 | `hipacc-exascale-2014` | `event_url` (hipacc.ucsc.edu/…) | 000 | TLS certificate expired 2026-07-23 (browsers warn); `http://` redirects to a 404. The page itself is still on UCSC's legacy server. | Wayback snapshot (2024-11-06; talk under the Program tab). Talk video found in the workshop's YouTube playlist (`jkj8U5rxRMw`) — **added as `url_video`**. The slides PDF is behind the same certificate and was never archived. |
+| 53 | `royal-society-2012` | `event_url` (royalsociety.org/…/2012/transients-universe/) | 404 | Page gone, though the Royal Society's own site search still lists it. | Wayback snapshot (2021-10-20) — later captures are the 2022 redesign without the programme; the talk is under Session 4. The programme's MP3 is unrecoverable (host gone, never archived). |
+| 59 | `yale-colloquium-2012` | `event_url` (physics.yale.edu/events/physics-club/archive) | 404 | Yale Physics site relaunch; the pre-Fall-2016 Physics Club archive was not migrated. | Wayback snapshot (2026-03-12). |
 
-After repairs: **145 ok, 10 walled, 0 dead of 155 links.** All 10 walled links are
+After repairs: **145 ok, 10 walled, 0 dead of 155 links** (149 ok of 159 once master's AAS additions were merged in). All 10 walled links are
 understood: ADS (above); the O'Reilly paywall and the permissioned Drive deck (July rows 15
 and 20); and bot-blocking by aas.org (3 links), Columbia DSI, CfA ITC, archive.siam.org and
 the JHU Gazette, each noted in its ledger entry as live in a browser.
@@ -308,6 +308,25 @@ entries.**
   the last could not be matched to any real Cefalù 2012 meeting).
 - 15 old-format Keynote bundles had no extractable preview (incl. citris2010,
   i4science, gw) — unreadable without opening Keynote; left for a manual pass.
+
+## Addendum — AAS/HEAD meeting abstracts (2026-09-26)
+
+JB supplied six ADS abstracts; the meeting programs sorted them:
+
+- **Four oral talks, now with abstracts on their pages.** New: AAS 199 (Jan 2002).
+  Enriched: AAS 191 (Jan 1998; title set to the official abstract title), HEAD 9 (Oct
+  2006), and the 2010 Pierce Prize lecture, which gained the AAS's own video, now
+  embedded (direct `.mp4` files embed like YouTube).
+- **Two posters, deliberately left off** (posters are out of scope for this page):
+  AAS 213 469.07 "Rapid and Automated Classification of Events from the Palomar
+  Transient Factory" (poster session 469 "PTF", Jan 7 2009) and AAS 214 602.03
+  "EXIST-observed GRBs As A Gateway to the z > 7 Universe" (late-abstract poster, Jun 2009).
+
+Where the sources live now: AAS moved its pre-2010 meeting programs and BAAS abstracts to
+`aasarchives.blob.core.windows.net` (linked from aas.org/meetings/past-meetings) and meeting
+videos to `aasfiles.blob.core.windows.net`. aas.org itself returns 403 to curl (so
+`linkcheck` reports it WALLED), and ADS abstract pages demand human verification, so ADS
+links appear only in page bodies, never in link fields.
 
 ## Addendum — transcripts for the recovered recordings (2026-09-26, PR #13)
 

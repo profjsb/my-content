@@ -40,7 +40,7 @@
       <div class="talk-links">
         {{ with .Params.url_video }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Video</a>{{ end }}
         {{ with .Params.url_audio }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Listen</a>{{ end }}
-        {{ with .Params.url_slides }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Slides</a>{{ end }}
+        {{ if not (.Resources.Match "slides/*") }}{{ with .Params.url_slides }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Slides</a>{{ end }}{{ end }}
         {{ if not .Params.has_transcript }}{{ with .Params.url_transcript }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Transcript</a>{{ end }}{{ end }}
         {{ with .Params.event_url }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Event page</a>{{ end }}
         <a class="talk-btn" href="{{ .Parent.RelPermalink }}">&larr; All talks</a>
@@ -48,6 +48,7 @@
     </div>
 
     {{ partial "talk_video_embed.html" . }}
+    {{ partial "talk_slides_embed.html" . }}
 
     {{ if .Params.has_transcript }}
     <div class="ai-disclaimer">This transcript was auto-generated and lightly edited for readability; it may contain errors. The summary is AI-generated.</div>

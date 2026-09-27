@@ -9,7 +9,7 @@ location: "Chicheley, UK"
 summary: "Discussion lead on coordinating follow-up facilities across transient experiments, at the Kavli satellite meeting following the Royal Society transients discussion meeting."
 topics: ["astronomy"]
 talk_type: "Invited Talk"
-talk_number: 53
+talk_number: 54
 display_date: "Apr 2012"
 has_transcript: false
 ---

@@ -8,7 +8,7 @@ location: "Berkeley, CA"
 summary: "Group overview of ML-accelerated discovery and inference, for the Berkeley astrophysics roundtable."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 109
+talk_number: 110
 display_date: "Nov 2022"
 has_transcript: false
 ---

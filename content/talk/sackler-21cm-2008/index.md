@@ -9,7 +9,7 @@ location: "Cambridge, MA"
 summary: "Gamma-ray bursts as probes of reionization and the high-redshift universe, at the Harvard Sackler 21-cm cosmology conference."
 topics: ["astronomy"]
 talk_type: "Invited Talk"
-talk_number: 30
+talk_number: 31
 display_date: "May 2008"
 has_transcript: false
 ---
