@@ -141,12 +141,16 @@ future sessions don't re-litigate them (and can retry the *recoverable* ones).
 - **#3 Hot-wiring the Transient Universe II (2009)** — only the IVOA TWiki agenda page.
 - **#18 CIERA Northwestern colloquium (May 2014)** — announcement page only.
 - **#19 DataEDGE panel (May 2014)** — speaker page only.
-- **#34 BIDS "Astrophysical Machine Learning" lecture (Apr 2019)** — event listing only,
-  and that listing is now 404 (see link health), leaving the item effectively unreachable.
+- ~~**#34 BIDS "Astrophysical Machine Learning" lecture (Apr 2019)** — event listing only,
+  and that listing is now 404 (see link health), leaving the item effectively unreachable.~~
+  **Resolved 2026-09-26:** a Wayback capture of the dead listing embeds the lecture video,
+  which is still live on the BIDS YouTube channel; both are now linked (see link health).
 
 ### Slides survive, but no recording was ever found
 
-\#6 Synoptic-survey ML (2011, SlideShare), #7 Royal Society (2012, Speaker Deck),
+\#6 Synoptic-survey ML (2011, SlideShare), #7 Royal Society (2012, Speaker Deck — the
+meeting page once linked an MP3 of the talk, but its host `downloads.royalsociety.org` is
+gone and the file was never archived; confirmed 2026-09-26),
 \#10 LSST All-Hands (2012, Speaker Deck), #16 NAS Big Data (2014 — slide match marked
 *probable*), #20 Astro Hack Week tutorial (2014 — and the slides link is a
 permission-walled Google Drive URL, so even that is effectively dead), #22 Data Science
@@ -169,19 +173,42 @@ Education (2015, SlideShare), #29 KDD (2017), #30 Autoencoding RNNs (2017),
 - **#15 Strata Santa Clara 2014 video** — behind the O'Reilly learning-platform
   subscription wall (returns 403). Kept as the link anyway since subscribers can reach it.
 
-## Link health at PR time (checked 2026-07-18)
+## Link health (last checked 2026-09-26)
+
+### At PR time (2026-07-18)
 
 All 82 outbound links were checked (GET with redirects; YouTube via oEmbed).
 **76 live.** The 6 failures:
 
 | # | Item | Link | Status | Diagnosis |
 |---|------|------|--------|-----------|
-| 12 | Berkeley Data Science Lecture 2013 | `url_video` (bids.berkeley.edu/resources/videos/…) | 404 | BIDS site restructured; webcast page gone. Wayback candidate. |
-| 12 | Berkeley Data Science Lecture 2013 | `event_url` (vcresearch.berkeley.edu/…) | 403 | Possibly bot-blocking — verify in a browser before replacing. |
+| 12 | Berkeley Data Science Lecture 2013 | `url_video` (bids.berkeley.edu/resources/videos/…) | 404 | BIDS site restructured; webcast page gone. Wayback candidate. **Repaired 2026-09-26** (video found on YouTube — see the re-check below). |
+| 12 | Berkeley Data Science Lecture 2013 | `event_url` (vcresearch.berkeley.edu/…) | 403 | Possibly bot-blocking — verify in a browser before replacing. **Repaired 2026-09-26** (not bot-blocking: the page is unpublished — see below). |
 | 15 | Strata Santa Clara 2014 | `url_video` (oreilly.com/library/…) | 403 | Subscription wall (expected; not rot). |
 | 20 | Astro Hack Week 2014 | `url_slides` (drive.google.com/…) | 401 | Permissioned Drive file — dead for visitors. Wayback/re-host candidate. |
 | 33 | Masters of Data podcast 2019 | `event_url` (podcasts.apple.com/gb/…) | 404 | **Repaired 2026-07-18:** episode delisted everywhere (Apple GB+US 404, absent from the iTunes episode index, rolled off the show's Wistia feed, no Wayback capture); `event_url` now points at the live show page (sumologic.com/podcast). The audio itself is unrecoverable — see the unreachable list. |
-| 34 | BIDS 2019 lecture | `event_url` (bids.berkeley.edu/events/…) | 404 | BIDS site restructured. Wayback candidate. |
+| 34 | BIDS 2019 lecture | `event_url` (bids.berkeley.edu/events/…) | 404 | BIDS site restructured. Wayback candidate. **Repaired 2026-09-26** (Wayback, plus the lecture video — see below). |
+
+### Re-check (2026-09-26)
+
+`linkcheck` over 153 links: **137 ok, 9 walled, 7 dead** — the three July BIDS/vcresearch
+failures plus four event pages that rotted after July. Each dead link was opened in a real
+browser before repair. `#` is the current `talk_number`.
+
+| # | Item | Link | Status | Diagnosis | Repair |
+|---|------|------|--------|-----------|--------|
+| 62 | `berkeley-data-science-lecture-2013` | `url_video` (bids.berkeley.edu/resources/videos/…) | 404 | BIDS site restructured (July row 12). | **Moved original:** the CITRIS YouTube upload the BIDS page embedded (`4mBUX47YtSE`); its captions introduce Bloom as the series' first speaker. |
+| 62 | `berkeley-data-science-lecture-2013` | `event_url` (vcresearch.berkeley.edu/2013-14-data-science-lectures) | 504 (July: 403) | Not bot-blocking: a browser gets Pantheon's 504 or Drupal "Access denied" — the page is unpublished; the site root is live. | Wayback snapshot (2021-06-20). |
+| 98 | `bids-2019` | `event_url` (bids.berkeley.edu/events/…) | 404 | BIDS site restructured (July row 34). | Wayback snapshot (2023-03-29). It embeds the lecture video, still live on the BIDS YouTube channel (`kf8a-NnjVQY`) — **added as `url_video`**. |
+| 39 | `cospar-2010` | `event_url` (ui.adsabs.harvard.edu/abs/…) | 405 | AWS WAF bot challenge (`x-amzn-waf-action: captcha`); a fresh browser gets a "confirm you are human" CAPTCHA. The record exists (site publication `2010-cosp-38-2351-b`). | **No change** — not rot. `linkcheck` now reports WAF challenges as WALLED. |
+| 67 | `hipacc-exascale-2014` | `event_url` (hipacc.ucsc.edu/…) | 000 | TLS certificate expired 2026-07-23 (browsers warn); `http://` redirects to a 404. The page itself is still on UCSC's legacy server. | Wayback snapshot (2024-11-06; talk under the Program tab). Talk video found in the workshop's YouTube playlist (`jkj8U5rxRMw`) — **added as `url_video`**. The slides PDF is behind the same certificate and was never archived. |
+| 52 | `royal-society-2012` | `event_url` (royalsociety.org/…/2012/transients-universe/) | 404 | Page gone, though the Royal Society's own site search still lists it. | Wayback snapshot (2021-10-20) — later captures are the 2022 redesign without the programme; the talk is under Session 4. The programme's MP3 is unrecoverable (host gone, never archived). |
+| 58 | `yale-colloquium-2012` | `event_url` (physics.yale.edu/events/physics-club/archive) | 404 | Yale Physics site relaunch; the pre-Fall-2016 Physics Club archive was not migrated. | Wayback snapshot (2026-03-12). |
+
+After repairs: **145 ok, 10 walled, 0 dead of 155 links.** All 10 walled links are
+understood: ADS (above); the O'Reilly paywall and the permissioned Drive deck (July rows 15
+and 20); and bot-blocking by aas.org (3 links), Columbia DSI, CfA ITC, archive.siam.org and
+the JHU Gazette, each noted in its ledger entry as live in a browser.
 
 ## Addendum — same-day restyle & audio pass (2026-07-18)
 
