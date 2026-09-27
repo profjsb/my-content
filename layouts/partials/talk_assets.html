@@ -438,6 +438,126 @@ body.dark .talk-topic-chip { color: #a0a0a0; background: #333; }
   height: 100%;
   border: 0;
 }
+/* embedded slide viewer (talk_slides_embed.html) */
+.talk-slides { margin-bottom: 32px; outline: none; }
+.talk-slides-stage {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+.talk-slides-stage img {
+  display: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+.talk-slides-stage img.is-current { display: block; }
+.talk-slides-hit {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  outline: none;  /* mouse/touch targets only; the bar buttons are the keyboard controls */
+  -webkit-tap-highlight-color: transparent;
+}
+.talk-slides-hit:disabled { cursor: default; }
+.talk-slides-hit-prev { left: 0; width: 30%; }
+.talk-slides-hit-next { right: 0; width: 70%; }
+@media (hover: hover) {
+  .talk-slides-hit::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.45) center / 18px 18px no-repeat;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+  .talk-slides-hit-prev::after { left: 14px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 3L5 8l5 5'/%3E%3C/svg%3E"); }
+  .talk-slides-hit-next::after { right: 14px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3l5 5-5 5'/%3E%3C/svg%3E"); }
+  .talk-slides-stage:hover .talk-slides-hit:not(:disabled)::after { opacity: 0.7; }
+  .talk-slides-stage .talk-slides-hit:not(:disabled):hover::after { opacity: 1; }
+}
+.talk-slides-progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 0;
+  height: 3px;
+  background: var(--t-accent);
+  transition: width 0.2s ease;
+  pointer-events: none;
+}
+.talk-slides-bar { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+.talk-slides-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 32px;
+  padding: 0;
+  color: var(--t-secondary);
+  background: var(--t-btn-bg);
+  border: 1px solid var(--t-btn-border);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.talk-slides-btn:hover:not(:disabled) { background: #EBE3D6; border-color: #C4B8A8; color: var(--t-heading); }
+.talk-slides-btn:disabled { opacity: 0.4; cursor: default; }
+.talk-slides-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.talk-slides-count {
+  min-width: 64px;
+  text-align: center;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  color: var(--t-secondary);
+}
+.talk-slides-fs { margin-left: auto; }
+.talk-slides.is-fs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding-bottom: 12px;
+  background: #000;
+}
+.talk-slides.is-fs .talk-slides-stage {
+  flex: 1 1 auto;
+  min-height: 0;
+  aspect-ratio: auto !important;
+  border-radius: 0;
+}
+.talk-slides.is-fs .talk-slides-bar { padding: 0 16px; }
+.talk-slides.is-fs .talk-slides-btn { color: #ccc; background: #1f1f1f; border-color: #333; }
+.talk-slides.is-fs .talk-slides-btn:hover:not(:disabled) { color: #fff; background: #333; border-color: #555; }
+.talk-slides.is-fs .talk-slides-count { color: #aaa; }
 .ai-disclaimer {
   background-color: var(--t-btn-bg);
   border-left: 3px solid #C4B8A8;
@@ -528,6 +648,7 @@ body.dark .talks-wrapper {
 body.dark .talk-card, body.dark .talk-info-card { box-shadow: none; }
 body.dark .talk-card:hover { border-color: rgba(255, 255, 255, 0.2); }
 body.dark .talk-btn:hover { background: #333; border-color: rgba(255, 255, 255, 0.3); }
+body.dark .talk-slides-btn:hover:not(:disabled) { background: #333; border-color: rgba(255, 255, 255, 0.3); }
 body.dark .talk-num { color: #a0a0a0; background: #333; }
 body.dark .talks-search:focus-within { box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.25); }
 body.dark .talks-search-clear:hover { border-color: rgba(255, 255, 255, 0.3); }

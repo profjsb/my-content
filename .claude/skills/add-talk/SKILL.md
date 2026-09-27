@@ -28,6 +28,7 @@ Background and past decisions (including which talks are known but unreachable):
 T=".claude/skills/add-talk/scripts/talks.py"   # stdlib-only; run from repo root
 python3 $T validate     # pages <-> ledger consistency, numbering, transcript flags
 python3 $T scaffold ... # create bundle + ledger entry, auto-number, renumber others
+python3 $T slides ...   # render a deck PDF into the bundle for the embedded slide viewer
 python3 $T renumber     # recompute talk_number after any date edits
 python3 $T linkcheck    # verify all outbound links (YouTube via oEmbed)
 ```
@@ -77,6 +78,16 @@ python3 $T linkcheck    # verify all outbound links (YouTube via oEmbed)
      `.../search?term=<show>&entity=podcast`) and take the episode's `<enclosure>`.
      Beware: feeds often truncate to recent episodes — old episodes may be gone from
      every directory (that's how the 2019 Masters of Data episode was lost).
+
+   **Embedding a deck** (the user hands over the slides as a PDF): after scaffolding,
+   run `python3 $T slides --slug <slug> --pdf <deck.pdf>`. It renders every page to
+   `content/talk/<slug>/slides/NNN.webp` (2400 px wide; needs Ghostscript + cwebp —
+   `brew install ghostscript webp`), and the talk page then shows an embedded slide
+   viewer (`talk_slides_embed.html`) while the list-page Slides button jumps to it; don't
+   pass `--slides`. Never put the PDF itself in the bundle: this repo is public, and the
+   viewer exists so the deck is viewable but not downloadable (`validate` warns about
+   PDFs in talk bundles). Record the viewer URL (`/talk/<slug>/#slides`) as the ledger's
+   `slides_url`.
 
 3. **Scaffold** (from the repo root, on a branch — see step 6):
 
