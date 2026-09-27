@@ -2513,5 +2513,25 @@
     "transcript_url": null,
     "summary": "Evidence that gamma-ray bursts come from massive stars, not neutron-star mergers — supernova bumps in afterglows, an HST/Keck host survey — plus JCAM, a new rapid-response imager on the Palomar 200-inch.",
     "notes": "Program (aasarchives.blob.core.windows.net, BAAS v33n4): session 26 'Gamma Ray Bursts', oral (contributed — no invited/special marking), Mon Jan 7 2002, 10:00-11:30am, International Ballroom West, Hilton Washington; talk 2 of 5, after Gehrels's Swift MIDEX talk. Abstract 26.02 = ADS 2001AAS...199.2602B (supplied by JB; the bibcode year is the BAAS volume year). Same title as the 2001 Harvard/CfA and IAS seminars. No slides, video, or press coverage found (Speaker Deck, SlideShare, YouTube, Wayback of the Caltech talks page, which stops before this talk)."
+  },
+  {
+    "n": 129,
+    "slug": "learning-in-retirement-2024",
+    "title": "Transforming Astrophysics with AI",
+    "event": "Learning in Retirement: 'Berkeley in Space', UC Berkeley Retirement Center",
+    "type": "Lecture",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2024-11-05",
+    "location": "Berkeley, CA (virtual)",
+    "video_url": "https://www.youtube.com/watch?v=tniRyPP1aGg",
+    "slides_url": null,
+    "event_url": "https://retirement.berkeley.edu/lir",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "How machine learning became central to discovery and inference in time-domain astronomy (real-bogus supernova discovery, self-supervised variable-star models, and simulation-based inference that uncovered a new microlensing degeneracy) and where AI goes next: downstream in AI-guided exploration, upstream in telescopes run as robots.",
+    "notes": "UC Berkeley Retirement Center, Learning in Retirement (LIR) series 'Berkeley in Space', organized by Donald Mastronarde: Part I Oct 29 (Panos Papadopoulos), Part II Tue Nov 5, 2024 (this lecture), Part III Nov 12 (Raffaella Margutti). Listed under '2024 Past Events' on retirement.berkeley.edu/lir (event_url; also in Wayback captures from 2025-02-07). That listing's 'View recording' link is the video: the UC Berkeley Retirement Center's YouTube upload tniRyPP1aGg (1:05:51, uploaded 2024-11-18; oEmbed 200 on 2026-09-27). Given over Zoom (Bloom's webcam over his slides; Mastronarde introduces), on Election Day; the recording ends at his closing thank-you, before the Q&A. Deck title slide: 'Transforming Astrophysics with AI / Learning in Retirement / Nov 5, 2024 / University of California, Berkeley'; the deck survives in ~/Talks/bloom_coase_2024.key (last saved Nov 7, 2024, reused for c2oa2se-2024). No slides online: the LIR's Drive 'resource library' stops at 2017. Embedded transcript (2026-09-27) from local faster-whisper (distil-large-v3, with medium.en re-checks of doubtful clips and every Key Quote), AI-cleaned. Topics astronomy + ai-ml: Valency does not appear (Wise.io only in the bio)."
   }
 ]

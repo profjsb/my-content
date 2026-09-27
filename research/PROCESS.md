@@ -362,6 +362,37 @@ YouTube recordings, and all three now have embedded transcripts, Key Quotes and
   courses. The other two stay `astronomy`/`ai-ml`. The HiPACC card summary, previously a
   placeholder, was rewritten from the transcript.
 
+## Addendum — Learning in Retirement 2024 lecture (2026-09-27)
+
+JB asked for a missing talk: "Transforming Astrophysics with AI" (Tue Nov 5, 2024), Part II of
+the UC Berkeley Retirement Center's Learning in Retirement series "Berkeley in Space", organized by
+Donald Mastronarde. It is now `learning-in-retirement-2024` (#117), a Lecture whose event name
+follows `learning-in-retirement-2010` (added on PR #17's branch). **Transcript pages: +1.**
+
+- **Sources:** the LIR "Past LIR Events and Recordings" page (retirement.berkeley.edu/lir, under
+  "2024 Past Events"; in Wayback from 2025-02-07) gives the title, date, series and speaker. Its
+  "View recording" link is the Retirement Center's YouTube upload (`tniRyPP1aGg`, 1:05:51). The deck's
+  title slide agrees. The deck survives as `~/Talks/bloom_coase_2024.key`, last saved two days later
+  for `c2oa2se-2024`. The LIR's Drive "resource library" stops at 2017, so there is no slides link.
+- **Zoom, no Q&A:** the video shows Bloom's webcam over his slides, so the location is "Berkeley, CA
+  (virtual)", as for `harvard-iacs-2020`. The recording stops at his closing thank-you, before the
+  Q&A. Speakers are MASTRONARDE (introduction) and BLOOM.
+- **Transcript (local Whisper):** `distil-large-v3` took 2 h 26 min for the 66 minutes, because the
+  M2 was shared with another session's Whisper jobs (load average 100–200). Four parallel Opus
+  agents cleaned it using one rule sheet and a list of terms read off the slides. The slide list
+  came from 73 distinct frames sampled with PyAV (no ffmpeg needed) and from the deck's text, pulled
+  with a pure-Python IWA/Snappy decoder. 10,935 → 10,755 words (98%). `medium.en` re-heard every
+  Key Quote and the doubtful passages. Three disputed words then went to a narrow-window run of
+  both models with word probabilities. It settled "none of which **is**" (not "are"). "Data sets
+  that/there are out there" stayed split (0.88 vs 0.60), so the quote starts after it. The host's
+  "decartered" was "garnered". Both models agree on, so the text keeps as spoken: "on the
+  right-hand side is supervised" (the slide says unsupervised), "far away from their host galaxy"
+  (star) and "would tell us it shouldn't".
+- **Topics:** `astronomy` + `ai-ml`. Valency never appears (Wise.io only in the bio), so there is no
+  `industry`, and a primer on ML types for a lay audience doesn't make it `education`.
+- **Merge order:** PRs #15 and #17 also append ledger `n = 129` and shift `talk_number`. Whichever
+  lands later needs a fresh `n` and a `talks.py renumber`.
+
 ## Maintenance
 
 Two skills were added with this branch:
