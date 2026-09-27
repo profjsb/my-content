@@ -798,8 +798,8 @@ recorded) are marked.
 
 **Link health and tooling.** `linkcheck` now calls `/usr/bin/curl` when it exists.
 Miniforge's curl, first on `PATH` here, rejects KITP's certificate chain, so it would have
-reported both KITP links as dead (`000`). After the sweep: **190 ok, 10 walled, 0 dead of
-200 links**. The Everhart snapshot needed one re-check, because the Wayback Machine refused a
+reported both KITP links as dead (`000`). After the sweep and the merge with PR #18: **192
+ok, 10 walled, 0 dead of 202 links**. The Everhart snapshot needed one re-check, because the Wayback Machine refused a
 connection during the run. The 10 walled links are the ones already documented under link
 health: aas.org (3), ADS, the O'Reilly paywall, the permissioned Drive deck, Columbia DSI,
 CfA ITC, archive.siam.org and the JHU Gazette. The sweep adds five Wayback links (`everhart-2002`,
