@@ -8,7 +8,7 @@ location: "Oakland, CA"
 summary: "Enrichment lecture for the volunteers of Oakland's Chabot Space & Science Center on the cosmic distance ladder and where gamma-ray bursts fit on it."
 topics: ["astronomy"]
 talk_type: "Lecture"
-talk_number: 47
+talk_number: 48
 display_date: "Jun 2007"
 has_transcript: false
 ---

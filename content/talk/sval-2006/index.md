@@ -9,7 +9,7 @@ location: "Los Altos Hills, CA"
 summary: "Public lecture on gamma-ray bursts, from their Cold War discovery by nuclear-test-monitoring satellites through the afterglow and supernova breakthroughs to Swift's first short bursts."
 topics: ["astronomy"]
 talk_type: "Lecture"
-talk_number: 40
+talk_number: 41
 display_date: "May 2006"
 has_transcript: false
 ---

@@ -9,7 +9,7 @@ location: "Kohala Coast, HI"
 summary: "Evening lecture for W. M. Keck Observatory's 'Evenings with Astronomers' series on the detective story of gamma-ray bursts, from Cold War satellite detections to collapsing massive stars and merging neutron stars, and on bursts as beacons to dust, reionization and the first stars."
 topics: ["astronomy"]
 talk_type: "Lecture"
-talk_number: 67
+talk_number: 68
 display_date: "Apr 2010"
 has_transcript: false
 ---

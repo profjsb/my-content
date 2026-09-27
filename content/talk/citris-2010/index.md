@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Research Exchange lecture on the astronomer's changing role as synoptic surveys flood the discovery pipeline: Palomar Transient Factory candidate streams, machine-learned classification of transients and variable stars, and deciding which events deserve scarce follow-up."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 66
+talk_number: 67
 display_date: "Mar 2010"
 url_video: "https://www.youtube.com/watch?v=1S7uH73TPQ8"
 has_transcript: false

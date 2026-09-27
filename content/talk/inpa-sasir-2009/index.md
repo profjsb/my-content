@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Seminar at Berkeley Lab on SASIR, a proposed survey of the whole sky in the infrared with a dedicated 6.5-meter telescope in San Pedro Mártir, Mexico (what SDSS and LSST are to the optical sky, a successor to 2MASS), and its science from high-redshift quasars to obscured transients."
 topics: ["astronomy"]
 talk_type: "Seminar"
-talk_number: 58
+talk_number: 59
 display_date: "Feb 2009"
 has_transcript: false
 ---

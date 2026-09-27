@@ -8,7 +8,7 @@ location: "Livermore, CA"
 summary: "Seminar at Livermore's Institute of Geophysics and Planetary Physics on the Synoptic All-Sky Infrared (SASIR) Survey, a proposed 6.5-meter infrared survey telescope in Baja California, and its place after the Astro2010 decadal survey."
 topics: ["astronomy"]
 talk_type: "Seminar"
-talk_number: 75
+talk_number: 76
 display_date: "Nov 2010"
 has_transcript: false
 ---

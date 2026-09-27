@@ -8,7 +8,7 @@ location: "Berkeley, CA"
 summary: "Talk on time-domain astronomy's data deluge, from Palomar Transient Factory discovery streams to machine-learned classification and autonomous follow-up, for a Berkeley astrophysics roundtable on computational astrophysics."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 80
+talk_number: 81
 display_date: "Apr 2011"
 has_transcript: false
 ---

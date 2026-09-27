@@ -8,7 +8,7 @@ location: "San Francisco, CA"
 summary: "Meetup talk on machine learning at industrial scale at GE: where it pays off in industrial operations, why production ML systems are mostly glue code rather than models, and the systems-engineering trade-offs of deploying them."
 topics: ["industry", "ai-ml"]
 talk_type: "Talk"
-talk_number: 132
+talk_number: 134
 display_date: "Apr 2017"
 url_slides: "https://www.slideshare.net/JoshuaBloom/industrial-machine-learning-at-ge"
 has_transcript: false

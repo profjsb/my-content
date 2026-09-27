@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Why astronomy's AI transformation is still ahead - the earliest delivery of the argument later given as the A3D3/UW colloquium."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Seminar"
-talk_number: 159
+talk_number: 161
 display_date: "Sep 2023"
 has_transcript: false
 ---

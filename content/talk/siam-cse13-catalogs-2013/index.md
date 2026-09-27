@@ -9,7 +9,7 @@ location: "Boston, MA"
 summary: "Doing science with probabilistic machine-learned classification catalogs, in the Big Data minisymposium (MS158) - his second CSE13 talk besides the plenary."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 101
+talk_number: 102
 display_date: "Feb 2013"
 has_transcript: false
 ---

@@ -9,7 +9,7 @@ location: "State College, PA"
 summary: "The revised observational picture of short gamma-ray bursts five years into the Swift mission, with the Berkeley GRB group."
 topics: ["astronomy"]
 talk_type: "Invited Talk"
-talk_number: 63
+talk_number: 64
 display_date: "Nov 2009"
 has_transcript: false
 ---

@@ -8,7 +8,7 @@ location: "Berkeley, CA"
 summary: "Seminar for Berkeley statisticians on turning synoptic-survey data streams into real-time discoveries: the follow-up bottleneck, machine-learned classification of images and light curves in the Palomar Transient Factory, and the division of labor between machines and humans."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Seminar"
-talk_number: 62
+talk_number: 63
 display_date: "Sep 2009"
 has_transcript: false
 ---

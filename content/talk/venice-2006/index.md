@@ -9,7 +9,7 @@ location: "Venice, Italy"
 summary: "Solicited talk on the galaxy hosts and environments of short gamma-ray bursts and the case for an old-population progenitor."
 topics: ["astronomy"]
 talk_type: "Invited Talk"
-talk_number: 42
+talk_number: 43
 display_date: "Jun 2006"
 has_transcript: false
 ---

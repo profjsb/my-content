@@ -8,7 +8,7 @@ location: "New York, NY"
 summary: "Astrophysical inference under noise, uncertainty, and real-time pressure, at the Simons Foundation."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 122
+talk_number: 123
 display_date: "May 2015"
 has_transcript: false
 ---

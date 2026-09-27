@@ -8,7 +8,7 @@ location: "Berkeley, CA"
 summary: "i4Science lecture at CITRIS on machine-learning pipelines for discovery and inference on streaming astronomical time-series data (variable stars, transients, synoptic surveys)."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 79
+talk_number: 80
 display_date: "Apr 2011"
 url_video: "https://www.youtube.com/watch?v=yUhPC24vThs"
 has_transcript: true

@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Joint Berkeley astrophysics presentation at the first NSF workshop on its Cyber-Enabled Discovery and Innovation initiative: why 21st-century astrophysics is data-driven, from spectroscopic cosmology surveys and radio-array signal processing to classification and anomaly detection in the time domain."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 49
+talk_number: 50
 display_date: "Oct 2007"
 has_transcript: false
 ---

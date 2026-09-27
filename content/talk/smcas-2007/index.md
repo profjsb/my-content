@@ -9,7 +9,7 @@ location: "San Mateo, CA"
 summary: "Evening talk at the San Mateo County Astronomical Society's monthly general meeting in the College of San Mateo planetarium, under the title of his 2006 Silicon Valley lecture."
 topics: ["astronomy"]
 talk_type: "Lecture"
-talk_number: 45
+talk_number: 46
 display_date: "Apr 2007"
 has_transcript: false
 ---

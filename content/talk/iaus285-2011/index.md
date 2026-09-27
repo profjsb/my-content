@@ -9,7 +9,7 @@ location: "Oxford, UK"
 summary: "Closing-day invited review on what future time-domain surveys demand beyond discovery: machine-learned real-bogus and variable-star classification and its limits, deciding what to follow up, and coupling electromagnetic and gravitational-wave searches."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 84
+talk_number: 85
 display_date: "Sep 2011"
 has_transcript: false
 ---

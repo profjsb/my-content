@@ -3404,5 +3404,44 @@
     "transcript_url": null,
     "summary": "Joint Berkeley astrophysics presentation at the first NSF workshop on its Cyber-Enabled Discovery and Innovation initiative: why 21st-century astrophysics is data-driven, from spectroscopic cosmology surveys and radio-array signal processing to classification and anomaly detection in the time domain.",
     "notes": "Deck ~/OldLaptop/TalksOld/cdi.key (36 slides; also cdi.zip; title slide 'Data-driven 21st Century Astrophysics / Computation & Complex Systems; Berkeley, 12 October 2007 / Josh Bloom / w/ D. Schlegel (LBL), G. Bower, E. Quataert'; includes a slide 'Astrophysics & CDI'). MSRI workshop 448 'Computation and Complex Systems' (Friday Oct 12, 2007; organized by Robert Bryant and Masoud Nikravesh; the first of four one-day NSF workshops on the Cyber-enabled Discovery and Innovation initiative): SLMath's workshop page (linked) and its schedule data list '9:50-10:35 Astrophysics'; MSRI's 2007-08 annual report prints the program ('Astrophysics: Josh Bloom, Geoffrey Bower, Eliot Quataert (UCB, Astrophysics), and Dave Schlegel (LBNL)') and lists 'Joshua Bloom, Astrophysics' among the workshop's recorded videos. SLMath's archive counts 8 videos for the workshop but does not expose them publicly. Not in the CVs. The email archive has no mail from June 2006 through October 2009."
+  },
+  {
+    "n": 175,
+    "slug": "american-voices-2006",
+    "title": "Scientist Interview",
+    "event": "American Voices with Bill Bradley, Sirius Satellite Radio",
+    "type": "Radio",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2006-03-26",
+    "location": null,
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Guest interview as a scientist on American Voices, former senator Bill Bradley's weekly talk show on Sirius satellite radio.",
+    "notes": "Listed in his 2005-07 merit record: 'Guest radio appearance, \"American Voices\" with host Sen. Bill Bradley, 26 March 2006'. JB confirmed it (2026-09-27) as a radio appearance, a scientist interview; the title is his description. American Voices, Bradley's weekly show, launched on Sirius (Talk Central, channel 148) in May 2005 and aired Sundays; 26 Mar 2006 was a Sunday. No episode listing or recording found: the archived American Voices pages on billbradley.com (2007) list no 2006 episodes, and the email archive holds almost nothing for March 2006."
+  },
+  {
+    "n": 176,
+    "slug": "bbc-click-2015",
+    "title": "Machine Learning in Business",
+    "event": "Click, BBC News",
+    "type": "Interview",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
+    "date": "2015-09-26",
+    "location": null,
+    "video_url": "https://www.youtube.com/watch?v=bdZkOBi4VUo&t=730",
+    "slides_url": null,
+    "event_url": "https://www.bbc.co.uk/programmes/b06fy32b",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Short interview in BBC Click's second artificial-intelligence special, in a segment asking whether AI will take our jobs: how wise.io built the image-sharing site We Heart It a spam filter tailored to that one site, and why highly personalized filters are where AI is heading.",
+    "notes": "Listed in his 2015-2022 CVs' media section: 'BBC News, Click, \"Machine Learning in Business\"; Oct 2015' (title kept from the CV). BBC programme page b06fy32b (linked): 'Click - 26/09/2015', the second of Click's artificial intelligence specials; first broadcast Sat 26 Sep 2015, 00:30 GMT, on BBC News, with repeats through Thu 1 Oct 2015 (the CV's 'Oct 2015'). The official BBC Click YouTube upload ('Click 803 : Teaching Artificial Intelligence to walk', 2020-06-23, 24:37; url_video starts at 12:10) carries the segment: We Heart It brought in 'AI specialists Wise' to build 'in effect a personalized AI spam filter'; he appears on camera, unnamed, at about 13:30-14:11 on filters 'highly tailored to you' as 'the kind of thing that Wise is trying to do'. No name caption; JB confirmed (2026-09-27) that the spokesperson is him."
   }
 ]

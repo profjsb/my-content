@@ -9,7 +9,7 @@ location: "Tonantzintla, Mexico"
 summary: "Opening overview of the Synoptic All-Sky Infrared survey, a proposed 6.5-meter telescope at San Pedro Mártir that would map the whole sky in four near-infrared bands every few months, with the questions and decision timeline for the workshop."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 53
+talk_number: 54
 display_date: "Aug 2008"
 url_slides: "https://www.inaoep.mx/~progharo/gh2008/BloomOverview.pdf"
 has_transcript: false

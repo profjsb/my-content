@@ -9,7 +9,7 @@ location: "Granada, Spain"
 summary: "The concept for a synoptic all-sky infrared imaging survey (SASIR), a proposed 6.5-m IR survey telescope."
 topics: ["astronomy"]
 talk_type: "Seminar"
-talk_number: 56
+talk_number: 57
 display_date: "Sep 2008"
 has_transcript: false
 ---

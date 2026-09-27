@@ -9,7 +9,7 @@ location: "Menlo Park, CA"
 summary: "A 15-minute talk in the roundtable's Artificial Intelligence session: from Harvard's human computers to the real-time ML framework that found SN 2011fe, to what machine intelligence in production demands at Wise.io (trading off accuracy, interpretability and implementability on real, not benchmark, data) and a future with ML baked into every purchased app."
 topics: ["astronomy", "industry", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 119
+talk_number: 120
 display_date: "Sep 2014"
 has_transcript: false
 ---

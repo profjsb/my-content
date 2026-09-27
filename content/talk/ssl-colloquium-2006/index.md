@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Colloquium at Berkeley's Space Sciences Laboratory on the flood of gamma-ray burst results after Swift's launch: the first redshift of a short-hard burst and the mounting case for merging compact binaries, the infrared flash caught during a burst, and a burst seen at redshift 6.3."
 topics: ["astronomy"]
 talk_type: "Colloquium"
-talk_number: 37
+talk_number: 38
 display_date: "Apr 2006"
 has_transcript: false
 ---

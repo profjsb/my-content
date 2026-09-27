@@ -618,8 +618,8 @@ Wayback snapshots one at a time after its parallel pass. This sweep adds 11 Wayb
 ## Addendum — TalksOld and merit-CV follow-up sweep (2026-09-27)
 
 This pass took the first two leads above: the old decks in `~/OldLaptop/TalksOld` and the
-talk lists in JB's merit-review CVs, including their commented-out lines. **148 → 174
-entries** (26 added, 4 corrected).
+talk lists in JB's merit-review CVs, including their commented-out lines. **148 → 176
+entries** (28 added, 4 corrected).
 
 **Sources.**
 - `find -L ~/OldLaptop/TalksOld` finds 21 `.key` items: 15 Keynote 2/3 directory packages
@@ -646,7 +646,7 @@ entries** (26 added, 4 corrected).
   stands in for a CDX lookup. Old MSRI workshop programs come from SLMath's JSON API
   (`https://www.slmath.org/api/workshops/<id>` and `.../schedules`).
 
-**Added (26).** Each ledger `notes` field has the full evidence. Descriptive titles (none
+**Added (28).** Each ledger `notes` field has the full evidence. Descriptive titles (none
 recorded) are marked.
 
 | Slug | Date | Talk | Found through |
@@ -661,6 +661,7 @@ recorded) are marked.
 | `ucdavis-2005` | 2005-11-10 | Recent Progress on Gamma-Ray Bursts: Cosmological Strides and the Progenitors of the Short-Hard Subclass, UC Davis | `talks.txt`; calendar ("Davis colloquium", all-day Nov 9) |
 | `llnl-2006` | 2006-01-20 | Gamma-Ray Bursts (**descriptive**), IGPP Seminar, LLNL | CV's "% LLNL talk."; `talks.txt` |
 | `kitp-2006` | 2006-03-14 | Scoping the Follow-up Effort, Transient Universe 2006, KITP | `talks.txt`; KITP's online archive: **39-minute recording (embedded MP4) and slides** |
+| `american-voices-2006` | 2006-03-26 | Scientist Interview, American Voices with Bill Bradley (Sirius radio) | `talks.txt` only; JB confirmed it and supplied the description |
 | `ssl-colloquium-2006` | 2006-04-14 | The Gamma-Ray Burst Revolution, SSL colloquium, UC Berkeley | `SSLColloquium.key`; `talks.txt`; calendar; archived SSL abstract |
 | `kipac-2006` | 2006-04-20 | Gamma-Ray Bursts (**descriptive**), ACKS colloquium, KIPAC/Stanford | `talks.txt`; calendar; KIPAC's request for his slides (email) |
 | `pairitel-2006` | 2006-05-16 | PAIRITEL: Past, Present, Future, 2nd PAIRITEL Workshop, CfA | `ptel2_sci_intro.pdf` and `ptel2_welcome.pdf`; `talks.txt`; archived program (his two talks there are one entry) |
@@ -676,6 +677,7 @@ recorded) are marked.
 | `inpa-sasir-2009` | 2009-02-20 | SASIR: The Synoptic All-Sky Infrared Imaging Survey Concept, INPA seminar, LBNL | INPA's live seminar archive |
 | `neyman-2009` | 2009-09-09 | Real-Time Knowledge Extraction from Massive Time-Series Datastreams, Neyman Seminar, Berkeley Statistics | `neyman.key`; calendar; a colleague's Jan 2010 email |
 | `fox-business-2014` | 2014-09-10 | The $100 Earthquake Detector, Varney & Co., Fox Business | Media list in the 2015–22 CVs; the booker's email; Fox's video page |
+| `bbc-click-2015` | 2015-09-26 | Machine Learning in Business, BBC Click's AI special | Media list in the 2015–22 CVs; BBC programme page; the official YouTube upload; JB confirmed he is the unnamed wise.io spokesperson |
 | `applied-ai-meetup-2017` | 2017-04-13 | Industrial Machine Learning, Applied AI meetup, San Francisco | The SlideShare deck formerly on `haas-industrial-ml`; an attendee's email |
 
 **Corrected (4).** No slug changed.
@@ -703,8 +705,8 @@ recorded) are marked.
   - the L&S Faculty Forum talk "The Gamma-ray Burst Mystery", from a members' faculty lunch
     series (`talks.txt` gives April 1, 2007; the calendar has Monday April 2).
 
-  The INPA and Livermore IGPP noon seminars stay: they are formal seminar series already on
-  the page (`ipna-2005`, `llnl-2010`).
+  The INPA and Livermore IGPP noon seminars stay (JB confirmed): they are formal seminar
+  series already on the page (`ipna-2005`, `llnl-2010`).
 - **Not a talk:** the Keck Time Domain Astronomy Working Group's final report to Keck's
   Science Steering Committee (Nov 6, 2006): `report_ucla.key` (four copies) and
   `tdawg_present.key.tar`.
@@ -717,7 +719,8 @@ recorded) are marked.
 - **Private pitch:** `microsoft.key` (Sep 2007, "Time-domain Anomaly Detection on
   Astronomically Large Data Scales"). Its first slide is a proposal abstract, and he is not on
   the program of Microsoft Research's eScience 2007 workshop.
-- **Unverified collaboration meetings**, the rule applied to `sasir_bigboss_nov2009`:
+- **Unverified collaboration meetings**, the rule applied to `sasir_bigboss_nov2009` (JB confirmed
+  dropping the PTF decks):
   - `ptf_tcp` and `ptf_tdf`, "A classification engine for the Palomar Transients Factory" and
     "Black Hole Tidal Disruption Events", both at a "PTF meeting, Pasadena, CA 17 Sept 2007".
     Flash exports and a sync script sent both to the PTF group's account that day, but no
@@ -736,13 +739,13 @@ recorded) are marked.
   `21cm talk` (Sackler 2008) and `aspen` (Aspen 2009); the last two are corrected above. The
   `GW/` folder holds gravitational-wave sound files and links used in talks.
 
-**Needs JB.**
-- **BBC Click, 26 Sep 2015** ("Machine Learning in Business" in the 2015–22 CVs). Click's
-  second AI special (BBC PID `b06fy32b`; YouTube `bdZkOBi4VUo`, segment from 12:10) cuts to
-  an unnamed wise.io spokesperson at about 13:30. If that is him, add it as an Interview.
-- **"American Voices" with Bill Bradley** (Sirius satellite radio, March 26, 2006). It is
-  only in `talks.txt`; no episode listing survives, and the topic is unknown.
-- **The two PTF-meeting decks** above, if an internal 2007 PTF meeting should count.
+**Decided by JB (2026-09-27).**
+- **BBC Click, 26 Sep 2015:** the unnamed wise.io spokesperson is him, so it was added as an
+  Interview (`bbc-click-2015`).
+- **"American Voices" with Bill Bradley** (Sirius satellite radio, March 26, 2006): added as
+  Radio, titled "Scientist Interview" as he described it (`american-voices-2006`).
+- **The two PTF-meeting decks:** dropped.
+- **INPA and LLNL IGPP noon seminars:** kept; they are not lunch talks.
 
 **Leads for a later pass:**
 - Transcripts: `kitp-2006` (39-minute recording in KITP's archive) through the local-Whisper
@@ -762,10 +765,11 @@ recorded) are marked.
 
 **Link health and tooling.** `linkcheck` now calls `/usr/bin/curl` when it exists.
 Miniforge's curl, first on `PATH` here, rejects KITP's certificate chain, so it would have
-reported both KITP links as dead (`000`). After the sweep: **188 ok, 10 walled, 0 dead of
-198 links**. The 10 walled links are the ones already documented under link health: aas.org
-(3), ADS, the O'Reilly paywall, the permissioned Drive deck, Columbia DSI, CfA ITC,
-archive.siam.org and the JHU Gazette. The sweep adds five Wayback links (`everhart-2002`,
+reported both KITP links as dead (`000`). After the sweep: **190 ok, 10 walled, 0 dead of
+200 links**. The Everhart snapshot needed one re-check, because the Wayback Machine refused a
+connection during the run. The 10 walled links are the ones already documented under link
+health: aas.org (3), ADS, the O'Reilly paywall, the permissioned Drive deck, Columbia DSI,
+CfA ITC, archive.siam.org and the JHU Gazette. The sweep adds five Wayback links (`everhart-2002`,
 `ssl-colloquium-2006`, `pairitel-2006`, `cinc-2006`, `sfaa-2007`).
 
 ## Maintenance

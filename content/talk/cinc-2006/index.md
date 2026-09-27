@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Short talk at the annual Bay Area cosmology meeting on gamma-ray bursts at high redshift: how many there should be, what their progenitors' metallicity implies, and their use as probes of dust, star formation and reionization."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 41
+talk_number: 42
 display_date: "May 2006"
 has_transcript: false
 ---

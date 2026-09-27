@@ -9,7 +9,7 @@ location: "Cambridge, MA"
 summary: "Science overview for the second workshop of PAIRITEL, the robotic 1.3-meter infrared telescope on Mt. Hopkins he led: its gamma-ray burst and supernova results, its automated operations, and plans for the next observing seasons."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 39
+talk_number: 40
 display_date: "May 2006"
 has_transcript: false
 ---
