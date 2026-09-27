@@ -9,7 +9,7 @@ location: "Santa Clara, CA"
 summary: "Presenting the recurrent autoencoder network for classifying unevenly sampled variable-star light curves (Naul, Bloom, Perez & van der Walt; Nature Astronomy 2018)."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 98
+talk_number: 116
 display_date: "Sep 2018"
 url_slides: "https://www.slideshare.net/JoshuaBloom/autoencoding-rnn-for-inference-on-unevenly-sampled-timeseries-data"
 has_transcript: false

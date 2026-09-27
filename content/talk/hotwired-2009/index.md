@@ -9,7 +9,7 @@ location: "Santa Cruz, CA"
 summary: "The SASIR synoptic infrared survey concept, presented at the second Hot-wiring the Transient Universe workshop."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 36
+talk_number: 37
 display_date: "Apr 2009"
 has_transcript: false
 ---

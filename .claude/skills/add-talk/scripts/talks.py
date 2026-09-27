@@ -22,6 +22,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 from concurrent.futures import ThreadPoolExecutor
 
 CONTENT = "content/talk"
@@ -351,16 +352,28 @@ def cmd_linkcheck(_args):
         slug, key, url = j
         code, how = check_url(url, is_audio=(key == "url_audio"))
         return slug, key, url, code, how
-    dead, walled, ok = [], [], 0
+    # The Wayback Machine refuses connections (curl reports 000) when hit in parallel, so its
+    # snapshots are checked one at a time after the parallel pass; any connection failure
+    # gets one more try after a pause before it counts as dead.
+    wayback = [j for j in jobs if "web.archive.org/" in j[2]]
     with ThreadPoolExecutor(max_workers=12) as ex:
-        for slug, key, url, code, how in ex.map(run, jobs):
-            c = int(code) if code.isdigit() else 0
-            if c in (401, 403) or how == "waf":
-                walled.append((slug, key, url, code))
-            elif c >= 400 or c == 0:
-                dead.append((slug, key, url, code))
-            else:
-                ok += 1
+        results = list(ex.map(run, [j for j in jobs if "web.archive.org/" not in j[2]]))
+    for j in wayback:
+        time.sleep(3)
+        results.append(run(j))
+    retry = [i for i, r in enumerate(results) if not r[3].isdigit() or int(r[3]) == 0]
+    for n, i in enumerate(retry):
+        time.sleep(30 if n == 0 else 3)
+        results[i] = run(results[i][:3])
+    dead, walled, ok = [], [], 0
+    for slug, key, url, code, how in results:
+        c = int(code) if code.isdigit() else 0
+        if c in (401, 403) or how == "waf":
+            walled.append((slug, key, url, code))
+        elif c >= 400 or c == 0:
+            dead.append((slug, key, url, code))
+        else:
+            ok += 1
     for slug, key, url, code in dead:
         print(f"DEAD   {code} {slug} {key} {url}")
     for slug, key, url, code in walled:

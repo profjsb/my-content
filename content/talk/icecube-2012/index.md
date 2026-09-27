@@ -8,7 +8,7 @@ location: "Berkeley, CA"
 summary: "Gamma-ray burst phenomenology and the prospects for coincident neutrino detection, for the IceCube collaboration."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 52
+talk_number: 67
 display_date: "Mar 2012"
 has_transcript: false
 ---

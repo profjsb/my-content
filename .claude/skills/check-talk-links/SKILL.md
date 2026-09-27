@@ -21,7 +21,15 @@ python3 .claude/skills/add-talk/scripts/talks.py linkcheck
 ## Interpreting results
 
 - **`DEAD` (404/410/timeouts)** — real rot; needs repair. A `000` can also be a TLS
-  failure (e.g. an expired certificate) — `curl -v` tells you which.
+  failure (e.g. an expired certificate) — `curl -v` tells you which. Two `000`s that are
+  *not* rot:
+  - **web.archive.org throttling.** The Wayback Machine refuses connections when hit
+    rapidly, so `linkcheck` checks snapshots one at a time and retries failures after a
+    pause. A snapshot that still shows `000` usually means something else on this machine
+    was querying Wayback at the same time; wait a few minutes and re-check it alone.
+  - **The local curl's CA bundle.** Miniforge's `curl` (first on PATH here) rejects some
+    certificate chains that browsers accept ("unable to get local issuer certificate").
+    Re-check with `/usr/bin/curl` before calling the link dead.
 - **`WALLED` (401/403, or an AWS WAF bot challenge)** — ambiguous: could be a paywall
   (O'Reilly), a permissioned file (Google Drive), or just bot-blocking of curl (ADS
   answers scripts with 405 + `x-amzn-waf-action: captcha`; humans get a CAPTCHA —

@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Data-driven inference at scale: Bayesian RR Lyrae period-luminosity fits giving ~1% distances, Gaussian-process image registration for astrometry, machine-learned variable-star catalogs, predicting stellar spectra from light curves, and real-time transient classification in the Palomar Transient Factory."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 68
+talk_number: 85
 display_date: "Mar 2014"
 url_video: "https://www.youtube.com/watch?v=jkj8U5rxRMw"
 has_transcript: true
