@@ -309,6 +309,40 @@ entries.**
 - 15 old-format Keynote bundles had no extractable preview (incl. citris2010,
   i4science, gw) — unreadable without opening Keynote; left for a manual pass.
 
+## Addendum — transcripts for the recovered recordings (2026-09-26, PR #13)
+
+The link-rot repair (see "Re-check (2026-09-26)" under link health) turned up three
+YouTube recordings, and all three now have embedded transcripts, Key Quotes and
+`research/<slug>.summary.txt` files. **Transcript pages: 20 → 23.**
+
+| Talk | Recording | Words (raw → clean) | Notes |
+|------|-----------|---------------------|-------|
+| `berkeley-data-science-lecture-2013` | CITRIS, 1:03 | 12,210 → 11,258 (92%) | Pérez intro, lecture, panel, audience Q&A; speaker labels; 5 quotes |
+| `bids-2019` | BIDS, 48 min | 8,502 → 8,195 (96%) | single speaker; 3 `[inaudible audience question]` markers; 4 quotes |
+| `hipacc-exascale-2014` | UC-HiPACC, 18 min | 3,049 → 2,839 (93%) | single speaker; 4 quotes |
+
+- **Pipeline:** `yt-dlp --write-auto-subs` VTT → keep only the lines carrying inline
+  `<c>` timing tags (the new words; the untagged lines are rolling repeats) → six
+  3–4.6k-word chunks → parallel Opus editing agents with one shared rule sheet (remove
+  filler, collapse stutters, fix punctuation and mis-heard names, keep content) → a
+  checker for leftover fillers, stutters and word retention → spot checks against the raw
+  captions. Overall 93.8% of words retained, the same as the July pass.
+- **Speaker labels (2013 panel):** PÉREZ, BLOOM, STARK, SILVER, ALLEN, AUDIENCE, taken
+  from introductions and field-specific content. Two turns were settled by idiolect:
+  "wind up" appears 9 times in Bloom's ~4.5k words and never in the other speakers' ~6k.
+  Seven turns that stayed ambiguous are labeled `PANELIST`.
+- **Verified name fixes:** Manik Varma (a Visiting Miller Professor in spring 2019;
+  caption "Matic pharma"), Aaron Culich (Stark's Stat 157 co-instructor, fall 2013;
+  "Aaron Coolidge"), Ruth Angus of AMNH ("with Angus from the aah"), NERSC ("nurse"),
+  Haviland Hall's seismometer ("basement of heaven"), the Ørsted satellite ("urstead"),
+  "time-domain data" ("China main data"), Cesium, bigmacc.info, SAMSI. **Kept as
+  captioned** (unverified): "Gyro" (BIDS 2019; possibly Uroš Seljak), the Stanford visitor
+  "Shannon Neulon", and the VCRO organizer "Kaya".
+- **Topics:** `berkeley-data-science-lecture-2013` gained `education`, since about a fifth
+  of the event (mostly the Q&A) is about training students, the Python boot camp and new
+  courses. The other two stay `astronomy`/`ai-ml`. The HiPACC card summary, previously a
+  placeholder, was rewritten from the transcript.
+
 ## Maintenance
 
 Two skills were added with this branch:

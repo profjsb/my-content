@@ -147,7 +147,8 @@
     "type": "Lecture",
     "topics": [
       "astronomy",
-      "ai-ml"
+      "ai-ml",
+      "education"
     ],
     "date": "2013-06-21",
     "location": "Berkeley, CA",
@@ -157,7 +158,7 @@
     "audio_url": null,
     "transcript_url": null,
     "summary": "How to extract real-time, actionable insight from noisy, incomplete streaming sensor data (earthquakes, supernovae, traffic), and the interplay between domain scientists, statisticians, and computer scientists.",
-    "notes": "Inaugural lecture of the series (per the host's introduction in the recording), followed by a faculty panel. The webcast was on the BIDS video resources page; original video_url https://bids.berkeley.edu/resources/videos/extracting-actionable-insight-dirty-time-series-data dead as of 2026-09-26 (404, BIDS site restructured) — now the live CITRIS YouTube upload that page embedded ('Data Science Lecture Series 6/21/2013', 4mBUX47YtSE). Original event_url https://vcresearch.berkeley.edu/2013-14-data-science-lectures dead as of 2026-09-26 (504, or Drupal 'Access denied' in a real browser: the page is unpublished, so the July 403 was not bot-blocking) — Wayback snapshot (Jun 2021) linked."
+    "notes": "Inaugural lecture of the series (per the host's introduction in the recording), followed by a faculty panel. The webcast was on the BIDS video resources page; original video_url https://bids.berkeley.edu/resources/videos/extracting-actionable-insight-dirty-time-series-data dead as of 2026-09-26 (404, BIDS site restructured) — now the live CITRIS YouTube upload that page embedded ('Data Science Lecture Series 6/21/2013', 4mBUX47YtSE). Original event_url https://vcresearch.berkeley.edu/2013-14-data-science-lectures dead as of 2026-09-26 (504, or Drupal 'Access denied' in a real browser: the page is unpublished, so the July 403 was not bot-blocking) — Wayback snapshot (Jun 2021) linked. Embedded transcript (2026-09-26) from the YouTube auto-captions: Pérez's intro, the lecture, the panel and audience Q&A, with speaker labels inferred from context (PANELIST where unclear)."
   },
   {
     "n": 9,
@@ -599,7 +600,7 @@
     "audio_url": null,
     "transcript_url": null,
     "summary": "How time-domain astronomers use ML on streaming, noisy, distorted images of the sky — the search for Planet 9, discovery of new variable sources, data-driven emulators — and building physics-informed learning architectures.",
-    "notes": "BIDS Data Science Lecture, Apr 18 2019, 190 Doe Library. Original event_url https://bids.berkeley.edu/events/astrophysical-machine-learning dead as of 2026-09-26 (404, BIDS site restructured) — Wayback snapshot (Mar 2023) linked. That archived page embeds the lecture video, still live on the BIDS YouTube channel (kf8a-NnjVQY, 48 min, uploaded the same day; its description links the old event page) — now video_url."
+    "notes": "BIDS Data Science Lecture, Apr 18 2019, 190 Doe Library. Original event_url https://bids.berkeley.edu/events/astrophysical-machine-learning dead as of 2026-09-26 (404, BIDS site restructured) — Wayback snapshot (Mar 2023) linked. That archived page embeds the lecture video, still live on the BIDS YouTube channel (kf8a-NnjVQY, 48 min, uploaded the same day; its description links the old event page) — now video_url. Embedded transcript (2026-09-26) from the YouTube auto-captions (the recording ends before the Q&A)."
   },
   {
     "n": 31,
@@ -2168,8 +2169,8 @@
     "event_url": "https://web.archive.org/web/20241106185112/https://hipacc.ucsc.edu/ApproachingExascale2014.html",
     "audio_url": null,
     "transcript_url": null,
-    "summary": "Machine-learned inference for astronomical surveys, at the UC-HiPACC exascale computational astrophysics workshop at LBNL.",
-    "notes": "Workshop Mar 21-22, 2014, LBNL Bldg 66; agenda lists the talk (23 min). Talk video found in the workshop's YouTube playlist: jkj8U5rxRMw on the UC-HiPACC channel (description: 'Joshua Bloom, University of California, Berkeley, March 21, 2014') — now video_url. Original event_url https://hipacc.ucsc.edu/ApproachingExascale2014.html dead as of 2026-09-26: its TLS certificate expired 2026-07-23 (browsers show a security warning; the page still sits on the legacy server) and the http:// URL redirects to a 404 — Wayback snapshot (Nov 2024) linked; the talk is under its Program tab. The event's slides PDF (hipacc.ucsc.edu/LectureSlides/24/435/140321_11_Bloom.pdf) is behind the same expired certificate and was never archived. Deck in local archive."
+    "summary": "Data-driven inference at scale: Bayesian RR Lyrae period-luminosity fits giving ~1% distances, Gaussian-process image registration for astrometry, machine-learned variable-star catalogs, predicting stellar spectra from light curves, and real-time transient classification in the Palomar Transient Factory.",
+    "notes": "Workshop Mar 21-22, 2014, LBNL Bldg 66; agenda lists the talk (23 min). Talk video found in the workshop's YouTube playlist: jkj8U5rxRMw on the UC-HiPACC channel (description: 'Joshua Bloom, University of California, Berkeley, March 21, 2014') — now video_url. Original event_url https://hipacc.ucsc.edu/ApproachingExascale2014.html dead as of 2026-09-26: its TLS certificate expired 2026-07-23 (browsers show a security warning; the page still sits on the legacy server) and the http:// URL redirects to a 404 — Wayback snapshot (Nov 2024) linked; the talk is under its Program tab. The event's slides PDF (hipacc.ucsc.edu/LectureSlides/24/435/140321_11_Bloom.pdf) is behind the same expired certificate and was never archived. Deck in local archive. Embedded transcript (2026-09-26) from the YouTube auto-captions; card summary rewritten from it."
   },
   {
     "n": 112,
