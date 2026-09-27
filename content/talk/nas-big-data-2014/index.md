@@ -24,7 +24,7 @@ Data literacy before big-data proficiency: what Berkeley's Python boot camps and
 
 > "Just because you learn French doesn't mean you're a good poet. I think Python is this modern gateway to computational computing, and it's the art and the poetry that is enabled by it that we really, really want to get to." – Joshua Bloom
 
-> "If you add 'data science' or 'big data' to your course name, you increase enrollment tenfold." – Joshua Bloom
+> "If you add ‘data science’ or ‘big data’ to your course name, you increase enrollment tenfold." – Joshua Bloom
 
 > "What I advocate is that, in terms of training, even at the higher-ed level, we ask how can we get our students more data literate before we start thinking about how can we train them in big data proficiency." – Joshua Bloom
 
