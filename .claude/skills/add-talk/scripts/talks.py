@@ -278,11 +278,15 @@ def check_url(url, is_audio=False):
                             "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)", url],
                            capture_output=True, text=True)
         return r.stdout.strip() or "000", "head"
-    r = subprocess.run(["curl", "-sL", "-o", "/dev/null", "-w", "%{http_code}",
+    # also report the AWS WAF action header: a bot challenge (e.g. ADS answers scripts with
+    # 405 + "x-amzn-waf-action: captcha") is a bot-block, not rot
+    r = subprocess.run(["curl", "-sL", "-o", "/dev/null", "-w",
+                        "%{http_code} %header{x-amzn-waf-action}",
                         "--max-time", "20", "-A",
                         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)", url],
                        capture_output=True, text=True)
-    return r.stdout.strip() or "000", "get"
+    code, _, waf = r.stdout.strip().partition(" ")
+    return code or "000", "waf" if waf else "get"
 
 
 def cmd_linkcheck(_args):
@@ -299,7 +303,7 @@ def cmd_linkcheck(_args):
     with ThreadPoolExecutor(max_workers=12) as ex:
         for slug, key, url, code, how in ex.map(run, jobs):
             c = int(code) if code.isdigit() else 0
-            if c in (401, 403):
+            if c in (401, 403) or how == "waf":
                 walled.append((slug, key, url, code))
             elif c >= 400 or c == 0:
                 dead.append((slug, key, url, code))
