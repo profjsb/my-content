@@ -9,7 +9,7 @@ location: "Greenbelt, MD"
 summary: "A half-century of gamma-ray burst science, honoring Neil Gehrels at the Goddard memorial meeting."
 topics: ["astronomy"]
 talk_type: "Invited Talk"
-talk_number: 93
+talk_number: 111
 display_date: "May 2018"
 has_transcript: false
 ---

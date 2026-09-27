@@ -8,7 +8,7 @@ location: "New York, NY"
 summary: "Deploying astronomical foundation models in production settings, at the Flatiron workshop on foundation models for astrophysics."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 119
+talk_number: 137
 display_date: "May 2025"
 has_transcript: false
 ---

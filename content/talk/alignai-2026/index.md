@@ -9,7 +9,7 @@ location: "Washington, DC"
 summary: "Opening keynote on AI and the future of science at ALIGN: AI 2026, a Washington, DC summit convening travel-industry leaders and AI innovators around generative AI's reshaping of the traveler's journey."
 topics: ["astronomy", "industry", "ai-ml"]
 talk_type: "Keynote"
-talk_number: 126
+talk_number: 144
 display_date: "Jul 2026"
 has_transcript: false
 ---

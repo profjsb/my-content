@@ -9,7 +9,7 @@ location: "Ann Arbor, MI"
 summary: "AI across astrophysics, at the cross-disciplinary workshop on AI applications to science and engineering."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 117
+talk_number: 135
 display_date: "Nov 2024"
 has_transcript: false
 ---

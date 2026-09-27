@@ -8,7 +8,7 @@ location: "Seattle, WA"
 summary: "Data-science infrastructure and time-domain inference work, at the Moore Foundation DDD investigators meeting."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 80
+talk_number: 98
 display_date: "Jul 2015"
 has_transcript: false
 ---
