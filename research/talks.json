@@ -2517,6 +2517,48 @@
   },
   {
     "n": 129,
+    "slug": "a16z-interview-2014",
+    "title": "Supernovas and Novel Insight: Where Machine Learning is Headed Next",
+    "event": "a16z Academic Roundtable 2014",
+    "type": "Podcast",
+    "topics": [
+      "astronomy",
+      "industry",
+      "ai-ml"
+    ],
+    "date": "2014-09-27",
+    "location": "Menlo Park, CA",
+    "video_url": "https://www.youtube.com/watch?v=6hQqpQ3IZlY",
+    "slides_url": null,
+    "event_url": "https://a16z.com/supernovas-and-novel-insight-where-machine-learning-is-headed-next/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Filmed at a16z's 2014 Academic Roundtable: how machine learning became a discovery engine for astronomy, sifting real transients from roughly a thousand bogus candidates apiece and catching the nearby Type Ia SN 2011fe about 11 hours after explosion, and why running ML in production led to Wise.io and to products with machine intelligence baked in.",
+    "notes": "a16z-produced interview video, not a recording of the talk: filmed at a16z's second annual Academic Roundtable (Sep 25-27, 2014, at the firm's Sand Hill Road offices in Menlo Park, per a16z's attendee confirmation), after JB's 11:10am talk on the last day (he refers back to 'my talk'), so it is dated 27 Sep 2014 and numbered right after that talk (a16z-roundtable-2014, which carries the deck). Typed Podcast per JB (the first pass used Interview, which the Type filter files under Radio). a16z published it 2015-01-07 at the event_url with a Vimeo embed (116019972) that is now dead (player 404, and the page prints the raw [vimeo] shortcode); a16z's own YouTube re-upload (6hQqpQ3IZlY, 14:26, uploaded 2017-07-15) is the video_url. Embedded transcript (2026-09-26): audio pulled from YouTube and transcribed locally with faster-whisper distil-large-v3, then AI-cleaned (fillers, false starts, stutters, mis-heard words); the interviewer's prompts are edited out of the video, so it reads as a monologue. Topics from the transcript: astronomy (first half: real-bogus discovery, SN 2011fe), industry (second half: Wise.io, churn, spam filters, analytics), ai-ml throughout. Added at JB's request 2026-09-26."
+  },
+  {
+    "n": 130,
+    "slug": "a16z-roundtable-2014",
+    "title": "Practicable Machine Intelligence in Science & Industry",
+    "event": "a16z Academic Roundtable 2014",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "industry",
+      "ai-ml"
+    ],
+    "date": "2014-09-27",
+    "location": "Menlo Park, CA",
+    "video_url": null,
+    "slides_url": "/talk/a16z-roundtable-2014/#slides",
+    "event_url": "https://web.archive.org/web/20141021025835/http://academic.a16z.com/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "A 15-minute talk in the roundtable's Artificial Intelligence session: from Harvard's human computers to the real-time ML framework that found SN 2011fe, to what machine intelligence in production demands at Wise.io (trading off accuracy, interpretability and implementability on real, not benchmark, data) and a future with ML baked into every purchased app.",
+    "notes": "Invited 15-minute talk: a16z's invitation asked JB to speak for 15 minutes on his machine learning research. The archived agenda (Wayback's 2014-10-21 capture of academic.a16z.com, the event_url) lists it on Sat Sep 27, 2014 at 11:10am as the 'Artificial Intelligence' session (sole speaker, then open discussion), at Andreessen Horowitz, 2865 Sand Hill Rd, Menlo Park. Title and date from the deck's title slide ('A16Z Academic Roundtable, 27 Sep 2014'). Slides: JB's PDF export (24 slides) rendered to 2400px WebP images (talks.py slides) and shown in the embedded viewer; per JB the PDF itself stays out of the repo and off the site. The deck had been left off the page under the industry-deck privacy rule (PROCESS.md, slide-archive sweep) until JB supplied it for publication 2026-09-26. No recording of the talk found; a16z's filmed interview from the same event is a separate entry (a16z-interview-2014). Topics: astronomy (Harvard computers, the SN 2011fe discovery framework) + industry (Wise.io apps and production ML, most of the deck) + ai-ml."
+  },
+  {
+    "n": 131,
     "slug": "citris-2010",
     "title": "Automating Discovery and Classification of the Dynamic Universe",
     "event": "CITRIS Research Exchange, UC Berkeley",
@@ -2536,7 +2578,7 @@
     "notes": "Found 2026-09-26 in the old-format Keynote sweep: citris2010.key (and citris2010_nobackup.key/.zip) in ~/OldLaptop/Talks are 0-byte placeholders, but organizer correspondence confirms a CITRIS Research Exchange talk on Wed Mar 31, 2010, noon, Sutardja Dai Hall (webcast to the CITRIS campuses), and CITRIS's YouTube channel has the 54-minute recording, \"Josh Bloom 3 31 2010\" (1S7uH73TPQ8, uploaded 2010-03-31; oEmbed 200). TITLE IS DESCRIPTIVE: the announced title/abstract were not preserved (event page citris-uc.org/events/RE-Mar31 never archived). Content per the auto-captions: Galileo's 1610 notebook as a time-domain observation, the PTF candidate stream, machine-learned transient/variable-star classification, removing the astronomer from the real-time loop; same closing summary as the SIAM CSE 2011 talk. event_url is the Research Exchange series page (formerly on citris-2013, now citris-2011, which was an i4Science talk). Transcript not yet made."
   },
   {
-    "n": 130,
+    "n": 132,
     "slug": "scidac-2010",
     "title": "Exploiting the Transient IR Sky",
     "event": "SciDAC Computational Astrophysics Consortium Meeting, SLAC",
@@ -2555,7 +2597,7 @@
     "notes": "Old-format Keynote deck ~/Talks/SASIR/scidac_may2010.key (86 slides; title slide '\"Present and Future Transient/Supernovae Studies in the Infrared\" / Exploiting the Transient IR Sky / SciDAC'10, SLAC, 20 May 2010'). The consortium meeting at SLAC (May 19-21, 2010; its schedule page is titled 'SciDAC & CAC Mid-Term Review') lists the talk under the quoted assigned title, Thu May 20, 4:30-4:55pm, session 'Observations and Searches - Mission Planning'; the participant list includes him. Those pages survive only as 2012 Wayback captures of www-conf.slac.stanford.edu/scidac/2010/ and are deliberately not linked: in 2010 the organizers asked that the meeting site, which posted the talks, not be advertised outside the group (his PDF was never archived). Organizer correspondence confirms the invitation (a SASIR/IR-transients slot). A collaboration meeting, like icecube-2012 and lobster-2010."
   },
   {
-    "n": 131,
+    "n": 133,
     "slug": "learning-in-retirement-2010",
     "title": "Gamma-Ray Bursts: Birth Cries of Black Holes",
     "event": "Learning in Retirement: 'The Golden Age of Astronomy', UC Berkeley Retirement Center",
@@ -2574,7 +2616,7 @@
     "notes": "Old-format Keynote deck ~/Talks/GRBs/learning in retirement 2010.key (65 slides; title slide 'Gamma-ray Bursts: Birth Cries of Black Holes / 14 Sept 2010'). UC Berkeley Retirement Center newsletter (Summer 2010, Vol. 13 No. 2, p. 3; linked) lists 'September 14: Gamma-Ray Bursts: Birth Cries of Black Holes', part 3 of the free four-part LIR series 'The Golden Age of Astronomy' organized by Alex Filippenko (Tuesdays Aug 31-Sept 21, 2010, 1-3pm); also in the Fall 2010 newsletter and the LIR history. Room not published (correspondence suggests the UC Berkeley Art Museum theater). No recording."
   },
   {
-    "n": 132,
+    "n": 134,
     "slug": "compass-2010",
     "title": "What Are Gamma-Ray Bursts?",
     "event": "Compass Lecture Series, Berkeley Compass Project",
@@ -2593,7 +2635,7 @@
     "notes": "Old-format Keynote deck ~/Talks/GRBs/compass lecture.key (+ backup; title slide 'What are Gamma-Ray Bursts? / 7 Oct 2010'; closing slide 'Compass Lecture 2010'). The Compass blog post 'The Fall 2010 Lecture Series!' (Wayback 2010-11-04, linked) lists 'Josh Bloom 10/07 - What are gamma ray bursts?', 4-5pm, 325 LeConte (Cyclotron Room), first of five fall speakers; the live Compass 'past lecture series' page lists him under Fall 2010 without date or title. No recording."
   },
   {
-    "n": 133,
+    "n": 135,
     "slug": "llnl-2010",
     "title": "SASIR: A Wide-Field Synoptic Survey for this Decade",
     "event": "IGPP Seminar, Lawrence Livermore National Laboratory",
@@ -2612,7 +2654,7 @@
     "notes": "Old-format Keynote deck ~/Talks/SASIR/sasir_llnl.key (+ backups; title slide 'LLNL, 19 November 2010'). Organizer correspondence confirms an IGPP seminar on Friday Nov 19, 2010 (abstract framed SASIR against New Worlds, New Horizons); his own email that afternoon mentions having just given it. No public listing survives: the IGPP seminar calendar (step.llnl.gov/IGPPSeminars) has no Wayback capture for 2010."
   },
   {
-    "n": 134,
+    "n": 136,
     "slug": "gwpaw-2011",
     "title": "EM Followup: Past, Present, Future",
     "event": "Gravitational-wave Physics and Astronomy Workshop (GWPAW 2011)",
@@ -2631,7 +2673,7 @@
     "notes": "Old-format Keynote deck ~/OldLaptop/Talks/Backup of gw.key (46 slides; gw.key itself is a 0-byte placeholder), title 'EM Followup: Past, Present, Future'. GWPAW 2011, UW-Milwaukee, Jan 26-29, 2011: the program (Wayback 2014-11-26, linked) has him Fri Jan 28, 10:00-10:30, session 'Observational Strategies and Instrumentation I', listed as 'Wide-field Surveys'; the talks page links his slides as KEYNOTE/PDF (the PDF, 32 pages, 'EM Followup: Past, Present, Future / Gravitational-wave Physics and Astronomy Workshop', is archived and linked as url_slides). Invitation and thank-you from the organizers confirm an invited review. No video (the GWPAW Vimeo channel has other talks from the session but not his)."
   },
   {
-    "n": 135,
+    "n": 137,
     "slug": "berkeley-roundtable-2011",
     "title": "Making Sense of the Dynamic Universe in the Synoptic Survey Era",
     "event": "Berkeley Astrophysics Roundtable",
@@ -2651,7 +2693,7 @@
     "notes": "Old-format Keynote deck ~/OldLaptop/Talks/astrophysics_roundtable_2011.key (+ backup last saved Apr 28, 2011): the i4Science deck retitled 'Making Sense of the Dynamic Universe in the Synoptic Survey Era' (the venue line still reads i4Science, Apr 5). Correspondence confirms the Astrophysics Roundtable on Friday Apr 29, 2011 (computational-astrophysics theme). Internal multi-speaker Berkeley event like berkeley-roundtable-2022/2025; no public page."
   },
   {
-    "n": 136,
+    "n": 138,
     "slug": "iaus285-2011",
     "title": "Technical and Observational Challenges for Future Time-Domain Surveys",
     "event": "IAU Symposium 285: New Horizons in Time-Domain Astronomy",
@@ -2671,7 +2713,7 @@
     "notes": "Old-format Keynote deck ~/OldLaptop/MoreOldTalk/iau.key (40 slides; title 'Technical and observational challenges for exploration of the time domain in the future'); fragments iau_gw_slides.key (GW workshop, Sept 19) and grb_questions_iau.key (GRB discussion questions, Sept 20) are from the same meeting. IAUS 285, Oxford, Sept 19-23, 2011: the proceedings put his invited review 'Technical and Observational Challenges for Future Time-Domain Surveys' (Proc. IAU 7, S285, pp. 165-170, doi:10.1017/S1743921312000531; linked) in the Friday session 'Preparing for the Future', just before the summary talk; date from that placement (the symposium site physics.ox.ac.uk/IAUS285 is dead and was never archived). His Sept 20 SN 2011fe talk at the same symposium is oxford-2011."
   },
   {
-    "n": 137,
+    "n": 139,
     "slug": "amnh-2011",
     "title": "Time-Domain Challenges in the Synoptic Survey Era",
     "event": "Department of Astrophysics Seminar, American Museum of Natural History",
@@ -2691,7 +2733,7 @@
     "notes": "Old-format Keynote deck ~/OldLaptop/Talks/amnh.key (65 slides; overview slide 'Time-domain challenges in the synoptic survey era / American Museum of Natural History, 8 Nov 2011'). Organizer correspondence confirms the AMNH Department of Astrophysics seminar, Tue Nov 8, 2011, 2-3pm, with this title and an abstract on variable-star classification, fast events with little human involvement, when to use discovery resources for follow-up, and quasar identification. The AMNH Department of Astrophysics' public Google Calendar (linked) lists the event, 2-3pm, Perkin Room, 5th floor, Rose Center, with the title and abstract; the department's 2011 events page (Wayback 2011-11-14) links that calendar."
   },
   {
-    "n": 138,
+    "n": 140,
     "slug": "berkeley-roundtable-2014",
     "title": "Inference in Time Domain Astrophysics",
     "event": "Berkeley Astrophysics Roundtable",
@@ -2712,7 +2754,7 @@
     "notes": "Old-format Keynote deck ~/OldLaptop/MoreOldTalk/roundtable.key (70 slides; title slide 'Inference in Time Domain Astrophysics / Astrophysics Roundtable'; last saved May 6, 2014). Correspondence confirms the Astrophysics Roundtable on Monday May 5, 2014 (morning program with three other Berkeley speakers); the invitation listed his talk as 'Big Data Science in Time Domain Astronomy'. The same title and deck went to the CIERA colloquium two days later (ciera-northwestern-2014). Internal multi-speaker Berkeley event like berkeley-roundtable-2022/2025; no public page. About a sixth of the deck is on data-science training and BIDS, hence education."
   },
   {
-    "n": 139,
+    "n": 141,
     "slug": "cefalu-2008",
     "title": "GRBs as Cosmological Probes",
     "event": "Probing Stellar Populations out to the Distant Universe (Cefalù 2008)",
@@ -2731,7 +2773,7 @@
     "notes": "Old-format Keynote deck ~/Talks/GRBs/cefalu.key (36 slides, last saved 2012-07-16; title slide 'GRBs as Cosmological Probes / Cefalu: Probing Stellar Populations Out to the Distant Universe 19 Sept 2008'). The July 2026 sweep excluded 'cefalu' because its preview image carried no metadata and no Cefalù 2012 meeting matched; the slide text dates it to the 2008 conference (Cefalù, Sicily, Sept 7-19, 2008; second week, Sept 15-19, on supernovae, GRBs and novae). The conference page (Wayback 2013, linked; last updated Oct 2008) lists 'J. Bloom' (affiliation misprinted UCSB) on the second-week SOC. The programs (prog_3.pdf, invited-speaker list) were never archived, so the day rests on the title slide (Fri Sept 19, the last day); type left as Talk for the same reason. No paper in the proceedings (AIP Conf. Proc. 1111: all 104 papers checked via Crossref). The email archive has no messages from Aug-Sep 2008. Same title as sackler-21cm-2008 (May 2008)."
   },
   {
-    "n": 140,
+    "n": 142,
     "slug": "eventful-universe-2010",
     "title": "Scratching Decadal Itches with Gamma-Ray Bursts",
     "event": "The Eventful Universe (NOAO 50th Anniversary Symposium)",
@@ -2750,7 +2792,7 @@
     "notes": "Old-format Keynote deck ~/Talks/GRBs/eventful_tucscon_2010.key (94 slides; title slide 'Scratching Decadal Itches with Gamma-Ray Bursts / Eventful Universe - 50th Birthday of NOAO'; last saved Mar 18, 2010, 11:47). The Eventful Universe, NOAO, Tucson, Mar 17-20, 2010 (the 'future' half of NOAO's two 50th-anniversary symposia): the archived home page lists him among the invited speakers, and the schedule (Wayback, linked) puts the talk at 1:30pm Thu Mar 18, opening Session II, 'Things That Can Be Seen Really, Really Far Away'. Abstract: web.archive.org/web/20130209035112/http://www.noao.edu:80/meetings/eventful-universe/abstracts.php (anchor #joshua). No slides posted or archived; noao.edu no longer resolves."
   },
   {
-    "n": 141,
+    "n": 143,
     "slug": "keck-2010",
     "title": "Cosmic Forensics: Tracking Stellar Deaths",
     "event": "Evenings with Astronomers, W. M. Keck Observatory",
@@ -2769,7 +2811,7 @@
     "notes": "Old-format Keynote decks ~/OldLaptop/MoreOldTalk/keck.key (55 slides; title slide 'Cosmic Forensics: Tracking Stellar Deaths / 12 Apr 2010', saved that morning) and ~/Talks/GRBs/keck.key (same deck, title slide '13 Apr 2010'); speaker notes: 'as you'll see tonight, Keck is intimately connected with universe at all wavelengths'. The July 2026 sweep excluded 'keck' because its preview carried no metadata. Keck's invitation (correspondence) announces 'our final 2010 lecture of this incredible series: Cosmic Forensics: Tracking Stellar Deaths, Dr. Joshua Bloom, Tuesday, April 13'. Evenings with Astronomers was Keck's annual by-invitation lecture series at The Fairmont Orchid, Mauna Lani Resort; the series page (Wayback 2010-09-24, linked) lists only the Jan-Mar 2010 lectures, and Keck's 2010 podcast index has no entry for this one. The 12 Apr copy is presumably a draft; no sign of a second delivery (Keck's free Waimea public lectures that spring were other speakers)."
   },
   {
-    "n": 142,
+    "n": 144,
     "slug": "dean-lecture-2010",
     "title": "Making Sense of the Dynamic Universe in the Synoptic Survey Era",
     "event": "Benjamin Dean Astronomy Lecture, California Academy of Sciences",
@@ -2789,7 +2831,7 @@
     "notes": "No deck survives in the three folders; found through the outreach paragraph of JB's 2012 and 2015 merit-review CVs (~/Admin/Merit/*/jsbcv_*.tex: 'He gave the Benjamin Dean Lecture at the California Academy of Sciences (\"Making Sense of the Dynamic Universe in the Synoptic Survey Era\") on 4 October 2010'). Organizer correspondence confirms Monday Oct 4, 2010, 7:30pm, with the submitted title and abstract; the Academy's lectures page (Wayback 2010-09-24, linked) lists it with the abstract, and its calendar export puts it in the Morrison Planetarium. Recording: iTunes U 'Dean Lectures' (California Academy of Sciences) episode 29, 'Joshua Bloom, UC Berkeley - 10/4/2010', 1:38:17. The collection page is dead (Wayback copy web.archive.org/web/20140626040722/https://itunes.apple.com/us/itunes-u/dean-lectures/id576541226?mt=10); the MP3 (141.5 MB) is still served, over http only, from Apple's legacy iTunes U CDN (a1723.phobos.apple.com) and is audio_url. It is not in the Wayback Machine, so save a copy while it lasts. Transcript not yet made. The same title reappears on the berkeley-roundtable-2011 deck."
   },
   {
-    "n": 143,
+    "n": 145,
     "slug": "ucdavis-2011",
     "title": "Challenges to Automating the Scientific Workflow in Streaming Astronomical Data",
     "event": "UC Davis Workshop on Statistical Methods for Astronomy and Astrophysics",
@@ -2809,7 +2851,7 @@
     "notes": "Old-format Keynote deck ~/OldLaptop/Talks/davis.key (40 slides; title slide 'Challenges to Automating the Scientific Workflow in Streaming Astronomical Data / Workshop on Statistical Methods for Astronomy and Astrophysics; UC Davis (8 Oct 2011)'). The July 2026 sweep excluded 'davis' because its preview carried no metadata. The one-day workshop's schedule (UC Davis Statistics; Wayback 2011-12-08, linked) lists him Sat Oct 8, 10:35-11:10am, Mathematical Sciences Building 1147, followed by Joseph Richards. The organizers' invitation and a thank-you note confirm it. The original stat.ucdavis.edu/~astro11 site now redirects to a Cloudflare-blocked page. No slides posted."
   },
   {
-    "n": 144,
+    "n": 146,
     "slug": "columbia-2011",
     "title": "The Transient Universe",
     "event": "Astrophysics Pizza Lunch, Columbia University",
@@ -2828,7 +2870,7 @@
     "notes": "Old-format Keynote deck ~/OldLaptop/Talks/columbia pizza.key (18 slides, no title slide; last saved Nov 9, 2011): SN 2011fe progenitor limits (Li, Bloom et al.; Nugent et al.; Bloom, Kasen et al.) and the relativistic TDEs Sw J1644+57 (Bloom+11, Levan+11) and Sw J2058+05 (Cenko+11). Columbia astronomy's Fall 2011 pizza-lunch listing reads 'Nov. 8 | Josh Bloom (Berkeley) | The Transient Universe' (a second speaker shared the lunch). The live wiki page (docs.astro.columbia.edu/wiki/Talks/Fall2011/Pizza) loads in browsers but fails certificate verification in some curl builds, so the Wayback copy (2011-12-13) is linked. Correspondence confirms the Tuesday noon slot (the department's informal 'short talk, long discussion' series), two hours before his AMNH seminar (amnh-2011)."
   },
   {
-    "n": 145,
+    "n": 147,
     "slug": "dean-lecture-2012",
     "title": "The Supernova of a Generation: SN 2011fe",
     "event": "Benjamin Dean Astronomy Lecture, California Academy of Sciences",
@@ -2847,7 +2889,7 @@
     "notes": "Old-format Keynote decks ~/OldLaptop/Talks/dean_lecture_sept2012.key (97 slides, saved Sept 10 after the talk) and evening_with_stars.key (a draft saved Sept 9). The title slide reads 'Benjamin Dean Lecture Sept 9, 2012', but the Academy's event page (Wayback 2012-09-07, linked) and organizer correspondence give Monday, Sept 10, 2012, 7:30pm, in the planetarium; the slide's date is a day off. Recording: iTunes U 'Dean Lectures' episode 44, 'Joshua Bloom, University of California Berkeley—9/10/2012' (released 2013-06-21, 1:24:28); JB's 2015 merit CV cites the iTunes U collection (id576541226; dead, Wayback copy 2014-06-26). The MP3 (121.7 MB; its metadata names JoshuaBloom.sesx) is still served, over http only, from Apple's legacy iTunes U CDN (a530.phobos.apple.com) and is audio_url. It is not in the Wayback Machine, so save a copy while it lasts. Transcript not yet made."
   },
   {
-    "n": 146,
+    "n": 148,
     "slug": "hotwired-2013",
     "title": "The Modern Automated Astrophysics Stack",
     "event": "Hot-wiring the Transient Universe III",

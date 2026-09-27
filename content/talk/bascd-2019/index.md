@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Keynote on physics-informed ML across astrophysics: the Planet 9 search, variable-source detection, generative telescope scheduling, and cosmic-ray removal."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Keynote"
-talk_number: 122
+talk_number: 124
 display_date: "Dec 2019"
 has_transcript: false
 ---

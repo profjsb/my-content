@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "How time-domain astronomers use ML on streaming, noisy, distorted images of the sky — the search for Planet 9, discovery of new variable sources, data-driven emulators — and building physics-informed learning architectures."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Lecture"
-talk_number: 117
+talk_number: 119
 display_date: "Apr 2019"
 url_video: "https://www.youtube.com/watch?v=kf8a-NnjVQY"
 has_transcript: true

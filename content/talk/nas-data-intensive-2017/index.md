@@ -9,7 +9,7 @@ location: "Irvine, CA"
 summary: "Astronomy's data-science needs and opportunities, for the National Academies roundtable on data science education."
 topics: ["astronomy", "education"]
 talk_type: "Invited Talk"
-talk_number: 104
+talk_number: 106
 display_date: "Mar 2017"
 has_transcript: false
 ---
