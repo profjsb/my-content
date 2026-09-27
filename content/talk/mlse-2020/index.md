@@ -9,7 +9,7 @@ location: "Virtual"
 summary: "Physics-informed ML for inference and discovery, in the astronomy track of the Columbia-organized MLSE conference."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 127
+talk_number: 155
 display_date: "Dec 2020"
 has_transcript: false
 ---

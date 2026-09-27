@@ -9,7 +9,7 @@ location: "Berkeley, CA (virtual)"
 summary: "How machine learning became central to discovery and inference in time-domain astronomy (real-bogus supernova discovery, self-supervised variable-star models, and simulation-based inference that uncovered a new microlensing degeneracy) and where AI goes next: downstream in AI-guided exploration, upstream in telescopes run as robots."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Lecture"
-talk_number: 137
+talk_number: 165
 display_date: "Nov 2024"
 url_video: "https://www.youtube.com/watch?v=tniRyPP1aGg"
 has_transcript: true

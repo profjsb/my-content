@@ -9,7 +9,7 @@ location: "Elba, Italy"
 summary: "On the extragalactic host galaxies of gamma-ray bursts, in the first post-BeppoSAX year as afterglows and hosts were first being identified."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 2
+talk_number: 3
 display_date: "May 1997"
 has_transcript: false
 ---

@@ -8,7 +8,7 @@ location: "Pasadena, CA"
 summary: "Survey of the rapidly moving observational GRB field for the IPAC astronomy community."
 topics: ["astronomy"]
 talk_type: "Seminar"
-talk_number: 7
+talk_number: 9
 display_date: "Feb 2000"
 has_transcript: false
 ---

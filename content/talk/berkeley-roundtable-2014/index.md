@@ -8,7 +8,7 @@ location: "Berkeley, CA"
 summary: "Talk on inference from time-domain data, from a Bayesian distance ladder built on variable stars to the machine-learned discovery of SN 2011fe, and on training data-literate scientists through Python boot camps and the new Berkeley Institute for Data Science."
 topics: ["astronomy", "ai-ml", "education"]
 talk_type: "Talk"
-talk_number: 88
+talk_number: 113
 display_date: "May 2014"
 has_transcript: false
 ---

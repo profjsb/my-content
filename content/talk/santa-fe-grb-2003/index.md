@@ -9,7 +9,7 @@ location: "Santa Fe, NM"
 summary: "Standardizing gamma-ray burst energies and the promises and limitations of a GRB Hubble diagram for cosmology."
 topics: ["astronomy"]
 talk_type: "Invited Talk"
-talk_number: 16
+talk_number: 20
 display_date: "Sep 2003"
 has_transcript: false
 ---

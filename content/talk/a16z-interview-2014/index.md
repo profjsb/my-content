@@ -9,7 +9,7 @@ location: "Menlo Park, CA"
 summary: "Filmed at a16z's 2014 Academic Roundtable: how machine learning became a discovery engine for astronomy, sifting real transients from roughly a thousand bogus candidates apiece and catching the nearby Type Ia SN 2011fe about 11 hours after explosion, and why running ML in production led to Wise.io and to products with machine intelligence baked in."
 topics: ["astronomy", "industry", "ai-ml"]
 talk_type: "Podcast"
-talk_number: 95
+talk_number: 121
 display_date: "Sep 2014"
 url_video: "https://www.youtube.com/watch?v=6hQqpQ3IZlY"
 has_transcript: true

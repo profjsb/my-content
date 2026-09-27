@@ -9,7 +9,7 @@ location: "Washington, DC"
 summary: "The Pierce Prize lecture: what the diverse progenitors of gamma-ray bursts — collapsars, mergers, and oddballs — teach us, and how bursts became tools for cosmology."
 topics: ["astronomy"]
 talk_type: "Keynote"
-talk_number: 40
+talk_number: 65
 display_date: "Jan 2010"
 url_video: "https://aasfiles.blob.core.windows.net/files/aas215/aas_215_103_pierce_prize_finding_utility_in_the_diverse_origins_of_gamma_ray_bursts.mp4"
 has_transcript: false

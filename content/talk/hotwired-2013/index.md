@@ -9,7 +9,7 @@ location: "Santa Fe, NM"
 summary: "Talk on the machine-learning stack behind real-time discovery in the Palomar Transient Factory and its successor iPTF: real-bogus classification, why machine-learned classification beats human scanners, and early numbers and lessons from iPTF."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 83
+talk_number: 108
 display_date: "Nov 2013"
 has_transcript: false
 ---

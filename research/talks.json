@@ -37,7 +37,7 @@
     "audio_url": null,
     "transcript_url": null,
     "summary": "Session talk on the machine-learning classification engine behind Palomar Transient Factory discoveries, in the event-classification session alongside LSST and Caltech colleagues.",
-    "notes": "HTU-I, Tucson, June 4-7 2007; talk June 5 in the Event Classification session (IVOA TWiki agenda). Previously mislabeled as HTU-II 2009."
+    "notes": "HTU-I, Tucson, June 4-7 2007; talk June 5 in the Event Classification session (IVOA TWiki agenda). Previously mislabeled as HTU-II 2009. Deck: ~/OldLaptop/TalksOld/vohtn.key (21 slides; title slide 'Building a classification engine for the Palomar Transients Factory (PTF) & Pan-STARRS1 / J. Bloom, D. Starr, N. Butler, P. Nugent (UC Berkeley/LBL), P. Protopapas, M. Wood-Vasey (IIC/Harvard), D. Eads (UC Santa Cruz) / Hot-wiring the transient universe, Tucson, AZ June 5, 2007')."
   },
   {
     "n": 3,
@@ -447,21 +447,21 @@
     "n": 23,
     "slug": "haas-industrial-ml",
     "title": "Industrial Machine Learning",
-    "event": "UC Berkeley Haas School of Business",
-    "type": "Lecture",
+    "event": "Data Science & Strategy Lecture Series, Berkeley Haas",
+    "type": "Podcast",
     "topics": [
       "industry",
       "ai-ml"
     ],
-    "date": "2017",
+    "date": "2018-03-27",
     "location": "Berkeley, CA",
     "video_url": "https://www.youtube.com/watch?v=lH8mkQKRRq0",
-    "slides_url": "https://www.slideshare.net/JoshuaBloom/industrial-machine-learning-at-ge",
-    "event_url": null,
+    "slides_url": null,
+    "event_url": "https://fcba.berkeley.edu/data-science-strategy-lecture-series/",
     "audio_url": null,
     "transcript_url": null,
-    "summary": "Guest lecture at Berkeley Haas on industrial-scale machine learning — deploying ML against industrial data at GE Digital after the Wise.io acquisition, and the gaps between academic, startup, and enterprise ML.",
-    "notes": "Year approximate."
+    "summary": "Short interview with Haas lecturer Greg La Blanc on when companies should (and should not) reach for machine learning: the technical debt it brings, the trade-off between accuracy and explainability, and how to win the trust of the people whose work it changes.",
+    "notes": "Corrected in the 2026-09-27 follow-up sweep. Previously a 'Lecture' dated '2017 (year approximate)' with a GE SlideShare deck. The Fisher Center for Business Analytics' series page (linked) lists 'Tuesday, March 27, 2018 / Joshua Bloom, Professor of Astronomy, UC-Berkeley / Interview'; the YouTube video (UC Berkeley Haas channel, 'Prof. Joshua Bloom: Industrial Machine Learning', 6:46) was posted 2018-05-10, which is the 'May 2018' of his 2018 merit CV ('Haas School of Business, Interview \"Industrial Machine Learning\"'). It is a two-person interview with series host Greg La Blanc, so it is typed Podcast (produced video interview), like the a16z interview. The SlideShare deck 'Industrial Machine Learning (at GE)' belongs to a different talk (title slide 'Applied Artificial Intelligence in the New Industrial Revolution, 13 April 2017 (SF)') and moved to applied-ai-meetup-2017. The video has no captions; a local Whisper transcript (not embedded) was used to rewrite the summary."
   },
   {
     "n": 24,
@@ -1111,7 +1111,7 @@
   {
     "n": 57,
     "slug": "barcelona-2001",
-    "title": "The Progenitors of Gamma-Ray Bursts",
+    "title": "Towards the Progenitors of Cosmological Gamma-Ray Bursts",
     "event": "Universitat de Barcelona",
     "type": "Invited Talk",
     "topics": [
@@ -1125,7 +1125,7 @@
     "audio_url": null,
     "transcript_url": null,
     "summary": "Invited review of gamma-ray burst progenitor evidence: afterglow offsets, host galaxies, and supernova bumps.",
-    "notes": "Slides survive only as a Wayback capture of the 43-slide web export from his old Caltech pages (linked); his archived talks page lists the title as 'Towards the Progenitors...'."
+    "notes": "Slides survive only as a Wayback capture of the 43-slide web export from his old Caltech pages (linked); his archived talks page lists the title as 'Towards the Progenitors...'. Title corrected in the 2026-09-27 follow-up sweep from the CV's 'The Progenitors of Gamma-Ray Bursts' to the title and abstract he sent his Universitat de Barcelona host on 21 Jun 2001 (correspondence), which matches the archived talks page."
   },
   {
     "n": 58,
@@ -1410,7 +1410,7 @@
     "audio_url": null,
     "transcript_url": null,
     "summary": "Colloquium on the two burst populations - collapsars and mergers - and the evidence separating them.",
-    "notes": "No archived spring-2007 Princeton colloquium schedule exists."
+    "notes": "No archived spring-2007 Princeton colloquium schedule exists. Deck: ~/OldLaptop/TalksOld/princeton1.key (54 slides; title slide 'Gamma-Ray Bursts: The Long & the Short of Them / Josh Bloom / Princeton University 27 March 2007'), plus a Flash export (princeton1.swf)."
   },
   {
     "n": 73,
@@ -1459,7 +1459,7 @@
     "topics": [
       "astronomy"
     ],
-    "date": "2008-05",
+    "date": "2008-05-12",
     "location": "Cambridge, MA",
     "video_url": null,
     "slides_url": null,
@@ -1467,7 +1467,7 @@
     "audio_url": null,
     "transcript_url": null,
     "summary": "Gamma-ray bursts as probes of reionization and the high-redshift universe, at the Harvard Sackler 21-cm cosmology conference.",
-    "notes": "Month per CV. Linked page is the Sackler series page (2008 program subpage not recoverable; blocks bots but live in browser)."
+    "notes": "Month per CV. Linked page is the Sackler series page (2008 program subpage not recoverable; blocks bots but live in browser). Day pinned to Monday 12 May 2008 by the deck ~/OldLaptop/TalksOld/'21cm talk.key' (33 slides; title slide 'GRBs as Cosmological Probes / Drivers & Mission Requirements / Sackler Conference on \"21cm Cosmology\" Harvard/CfA 12 May 2008'; 2026-09-27 follow-up sweep)."
   },
   {
     "n": 76,
@@ -1510,14 +1510,14 @@
   {
     "n": 78,
     "slug": "aspen-wfd-2009",
-    "title": "Real-Time Classification in the Petascale Epoch: Ramping Up with PTF",
+    "title": "Real-Time Classification in the Petascale Era: Ramping Up with PTF",
     "event": "Aspen Workshop on Wide-Fast-Deep Surveys",
     "type": "Invited Talk",
     "topics": [
       "astronomy",
       "ai-ml"
     ],
-    "date": "2009-06-25",
+    "date": "2009-06-22",
     "location": "Aspen, CO",
     "video_url": null,
     "slides_url": null,
@@ -1525,7 +1525,7 @@
     "audio_url": null,
     "transcript_url": null,
     "summary": "Machine-learned real-time classification of Palomar Transient Factory events as the ramp toward petascale synoptic surveys.",
-    "notes": "Aspen Center for Physics summer workshop 'Wide-Fast-Deep Surveys: New Astrophysics Frontier', June 14-July 5, 2009; no per-talk agenda survives (workshop listed inline on linked page)."
+    "notes": "Aspen Center for Physics summer workshop 'Wide-Fast-Deep Surveys: New Astrophysics Frontier', June 14-July 5, 2009; no per-talk agenda survives (workshop listed inline on linked page). Deck ~/OldLaptop/TalksOld/aspen.key (110 slides; title slide 'Real-Time Classification in the Petascale Era: Ramping up with PTF / Aspen, 22 June 2009 / Josh Bloom / UC Berkeley'; last saved 21 Jun 2009, 23:09; the notes open 'Kick off this session...'). Title and day now follow the deck (2026-09-27 follow-up sweep); the 2009 merit CV has 'Petascale Epoch' and 25 June 2009. No program or email survives to decide further (email archive gap Jun 2006-Oct 2009)."
   },
   {
     "n": 79,
@@ -2927,5 +2927,541 @@
     "transcript_url": null,
     "summary": "How machine learning became central to discovery and inference in time-domain astronomy (real-bogus supernova discovery, self-supervised variable-star models, and simulation-based inference that uncovered a new microlensing degeneracy) and where AI goes next: downstream in AI-guided exploration, upstream in telescopes run as robots.",
     "notes": "UC Berkeley Retirement Center, Learning in Retirement (LIR) series 'Berkeley in Space', organized by Donald Mastronarde: Part I Oct 29 (Panos Papadopoulos), Part II Tue Nov 5, 2024 (this lecture), Part III Nov 12 (Raffaella Margutti). Listed under '2024 Past Events' on retirement.berkeley.edu/lir (event_url; also in Wayback captures from 2025-02-07). That listing's 'View recording' link is the video: the UC Berkeley Retirement Center's YouTube upload tniRyPP1aGg (1:05:51, uploaded 2024-11-18; oEmbed 200 on 2026-09-27). Given over Zoom (Bloom's webcam over his slides; Mastronarde introduces), on Election Day; the recording ends at his closing thank-you, before the Q&A. Deck title slide: 'Transforming Astrophysics with AI / Learning in Retirement / Nov 5, 2024 / University of California, Berkeley'; the deck survives in ~/Talks/bloom_coase_2024.key (last saved Nov 7, 2024, reused for c2oa2se-2024). No slides online: the LIR's Drive 'resource library' stops at 2017. Embedded transcript (2026-09-27) from local faster-whisper (distil-large-v3, with medium.en re-checks of doubtful clips and every Key Quote), AI-cleaned. Topics astronomy + ai-ml: Valency does not appear (Wise.io only in the bio)."
+  },
+  {
+    "n": 150,
+    "slug": "kent-space-society-1997",
+    "title": "Gamma-Ray Bursts",
+    "event": "University of Kent Space Society",
+    "type": "Lecture",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "1997-03",
+    "location": "Canterbury, UK",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Talk on gamma-ray bursts for the University of Kent's student Space Society, given while he was a graduate student at Cambridge.",
+    "notes": "Title is descriptive: none survives. On 18 Nov 1997 the Society's General Secretary thanked him 'for your talk given in March 1997 on gamma bursts' and invited him back (correspondence, from a ukc.ac.uk address, so the University of Kent at Canterbury, not Kent State); the day is not recoverable because the email archive is nearly empty before mid-1997. His merit-review CVs (2008-2012) list 'Kent University Space Society' first among his public-outreach venues. No public trace found."
+  },
+  {
+    "n": 151,
+    "slug": "smaac-1999",
+    "title": "Gamma-Ray Bursts",
+    "event": "Santa Monica Amateur Astronomy Club",
+    "type": "Lecture",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "1999-02-12",
+    "location": "Santa Monica, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Guest talk on gamma-ray bursts at the Santa Monica Amateur Astronomy Club's monthly meeting, while he was a Caltech graduate student.",
+    "notes": "Title is descriptive: none survives. Friday 12 Feb 1999: the club president's thank-you letter of 17 Feb 1999 names 'our guest speaker this past Friday night, February 12, 1999' (he later attached it to his Everhart Lecture application; his merit-review CVs quote it in a commented-out line and list the club among his outreach venues). An attendee's thank-you that night and his own emails of 8 and 17 Feb corroborate. No public listing survives."
+  },
+  {
+    "n": 152,
+    "slug": "santa-monica-college-2000",
+    "title": "The Universe's Biggest Blasts",
+    "event": "John Drescher Planetarium Astronomy Guest Lecture Series, Santa Monica College",
+    "type": "Lecture",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2000-04-28",
+    "location": "Santa Monica, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Public evening lecture in Santa Monica College's planetarium guest-lecture series on the link between exploding stars, black holes and gamma-ray bursts.",
+    "notes": "Pinned by correspondence: the planetarium director's invitation (3 Nov 1999; working title 'The Biggest Explosions in the Universe'), the Winter-Spring and Spring-Summer 2000 planetarium schedules (title 'The Universe's Biggest Blasts'; blurb: 'the link between exploding stars, black holes and mysterious gamma-ray bursts'), a confirmation of 'April 28th at 8:00 p.m.' on 14 Apr 2000, and an audience member's follow-up in May. His merit-review CVs list Santa Monica (Community) College among his outreach venues. No public listing survives."
+  },
+  {
+    "n": 153,
+    "slug": "everhart-2002",
+    "title": "Toward the Origin of Gamma-Ray Bursts: The Biggest Bangs in the Universe",
+    "event": "Everhart Lecture Series, Caltech",
+    "type": "Lecture",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2002-03-15",
+    "location": "Pasadena, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://web.archive.org/web/20020902013617/http://www.its.caltech.edu/~els/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Everhart Lecture for a general Caltech audience on the thirty-year gamma-ray burst mystery: how afterglows settled the distance debate, the case for massive stars over merging neutron stars, and what bursts could teach about cosmology and gravitational waves.",
+    "notes": "Pinned by the series announcement ('Everhart Lecture Series: 15 March 2002 / Joshua Bloom (Astronomy) / Title: Toward the Origin of Gamma-Ray Bursts, the Biggest Bangs in the Universe / 4pm / Beckman Institute Auditorium') and his own emails (correspondence). His CVs list the 2002 'Everhart Lecture Series Prize (Distinguished Graduate Student Lecture Series)'. Deck: ~/OldLaptop/TalksOld/everhart1.sxi (StarOffice, last saved 15 Mar 2002; title slide 'Everhart Lecture Series, Winter Presentation: 15 March 2002') and a PDF export made in May 2006 (everhart1.pdf). The series page (Wayback 2002-09-02, linked) lists 'Everhart Lecturers Selected for 2001-2002 ... Joshua Bloom (Astronomy) / Title: Toward the Origin of Gamma-Ray Bursts, ... / Time: 15 March 2002, Friday, 4pm / Place: Beckman Institute Auditorium'. The title slide points to www.astro.caltech.edu/~jsb/everhart/, which was never archived. He was invited to repeat it at the Caltech Alumni Association's Seminar Day (18 May 2002) but withdrew in Dec 2001."
+  },
+  {
+    "n": 154,
+    "slug": "int-sn-grb-2004",
+    "title": "Supernova Bumps as Evidence for a Massive Star Origin",
+    "event": "The Supernova-Gamma-Ray Burst Connection, Institute for Nuclear Theory",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2004-07-13",
+    "location": "Seattle, WA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://archive.int.washington.edu/PROGRAMS/program_04-2_wkshop1.html",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Invited review of the photometric case that long gamma-ray bursts come from massive stars: the late 'supernova bumps' seen in afterglow light curves.",
+    "notes": "INT workshop 'The Supernova - Gamma Ray Burst Connection' (University of Washington, Seattle, July 12-14, 2004; part of program INT-04-2). The INT's tentative schedule (live, linked) has 'Bloom: Non-spectroscopic Evidence for an Association' on 13 July, 09:00-09:30, Session 3 'The Observational SN-GRB Connection'; the workshop page lists him on the scientific organizing committee (with Filippenko, Hjorth, Kouveliotou, Nomoto and Woosley). His 2004-05 merit bio-bibliography gives the title used here: 'Invited Talk, Supernova-GRB Connection, Seattle, \"Supernova Bumps as Evidence for a Massive Star Origin,\" 13 July 2004'; the commented '% U Washington Talk' line in his CVs points to it. The INT posted no talks for this workshop, and no deck survives locally."
+  },
+  {
+    "n": 155,
+    "slug": "kitp-2006",
+    "title": "Scoping the Follow-up Effort",
+    "event": "Transient Universe 2006: Popular, Not So Popular & Knowable Unknowns, KITP",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2006-03-14",
+    "location": "Santa Barbara, CA",
+    "video_url": "https://s3-us-west-2.amazonaws.com/kitpcloud/grbtu_c06/Bloom_KITP.mp4",
+    "slides_url": "https://online.kitp.ucsb.edu/online/grbtu_c06/bloom/pdf/JBloom_KITP.pdf",
+    "event_url": "https://online.kitp.ucsb.edu/online/grbtu_c06/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Discussion-opening talk arguing that discovery is not follow-up: as surveys like Pan-STARRS and LSST outstrip scarce follow-up resources, transient astronomy needs new ways to share events (VOEvent) and clear priorities for what to chase.",
+    "notes": "KITP conference 'Transient Universe 2006' (March 13-14, 2006). The schedule (linked) lists '1700 Scoping the Followup effort (led by J. Bloom)' in Session 7 'Future & Followup' (chair S. Kulkarni), before the closing 'Last Word'; the same page names him coordinator of the Virtual Poster Session. KITP's talk page (online.kitp.ucsb.edu/online/grbtu_c06/bloom/) has the recording (38.9 min; RealVideo, QuickTime, m4b audio) synced to 30 slides; url_video is the direct MP4 from KITP's S3 archive and url_slides KITP's PDF of the deck (title slide 'Scoping the Follow-up Effort'). His 2005-07 merit record: 'Speaker, Transient Universe 2006, KITP, 14 Mar 2006: \"Scoping the Follow-up Effort\"'; the organizers' abstract-booklet emails (Feb-Mar 2006) corroborate. No transcript yet (see leads in research/PROCESS.md)."
+  },
+  {
+    "n": 156,
+    "slug": "pairitel-2006",
+    "title": "PAIRITEL: Past, Present, Future",
+    "event": "2nd Annual PAIRITEL Workshop, Harvard-Smithsonian Center for Astrophysics",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2006-05-16",
+    "location": "Cambridge, MA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://web.archive.org/web/20060918192804/http://cfa-www.harvard.edu/~oir/pairitel/workshop2.shtml",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Science overview for the second workshop of PAIRITEL, the robotic 1.3-meter infrared telescope on Mt. Hopkins he led: its gamma-ray burst and supernova results, its automated operations, and plans for the next observing seasons.",
+    "notes": "Program (Wayback 2006-09-18, linked; the live CfA page is gone): 'Tuesday May 16, 2006, Pratt Conference Room', Joshua Bloom 9:15-9:40 'Welcome; Introduction to the Pipeline and New Archive' and 1:05-1:40 'PAIRITEL: Past, Present, Future'; conference organizer Joshua Bloom, UC Berkeley. Both talks survive locally as PDFs (~/OldLaptop/TalksOld/ptel2_welcome.pdf and ptel2_sci_intro.pdf, title slides '2nd PAIRITEL Workshop; 16 May 2006'); the workshop's own copies were never archived. Organizer correspondence (Apr-May 2006) confirms the date and room. His 2005-07 merit record lists both titles (and places it at Harvard/CfA)."
+  },
+  {
+    "n": 157,
+    "slug": "sval-2006",
+    "title": "Giant Cosmic Explosions: The Gamma-Ray Burst Boom",
+    "event": "Silicon Valley Astronomy Lectures, Foothill College",
+    "type": "Lecture",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2006-05-17",
+    "location": "Los Altos Hills, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://astrosociety.org/events-home/events/silicon-valley-lecture-series/past-slvs-lectures.html",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Public lecture on gamma-ray bursts, from their Cold War discovery by nuclear-test-monitoring satellites through the afterglow and supernova breakthroughs to Swift's first short bursts.",
+    "notes": "The ASP's past-lectures list (linked) has 'May 17, 2006: Dr. Joshua Bloom (U. of California, Berkeley): Giant Cosmic Explosions: The Gamma-Ray Burst Boom'. The organizer's logistics email ('Info on Lecture You Are Doing at Foothill College May 17th') and his thanks afterwards confirm it (correspondence). Deck ~/OldLaptop/TalksOld/foothill.ppt (title slide 'The Gamma-Ray Boom... / Silicon Valley Astronomy Lecture / 17 May 2006'). His 2005-07 merit record misdates it '19 May 2006' and calls it the 'Silicon Valley Astronomy Club'; his CVs list the 'Silicon Valley Lectures Series' among his outreach venues. The organizer mentioned that a nonprofit sometimes taped the lectures, but no recording was found."
+  },
+  {
+    "n": 158,
+    "slug": "cinc-2006",
+    "title": "Gamma-Ray Bursts at High Redshift",
+    "event": "Cosmology in Northern California (CINC '06), Lawrence Berkeley National Laboratory",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2006-05-22",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://web.archive.org/web/20080905084459/http://supernova.lbl.gov/~evlinder/cinc06talks.html",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Short talk at the annual Bay Area cosmology meeting on gamma-ray bursts at high redshift: how many there should be, what their progenitors' metallicity implies, and their use as probes of dust, star formation and reionization.",
+    "notes": "CINC '06 (May 22, 2006, 9am-5pm, Berkeley Lab; 'all talks are strictly 10+5 minutes'): the archived talk list (Wayback 2008-09-05, linked) has 'Josh Bloom (Berkeley) - Gamma-ray Bursts at High Redshift' in the 1:00-2:00 session; the organizers' announcements (correspondence) give the date and venue, and his calendar has 'Cosmology Meeting @ LBL' that day. Deck ~/OldLaptop/TalksOld/cinc.ppt (title slide 'CINC '06 Cosmology Workshop / Gamma-Ray Bursts at High Redshift'). His 2005-07 merit record lists it."
+  },
+  {
+    "n": 159,
+    "slug": "smcas-2007",
+    "title": "Giant Cosmic Explosions: The Gamma-Ray Burst Boom",
+    "event": "San Mateo County Astronomical Society",
+    "type": "Lecture",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2007-04-06",
+    "location": "San Mateo, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://smcas.net/wp-content/uploads/2024/01/SMCAS-Presentation-History-2001-to-2015-Marion-Weiler.pdf",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Evening talk at the San Mateo County Astronomical Society's monthly general meeting in the College of San Mateo planetarium, under the title of his 2006 Silicon Valley lecture.",
+    "notes": "SMCAS's presentation history 2001-2015 (linked PDF, from smcas.net/events/past-speakers/) lists 'Apr 6th 2007: Dr. Joshua Bloom, UC Berkeley / Giant Cosmic Explosions: The Gamma-ray Burst Boom'. His calendar has 'San Mateo Talk' 7-8 pm that evening; his 2005-07 merit record lists 'Guest Speaker, San Mateo County Astronomical Society (SMCAS), 6 April 2007'; the society's Jan 2012 invitation recalls it. Meetings are at the College of San Mateo Planetarium (talk about 8 pm, after a business meeting). No deck located."
+  },
+  {
+    "n": 160,
+    "slug": "chabot-2007",
+    "title": "The Cosmic Distance Ladder & Gamma-Ray Bursts",
+    "event": "Volunteer Night Enrichment Lecture, Chabot Space & Science Center",
+    "type": "Lecture",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2007-06-26",
+    "location": "Oakland, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Enrichment lecture for the volunteers of Oakland's Chabot Space & Science Center on the cosmic distance ladder and where gamma-ray bursts fit on it.",
+    "notes": "Listed in his 2005-07 merit record: 'Lecturer, Chabot Space & Science Center, Volunteer Night Enrichment Lecture, 26 June 2007 \"The Cosmic Distance Ladder & Gamma Ray Bursts\"'; his merit-review CVs name Chabot among his outreach venues. Chabot's volunteer enrichment talks were Tuesday evenings (a 2012 coordinator's description). The email archive has no mail from June 2006 through October 2009. No calendar entry, deck or public listing survives."
+  },
+  {
+    "n": 161,
+    "slug": "sfaa-2007",
+    "title": "Gamma-Ray Bursts: Newfound Diversity in Nature's Biggest Bangs",
+    "event": "San Francisco Amateur Astronomers",
+    "type": "Lecture",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2007-10-17",
+    "location": "San Francisco, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://web.archive.org/web/20080120125946/http://www.sfaa-astronomy.org:80/lectures/lecturehistory.php?gm",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Public lecture on how gamma-ray bursts went from Cold War curiosity to the biggest explosions known, and on their newfound diversity: short bursts from merging compact objects and long bursts without supernovae.",
+    "notes": "SFAA's lecture history (Wayback 2008-01-20, linked) lists 'October 17, 2007 - 7:30pm / Subject: \"GRB's\" / Speaker: Dr. Joshua Bloom'. SFAA's monthly lectures were held on third Wednesdays at the Randall Museum. Deck ~/OldLaptop/TalksOld/sfaa.key (43 slides; title slide 'Gamma-Ray Bursts: Newfound Diversity in Nature's Biggest Bangs / Josh Bloom / UC Berkeley / San Francisco Amateur Astronomers / 17 October 2007'; last saved that evening). The email archive has no mail from June 2006 through October 2009."
+  },
+  {
+    "n": 162,
+    "slug": "santa-fe-grb-2007",
+    "title": "The Crisis of Classification",
+    "event": "Gamma-Ray Bursts 2007 (Santa Fe Conference)",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2007-11-06",
+    "location": "Santa Fe, NM",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Conference talk arguing that gamma-ray bursts' long/short split no longer maps cleanly onto their progenitors (durations, spectral lags and host offsets all have exceptions) and proposing a physically based classification instead.",
+    "notes": "Deck ~/OldLaptop/TalksOld/santa-fe07.key (20 slides; title slide 'The Crisis of Classification / Josh Bloom / GRB2007: Santa Fe, NM 6 November 2007') plus santa-fe-extra.key (backup slides, e.g. 'Was long-soft burst 060121 a short-hard burst at high z?'). The conference ran Nov 5-9, 2007 in Santa Fe (AIP Conf. Proc. 1000, eds. Galassi, Palmer & Fenimore); his proceedings paper 'Gamma-ray Bursts, Classified Physically' (AIP Conf. Proc. 1000, 11) is on the site's publications list. Not in the CVs. The email archive has no mail from June 2006 through October 2009."
+  },
+  {
+    "n": 163,
+    "slug": "inaoe-sasir-2008",
+    "title": "The Synoptic All-Sky Infrared (SASIR) Survey: Overview",
+    "event": "Guillermo Haro Workshop 2008: Science with SASIR, INAOE",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2008-08-13",
+    "location": "Tonantzintla, Mexico",
+    "video_url": null,
+    "slides_url": "https://www.inaoep.mx/~progharo/gh2008/BloomOverview.pdf",
+    "event_url": "https://www.inaoep.mx/~progharo/gh2008/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Opening overview of the Synoptic All-Sky Infrared survey, a proposed 6.5-meter telescope at San Pedro Mártir that would map the whole sky in four near-infrared bands every few months, with the questions and decision timeline for the workshop.",
+    "notes": "GH 2008 'Science with SASIR' / 'SASIR - The Synoptic All-Sky Infrared Survey' (Guillermo Haro workshop, INAOE, Tonantzintla, Puebla, Aug 13-21, 2008; talks in INAOE's Auditorio Docente). The program (live, linked) has him Wed 13 Aug 10:30 'SASIR overview', Mon 18 Aug 12:30 'SASIR overview (version 2)' and Tue 19 Aug 10:30 'Detectors', each with slides (BloomOverview.pdf, linked, title slide 'SASIR/Guillermo Haro Workshop; 13 Aug - 21 Aug'; Bloom_2.pdf; Bloomdetectors.pdf). Found while chasing the CVs' commented '% Barcelona SASIR' line; not in the CVs. The email archive has no mail from June 2006 through October 2009."
+  },
+  {
+    "n": 164,
+    "slug": "inpa-sasir-2009",
+    "title": "SASIR: The Synoptic All-Sky Infrared Imaging Survey Concept",
+    "event": "INPA Seminar, Lawrence Berkeley National Laboratory",
+    "type": "Seminar",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2009-02-20",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://inpa-old.lbl.gov/INPA/Abstracts/022009.html",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Seminar at Berkeley Lab on SASIR, a proposed survey of the whole sky in the infrared with a dedicated 6.5-meter telescope in San Pedro Mártir, Mexico (what SDSS and LSST are to the optical sky, a successor to 2MASS), and its science from high-redshift quasars to obscured transients.",
+    "notes": "INPA's seminar archive (inpa-old.lbl.gov/INPA/past.html) lists '20 February - Joshua Bloom (UC Berkeley) - SASIR: the Synoptic All-Sky Inrared Survey' under 2009; the abstract page (live, linked) carries the title used here. Found while checking INPA's archive for other talks; not in the CVs or decks. The email archive has no mail from June 2006 through October 2009."
+  },
+  {
+    "n": 165,
+    "slug": "neyman-2009",
+    "title": "Real-Time Knowledge Extraction from Massive Time-Series Datastreams",
+    "event": "Neyman Seminar, Department of Statistics, UC Berkeley",
+    "type": "Seminar",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2009-09-09",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Seminar for Berkeley statisticians on turning synoptic-survey data streams into real-time discoveries: the follow-up bottleneck, machine-learned classification of images and light curves in the Palomar Transient Factory, and the division of labor between machines and humans.",
+    "notes": "Deck ~/OldLaptop/TalksOld/neyman.key (128 slides; title slide 'Real-Time Knowledge Extraction from Massive Time-Series Datastreams / Neyman Seminar, UC Berkeley, 9 Sept 2009'; last saved that afternoon). His calendar has 'Neyman Seminar' 4:10-5 pm in Evans Hall that day; in Jan 2010 a statistics colleague referred to 'the slides from a Neyman Seminar he gave last semester' and he shared them (correspondence). The Neyman Seminar is the Statistics Department's applied-statistics seminar, not a home-department talk. No public listing or archived slides found (the Statistics site's event archive starts later)."
+  },
+  {
+    "n": 166,
+    "slug": "fox-business-2014",
+    "title": "The $100 Earthquake Detector",
+    "event": "Varney & Co., Fox Business Network",
+    "type": "Interview",
+    "topics": [
+      "industry"
+    ],
+    "date": "2014-09-10",
+    "location": null,
+    "video_url": "https://www.foxbusiness.com/video/3777811155001",
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Live television interview about the $100 earthquake early-warning device he built from a Raspberry Pi and California's ShakeAlert feed, which gave his Berkeley home about five seconds of warning before the August 2014 South Napa earthquake.",
+    "notes": "Wednesday 10 Sep 2014, about 11:50 am ET, a live remote from UC Berkeley's journalism-school studio (correspondence with the show's booker, who found him through coverage of his blog post about the device). Fox's video page (linked; 3:15, 'The $100 earthquake detector') carries upload date 2014-09-10 and asset name 091014_varney_josh; a direct MP4 also exists on media.foxbusiness.com. Listed in his 2015-2022 CVs' media section ('Fox Business News, \"The $100 Earthquake Detector\" Varney & Co.'). The same week NBC Bay Area aired 'UC Berkeley Professor Develops $110 Earthquake Warning System'; that link now redirects to NBC's generic video page."
+  },
+  {
+    "n": 167,
+    "slug": "applied-ai-meetup-2017",
+    "title": "Industrial Machine Learning",
+    "event": "Applied Artificial Intelligence in the New Industrial Revolution (Applied AI Meetup)",
+    "type": "Talk",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
+    "date": "2017-04-13",
+    "location": "San Francisco, CA",
+    "video_url": null,
+    "slides_url": "https://www.slideshare.net/JoshuaBloom/industrial-machine-learning-at-ge",
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Meetup talk on machine learning at industrial scale at GE: where it pays off in industrial operations, why production ML systems are mostly glue code rather than models, and the systems-engineering trade-offs of deploying them.",
+    "notes": "Slides on SlideShare (uploaded 14 Apr 2017; title slide 'Industrial Machine Learning / Applied Artificial Intelligence in the New Industrial Revolution, 13 April 2017 (SF) / Josh Bloom'); until this sweep the deck was mis-attached to haas-industrial-ml. An attendee wrote the next day that he had seen the talk 'at the Applied Artificial Intelligence Meetup last night' (correspondence). No event page found."
+  },
+  {
+    "n": 168,
+    "slug": "inpa-ir-flash-2005",
+    "title": "Discovery of a Contemporaneous Infrared Flash from GRB 041219a",
+    "event": "INPA Seminar, Lawrence Berkeley National Laboratory",
+    "type": "Seminar",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2005-04-01",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Seminar at Berkeley Lab on the infrared flash that PAIRITEL caught during the gamma-ray emission of GRB 041219a (Blake et al. 2005, Nature).",
+    "notes": "His 2004-05 merit bio-bibliography lists 'Invited Talk, IPNA Seminar, LBL, \"Discovery of a Contemporaneous Infrared Flash from GRB\" (1 April 2005)'; his CVs keep it as a commented '% 1st ipna' line, separate from the 22 Jul 2005 seminar (ipna-2005). The merit record truncates the title; the burst is GRB 041219a (the Nature paper; 18 days later he gave 'Discovery of an Infrared Flash from GRB 041219a' at the 1st PAIRITEL workshop). Correspondence: a Berkeley Lab cosmologist invited him in Feb 2005 to speak in 'the Friday noon series', and on 31 Mar he forwarded the flash light curves to his Berkeley account. INPA's online seminar archive starts in 2007."
+  },
+  {
+    "n": 169,
+    "slug": "ucdavis-2005",
+    "title": "Recent Progress on Gamma-Ray Bursts: Cosmological Strides and the Progenitors of the Short-Hard Subclass",
+    "event": "UC Davis",
+    "type": "Seminar",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2005-11-10",
+    "location": "Davis, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Invited seminar at UC Davis on the year's gamma-ray burst advances: bursts as cosmological probes and the first host-galaxy clues to the progenitors of short-hard bursts.",
+    "notes": "His 2005-07 merit record: 'Invited seminar, UC Davis, Nov 10, 2005' with this title. His calendar (imported in May 2007, which misplaces some all-day entries) has an all-day 'Davis colloquium' on Nov 9. The email archive is empty for Oct 2005-Feb 2006, and no UC Davis listing was found."
+  },
+  {
+    "n": 170,
+    "slug": "ssl-colloquium-2006",
+    "title": "The Gamma-Ray Burst Revolution",
+    "event": "SSL Colloquium, Space Sciences Laboratory, UC Berkeley",
+    "type": "Colloquium",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2006-04-14",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://web.archive.org/web/20060618184535/http://www.ssl.berkeley.edu:80/seminars/abs/060414_Bloom_abs.html",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Colloquium at Berkeley's Space Sciences Laboratory on the flood of gamma-ray burst results after Swift's launch: the first redshift of a short-hard burst and the mounting case for merging compact binaries, the infrared flash caught during a burst, and a burst seen at redshift 6.3.",
+    "notes": "Deck ~/OldLaptop/TalksOld/SSLColloquium.key (146 slides; title slide 'The Gamma-Ray Burst Revolution / Joshua Bloom / UC Berkeley Astronomy Department / SSL: 14 April 2006'; one slide notes the latest Swift burst was '060413 (ie. yesterday)'). His calendar has 'SSL Colloquium - GRB Revolution' at 3 pm that day; SSL colloquia met Fridays at 3 pm (SSL's announcements); his 2005-07 merit record lists 'Colloquium, Space Sciences Lab, Berkeley, CA 14 April 2006: \"The Gamma-Ray Burst Revolution\"'. SSL's abstract page (Wayback 2006-06-18, linked; the colloquium file is 060414_Bloom_abs.html) has the title and abstract: Swift-era results, the first short-GRB redshift and compact-binary progenitors, the contemporaneous infrared flash, and the z=6.29 burst. SSL posted slides for some speakers that term, but not his."
+  },
+  {
+    "n": 171,
+    "slug": "usf-2005",
+    "title": "Gamma-Ray Bursts",
+    "event": "Physics Colloquium, University of San Francisco",
+    "type": "Colloquium",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2005-10-05",
+    "location": "San Francisco, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Physics department colloquium at the University of San Francisco in the first year of Swift-era gamma-ray burst results.",
+    "notes": "Title is descriptive: no title survives, and the topic is inferred (every talk he recorded for 2005-06 was on gamma-ray bursts). Wednesday 5 Oct 2005: his 2005-07 merit record lists 'Colloquium, Physics Department, Univ. San Francisco, 5 October 2005'; his CVs keep a commented '% USF talk' line among the 2005 talks; his calendar (imported in May 2007) has all-day 'UCSF Colloquium' entries on Oct 4 and 5 (sic). USF's physics colloquium list was last archived in Aug 2005, before the fall schedule was posted; the email archive is empty for Oct 2005."
+  },
+  {
+    "n": 172,
+    "slug": "llnl-2006",
+    "title": "Gamma-Ray Bursts",
+    "event": "IGPP Seminar, Lawrence Livermore National Laboratory",
+    "type": "Seminar",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2006-01-20",
+    "location": "Livermore, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Friday seminar at Livermore's Institute of Geophysics and Planetary Physics, the first of his two talks in the series.",
+    "notes": "Title is descriptive: no title survives and the topic is inferred from his 2005-06 talks (all on gamma-ray bursts); a Livermore IGPP astronomer had taken Keck data on GRB 050509b for him in June 2005. His 2005-07 merit record lists 'Invited Speaker, Lawrence Livermore National Laboratory IGPP Seminar, 20 Jan 2006'; his CVs keep a commented '% LLNL talk.' line among the 2005-06 talks. Same series as llnl-2010 (Fridays 12-1 pm, Bldg 219). No email survives for Oct 2005-Feb 2006, his calendar has no entry, and the IGPP seminar calendar (step.llnl.gov/IGPPSeminars) could not be checked on the Wayback Machine during the sweep."
+  },
+  {
+    "n": 173,
+    "slug": "kipac-2006",
+    "title": "Gamma-Ray Bursts",
+    "event": "ACKS Astrophysics Colloquium, KIPAC, Stanford University",
+    "type": "Colloquium",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2006-04-20",
+    "location": "Stanford, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Colloquium in the joint astrophysics series co-hosted by Stanford's Kavli Institute for Particle Astrophysics and Cosmology, six days after his gamma-ray burst colloquium at Berkeley's Space Sciences Laboratory.",
+    "notes": "Title is descriptive: none survives. Thursday 20 Apr 2006: his 2005-07 merit record lists 'Invited Speaker, ACKS Seminar at the Kavli Institute for Particle Astrophysics and Cosmology, 20 April 2006'; his calendar has 'KIPAC colloquium' that day; on 12 May 2006 KIPAC postdocs archiving the series asked the speakers for the slides of 'the talk you recently gave at Stanford' for the ACKS seminar site (correspondence; no reply survives). ACKS was the astrophysics colloquium KIPAC co-hosted, on Thursdays, alternating between campus and SLAC (KIPAC's events page, Wayback 2006-09-01). The ACKS schedule page (stanford.edu/~msako/acks_seminar.html) could not be checked on the Wayback Machine during the sweep."
+  },
+  {
+    "n": 174,
+    "slug": "tmt-2007",
+    "title": "Gamma-Ray Bursts & Transient Phenomena",
+    "event": "Science in the Era of TMT, UC Irvine",
+    "type": "Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2007-07-23",
+    "location": "Irvine, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Talk on the transient science a thirty-meter telescope could do: gamma-ray bursts as beacons to the first galaxies and reionization, tidal disruption flares out to cosmological distances, and what TMT would need to respond to them quickly.",
+    "notes": "Deck ~/OldLaptop/TalksOld/tmt_short.key (26 slides; title slide 'Gamma-Ray Bursts & Transient Phenomena / Josh Bloom / Science in the Era of TMT (UC Irvine); 23 July 2007'; exported to Flash on 12 Aug 2007). His notes leave supernovae to others ('Special talks about this'). The workshop is otherwise traced by another speaker's slides, 'Synergy between the Thirty Meter Telescope and the James Webb Space Telescope', from the 'Science in the Era of TMT' workshop at UC Irvine on Tuesday July 24, 2007 (asu.edu jwsttalks/uci07jwsttmt.pdf, now 404; Wayback copy web.archive.org/web/20231024194404/https://www.asu.edu/clas/hst/www/jwst/jwsttalks/uci07jwsttmt.pdf, title slide '\"Science in the Era of TMT\" Workshop, UC Irvine, Tuesday July 24, 2007'). Not in the CVs. The email archive has no mail from June 2006 through October 2009."
+  },
+  {
+    "n": 175,
+    "slug": "nsf-cdi-2007",
+    "title": "Data-Driven 21st Century Astrophysics",
+    "event": "NSF-CDI Workshop: Computation and Complex Systems, MSRI",
+    "type": "Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2007-10-12",
+    "location": "Berkeley, CA",
+    "video_url": null,
+    "slides_url": null,
+    "event_url": "https://www.slmath.org/workshops/448",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Joint Berkeley astrophysics presentation at the first NSF workshop on its Cyber-Enabled Discovery and Innovation initiative: why 21st-century astrophysics is data-driven, from spectroscopic cosmology surveys and radio-array signal processing to classification and anomaly detection in the time domain.",
+    "notes": "Deck ~/OldLaptop/TalksOld/cdi.key (36 slides; also cdi.zip; title slide 'Data-driven 21st Century Astrophysics / Computation & Complex Systems; Berkeley, 12 October 2007 / Josh Bloom / w/ D. Schlegel (LBL), G. Bower, E. Quataert'; includes a slide 'Astrophysics & CDI'). MSRI workshop 448 'Computation and Complex Systems' (Friday Oct 12, 2007; organized by Robert Bryant and Masoud Nikravesh; the first of four one-day NSF workshops on the Cyber-enabled Discovery and Innovation initiative): SLMath's workshop page (linked) and its schedule data list '9:50-10:35 Astrophysics'; MSRI's 2007-08 annual report prints the program ('Astrophysics: Josh Bloom, Geoffrey Bower, Eliot Quataert (UCB, Astrophysics), and Dave Schlegel (LBNL)') and lists 'Joshua Bloom, Astrophysics' among the workshop's recorded videos. SLMath's archive counts 8 videos for the workshop but does not expose them publicly. Not in the CVs. The email archive has no mail from June 2006 through October 2009."
+  },
+  {
+    "n": 176,
+    "slug": "american-voices-2006",
+    "title": "Scientist Interview",
+    "event": "American Voices with Bill Bradley, Sirius Satellite Radio",
+    "type": "Radio",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2006-03-26",
+    "location": null,
+    "video_url": null,
+    "slides_url": null,
+    "event_url": null,
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Guest interview as a scientist on American Voices, former senator Bill Bradley's weekly talk show on Sirius satellite radio.",
+    "notes": "Listed in his 2005-07 merit record: 'Guest radio appearance, \"American Voices\" with host Sen. Bill Bradley, 26 March 2006'. JB confirmed it (2026-09-27) as a radio appearance, a scientist interview; the title is his description. American Voices, Bradley's weekly show, launched on Sirius (Talk Central, channel 148) in May 2005 and aired Sundays; 26 Mar 2006 was a Sunday. No episode listing or recording found: the archived American Voices pages on billbradley.com (2007) list no 2006 episodes, and the email archive holds almost nothing for March 2006."
+  },
+  {
+    "n": 177,
+    "slug": "bbc-click-2015",
+    "title": "Machine Learning in Business",
+    "event": "Click, BBC News",
+    "type": "Interview",
+    "topics": [
+      "industry",
+      "ai-ml"
+    ],
+    "date": "2015-09-26",
+    "location": null,
+    "video_url": "https://www.youtube.com/watch?v=bdZkOBi4VUo&t=730",
+    "slides_url": null,
+    "event_url": "https://www.bbc.co.uk/programmes/b06fy32b",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Short interview in BBC Click's second artificial-intelligence special, in a segment asking whether AI will take our jobs: how wise.io built the image-sharing site We Heart It a spam filter tailored to that one site, and why highly personalized filters are where AI is heading.",
+    "notes": "Listed in his 2015-2022 CVs' media section: 'BBC News, Click, \"Machine Learning in Business\"; Oct 2015' (title kept from the CV). BBC programme page b06fy32b (linked): 'Click - 26/09/2015', the second of Click's artificial intelligence specials; first broadcast Sat 26 Sep 2015, 00:30 GMT, on BBC News, with repeats through Thu 1 Oct 2015 (the CV's 'Oct 2015'). The official BBC Click YouTube upload ('Click 803 : Teaching Artificial Intelligence to walk', 2020-06-23, 24:37; url_video starts at 12:10) carries the segment: We Heart It brought in 'AI specialists Wise' to build 'in effect a personalized AI spam filter'; he appears on camera, unnamed, at about 13:30-14:11 on filters 'highly tailored to you' as 'the kind of thing that Wise is trying to do'. No name caption; JB confirmed (2026-09-27) that the spokesperson is him."
   }
 ]

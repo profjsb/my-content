@@ -9,7 +9,7 @@ location: "Rome, Italy"
 summary: "The discovery and multi-wavelength follow-up of GRB 980703's afterglow and its dusty star-forming host galaxy."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 5
+talk_number: 6
 display_date: "Nov 1998"
 has_transcript: false
 ---

@@ -8,7 +8,7 @@ location: "Princeton, NJ"
 summary: "Colloquium on the two burst populations - collapsars and mergers - and the evidence separating them."
 topics: ["astronomy"]
 talk_type: "Colloquium"
-talk_number: 29
+talk_number: 45
 display_date: "Mar 2007"
 has_transcript: false
 ---

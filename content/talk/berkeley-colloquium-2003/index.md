@@ -8,7 +8,7 @@ location: "Berkeley, CA"
 summary: "Colloquium on the state of cosmological gamma-ray burst studies, delivered shortly before joining the Berkeley faculty."
 topics: ["astronomy"]
 talk_type: "Colloquium"
-talk_number: 18
+talk_number: 22
 display_date: "Nov 2003"
 has_transcript: false
 ---

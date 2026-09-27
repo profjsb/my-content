@@ -9,7 +9,7 @@ location: "Milwaukee, WI"
 summary: "Invited talk on electromagnetic follow-up of gravitational-wave sources: short-GRB kilonovae as counterparts to neutron-star mergers, the state of rapid optical follow-up of LIGO/Virgo triggers, and what wide-field surveys (LSST, WFIRST, SASIR, Pan-STARRS) could add in the advanced-detector era."
 topics: ["astronomy"]
 talk_type: "Invited Talk"
-talk_number: 53
+talk_number: 78
 display_date: "Jan 2011"
 url_slides: "https://web.archive.org/web/20141126151032/http://www.gravity.phys.uwm.edu/conferences/gwpaw/talks/bloom.pdf"
 has_transcript: false

@@ -1,20 +1,20 @@
 ---
 title: "Industrial Machine Learning"
-date: 2017-07-01
-publishDate: 2017-07-01
+date: 2018-03-27
+publishDate: 2018-03-27
 draft: false
-event: "UC Berkeley Haas School of Business"
+event: "Data Science & Strategy Lecture Series, Berkeley Haas"
+event_url: "https://fcba.berkeley.edu/data-science-strategy-lecture-series/"
 location: "Berkeley, CA"
-summary: "Guest lecture at Berkeley Haas on industrial-scale machine learning — deploying ML against industrial data at GE Digital after the Wise.io acquisition, and the gaps between academic, startup, and enterprise ML."
+summary: "Short interview with Haas lecturer Greg La Blanc on when companies should (and should not) reach for machine learning: the technical debt it brings, the trade-off between accuracy and explainability, and how to win the trust of the people whose work it changes."
 topics: ["industry", "ai-ml"]
-talk_type: "Lecture"
-talk_number: 108
-display_date: "2017"
+talk_type: "Podcast"
+talk_number: 140
+display_date: "Mar 2018"
 url_video: "https://www.youtube.com/watch?v=lH8mkQKRRq0"
-url_slides: "https://www.slideshare.net/JoshuaBloom/industrial-machine-learning-at-ge"
 has_transcript: false
 ---
 
-Guest lecture at Berkeley Haas on industrial-scale machine learning — deploying ML against industrial data at GE Digital after the Wise.io acquisition, and the gaps between academic, startup, and enterprise ML.
+Short interview with Haas lecturer Greg La Blanc on when companies should (and should not) reach for machine learning: the technical debt it brings, the trade-off between accuracy and explainability, and how to win the trust of the people whose work it changes.
 
-*Year approximate.*
+*A seven-minute video interview recorded Tuesday, March 27, 2018, for the lecture series that La Blanc runs alongside his data-science courses at the Haas School of Business; Haas posted it on May 10, 2018.*

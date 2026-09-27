@@ -9,7 +9,7 @@ location: "Leiden, The Netherlands"
 summary: "Colloquium on using gamma-ray bursts as probes of the distant universe."
 topics: ["astronomy"]
 talk_type: "Colloquium"
-talk_number: 35
+talk_number: 58
 display_date: "Sep 2008"
 has_transcript: false
 ---

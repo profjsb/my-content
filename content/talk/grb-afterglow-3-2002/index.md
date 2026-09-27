@@ -9,7 +9,7 @@ location: "Rome, Italy"
 summary: "Solicited case that late-time optical bumps in GRB afterglows are underlying supernovae - the photometric argument for the massive-star origin of long bursts."
 topics: ["astronomy"]
 talk_type: "Invited Talk"
-talk_number: 15
+talk_number: 19
 display_date: "Sep 2002"
 has_transcript: false
 ---

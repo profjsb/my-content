@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Research lecture for physics undergraduates in the student-run Compass Project's series: gamma-ray burst phenomenology, afterglows and progenitors, and the bursts' uses as probes of dust, reionization and the first stars and as partners to gravitational-wave searches."
 topics: ["astronomy"]
 talk_type: "Lecture"
-talk_number: 49
+talk_number: 74
 display_date: "Oct 2010"
 has_transcript: false
 ---

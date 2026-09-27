@@ -9,7 +9,7 @@ location: "Washington, DC"
 summary: "Population-synthesis predictions for where merging neutron-star binaries occur relative to their host galaxies, and what burst offsets imply for the merger progenitor model."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 4
+talk_number: 5
 display_date: "Jan 1998"
 has_transcript: false
 ---

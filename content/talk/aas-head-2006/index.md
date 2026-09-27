@@ -9,7 +9,7 @@ location: "San Francisco, CA"
 summary: "Invited review of short-burst host galaxies at the HEAD meeting, cementing the demographic case for compact-object mergers."
 topics: ["astronomy"]
 talk_type: "Invited Talk"
-talk_number: 28
+talk_number: 44
 display_date: "Oct 2006"
 has_transcript: false
 ---

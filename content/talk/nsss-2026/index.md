@@ -9,7 +9,7 @@ location: "Online"
 summary: "Sponsor session introducing Valency Bond — deep literature search over a fresh 45M-paper corpus backed by a 450M-edge citation graph, delivered as MCP tools inside Claude, Codex, or any agent — as the grounding data layer for open science in the agentic era."
 topics: ["industry", "ai-ml"]
 talk_type: "Talk"
-talk_number: 148
+talk_number: 176
 display_date: "Aug 2026"
 url_video: "https://www.youtube.com/live/PFhD1phK5Z4?t=1635s"
 url_slides: "https://valency-oss.github.io/talks/ns2026/"

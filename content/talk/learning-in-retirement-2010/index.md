@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Public lecture on gamma-ray bursts for the UC Berkeley Retirement Center's Learning in Retirement program: how Cold War satellite detections became the deaths of massive stars and the births of black holes, and how the bursts now serve as beacons to dust, reionization and the first stars."
 topics: ["astronomy"]
 talk_type: "Lecture"
-talk_number: 46
+talk_number: 71
 display_date: "Sep 2010"
 has_transcript: false
 ---
