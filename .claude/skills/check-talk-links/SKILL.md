@@ -24,7 +24,8 @@ python3 .claude/skills/add-talk/scripts/talks.py linkcheck
   failure (e.g. an expired certificate) — `curl -v` tells you which.
 - **`WALLED` (401/403, or an AWS WAF bot challenge)** — ambiguous: could be a paywall
   (O'Reilly), a permissioned file (Google Drive), or just bot-blocking of curl (ADS
-  answers scripts with 405 + `x-amzn-waf-action: captcha`; humans get a CAPTCHA).
+  answers scripts with 405 + `x-amzn-waf-action: captcha`; humans get a CAPTCHA —
+  detecting that needs curl ≥ 7.84, older curl reports it as `DEAD`).
   **Verify in a real browser before replacing** — a link that works for humans stays.
 - YouTube is checked via **oEmbed**, because deleted/private videos still return
   HTTP 200 on the watch page. An oEmbed 4xx means the video is really gone.

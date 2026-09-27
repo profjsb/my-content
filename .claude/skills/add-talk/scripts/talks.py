@@ -261,6 +261,19 @@ def cmd_scaffold(args):
 
 # ---------- linkcheck ----------
 
+def curl_status(url, head=False):
+    """Final status after redirects, plus whether an AWS WAF bot challenge answered (e.g. ADS
+    replies to scripts with 405 + "x-amzn-waf-action: captcha") — a bot-block, not rot."""
+    r = subprocess.run(["curl", "-sIL" if head else "-sL", "-o", "/dev/null", "-w",
+                        "%{http_code} %header{x-amzn-waf-action}",
+                        "--max-time", "20", "-A",
+                        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)", url],
+                       capture_output=True, text=True)
+    code, _, waf = r.stdout.strip().partition(" ")
+    # curl < 7.84 has no %header{} and echoes it verbatim: accept only a bare action token
+    return code or "000", bool(re.fullmatch(r"[A-Za-z]+", waf))
+
+
 def check_url(url, is_audio=False):
     m = re.search(r"youtube\.com/(?:live|embed|shorts)/([A-Za-z0-9_-]+)", url)
     if m:  # normalize /live/, /embed/, /shorts/ forms so oEmbed accepts them
@@ -271,22 +284,10 @@ def check_url(url, is_audio=False):
         r = subprocess.run(["curl", "-s", "-o", "/dev/null", "-w", "%{http_code}",
                             "--max-time", "15", o], capture_output=True, text=True)
         return r.stdout.strip() or "000", "yt-oembed"
-    if is_audio or url.split("?")[0].endswith((".mp3", ".m4a", ".ogg")):
-        # HEAD so we don't download the media; take the final status after redirects
-        r = subprocess.run(["curl", "-sIL", "-o", "/dev/null", "-w", "%{http_code}",
-                            "--max-time", "20", "-A",
-                            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)", url],
-                           capture_output=True, text=True)
-        return r.stdout.strip() or "000", "head"
-    # also report the AWS WAF action header: a bot challenge (e.g. ADS answers scripts with
-    # 405 + "x-amzn-waf-action: captcha") is a bot-block, not rot
-    r = subprocess.run(["curl", "-sL", "-o", "/dev/null", "-w",
-                        "%{http_code} %header{x-amzn-waf-action}",
-                        "--max-time", "20", "-A",
-                        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)", url],
-                       capture_output=True, text=True)
-    code, _, waf = r.stdout.strip().partition(" ")
-    return code or "000", "waf" if waf else "get"
+    # HEAD for media so we don't download it
+    head = is_audio or url.split("?")[0].endswith((".mp3", ".m4a", ".ogg"))
+    code, waf = curl_status(url, head=head)
+    return code, "waf" if waf else ("head" if head else "get")
 
 
 def cmd_linkcheck(_args):
