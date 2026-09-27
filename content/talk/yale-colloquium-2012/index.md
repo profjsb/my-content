@@ -9,7 +9,7 @@ location: "New Haven, CT"
 summary: "Yale Physics Club colloquium on relativistic tidal disruption events."
 topics: ["astronomy"]
 talk_type: "Colloquium"
-talk_number: 59
+talk_number: 76
 display_date: "Dec 2012"
 has_transcript: false
 ---

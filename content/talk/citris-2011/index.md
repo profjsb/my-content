@@ -1,23 +1,23 @@
 ---
 title: "Astrophysics of Streaming Time-Series Data: Discovery and Inference"
-date: 2013-07-01
-publishDate: 2013-07-01
+date: 2011-04-05
+publishDate: 2011-04-05
 draft: false
-event: "CITRIS Research Exchange, UC Berkeley"
-event_url: "https://citris-uc.org/news-events/citris-research-exchange/"
+event: "i4Science Lecture Series, CITRIS & LBNL Computational Science and Engineering"
 location: "Berkeley, CA"
-summary: "CITRIS Research Exchange seminar on ML pipelines for discovery and inference on streaming astronomical time-series data (variable stars, transients, synoptic surveys)."
+summary: "i4Science lecture at CITRIS on machine-learning pipelines for discovery and inference on streaming astronomical time-series data (variable stars, transients, synoptic surveys)."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 64
-display_date: "2013"
+talk_number: 55
+display_date: "Apr 2011"
 url_video: "https://www.youtube.com/watch?v=yUhPC24vThs"
 has_transcript: true
+aliases: ["/talk/citris-2013/"]
 ---
 
-CITRIS Research Exchange seminar on ML pipelines for discovery and inference on streaming astronomical time-series data (variable stars, transients, synoptic surveys).
+i4Science lecture at CITRIS on machine-learning pipelines for discovery and inference on streaming astronomical time-series data (variable stars, transients, synoptic surveys).
 
-*Exact date within 2013 unconfirmed.*
+*The 2:00–2:30pm talk of the Tuesday, April 5, 2011 i4Science session (Computational Science and Engineering at CITRIS and Lawrence Berkeley National Laboratory), Banatao Auditorium, Sutardja Dai Hall; announced as "…Discovery and Inference with Little Adult Supervision." CITRIS recorded it and posted the video in May 2011.*
 
 ## Key Quotes
 

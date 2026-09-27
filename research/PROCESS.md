@@ -151,8 +151,9 @@ future sessions don't re-litigate them (and can retry the *recoverable* ones).
 \#6 Synoptic-survey ML (2011, SlideShare), #7 Royal Society (2012, Speaker Deck — the
 meeting page once linked an MP3 of the talk, but its host `downloads.royalsociety.org` is
 gone and the file was never archived; confirmed 2026-09-26),
-\#10 LSST All-Hands (2012, Speaker Deck), #16 NAS Big Data (2014 — slide match marked
-*probable*), #20 Astro Hack Week tutorial (2014 — and the slides link is a
+\#10 LSST All-Hands (2012, Speaker Deck), ~~#16 NAS Big Data (2014 — slide match marked
+*probable*)~~ (**resolved 2026-09-26:** the recording is on the National Academies' Vimeo
+and the match is confirmed — see the last addendum), #20 Astro Hack Week tutorial (2014 — and the slides link is a
 permission-walled Google Drive URL, so even that is effectively dead), #22 Data Science
 Education (2015, SlideShare), #29 KDD (2017), #30 Autoencoding RNNs (2017),
 \#35 DESI plenary (2019 — internal collaboration meeting, no public event page either),
@@ -160,8 +161,10 @@ Education (2015, SlideShare), #29 KDD (2017), #30 Autoencoding RNNs (2017),
 
 ### Provenance uncertain (on the page with caveats in `talks.json` notes)
 
-- **#6 "Machine Learning and Classification in the Synoptic Survey Era" (2011)** —
-  51-slide deck exists; exact venue/date estimated from related 2011–2012 work.
+- ~~**#6 "Machine Learning and Classification in the Synoptic Survey Era" (2011)** —
+  51-slide deck exists; exact venue/date estimated from related 2011–2012 work.~~
+  **Resolved 2026-09-26:** the deck's own title slide reads "Berkeley Streaming Workshop;
+  7 May 2012", so it is now `berkeley-streaming-2012` (see the old-format Keynote addendum).
 - **#22 "Data Science Education: Needs & Opportunities in Astronomy" (2015)** — deck
   exists; venue unknown.
 - **#30 "Autoencoding RNNs" (2017)** — deck only; venue unknown, dated from the paper
@@ -209,6 +212,9 @@ After repairs: **145 ok, 10 walled, 0 dead of 155 links** (149 ok of 159 once ma
 understood: ADS (above); the O'Reilly paywall and the permissioned Drive deck (July rows 15
 and 20); and bot-blocking by aas.org (3 links), Columbia DSI, CfA ITC, archive.siam.org and
 the JHU Gazette, each noted in its ledger entry as live in a browser.
+
+After the old-format Keynote sweep (see its addendum), with the a16z pair merged: **171 ok,
+10 walled, 0 dead of 181 links**; the walled ten are unchanged.
 
 ## Addendum — same-day restyle & audio pass (2026-07-18)
 
@@ -297,17 +303,23 @@ entries.**
   workshop title; simons-visions-2013 moved to May 30 per the deck. A slide dated
   "AAS Austin Jan 2011" was corrected to AAS 219 (Jan 2012 — SN 2011fe postdates
   Jan 2011); "IAU Oxford Sept 2011" matches no IAU meeting and is recorded as an
-  Oxford seminar with a caveat note.
+  Oxford seminar with a caveat note (*wrong: it was IAU Symposium 285 — corrected in the
+  old-format Keynote addendum*).
 - **Privacy rule applied** (industry decks without venues are private): excluded
-  a16z academic roundtable, D. E. Shaw, Thomson Reuters, Vodafone, Fujitsu forum,
+  a16z academic roundtable (since published at JB's request, deck in the slide viewer:
+  see the 2026-09-26 a16z addendum), D. E. Shaw, Thomson Reuters, Vodafone, Fujitsu forum,
   TCV CIO/CTO, WeWork, Arkadium, Orange Institute, and all wise.io product/client
   decks (several marked "Confidential / Not for distribution"), plus Valency investor
   decks. Also excluded: courses/guest lectures (INFO 296A), lab-internal decks (BAIR
   retreat, Moore check-ins, group intros), student-authored decks, posters, and decks
   whose first page carried no identifying metadata (amnh, davis, como, keck, cefalù —
-  the last could not be matched to any real Cefalù 2012 meeting).
+  the last could not be matched to any real Cefalù 2012 meeting). (*Their slide text
+  later identified four of them, cefalù being a 2008 meeting; como was a colleague's
+  talk — see the old-format Keynote addendum.*)
 - 15 old-format Keynote bundles had no extractable preview (incl. citris2010,
   i4science, gw) — unreadable without opening Keynote; left for a manual pass.
+  (*Done 2026-09-26 without Keynote, by reading the bundles' XML — see the old-format
+  Keynote addendum.*)
 
 ## Addendum — AAS/HEAD meeting abstracts (2026-09-26)
 
@@ -362,12 +374,253 @@ YouTube recordings, and all three now have embedded transcripts, Key Quotes and
   courses. The other two stay `astronomy`/`ai-ml`. The HiPACC card summary, previously a
   placeholder, was rewritten from the transcript.
 
+## Addendum — NRC big-data workshop recording (2026-09-26)
+
+JB supplied the National Academies' Vimeo recording of `nas-big-data-2014`, "Computational
+Training and Data Literacy for Domain Scientists", until then a slides-only entry whose
+venue was marked *probable*. It now has the video, a transcript, Key Quotes and a
+`research/nas-big-data-2014.summary.txt`. **Transcript pages: 23 → 24.**
+
+- **Venue confirmed three ways:** the Vimeo description (a Committee on Applied and Theoretical Statistics workshop, April 11, 2014);
+  the deck's title slide and speaker notes (local archive,
+  `~/OldLaptop/MoreOldTalk/nas_bloom_teaching_big_data.key`, an old-format Keynote bundle
+  whose `index.apxl` XML yields the slide text); and the workshop proceedings (NAP 2015,
+  doi:10.17226/18981), whose Chapter 4 summarizes the talk under this exact title. The
+  page body links that chapter. The event is now credited to the National Research
+  Council, which convened the workshop. `event_url` is the Academies' current project page;
+  the old `/our-work/` URL now 301s there.
+- **First Vimeo video on the page.** `url_video` is the canonical `vimeo.com/94389370`,
+  because `talk_video_embed.html` only embeds `vimeo.com/<id>` URLs, not the showcase URL
+  (`vimeo.com/showcase/2861203?video=…`). The video's embed permission is public.
+- **Pipeline (Vimeo has no captions):** yt-dlp's Vimeo extractor now fails (its OAuth
+  token fetch returns 401), so the 240p MP4 came straight from the player config
+  (`player.vimeo.com/video/<id>/config` → `request.files.progressive`). It was transcribed
+  locally with faster-whisper `distil-large-v3` (CPU int8, VAD; ~13 min for the 33.6-min
+  talk on an M2, plus a one-time 1.5 GB model download). Then **every doubtful passage and
+  every Key Quote was re-transcribed with `medium.en`** as an independent check (28 clips),
+  and the result was cleaned by hand, with names and terms checked against the deck.
+  5,569 → 5,468 words (98% kept; Whisper already drops most fillers).
+- **The second model settled:** "after-hours hackathons" (distil: "after our"), "muck in on
+  the command line" ("mock in"), "robotic telescope resources" ("research. sources"), "IBM
+  Watson is using" ("is used. using"), and a phantom "We are with…" that was really
+  "…arriving in just a few years from now with a huge amount of data". **Kept as spoken**
+  because both models agreed: "four or five people take this course for credit" (he later
+  says renaming it raised for-credit enrollment to about 40), "say, in MATLAB",
+  "U.S. national involvement" (LOFAR/SKA) and "mentor-mentoree".
+- **Speakers:** FREW (session chair James Frew, per the proceedings), whose introductions are
+  cut mid-sentence at the start of the video, then BLOOM. The excerpt ends before any Q&A.
+- **Topics:** `education` + `astronomy`. About 15% of the talk is the astronomy data-deluge
+  motivation (LSST, LOFAR/SKA, the PTF transient pipeline, a PNAS Kepler result), and it
+  carries the argument. Machine learning comes up only in passing, so no `ai-ml`.
+
+## Addendum — a16z Academic Roundtable talk and interview (2026-09-26)
+
+JB asked for a16z's "Supernovas and Novel Insight: Where Machine Learning is Headed Next"
+(a16z.com, Jan 2015), then supplied the deck of the talk he gave at the same event, a16z's
+second annual Academic Roundtable (Sep 25–27, 2014, at the firm's Menlo Park offices). Both
+entries are dated 27 Sep 2014.
+
+- **#76 `a16z-roundtable-2014`: "Practicable Machine Intelligence in Science & Industry"
+  (Invited Talk).** a16z's invitation asked for 15 minutes on his ML research, and the
+  archived agenda (Wayback's 2014-10-21 capture of academic.a16z.com, now the `event_url`)
+  lists it at 11:10am on the last morning as the "Artificial Intelligence" session. No
+  recording was posted. The 24-slide deck is in the embedded viewer (`talks.py slides`,
+  2.1 MB of WebP); the PDF stays out of the repo. At JB's request this lifts the
+  slide-archive privacy exclusion (above) for this one deck.
+- **#77 `a16z-interview-2014`: the a16z video (Podcast).** It is an interview a16z filmed
+  at the roundtable after the talk (he refers back to "my talk"), not a talk recording.
+  **Typed `Podcast` per JB**; the first pass used `Interview`, which the Type filter files
+  under Radio. The a16z page's Vimeo embed is dead (the page prints the raw `[vimeo]`
+  shortcode), so the page embeds a16z's own YouTube re-upload (`6hQqpQ3IZlY`).
+  **Transcript pages: 24 → 25.**
+- **Transcript from local Whisper, per JB, not auto-captions.** The installed yt-dlp
+  (2026.07) gets HTTP 403 from YouTube's media servers, so the audio came from the latest
+  yt-dlp run in isolation (`uvx --from "yt-dlp[default]@latest" yt-dlp --js-runtimes node
+  -f 140`). faster-whisper `distil-large-v3` (int8, CPU) transcribed the 14.5 minutes in
+  15, and an AI pass removed fillers, false starts and stutters: 2,794 → 2,657 words
+  (95%). Doubtful phrases and every Key Quote were re-heard with `medium.en` on isolated
+  clips. Whisper fixed several auto-caption errors: "in the penthouse" was "couldn't have
+  done in the past", "apply non-data" was "opine on data", and "no extra mning data" was
+  "noisy streaming data". It also reversed one guess from the caption-based draft: "the
+  total amount of data" is really "the toy amount of data" (a single 0.14-second word in
+  both Whisper models).
+- **Same-day order:** `rank_key` breaks date ties on the existing `talk_number`, so the
+  talk stays #76 and the interview #77 through later renumbers.
+
+## Addendum — old-format Keynote sweep (2026-09-26)
+
+The July slide-archive sweep read each deck only through its embedded preview image and
+left "15 old-format Keynote bundles" for a manual pass. Old-format decks (Keynote '08/'09,
+before the 2013 IWA format) turn out to be machine-readable: the `.key` is a zip, or a
+directory package, whose `index.apxl` (sometimes `index.apxl.gz`) is XML. Splitting it on
+`<key:slide ` and stripping the tags from each `<sf:p>…</sf:p>` gives every slide's text,
+and each slide's `<key:notes>` element holds its speaker notes. So this pass re-read
+**every** old-format deck in the three folders as text, not just the 15, and deduped the
+title slides, venue lines and notes against the ledger. **18 new entries: 130 → 148**
+(counting the a16z pair that merged just before).
+
+```python
+import html, re, zipfile
+def paras(frag):   # text of each <sf:p> paragraph in an XML fragment
+    return [html.unescape(re.sub(r"<[^>]+>", "", p)).strip()
+            for p in re.findall(r"<sf:p\b[^>]*>(.*?)</sf:p>", frag, re.S)]
+xml = zipfile.ZipFile(path).read("index.apxl").decode()   # or gunzip index.apxl.gz
+for seg in re.split(r"<key:slide\s", xml)[1:]:              # master slides don't match
+    seg = seg.split("</key:slide>")[0]
+    body, _, notes = seg.partition("<key:notes")
+    slide_text, speaker_notes = paras(body), paras(notes)
+```
+
+**Inventory.** `find -L ~/Talks ~/OldLaptop/Talks ~/OldLaptop/MoreOldTalk -iname '*.key'
+-prune` finds 208 items: **99 old-format decks** (98 zips and 1 directory package), 95
+new-format decks, 12 zero-byte files and 2 zipped new-format packages. All 99 old-format
+decks parsed, giving 4,598 slides, 1,970 of them with speaker notes. Title slides usually
+name the venue and date. When they didn't, other sources filled the gap:
+- the notes ("as you'll see tonight…", "Perley, this meeting");
+- the file's last-saved time;
+- JB's email (organizer confirmations, via msgvault);
+- his merit-review CVs (`~/Admin/Merit/*/jsbcv_*.tex`).
+
+Every addition was then checked on the web: live pages where they still exist, Wayback
+captures otherwise.
+
+**What the "15 with no preview" were:**
+- **12 zero-byte files** in `~/OldLaptop/Talks`: `citris2010`, `citris2010_nobackup` (plus an
+  empty `.zip`), `gw`, `i4science`, `i4science_2011`, `jc20111`, `RRL_midIR`, `sacnas`,
+  `siam_2011`, `siam_2011_long`, `stsci_2011`, `tvs_tucson_lsst`. Each is 0 bytes in 0 blocks
+  with only a Finder-info xattr, so the content was lost when the laptop was copied; neither
+  Keynote nor a parser can read them.
+  - Readable copies of 7 survive (`Backup of …`, the `MoreOldTalk` duplicates,
+    `SASIR/sacnas_bloom_oct1.key`).
+  - Of the other five: `citris2010` (and its `_nobackup` twin) is now `citris-2010`, found
+    through its recording; `stsci_2011` is already `stsci-2011`; `siam_2011_long` was a
+    longer cut of `siam-cse-2011`; `RRL_midIR` (RR Lyrae in the mid-IR?) is simply gone.
+- **1 directory package**, `GRBs/invited_swift_penn_state_nov_2009_08.key`, readable after
+  gunzipping `index.apxl.gz`; it is Swift@5, already `swift5-2009`.
+- **2 zipped new-format packages** in `~/Talks`, `jul2019talk.key` and `invnet.key` (their IWA
+  text came out through a small raw-snappy decoder). Both are student-authored decks by
+  Keming Zhang (deepCR, 2019; cyclic-permutation-invariant networks, 2020), so they are out
+  of scope.
+
+**Added (18).** Each ledger `notes` field records the deck, email and web evidence.
+
+| Slug | Date | Talk | Found through |
+|------|------|------|---------------|
+| `cefalu-2008` | 2008-09-19 | GRBs as Cosmological Probes | deck; July's "Cefalù 2012" guess was wrong (SOC listing on the archived conference page; programs never archived, so the day is the slide's) |
+| `eventful-universe-2010` | 2010-03-18 | Scratching Decadal Itches with GRBs (invited) | deck; archived NOAO schedule |
+| `citris-2010` | 2010-03-31 | Automating Discovery and Classification of the Dynamic Universe | 0-byte deck → organizer email → CITRIS's 54-min YouTube recording. **Title is descriptive** (the announced one wasn't preserved) |
+| `keck-2010` | 2010-04-13 | Cosmic Forensics: Tracking Stellar Deaths | deck; Keck's invitation (by-invitation "Evenings with Astronomers" series; no web listing of this lecture) |
+| `scidac-2010` | 2010-05-20 | Exploiting the Transient IR Sky | deck; organizer email; the SciDAC consortium meeting's schedule (unlinked by request, see notes) |
+| `learning-in-retirement-2010` | 2010-09-14 | Gamma-Ray Bursts: Birth Cries of Black Holes | deck; UC Berkeley Retirement Center newsletter |
+| `dean-lecture-2010` | 2010-10-04 | Making Sense of the Dynamic Universe in the Synoptic Survey Era | **no deck**: the merit CVs' outreach paragraph → organizer email → archived Academy listing + iTunes U audio |
+| `compass-2010` | 2010-10-07 | What Are Gamma-Ray Bursts? | deck; archived Compass Project post |
+| `llnl-2010` | 2010-11-19 | SASIR: A Wide-Field Synoptic Survey for this Decade | deck; organizer email (no web listing survives) |
+| `gwpaw-2011` | 2011-01-28 | EM Followup: Past, Present, Future (invited) | backup deck (`gw.key` is 0 bytes); archived GWPAW program and slides PDF |
+| `berkeley-roundtable-2011` | 2011-04-29 | Making Sense of the Dynamic Universe in the Synoptic Survey Era | deck; email (internal donor event, like the 2022/2025 roundtables) |
+| `iaus285-2011` | 2011-09-23 | Technical and Observational Challenges for Future Time-Domain Surveys (invited) | deck; IAU S285 proceedings (Cambridge Core) |
+| `ucdavis-2011` | 2011-10-08 | Challenges to Automating the Scientific Workflow in Streaming Astronomical Data (invited) | deck; archived workshop schedule |
+| `columbia-2011` | 2011-11-08 | The Transient Universe | deck (no title slide); Columbia's pizza-lunch listing |
+| `amnh-2011` | 2011-11-08 | Time-Domain Challenges in the Synoptic Survey Era | deck; organizer email; AMNH's public calendar |
+| `dean-lecture-2012` | 2012-09-10 | The Supernova of a Generation: SN 2011fe | deck (its title slide says Sept 9; the Academy's page and email say Monday Sept 10); iTunes U audio |
+| `hotwired-2013` | 2013-11-14 | The Modern Automated Astrophysics Stack | deck; archived HTU-III speakers page; SLAC eConf proceedings |
+| `berkeley-roundtable-2014` | 2014-05-05 | Inference in Time Domain Astrophysics | deck; email (the invitation's title was "Big Data Science in Time Domain Astronomy") |
+
+**Corrected (3).** Two slugs changed; Hugo `aliases` keep the old URLs working.
+- **`citris-2013` → `citris-2011`.** The CITRIS video (YouTube upload 2011-05-19) is the
+  **April 5, 2011 i4Science lecture**, not a 2013 Research Exchange talk: the i4Science deck
+  has the same title, and the organizer's program has the 2:00pm slot. The Research Exchange
+  series link moved to `citris-2010`, his actual Research Exchange talk.
+- **`oxford-2011`**, the SN 2011fe talk (`sn2011fe_iau`, title slide "IAU Oxford- 20 Sept
+  2011"): the July sweep said "IAU Oxford Sept 2011" matched no IAU meeting, but **IAU
+  Symposium 285** (New Horizons in Time-Domain Astronomy) ran in Oxford on Sept 19–23,
+  2011. It is now credited to the symposium (Tuesday, "Explosive or Irreversible
+  Changes") and linked to the proceedings. His invited review on the closing day is the
+  new `iaus285-2011`.
+- **`synoptic-survey-ml-2011` → `berkeley-streaming-2012`.** Found while deduping; not an
+  old-format deck. The SlideShare deck's title slide (slide 2) reads "Classification of
+  Astronomical Time-Series Data in the Synoptic Survey Era … Berkeley Streaming Workshop;
+  7 May 2012", i.e. the workshop "From Data to Knowledge: Machine Learning with Real-time and
+  Streaming Applications". That resolves item #6 of "Provenance uncertain" above.
+- Ledger-only notes: `samsi-2012` (the deck says Sept 20, but its save times match the
+  program's Sept 21) and `ciera-northwestern-2014` (the CV and the roundtable deck give
+  "Inference in Time Domain Astrophysics"; the CIERA announcement's title is kept).
+
+**Excluded (same rules as July).** Every other old-format deck either matches an entry
+already on the page or falls under one of these groups:
+- **Not his talk:** `como` was prepared for the "GRBs as Probes" meeting (Como, May 2011),
+  but he did not attend and Nial Tanvir presented it for the group.
+- **Home-department internal:** `sasir_berkeley` was the Berkeley astronomy Theory Lunch
+  (Sept 29, 2010). The rule applied: a visiting talk at another department's lunch
+  (`columbia-2011`) counts, a lunch talk in his own department does not.
+- **Unverified collaboration meeting:** `sasir_bigboss_nov2009` (a SASIR pitch to BigBOSS;
+  no trace in email or on the web).
+- **Not a talk:**
+  - `Backup of tvs_tucson_lsst` is five welcome slides as co-chair of the LSST TVS workshop
+    (NOAO, March 2011).
+  - `lsst_aas` (+ backup) is image-only LSST status slides with notes, for the Nov 2010
+    town hall that `sasir-townhall-2010` already covers.
+  - `aas2010_poster` is a poster.
+- **Courses and guest lectures:** `ay290-2011` (+ backup), `ay290-2013`, `ay250-2013`,
+  `intro` (Python for Data Science), `ischool` and `ischool copy` (INFO 296A, 2013 and
+  2014).
+- **Lab-internal:** `lars` (+ backup; a group meeting, July 2011), `jc20111` (+ copies; a
+  journal club), `nch-bloomlab`, `dark` (a retreat dinner talk, "DARK Out in Portugal
+  2012"), `astronomy` (a department map), `moore_sloan_bids_bloom` (an internal BIDS
+  announcement, Nov 2013).
+- **Industry, client or funder (private):** `thomson-reuters-wiseio-k09`, `arkadium`,
+  `deshaw_bloom`, `wiseio_joshlecture_slides`, `machine_intelligence engine` and
+  `machine_intelligence engine_jsb`,
+  `ml tech`, `claudia1`/`claudia2`, `haas`/`haas_life` (a wise.io "Life as an
+  Entrepreneur" talk at Haas, Nov 2013, whose deck also carries the title slide of an
+  Oct 2013 "Citrix Data Camp" pitch; no public listing for either), and
+  `bloom_mooresloan_draft`/`bloom_datascience` (the Moore/Sloan "Supporting Data Science"
+  workshop, March 2013).
+- **Fragments:** `bloom_1min_2013`, `maxwise_mira_slide`, `josh-scipy`, and the IAU S285
+  side slides `iau_gw_slides` and `grb_questions_iau`.
+- **Already on the page, no change:** `petrosian-fest`, `lobster_bloom`, `exist_cospar`
+  (+ `exist_cospar_no_backup`), `invited_swift_penn_state_nov_2009`, `pierce_aas_2010`,
+  `aas_townhall`, `sacnas_bloom_oct1`, `siam_2011`, `mit_colloqium`,
+  `sn2011fe_bloom_aas_2012` and `sn2011fe_bloom_iau` (AAS 219; the latter is its Jan 2012
+  copy), `royal society 2012`, `b3` (the Royal Society satellite meeting), `neutrino`
+  (IceCube), `bloom_SAMSI` (+ `bloom_SAMSI_16`), `yale_colloqium`, `scipy2012_bloom`/`siam2013_bloom`/`visions_of_cs_bloom`/
+  `ciera` (SIAM CSE 2013, Visions 2013 and CIERA reuses), `siam_2013_bloom_catalogs`,
+  `bloom_kipac`, `data_science_bloom`, `strata_josh_henrik_key09`, `hipacc`,
+  `nas_bloom_teaching_big_data`, `mmds2014_bloom`, `aaas_bloom_16x9`, `pydata_bloom_16x9`.
+
+**Recordings and link health.** Three additions have recordings:
+- `citris-2010` is on CITRIS's YouTube channel.
+- Both Benjamin Dean lectures have the Academy's audio from its former iTunes U collection.
+  Those MP3s survive only on Apple's legacy CDN (`a*.phobos.apple.com`), over **http only**,
+  and are **not in the Wayback Machine**. They are the most fragile links on the page, so
+  save copies.
+
+No recordings were found for the other additions. Two live pages (SLAC's eConf proceedings
+and Columbia's astronomy wiki) fail certificate verification in the Miniforge `curl` that
+`linkcheck` finds first on this machine, though they load fine in browsers and in
+`/usr/bin/curl`. So `hotwired-2013` links the archived workshop page and `columbia-2011`
+the archived wiki page, with the live URLs in the notes. `linkcheck` itself now checks
+Wayback snapshots one at a time after its parallel pass. This sweep adds 11 Wayback links
+(26 in all), and in parallel the Wayback Machine refuses connections (curl reports
+`000`), which had made working snapshots look dead.
+
+**Leads for a later pass:**
+- `~/OldLaptop/TalksOld` has 21 more `.key` files from about 2007–08 (`SSLColloquium`,
+  `neyman`, `sfaa`, `santa-fe07`, `princeton1`, `microsoft`, `report_ucla`, …). Neither
+  sweep covered it.
+- The merit-review CVs list talks, including commented-out lines ("% Barcelona SASIR",
+  "% USF talk") that were never chased.
+- The UC Berkeley Retirement Center lists a second Learning in Retirement talk, "Transforming
+  Astrophysics with AI" (Nov 5, 2024), with a YouTube recording (`tniRyPP1aGg`). It is not on
+  the page yet.
+- Transcripts for `citris-2010` (54 min video) and the two Dean lectures (1 h 38 min and
+  1 h 24 min of audio), via the local-Whisper pipeline.
+
 ## Addendum — Learning in Retirement 2024 lecture (2026-09-27)
 
 JB asked for a missing talk: "Transforming Astrophysics with AI" (Tue Nov 5, 2024), Part II of
 the UC Berkeley Retirement Center's Learning in Retirement series "Berkeley in Space", organized by
-Donald Mastronarde. It is now `learning-in-retirement-2024` (#117), a Lecture whose event name
-follows `learning-in-retirement-2010` (added on PR #17's branch). **Transcript pages: +1.**
+Donald Mastronarde. It is now `learning-in-retirement-2024` (#137), a Lecture whose event name
+follows `learning-in-retirement-2010` (from the old-format Keynote sweep). **Transcript pages: +1.**
 
 - **Sources:** the LIR "Past LIR Events and Recordings" page (retirement.berkeley.edu/lir, under
   "2024 Past Events"; in Wayback from 2025-02-07) gives the title, date, series and speaker. Its
@@ -390,8 +643,8 @@ follows `learning-in-retirement-2010` (added on PR #17's branch). **Transcript p
   (star) and "would tell us it shouldn't".
 - **Topics:** `astronomy` + `ai-ml`. Valency never appears (Wise.io only in the bio), so there is no
   `industry`, and a primer on ML types for a lay audience doesn't make it `education`.
-- **Merge order:** PRs #15 and #17 also append ledger `n = 129` and shift `talk_number`. Whichever
-  lands later needs a fresh `n` and a `talks.py renumber`.
+- **Numbering:** it landed after PRs #15–#17, so its ledger entry is `n = 149`, and `renumber`
+  puts it at #137, just ahead of `c2oa2se-2024` two days later.
 
 ## Maintenance
 

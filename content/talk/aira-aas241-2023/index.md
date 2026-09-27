@@ -9,7 +9,7 @@ location: "Seattle, WA"
 summary: "A simulation-based-inference result in exoplanet microlensing (with K. Zhang and collaborators), at the AI-in-astronomy splinter session of AAS 241."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 111
+talk_number: 131
 display_date: "Jan 2023"
 has_transcript: false
 ---
