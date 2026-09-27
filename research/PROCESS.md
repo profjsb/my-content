@@ -385,11 +385,14 @@ title slides, venue lines and notes against the ledger. **128 → 146 entries.**
 
 ```python
 import html, re, zipfile
+def paras(frag):   # text of each <sf:p> paragraph in an XML fragment
+    return [html.unescape(re.sub(r"<[^>]+>", "", p)).strip()
+            for p in re.findall(r"<sf:p\b[^>]*>(.*?)</sf:p>", frag, re.S)]
 xml = zipfile.ZipFile(path).read("index.apxl").decode()   # or gunzip index.apxl.gz
 for seg in re.split(r"<key:slide\s", xml)[1:]:              # master slides don't match
+    seg = seg.split("</key:slide>")[0]
     body, _, notes = seg.partition("<key:notes")
-    text = [html.unescape(re.sub(r"<[^>]+>", "", p)).strip()
-            for p in re.findall(r"<sf:p\b[^>]*>(.*?)</sf:p>", body, re.S)]
+    slide_text, speaker_notes = paras(body), paras(notes)
 ```
 
 **Inventory.** `find -L ~/Talks ~/OldLaptop/Talks ~/OldLaptop/MoreOldTalk -iname '*.key'
