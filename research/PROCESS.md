@@ -640,7 +640,9 @@ follows `learning-in-retirement-2010` (from the old-format Keynote sweep). **Tra
   that/there are out there" stayed split (0.88 vs 0.60), so the quote starts after it. The host's
   "decartered" was "garnered". Both models agree on, so the text keeps as spoken: "on the
   right-hand side is supervised" (the slide says unsupervised), "far away from their host galaxy"
-  (star) and "would tell us it shouldn't".
+  (star), "would tell us it shouldn't" and "this action space isn't as complex as even
+  self-driving cars" (p = 1.00 in both; he means more complex). Four of these audio-checked
+  fixes missed the PR #18 merge and followed in a small PR.
 - **Topics:** `astronomy` + `ai-ml`. Valency never appears (Wise.io only in the bio), so there is no
   `industry`, and a primer on ML types for a lay audience doesn't make it `education`.
 - **Numbering:** it landed after PRs #15–#17, so its ledger entry is `n = 149`, and `renumber`
