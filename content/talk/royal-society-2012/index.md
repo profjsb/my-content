@@ -4,7 +4,7 @@ date: 2012-04-24
 publishDate: 2012-04-24
 draft: false
 event: "Royal Society Discussion Meeting: New Windows on Transients Across the Universe"
-event_url: "https://royalsociety.org/science-events-and-lectures/2012/transients-universe/"
+event_url: "https://web.archive.org/web/20211020035145/https://royalsociety.org/science-events-and-lectures/2012/transients-universe/"
 location: "London, UK"
 summary: "Invited discussion-meeting talk on machine learning as a surrogate for rapid human analysis at LSST data volumes: discovery algorithms, classification methodologies, and real-time transient identification."
 topics: ["astronomy", "ai-ml"]

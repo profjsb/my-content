@@ -73,11 +73,11 @@
     "location": "London, UK",
     "video_url": null,
     "slides_url": "https://speakerdeck.com/profjsb/data-mining-and-machine-learning-in-the-lsst-era",
-    "event_url": "https://royalsociety.org/science-events-and-lectures/2012/transients-universe/",
+    "event_url": "https://web.archive.org/web/20211020035145/https://royalsociety.org/science-events-and-lectures/2012/transients-universe/",
     "audio_url": null,
     "transcript_url": null,
     "summary": "Invited discussion-meeting talk on machine learning as a surrogate for rapid human analysis at LSST data volumes: discovery algorithms, classification methodologies, and real-time transient identification.",
-    "notes": "Deck on Speaker Deck confirms event and date."
+    "notes": "Deck on Speaker Deck confirms event and date. Talk was in Session 4 (chair Ralph Wijers). Original event_url https://royalsociety.org/science-events-and-lectures/2012/transients-universe/ dead as of 2026-09-26 (404, though the Royal Society's own site search still lists it) — Wayback snapshot (Oct 2021) linked; expand Session 4's 'Show detail'. Later captures show the 2022 redesign without the programme. The programme linked an audio recording (downloads.royalsociety.org/audio/DM/DM2012-06/Bloom.mp3), but that host no longer resolves and the MP3 was never archived — audio unrecoverable."
   },
   {
     "n": 5,
@@ -147,17 +147,18 @@
     "type": "Lecture",
     "topics": [
       "astronomy",
-      "ai-ml"
+      "ai-ml",
+      "education"
     ],
     "date": "2013-06-21",
     "location": "Berkeley, CA",
-    "video_url": "https://bids.berkeley.edu/resources/videos/extracting-actionable-insight-dirty-time-series-data",
+    "video_url": "https://www.youtube.com/watch?v=4mBUX47YtSE",
     "slides_url": null,
-    "event_url": "https://vcresearch.berkeley.edu/2013-14-data-science-lectures",
+    "event_url": "https://web.archive.org/web/20210620150023/https://vcresearch.berkeley.edu/2013-14-data-science-lectures",
     "audio_url": null,
     "transcript_url": null,
     "summary": "How to extract real-time, actionable insight from noisy, incomplete streaming sensor data (earthquakes, supernovae, traffic), and the interplay between domain scientists, statisticians, and computer scientists.",
-    "notes": "Webcast archived on the BIDS video resources page."
+    "notes": "Inaugural lecture of the series (per the host's introduction in the recording), followed by a faculty panel. The webcast was on the BIDS video resources page; original video_url https://bids.berkeley.edu/resources/videos/extracting-actionable-insight-dirty-time-series-data dead as of 2026-09-26 (404, BIDS site restructured) — now the live CITRIS YouTube upload that page embedded ('Data Science Lecture Series 6/21/2013', 4mBUX47YtSE). Original event_url https://vcresearch.berkeley.edu/2013-14-data-science-lectures dead as of 2026-09-26 (504, or Drupal 'Access denied' in a real browser: the page is unpublished, so the July 403 was not bot-blocking) — Wayback snapshot (Jun 2021) linked. Embedded transcript (2026-09-26) from the YouTube auto-captions: Pérez's intro, the lecture, the panel and audience Q&A, with speaker labels inferred from context (PANELIST where unclear)."
   },
   {
     "n": 9,
@@ -593,13 +594,13 @@
     ],
     "date": "2019-04-18",
     "location": "Berkeley, CA",
-    "video_url": null,
+    "video_url": "https://www.youtube.com/watch?v=kf8a-NnjVQY",
     "slides_url": null,
-    "event_url": "https://bids.berkeley.edu/events/astrophysical-machine-learning",
+    "event_url": "https://web.archive.org/web/20230329222626/https://bids.berkeley.edu/events/astrophysical-machine-learning",
     "audio_url": null,
     "transcript_url": null,
     "summary": "How time-domain astronomers use ML on streaming, noisy, distorted images of the sky — the search for Planet 9, discovery of new variable sources, data-driven emulators — and building physics-informed learning architectures.",
-    "notes": ""
+    "notes": "BIDS Data Science Lecture, Apr 18 2019, 190 Doe Library. Original event_url https://bids.berkeley.edu/events/astrophysical-machine-learning dead as of 2026-09-26 (404, BIDS site restructured) — Wayback snapshot (Mar 2023) linked. That archived page embeds the lecture video, still live on the BIDS YouTube channel (kf8a-NnjVQY, 48 min, uploaded the same day; its description links the old event page) — now video_url. Embedded transcript (2026-09-26) from the YouTube auto-captions (the recording ends before the Q&A)."
   },
   {
     "n": 31,
@@ -1615,11 +1616,11 @@
     "location": "New Haven, CT",
     "video_url": null,
     "slides_url": null,
-    "event_url": "https://physics.yale.edu/events/physics-club/archive",
+    "event_url": "https://web.archive.org/web/20260312081306/https://physics.yale.edu/events/physics-club/archive",
     "audio_url": null,
     "transcript_url": null,
     "summary": "Yale Physics Club colloquium on relativistic tidal disruption events.",
-    "notes": "CV says Dec 2012; Yale archive (linked) confirms Dec 3, 2012, host Nikhil Padmanabhan."
+    "notes": "CV says Dec 2012; Yale Physics Club archive ('Prior to Fall 2016', linked) confirms Dec 3, 2012, host Nikhil Padmanabhan. Original event_url https://physics.yale.edu/events/physics-club/archive dead as of 2026-09-26 (404 after the Yale Physics site relaunch; the pre-2016 archive was not migrated and site search finds nothing) — Wayback snapshot (Mar 2026) linked."
   },
   {
     "n": 84,
@@ -1995,7 +1996,7 @@
     "audio_url": null,
     "transcript_url": null,
     "summary": "The proposed EXIST hard X-ray survey mission as a probe of the reionization epoch through high-redshift gamma-ray bursts, as chair of the GRB-EXIST working group.",
-    "notes": "Assembly Jul 18-25, 2010; day approximate. With Grindlay (PI) and the EXIST team; ADS abstract linked (also in the site publications). Deck in local archive."
+    "notes": "Assembly Jul 18-25, 2010; day approximate. With Grindlay (PI) and the EXIST team; ADS abstract linked (also in the site publications). Deck in local archive. ADS link checked 2026-09-26: scripts get HTTP 405 and a fresh browser gets an AWS WAF 'confirm you are human' CAPTCHA (x-amzn-waf-action: captcha) — bot-blocking, not rot; the record exists (publication 2010-cosp-38-2351-b), so the link stays."
   },
   {
     "n": 103,
@@ -2163,13 +2164,13 @@
     ],
     "date": "2014-03-21",
     "location": "Berkeley, CA",
-    "video_url": null,
+    "video_url": "https://www.youtube.com/watch?v=jkj8U5rxRMw",
     "slides_url": null,
-    "event_url": "https://hipacc.ucsc.edu/ApproachingExascale2014.html",
+    "event_url": "https://web.archive.org/web/20241106185112/https://hipacc.ucsc.edu/ApproachingExascale2014.html",
     "audio_url": null,
     "transcript_url": null,
-    "summary": "Machine-learned inference for astronomical surveys, at the UC-HiPACC exascale computational astrophysics workshop at LBNL.",
-    "notes": "Workshop Mar 21-22, 2014, LBNL Bldg 66; agenda lists the talk (23 min). Workshop videos in a YouTube playlist linked from the page (per-talk links broken). Deck in local archive."
+    "summary": "Data-driven inference at scale: Bayesian RR Lyrae period-luminosity fits giving ~1% distances, Gaussian-process image registration for astrometry, machine-learned variable-star catalogs, predicting stellar spectra from light curves, and real-time transient classification in the Palomar Transient Factory.",
+    "notes": "Workshop Mar 21-22, 2014, LBNL Bldg 66; agenda lists the talk (23 min). Talk video found in the workshop's YouTube playlist: jkj8U5rxRMw on the UC-HiPACC channel (description: 'Joshua Bloom, University of California, Berkeley, March 21, 2014') — now video_url. Original event_url https://hipacc.ucsc.edu/ApproachingExascale2014.html dead as of 2026-09-26: its TLS certificate expired 2026-07-23 (browsers show a security warning; the page still sits on the legacy server) and the http:// URL redirects to a 404 — Wayback snapshot (Nov 2024) linked; the talk is under its Program tab. The event's slides PDF (hipacc.ucsc.edu/LectureSlides/24/435/140321_11_Bloom.pdf) is behind the same expired certificate and was never archived. Deck in local archive. Embedded transcript (2026-09-26) from the YouTube auto-captions; card summary rewritten from it."
   },
   {
     "n": 112,

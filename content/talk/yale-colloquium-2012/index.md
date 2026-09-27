@@ -4,7 +4,7 @@ date: 2012-12-03
 publishDate: 2012-12-03
 draft: false
 event: "Yale Physics Club"
-event_url: "https://physics.yale.edu/events/physics-club/archive"
+event_url: "https://web.archive.org/web/20260312081306/https://physics.yale.edu/events/physics-club/archive"
 location: "New Haven, CT"
 summary: "Yale Physics Club colloquium on relativistic tidal disruption events."
 topics: ["astronomy"]

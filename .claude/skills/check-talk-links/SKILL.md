@@ -20,9 +20,12 @@ python3 .claude/skills/add-talk/scripts/talks.py linkcheck
 
 ## Interpreting results
 
-- **`DEAD` (404/410/timeouts)** — real rot; needs repair.
-- **`WALLED` (401/403)** — ambiguous: could be a paywall (O'Reilly), a permissioned
-  file (Google Drive), or just bot-blocking of curl (some `*.berkeley.edu` sites).
+- **`DEAD` (404/410/timeouts)** — real rot; needs repair. A `000` can also be a TLS
+  failure (e.g. an expired certificate) — `curl -v` tells you which.
+- **`WALLED` (401/403, or an AWS WAF bot challenge)** — ambiguous: could be a paywall
+  (O'Reilly), a permissioned file (Google Drive), or just bot-blocking of curl (ADS
+  answers scripts with 405 + `x-amzn-waf-action: captcha`; humans get a CAPTCHA —
+  detecting that needs curl ≥ 7.84, older curl reports it as `DEAD`).
   **Verify in a real browser before replacing** — a link that works for humans stays.
 - YouTube is checked via **oEmbed**, because deleted/private videos still return
   HTTP 200 on the watch page. An oEmbed 4xx means the video is really gone.
@@ -34,11 +37,16 @@ python3 .claude/skills/add-talk/scripts/talks.py linkcheck
    podcast episodes. For podcast audio, resolve the show's current RSS via the iTunes
    API (`itunes.apple.com/lookup?id=<podcastId>` or `/search?term=<show>&entity=podcast`)
    and take the episode `<enclosure>` — but note feeds truncate, so old episodes may be
-   gone from every directory. A live original beats an archive copy.
+   gone from every directory. A live original beats an archive copy. Archived copies of
+   a dead page often reveal it: grep a snapshot for embedded YouTube/Vimeo IDs and check
+   them via oEmbed — the upload usually outlives the page that embedded it.
 2. **Fall back to the Wayback Machine**: check
    `https://web.archive.org/web/<original-url>` and link a **dated snapshot**
    (`https://web.archive.org/web/<timestamp>/<original-url>`) that actually renders the
-   content. Video/audio players usually do *not* survive archiving — for those, prefer
+   content. List all captures with the CDX API
+   (`https://web.archive.org/cdx/search/cdx?url=<url>`) — the availability API can miss
+   them, and the newest capture may be a post-redesign shell without the talk.
+   Video/audio players usually do *not* survive archiving — for those, prefer
    dropping the link over linking a broken snapshot.
 3. **If nothing works**, remove the link, keep the entry, and record what was lost in
    the ledger (`research/talks.json` `notes`) and in the "known but not linkable"
