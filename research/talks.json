@@ -2514,5 +2514,47 @@
     "transcript_url": null,
     "summary": "Evidence that gamma-ray bursts come from massive stars, not neutron-star mergers — supernova bumps in afterglows, an HST/Keck host survey — plus JCAM, a new rapid-response imager on the Palomar 200-inch.",
     "notes": "Program (aasarchives.blob.core.windows.net, BAAS v33n4): session 26 'Gamma Ray Bursts', oral (contributed — no invited/special marking), Mon Jan 7 2002, 10:00-11:30am, International Ballroom West, Hilton Washington; talk 2 of 5, after Gehrels's Swift MIDEX talk. Abstract 26.02 = ADS 2001AAS...199.2602B (supplied by JB; the bibcode year is the BAAS volume year). Same title as the 2001 Harvard/CfA and IAS seminars. No slides, video, or press coverage found (Speaker Deck, SlideShare, YouTube, Wayback of the Caltech talks page, which stops before this talk)."
+  },
+  {
+    "n": 129,
+    "slug": "a16z-interview-2014",
+    "title": "Supernovas and Novel Insight: Where Machine Learning is Headed Next",
+    "event": "a16z Academic Roundtable 2014",
+    "type": "Podcast",
+    "topics": [
+      "astronomy",
+      "industry",
+      "ai-ml"
+    ],
+    "date": "2014-09-27",
+    "location": "Menlo Park, CA",
+    "video_url": "https://www.youtube.com/watch?v=6hQqpQ3IZlY",
+    "slides_url": null,
+    "event_url": "https://a16z.com/supernovas-and-novel-insight-where-machine-learning-is-headed-next/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Filmed at a16z's 2014 Academic Roundtable: how machine learning became a discovery engine for astronomy, sifting real transients from roughly a thousand bogus candidates apiece and catching the nearby Type Ia SN 2011fe about 11 hours after explosion, and why running ML in production led to Wise.io and to products with machine intelligence baked in.",
+    "notes": "a16z-produced interview video, not a recording of the talk: filmed at a16z's second annual Academic Roundtable (Sep 25-27, 2014, at the firm's Sand Hill Road offices in Menlo Park, per a16z's attendee confirmation), after JB's 11:10am talk on the last day (he refers back to 'my talk'), so it is dated 27 Sep 2014 and numbered right after that talk (a16z-roundtable-2014, which carries the deck). Typed Podcast per JB (the first pass used Interview, which the Type filter files under Radio). a16z published it 2015-01-07 at the event_url with a Vimeo embed (116019972) that is now dead (player 404, and the page prints the raw [vimeo] shortcode); a16z's own YouTube re-upload (6hQqpQ3IZlY, 14:26, uploaded 2017-07-15) is the video_url. Embedded transcript (2026-09-26): audio pulled from YouTube and transcribed locally with faster-whisper distil-large-v3, then AI-cleaned (fillers, false starts, stutters, mis-heard words); the interviewer's prompts are edited out of the video, so it reads as a monologue. Topics from the transcript: astronomy (first half: real-bogus discovery, SN 2011fe), industry (second half: Wise.io, churn, spam filters, analytics), ai-ml throughout. Added at JB's request 2026-09-26."
+  },
+  {
+    "n": 130,
+    "slug": "a16z-roundtable-2014",
+    "title": "Practicable Machine Intelligence in Science & Industry",
+    "event": "a16z Academic Roundtable 2014",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "industry",
+      "ai-ml"
+    ],
+    "date": "2014-09-27",
+    "location": "Menlo Park, CA",
+    "video_url": null,
+    "slides_url": "/talk/a16z-roundtable-2014/#slides",
+    "event_url": "https://web.archive.org/web/20141021025835/http://academic.a16z.com/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "A 15-minute talk in the roundtable's Artificial Intelligence session: from Harvard's human computers to the real-time ML framework that found SN 2011fe, to what machine intelligence in production demands at Wise.io (trading off accuracy, interpretability and implementability on real, not benchmark, data) and a future with ML baked into every purchased app.",
+    "notes": "Invited 15-minute talk: a16z's invitation asked JB to speak for 15 minutes on his machine learning research. The archived agenda (Wayback's 2014-10-21 capture of academic.a16z.com, the event_url) lists it on Sat Sep 27, 2014 at 11:10am as the 'Artificial Intelligence' session (sole speaker, then open discussion), at Andreessen Horowitz, 2865 Sand Hill Rd, Menlo Park. Title and date from the deck's title slide ('A16Z Academic Roundtable, 27 Sep 2014'). Slides: JB's PDF export (24 slides) rendered to 2400px WebP images (talks.py slides) and shown in the embedded viewer; per JB the PDF itself stays out of the repo and off the site. The deck had been left off the page under the industry-deck privacy rule (PROCESS.md, slide-archive sweep) until JB supplied it for publication 2026-09-26. No recording of the talk found; a16z's filmed interview from the same event is a separate entry (a16z-interview-2014). Topics: astronomy (Harvard computers, the SN 2011fe discovery framework) + industry (Wise.io apps and production ML, most of the deck) + ai-ml."
   }
 ]

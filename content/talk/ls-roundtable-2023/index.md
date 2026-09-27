@@ -8,7 +8,7 @@ location: "Berkeley, CA"
 summary: "Astrophysical machine learning for a College of Letters & Science faculty roundtable."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 114
+talk_number: 116
 display_date: "Oct 2023"
 has_transcript: false
 ---
