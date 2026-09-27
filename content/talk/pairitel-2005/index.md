@@ -8,7 +8,7 @@ location: "Cambridge, MA"
 summary: "Science goals and commissioning status of PAIRITEL, the robotic 1.3-m infrared telescope for transient follow-up."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 22
+talk_number: 23
 display_date: "Apr 2005"
 has_transcript: false
 ---

@@ -9,7 +9,7 @@ location: "Washington, DC"
 summary: "Invited review of gamma-ray burst host galaxies and large-scale environments as progenitor diagnostics, in the first year of Swift."
 topics: ["astronomy"]
 talk_type: "Invited Talk"
-talk_number: 25
+talk_number: 26
 display_date: "Dec 2005"
 has_transcript: false
 ---

@@ -9,7 +9,7 @@ location: "Aspen, CO"
 summary: "Machine-learned real-time classification of Palomar Transient Factory events as the ramp toward petascale synoptic surveys."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 36
+talk_number: 37
 display_date: "Jun 2009"
 has_transcript: false
 ---

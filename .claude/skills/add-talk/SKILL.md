@@ -38,7 +38,9 @@ python3 $T linkcheck    # verify all outbound links (YouTube via oEmbed)
 1. **Gather facts.** Title, event, type, date (whatever precision is known), location,
    and any links the user already has. Valid types (drive badge colors):
    `Talk`, `Invited Talk`, `Keynote`, `Colloquium`, `Seminar`, `Lecture`, `Tutorial`,
-   `Panel`, `Plenary`, `Podcast`, `Radio`, `Interview`. Also assign one or more **topics**
+   `Panel`, `Plenary`, `Podcast`, `Radio`, `Interview`. **Posters are not listed** (JB's
+   call, 2026-09-26): when adding from meeting abstracts, check the program and skip any
+   abstract presented as a poster. Also assign one or more **topics**
    (they power the list-page Topic filter and render as small square chips on the card,
    bottom right). Vocabulary: `astronomy`, `industry`, `ai-ml`, `education`. **Derive
    topics from the content, not the venue name:**
@@ -103,8 +105,9 @@ python3 $T linkcheck    # verify all outbound links (YouTube via oEmbed)
      --notes "provenance/uncertainty notes for the ledger"
    ```
 
-   Link rendering rules: a YouTube or Vimeo `url_video` **auto-embeds a player** on the
-   talk's page (other hosts just get the Video button); `url_audio` renders a Listen
+   Link rendering rules: a YouTube or Vimeo `url_video`, or a direct video file
+   (`.mp4`/`.m4v`/`.webm`, such as the AAS's own meeting recordings), **auto-embeds a
+   player** on the talk's page (other hosts just get the Video button); `url_audio` renders a Listen
    button; `url_transcript` renders an external Transcript button only when the page has
    no embedded transcript (`has_transcript: false`).
 

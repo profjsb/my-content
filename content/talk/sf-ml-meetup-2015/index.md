@@ -8,7 +8,7 @@ location: "San Francisco, CA"
 summary: "Lessons from putting machine learning into production at wise.io, for the SF Machine Learning meetup hosted at Instacart."
 topics: ["industry", "ai-ml"]
 talk_type: "Talk"
-talk_number: 81
+talk_number: 82
 display_date: "Sep 2015"
 url_slides: "https://www.slideshare.net/firstmarkcap/machine-learning-in-production-josh-bloom-wiseio-firstmarks-data-driven"
 has_transcript: false

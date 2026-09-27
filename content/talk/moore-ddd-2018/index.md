@@ -7,7 +7,7 @@ event: "Moore Foundation Data-Driven Discovery Investigator Symposium"
 summary: "Spanning time-domain astrophysics, open-source tooling, and industrial ML at GE, for the Moore DDD investigators meeting."
 topics: ["astronomy", "ai-ml", "industry"]
 talk_type: "Talk"
-talk_number: 93
+talk_number: 94
 display_date: "2018"
 has_transcript: false
 ---

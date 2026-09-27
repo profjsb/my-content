@@ -8,7 +8,7 @@ location: "Berkeley, CA"
 summary: "The Synoptic All-Sky Infrared Survey concept, presented at a post-decadal-survey community town hall (alongside an LSST status report from Tony Tyson)."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 42
+talk_number: 43
 display_date: "Nov 2010"
 has_transcript: false
 ---

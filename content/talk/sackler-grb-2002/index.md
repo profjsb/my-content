@@ -8,7 +8,7 @@ location: "Cambridge, MA"
 summary: "Review of optical and infrared afterglow observations at the Harvard Sackler conference on gamma-ray bursts."
 topics: ["astronomy"]
 talk_type: "Invited Talk"
-talk_number: 13
+talk_number: 14
 display_date: "May 2002"
 has_transcript: false
 ---
