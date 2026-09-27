@@ -151,8 +151,9 @@ future sessions don't re-litigate them (and can retry the *recoverable* ones).
 \#6 Synoptic-survey ML (2011, SlideShare), #7 Royal Society (2012, Speaker Deck — the
 meeting page once linked an MP3 of the talk, but its host `downloads.royalsociety.org` is
 gone and the file was never archived; confirmed 2026-09-26),
-\#10 LSST All-Hands (2012, Speaker Deck), #16 NAS Big Data (2014 — slide match marked
-*probable*), #20 Astro Hack Week tutorial (2014 — and the slides link is a
+\#10 LSST All-Hands (2012, Speaker Deck), ~~#16 NAS Big Data (2014 — slide match marked
+*probable*)~~ (**resolved 2026-09-26:** the recording is on the National Academies' Vimeo
+and the match is confirmed — see the last addendum), #20 Astro Hack Week tutorial (2014 — and the slides link is a
 permission-walled Google Drive URL, so even that is effectively dead), #22 Data Science
 Education (2015, SlideShare), #29 KDD (2017), #30 Autoencoding RNNs (2017),
 \#35 DESI plenary (2019 — internal collaboration meeting, no public event page either),
@@ -361,6 +362,45 @@ YouTube recordings, and all three now have embedded transcripts, Key Quotes and
   of the event (mostly the Q&A) is about training students, the Python boot camp and new
   courses. The other two stay `astronomy`/`ai-ml`. The HiPACC card summary, previously a
   placeholder, was rewritten from the transcript.
+
+## Addendum — NRC big-data workshop recording (2026-09-26)
+
+JB supplied the National Academies' Vimeo recording of `nas-big-data-2014`, "Computational
+Training and Data Literacy for Domain Scientists", until then a slides-only entry whose
+venue was marked *probable*. It now has the video, a transcript, Key Quotes and a
+`research/nas-big-data-2014.summary.txt`. **Transcript pages: 23 → 24.**
+
+- **Venue confirmed three ways:** the Vimeo description (a Committee on Applied and Theoretical Statistics workshop, April 11, 2014);
+  the deck's title slide and speaker notes (local archive,
+  `~/OldLaptop/MoreOldTalk/nas_bloom_teaching_big_data.key`, an old-format Keynote bundle
+  whose `index.apxl` XML yields the slide text); and the workshop proceedings (NAP 2015,
+  doi:10.17226/18981), whose Chapter 4 summarizes the talk under this exact title. The
+  page body links that chapter. The event is now credited to the National Research
+  Council, which convened the workshop. `event_url` is the Academies' current project page;
+  the old `/our-work/` URL now 301s there.
+- **First Vimeo video on the page.** `url_video` is the canonical `vimeo.com/94389370`,
+  because `talk_video_embed.html` only embeds `vimeo.com/<id>` URLs, not the showcase URL
+  (`vimeo.com/showcase/2861203?video=…`). The video's embed permission is public.
+- **Pipeline (Vimeo has no captions):** yt-dlp's Vimeo extractor now fails (its OAuth
+  token fetch returns 401), so the 240p MP4 came straight from the player config
+  (`player.vimeo.com/video/<id>/config` → `request.files.progressive`). It was transcribed
+  locally with faster-whisper `distil-large-v3` (CPU int8, VAD; ~13 min for the 33.6-min
+  talk on an M2, plus a one-time 1.5 GB model download). Then **every doubtful passage and
+  every Key Quote was re-transcribed with `medium.en`** as an independent check (28 clips),
+  and the result was cleaned by hand, with names and terms checked against the deck.
+  5,569 → 5,468 words (98% kept; Whisper already drops most fillers).
+- **The second model settled:** "after-hours hackathons" (distil: "after our"), "muck in on
+  the command line" ("mock in"), "robotic telescope resources" ("research. sources"), "IBM
+  Watson is using" ("is used. using"), and a phantom "We are with…" that was really
+  "…arriving in just a few years from now with a huge amount of data". **Kept as spoken**
+  because both models agreed: "four or five people take this course for credit" (he later
+  says renaming it raised for-credit enrollment to about 40), "say, in MATLAB",
+  "U.S. national involvement" (LOFAR/SKA) and "mentor-mentoree".
+- **Speakers:** FREW (session chair James Frew, per the proceedings), whose introductions are
+  cut mid-sentence at the start of the video, then BLOOM. The excerpt ends before any Q&A.
+- **Topics:** `education` + `astronomy`. About 15% of the talk is the astronomy data-deluge
+  motivation (LSST, LOFAR/SKA, the PTF transient pipeline, a PNAS Kepler result), and it
+  carries the argument. Machine learning comes up only in passing, so no `ai-ml`.
 
 ## Maintenance
 
