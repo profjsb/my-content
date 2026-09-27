@@ -224,20 +224,21 @@
     "n": 12,
     "slug": "nas-big-data-2014",
     "title": "Computational Training and Data Literacy for Domain Scientists",
-    "event": "Training Students to Extract Value from Big Data, National Academy of Sciences",
+    "event": "Training Students to Extract Value from Big Data, National Research Council",
     "type": "Invited Talk",
     "topics": [
+      "astronomy",
       "education"
     ],
     "date": "2014-04-11",
     "location": "Washington, DC",
-    "video_url": null,
+    "video_url": "https://vimeo.com/94389370",
     "slides_url": "https://www.slideshare.net/JoshuaBloom/computational-training-and-data-literacy-for-domain-scientists",
-    "event_url": "https://www.nationalacademies.org/our-work/training-students-to-extract-value-from-big-data-a-workshop",
+    "event_url": "https://www.nationalacademies.org/projects/DEPS-BMSA-12-01",
     "audio_url": null,
     "transcript_url": null,
-    "summary": "Invited lecture at the NAS workshop on big-data education, drawing on the Berkeley 'Python for Data Science' bootcamps and course, and what domain scientists need in computational training; proceedings published by National Academies Press.",
-    "notes": "Slides title matched to this event (probable)."
+    "summary": "Data literacy before big-data proficiency: what Berkeley's Python boot camps and graduate seminar showed about training domain scientists, and the open questions — where such courses fit in the curriculum, who teaches them and how they're credited, the 'novelty-squared' problem, and inclusion.",
+    "notes": "Workshop Apr 11-12, 2014, at the National Academies' Keck Center (500 5th St NW), convened by the NRC Committee on Applied and Theoretical Statistics with NSF sponsorship. The talk opened session 4, 'Courses, Curricula, and Interdisciplinary Programs' (Apr 11; chair James Frew; also Peter Fox and Bill Howe). The earlier 'probable' slide-title match is confirmed by the Vimeo description, the deck's title slide (local archive ~/OldLaptop/MoreOldTalk/nas_bloom_teaching_big_data.key: '11 April 2014') and the workshop proceedings (NAP 2015, doi:10.17226/18981), whose chapter 4 summarizes the talk under this title (linked in the page body). Video on the National Academies' Vimeo (94389370, in the workshop showcase vimeo.com/showcase/2861203; 33.6 min, starting with the end of the chair's introductions; no Q&A; no captions). Embedded transcript (2026-09-26) from a local faster-whisper transcription (distil-large-v3; doubtful passages and all Key Quotes re-checked with medium.en), lightly edited, names checked against the deck. Old event_url nationalacademies.org/our-work/training-students-to-extract-value-from-big-data-a-workshop now 301s to the project page linked here."
   },
   {
     "n": 13,
