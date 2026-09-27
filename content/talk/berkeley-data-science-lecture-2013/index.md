@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "How to extract real-time, actionable insight from noisy, incomplete streaming sensor data (earthquakes, supernovae, traffic), and the interplay between domain scientists, statisticians, and computer scientists."
 topics: ["astronomy", "ai-ml", "education"]
 talk_type: "Lecture"
-talk_number: 80
+talk_number: 104
 display_date: "Jun 2013"
 url_video: "https://www.youtube.com/watch?v=4mBUX47YtSE"
 has_transcript: true

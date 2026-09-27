@@ -8,7 +8,7 @@ location: "Stanford, CA"
 summary: "Where gamma-ray burst science is headed, at the symposium honoring Vahe Petrosian."
 topics: ["astronomy"]
 talk_type: "Invited Talk"
-talk_number: 36
+talk_number: 59
 display_date: "Apr 2009"
 has_transcript: false
 ---

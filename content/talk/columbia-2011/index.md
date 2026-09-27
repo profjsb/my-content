@@ -9,7 +9,7 @@ location: "New York, NY"
 summary: "Informal lunch talk at Columbia on the year's transient discoveries: constraints on the progenitor of the nearby Type Ia supernova SN 2011fe and the relativistic tidal disruption events Swift J1644+57 and J2058+05."
 topics: ["astronomy"]
 talk_type: "Seminar"
-talk_number: 63
+talk_number: 87
 display_date: "Nov 2011"
 has_transcript: false
 ---

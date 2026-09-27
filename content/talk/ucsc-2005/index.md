@@ -8,7 +8,7 @@ location: "Santa Cruz, CA"
 summary: "Colloquium on gamma-ray bursts in the first months of the Swift era."
 topics: ["astronomy"]
 talk_type: "Colloquium"
-talk_number: 21
+talk_number: 27
 display_date: "Apr 2005"
 has_transcript: false
 ---

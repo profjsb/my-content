@@ -8,7 +8,7 @@ location: "Menlo Park, CA"
 summary: "Talk to the SciDAC Computational Astrophysics Consortium on the infrared transient sky, from dust-obscured and unusually red explosions to near-infrared supernova cosmography, and on the proposed Synoptic All-Sky Infrared (SASIR) Survey as a discovery engine for them."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 44
+talk_number: 68
 display_date: "May 2010"
 has_transcript: false
 ---

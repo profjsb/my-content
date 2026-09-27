@@ -8,7 +8,7 @@ location: "Austin, TX"
 summary: "Colloquium on optical/IR follow-up of gamma-ray bursts and the newly identified X-ray flashes."
 topics: ["astronomy"]
 talk_type: "Colloquium"
-talk_number: 17
+talk_number: 21
 display_date: "Oct 2003"
 has_transcript: false
 ---

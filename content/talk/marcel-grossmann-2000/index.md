@@ -9,7 +9,7 @@ location: "Rome, Italy"
 summary: "What the properties of GRB host galaxies imply for progenitor models, at the relativistic-astrophysics meeting."
 topics: ["astronomy"]
 talk_type: "Invited Talk"
-talk_number: 8
+talk_number: 11
 display_date: "Jul 2000"
 has_transcript: false
 ---

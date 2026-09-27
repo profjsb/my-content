@@ -313,10 +313,16 @@ def cmd_slides(args):
 
 # ---------- linkcheck ----------
 
+# Prefer the OS curl: Miniforge's curl (first on PATH on JB's machine) ships its own CA bundle
+# and rejects some chains that browsers accept (e.g. online.kitp.ucsb.edu), which linkcheck
+# would misreport as dead (000).
+CURL = "/usr/bin/curl" if os.path.exists("/usr/bin/curl") else "curl"
+
+
 def curl_status(url, head=False):
     """Final status after redirects, plus whether an AWS WAF bot challenge answered (e.g. ADS
     replies to scripts with 405 + "x-amzn-waf-action: captcha") — a bot-block, not rot."""
-    r = subprocess.run(["curl", "-sIL" if head else "-sL", "-o", "/dev/null", "-w",
+    r = subprocess.run([CURL, "-sIL" if head else "-sL", "-o", "/dev/null", "-w",
                         "%{http_code} %header{x-amzn-waf-action}",
                         "--max-time", "20", "-A",
                         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)", url],
@@ -333,7 +339,7 @@ def check_url(url, is_audio=False):
     if "youtube.com/watch" in url or "youtu.be/" in url:
         import urllib.parse
         o = "https://www.youtube.com/oembed?url=" + urllib.parse.quote(url, safe="")
-        r = subprocess.run(["curl", "-s", "-o", "/dev/null", "-w", "%{http_code}",
+        r = subprocess.run([CURL, "-s", "-o", "/dev/null", "-w", "%{http_code}",
                             "--max-time", "15", o], capture_output=True, text=True)
         return r.stdout.strip() or "000", "yt-oembed"
     # HEAD for media so we don't download it

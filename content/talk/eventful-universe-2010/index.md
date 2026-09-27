@@ -9,7 +9,7 @@ location: "Tucson, AZ"
 summary: "Invited talk at NOAO's 50th-anniversary symposium on time-domain astronomy, arguing that gamma-ray bursts stay central to the coming decade's priorities: probes of reionization and the first stars, tracers of dust and hidden star formation through 'dark' bursts, and electromagnetic partners to gravitational-wave detections."
 topics: ["astronomy"]
 talk_type: "Invited Talk"
-talk_number: 41
+talk_number: 65
 display_date: "Mar 2010"
 has_transcript: false
 ---

@@ -8,7 +8,7 @@ location: "Berkeley, CA"
 summary: "ML-driven discovery and classification of transients and variable stars in the era of synoptic surveys (PTF to LSST): real/bogus discrimination, probabilistic variable-star catalogs, and automating the discovery loop."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 70
+talk_number: 94
 display_date: "May 2012"
 url_slides: "https://www.slideshare.net/JoshuaBloom/joshua-bloom-machine-learning-and-classification-in-the-synoptic-survey-era"
 has_transcript: false

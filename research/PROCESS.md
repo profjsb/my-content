@@ -615,6 +615,159 @@ Wayback snapshots one at a time after its parallel pass. This sweep adds 11 Wayb
 - Transcripts for `citris-2010` (54 min video) and the two Dean lectures (1 h 38 min and
   1 h 24 min of audio), via the local-Whisper pipeline.
 
+## Addendum — TalksOld and merit-CV follow-up sweep (2026-09-27)
+
+This pass took the first two leads above: the old decks in `~/OldLaptop/TalksOld` and the
+talk lists in JB's merit-review CVs, including their commented-out lines. **148 → 174
+entries** (26 added, 4 corrected).
+
+**Sources.**
+- `find -L ~/OldLaptop/TalksOld` finds 21 `.key` items: 15 Keynote 2/3 directory packages
+  (`index.apxl.gz`) and 6 Keynote '09 zips, plus `tdawg_present.key.tar` and `cdi.zip`,
+  copies of two of them. The recipe above reads all of them (gunzip the older packages
+  first): 864 slides, 289 with speaker notes. The folder also has four PowerPoint files
+  and a StarOffice deck. They were read by scanning PowerPoint's text records
+  (`TextCharsAtom` 0x0FA0 / `TextBytesAtom` 0x0FA8), the `.sxi`'s `content.xml`, and the
+  PDF exports with pypdf.
+- The merit CVs, `~/Admin/Merit/*/jsbcv_*.tex`: the 2008 Pierce CV and the 2009, 2012 and
+  2015 merit CVs (the 2018 and 2022 copies are identical). Every talk in their "Selected
+  Professional Talks" tables was already on the page. The leads were the commented-out
+  lines and the outreach paragraph. The merit records filed beside the CVs resolved most of
+  them, because they list talks with dates: `step2004-2005/biobib_2004_2005.pdf` and
+  `step2005-2007/talks.txt` (the same list as `biobib1.doc`).
+- Pinning dates and venues: JB's email (msgvault) and his Google Calendar. The calendar
+  holds a May 2007 import of 2005–07 events, whose all-day entries can be a day off, and
+  live entries from 2009 on. **The email archive has no mail from late May 2006 through
+  October 2009**, and almost none for Oct 2005–Mar 2006. So the 2006–09 talks rest on decks,
+  the calendar and the web.
+- The web: live pages first, then the Wayback Machine. Its CDX search API was down (503)
+  for hours during the sweep while snapshot replay kept working. Requesting
+  `https://web.archive.org/web/<YYYYMMDD>/<url>` redirects to the nearest capture, which
+  stands in for a CDX lookup. Old MSRI workshop programs come from SLMath's JSON API
+  (`https://www.slmath.org/api/workshops/<id>` and `.../schedules`).
+
+**Added (26).** Each ledger `notes` field has the full evidence. Descriptive titles (none
+recorded) are marked.
+
+| Slug | Date | Talk | Found through |
+|------|------|------|---------------|
+| `kent-space-society-1997` | 1997-03 | Gamma-Ray Bursts (**descriptive**), University of Kent Space Society | CV outreach paragraph; the Society's thank-you email (Nov 1997) gives the month |
+| `smaac-1999` | 1999-02-12 | Gamma-Ray Bursts (**descriptive**), Santa Monica Amateur Astronomy Club | CV outreach paragraph and its commented quote of the club president's letter |
+| `santa-monica-college-2000` | 2000-04-28 | The Universe's Biggest Blasts, Drescher Planetarium lecture series | CV outreach paragraph; planetarium schedules and confirmation in email |
+| `everhart-2002` | 2002-03-15 | Toward the Origin of Gamma-Ray Bursts: The Biggest Bangs in the Universe, Everhart Lecture, Caltech | `everhart1.sxi`; CV honors; series announcement; archived series page |
+| `int-sn-grb-2004` | 2004-07-13 | Supernova Bumps as Evidence for a Massive Star Origin, INT workshop, Seattle | CV's "% U Washington Talk"; 2004–05 bio-bibliography; INT's live schedule |
+| `inpa-ir-flash-2005` | 2005-04-01 | Discovery of a Contemporaneous Infrared Flash from GRB 041219a, INPA seminar, LBNL | CV's "% 1st ipna"; 2004–05 bio-bibliography; invitation email |
+| `usf-2005` | 2005-10-05 | Gamma-Ray Bursts (**descriptive**), USF physics colloquium | CV's "% USF talk"; `talks.txt`; calendar |
+| `ucdavis-2005` | 2005-11-10 | Recent Progress on Gamma-Ray Bursts: Cosmological Strides and the Progenitors of the Short-Hard Subclass, UC Davis | `talks.txt`; calendar ("Davis colloquium", all-day Nov 9) |
+| `llnl-2006` | 2006-01-20 | Gamma-Ray Bursts (**descriptive**), IGPP Seminar, LLNL | CV's "% LLNL talk."; `talks.txt` |
+| `kitp-2006` | 2006-03-14 | Scoping the Follow-up Effort, Transient Universe 2006, KITP | `talks.txt`; KITP's online archive: **39-minute recording (embedded MP4) and slides** |
+| `ssl-colloquium-2006` | 2006-04-14 | The Gamma-Ray Burst Revolution, SSL colloquium, UC Berkeley | `SSLColloquium.key`; `talks.txt`; calendar; archived SSL abstract |
+| `kipac-2006` | 2006-04-20 | Gamma-Ray Bursts (**descriptive**), ACKS colloquium, KIPAC/Stanford | `talks.txt`; calendar; KIPAC's request for his slides (email) |
+| `pairitel-2006` | 2006-05-16 | PAIRITEL: Past, Present, Future, 2nd PAIRITEL Workshop, CfA | `ptel2_sci_intro.pdf` and `ptel2_welcome.pdf`; `talks.txt`; archived program (his two talks there are one entry) |
+| `sval-2006` | 2006-05-17 | Giant Cosmic Explosions: The Gamma-Ray Burst Boom, Silicon Valley Astronomy Lectures | `foothill.ppt`; the ASP's past-lectures list; organizer email (the merit record's "19 May" is wrong) |
+| `cinc-2006` | 2006-05-22 | Gamma-Ray Bursts at High Redshift, CINC '06, LBNL | `cinc.ppt`; `talks.txt`; archived talk list |
+| `smcas-2007` | 2007-04-06 | Giant Cosmic Explosions: The Gamma-Ray Burst Boom, San Mateo County Astronomical Society | CV outreach paragraph; `talks.txt`; calendar; SMCAS's presentation history |
+| `chabot-2007` | 2007-06-26 | The Cosmic Distance Ladder & Gamma-Ray Bursts, Chabot volunteer enrichment lecture | CV outreach paragraph; `talks.txt` (nothing else survives: email gap, no web listing) |
+| `tmt-2007` | 2007-07-23 | Gamma-Ray Bursts & Transient Phenomena, Science in the Era of TMT, UC Irvine | `tmt_short.key`; another speaker's archived slides date the workshop |
+| `nsf-cdi-2007` | 2007-10-12 | Data-Driven 21st Century Astrophysics, NSF-CDI workshop, MSRI | `cdi.key`; SLMath's program; MSRI's 2007–08 annual report |
+| `sfaa-2007` | 2007-10-17 | Gamma-Ray Bursts: Newfound Diversity in Nature's Biggest Bangs, San Francisco Amateur Astronomers | `sfaa.key`; archived SFAA lecture history |
+| `santa-fe-grb-2007` | 2007-11-06 | The Crisis of Classification, Gamma-Ray Bursts 2007, Santa Fe | `santa-fe07.key` (+ backup slides); his proceedings paper, linked on the page |
+| `inaoe-sasir-2008` | 2008-08-13 | The Synoptic All-Sky Infrared (SASIR) Survey: Overview, Guillermo Haro Workshop, INAOE | Found while chasing "% Barcelona SASIR": INAOE's live program and slides (his three talks there are one entry) |
+| `inpa-sasir-2009` | 2009-02-20 | SASIR: The Synoptic All-Sky Infrared Imaging Survey Concept, INPA seminar, LBNL | INPA's live seminar archive |
+| `neyman-2009` | 2009-09-09 | Real-Time Knowledge Extraction from Massive Time-Series Datastreams, Neyman Seminar, Berkeley Statistics | `neyman.key`; calendar; a colleague's Jan 2010 email |
+| `fox-business-2014` | 2014-09-10 | The $100 Earthquake Detector, Varney & Co., Fox Business | Media list in the 2015–22 CVs; the booker's email; Fox's video page |
+| `applied-ai-meetup-2017` | 2017-04-13 | Industrial Machine Learning, Applied AI meetup, San Francisco | The SlideShare deck formerly on `haas-industrial-ml`; an attendee's email |
+
+**Corrected (4).** No slug changed.
+- **`haas-industrial-ml`** was a "Lecture" dated "2017 (year approximate)" with a GE SlideShare
+  deck. The 2018 CV calls it an interview (May 2018). The Fisher Center's series page lists it
+  on Tuesday, March 27, 2018: a 6:46 interview with Greg La Blanc, posted May 10, 2018. It is
+  now typed Podcast, like the a16z interview. The video has no captions, so the summary was
+  rewritten from a local Whisper transcript (not embedded). The deck belongs to an April 2017
+  San Francisco meetup and moved to `applied-ai-meetup-2017`.
+- **`barcelona-2001`** changes from the CV's "The Progenitors of Gamma-Ray Bursts" to
+  "Towards the Progenitors of Cosmological Gamma-Ray Bursts". That is the title and abstract
+  he sent his hosts on 21 June 2001, and it matches his archived talks page.
+- **`aspen-wfd-2009`**: title "…in the Petascale Era…" and June 22, from the deck's title slide
+  ("Aspen, 22 June 2009", saved the night before). The 2009 CV has "Epoch" and June 25.
+- **`sackler-21cm-2008`**: the deck (`21cm talk.key`) pins the day to May 12, 2008.
+- Ledger only: `princeton-colloquium-2007` and `hotwired-2007` gained their decks
+  (`princeton1.key`, `vohtn.key`).
+
+**Excluded.**
+- **Informal lunch talks** (JB's rule of 2026-09-27, when he dropped `columbia-2011`):
+  - the Columbia pizza lunch of May 15, 2001 ("Gamma-ray burst bursting sites: A clue to the
+    progenitors"; the CV's commented "Columbia University … 15 May 2001");
+  - the "B. Price Lunch Talk" of June 24, 2005, a group lunch in Berkeley physics (2004–05
+    bio-bibliography);
+  - the L&S Faculty Forum talk "The Gamma-ray Burst Mystery", from a members' faculty lunch
+    series (`talks.txt` gives April 1, 2007; the calendar has Monday April 2).
+
+  The INPA and Livermore IGPP noon seminars stay: they are formal seminar series already on
+  the page (`ipna-2005`, `llnl-2010`).
+- **Not a talk:** the Keck Time Domain Astronomy Working Group's final report to Keck's
+  Science Steering Committee (Nov 6, 2006): `report_ucla.key` (four copies) and
+  `tdawg_present.key.tar`.
+- **Courses:** `ay290a-fall2007` (an Astro 290A introduction to his group), and the Astro
+  290B lecture of March 1, 2005 in the 2004–05 bio-bibliography.
+- **Fragments and duplicates:** `classification matrix` (one slide), `santa-fe-extra`
+  (backup slides for `santa-fe-grb-2007`) and `cdi.zip` (a copy of `cdi.key`).
+- **Not his:** `GRBs.ppt`, a 2002 Rice University deck on GRB spectral lags by Kocevski,
+  Liang and Schaefer.
+- **Private pitch:** `microsoft.key` (Sep 2007, "Time-domain Anomaly Detection on
+  Astronomically Large Data Scales"). Its first slide is a proposal abstract, and he is not on
+  the program of Microsoft Research's eScience 2007 workshop.
+- **Unverified collaboration meetings**, the rule applied to `sasir_bigboss_nov2009`:
+  - `ptf_tcp` and `ptf_tdf`, "A classification engine for the Palomar Transients Factory" and
+    "Black Hole Tidal Disruption Events", both at a "PTF meeting, Pasadena, CA 17 Sept 2007".
+    Flash exports and a sync script sent both to the PTF group's account that day, but no
+    email or web trace survives.
+  - `snap_tdf`, the same tidal-disruption talk at "LBL 19 Oct 2007", with SNAP rate slides.
+    It was not an INPA seminar.
+- **Did not happen:**
+  - The Caltech Alumni Association's Seminar Day (May 18, 2002): he accepted, then withdrew.
+  - A second SMCAS talk on March 2, 2012. SMCAS's compiled 2001–2015 presentation history
+    lists him, but the society's contemporaneous speaker page (Wayback 2015) has Gordon Myers
+    that night. Only the January 2012 invitation survives in email.
+- **Coverage, not appearances:** the ABC7 story on the new Berkeley Center for Cosmological
+  Physics (Dec 4, 2007), where he appears only in background classroom footage, and the
+  press items in the CVs' media lists.
+- **Already on the page:** `princeton1` (Princeton 2007), `vohtn` (Hot-wiring 2007),
+  `21cm talk` (Sackler 2008) and `aspen` (Aspen 2009); the last two are corrected above. The
+  `GW/` folder holds gravitational-wave sound files and links used in talks.
+
+**Needs JB.**
+- **BBC Click, 26 Sep 2015** ("Machine Learning in Business" in the 2015–22 CVs). Click's
+  second AI special (BBC PID `b06fy32b`; YouTube `bdZkOBi4VUo`, segment from 12:10) cuts to
+  an unnamed wise.io spokesperson at about 13:30. If that is him, add it as an Interview.
+- **"American Voices" with Bill Bradley** (Sirius satellite radio, March 26, 2006). It is
+  only in `talks.txt`; no episode listing survives, and the topic is unknown.
+- **The two PTF-meeting decks** above, if an internal 2007 PTF meeting should count.
+
+**Leads for a later pass:**
+- Transcripts: `kitp-2006` (39-minute recording in KITP's archive) through the local-Whisper
+  pipeline. A local transcript of `haas-industrial-ml` exists and could be embedded.
+- MSRI recorded the CDI workshop's astrophysics session (`nsf-cdi-2007`). SLMath's archive
+  counts 8 videos for workshop 448 but does not serve them. The Neyman 2009 slides
+  (lyra.berkeley.edu) were never archived.
+- CV lines still unexplained:
+  - "% IceCube talk", before Sep 2008. It may be the 2005 Price lunch, since Price led
+    Berkeley's IceCube group.
+  - "% Barcelona SASIR", 2008, inside the email gap.
+- Calendar-only traces: a "Classification Talk at LBL" (Feb 25, 2009) and an "LBL BOSS /
+  SASIR Talk" (Nov 20, 2009). The second matches the excluded `sasir_bigboss_nov2009` deck.
+- An NBC Bay Area segment from the week of the Fox interview, "UC Berkeley Professor Develops
+  $110 Earthquake Warning System" (Sept 2014); its link now redirects.
+- The 2024 Learning in Retirement talk from the list above is in PR #18, opened in parallel.
+
+**Link health and tooling.** `linkcheck` now calls `/usr/bin/curl` when it exists.
+Miniforge's curl, first on `PATH` here, rejects KITP's certificate chain, so it would have
+reported both KITP links as dead (`000`). After the sweep: **188 ok, 10 walled, 0 dead of
+198 links**. The 10 walled links are the ones already documented under link health: aas.org
+(3), ADS, the O'Reilly paywall, the permissioned Drive deck, Columbia DSI, CfA ITC,
+archive.siam.org and the JHU Gazette. The sweep adds five Wayback links (`everhart-2002`,
+`ssl-colloquium-2006`, `pairitel-2006`, `cinc-2006`, `sfaa-2007`).
+
 ## Maintenance
 
 Two skills were added with this branch:

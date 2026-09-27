@@ -9,7 +9,7 @@ location: "Baltimore, MD"
 summary: "Colloquium on relativistic tidal disruption events at STScI."
 topics: ["astronomy"]
 talk_type: "Colloquium"
-talk_number: 65
+talk_number: 89
 display_date: "Nov 2011"
 has_transcript: false
 ---

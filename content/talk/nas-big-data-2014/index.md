@@ -9,7 +9,7 @@ location: "Washington, DC"
 summary: "Data literacy before big-data proficiency: what Berkeley's Python boot camps and graduate seminar showed about training domain scientists, and the open questions — where such courses fit in the curriculum, who teaches them and how they're credited, the 'novelty-squared' problem, and inclusion."
 topics: ["astronomy", "education"]
 talk_type: "Invited Talk"
-talk_number: 86
+talk_number: 110
 display_date: "Apr 2014"
 url_video: "https://vimeo.com/94389370"
 url_slides: "https://www.slideshare.net/JoshuaBloom/computational-training-and-data-literacy-for-domain-scientists"

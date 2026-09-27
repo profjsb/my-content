@@ -9,7 +9,7 @@ location: "Cefalù, Italy"
 summary: "Review of gamma-ray bursts as cosmological probes: finding bursts beyond redshift 6, host absorption as a window on the neutral intergalactic medium and reionization, dust and extinction curves, and bursts as signposts to the first stars, with a caution against GRB Hubble-diagram cosmography."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 33
+talk_number: 55
 display_date: "Sep 2008"
 has_transcript: false
 ---

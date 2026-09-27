@@ -8,7 +8,7 @@ location: "Princeton, NJ"
 summary: "Progenitor evidence for gamma-ray bursts - offsets, hosts, and the emerging supernova connection - presented at the IAS."
 topics: ["astronomy"]
 talk_type: "Seminar"
-talk_number: 11
+talk_number: 14
 display_date: "May 2001"
 has_transcript: false
 ---

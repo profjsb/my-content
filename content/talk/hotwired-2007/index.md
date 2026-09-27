@@ -9,7 +9,7 @@ location: "Tucson, AZ"
 summary: "Session talk on the machine-learning classification engine behind Palomar Transient Factory discoveries, in the event-classification session alongside LSST and Caltech colleagues."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Talk"
-talk_number: 30
+talk_number: 46
 display_date: "Jun 2007"
 has_transcript: false
 ---

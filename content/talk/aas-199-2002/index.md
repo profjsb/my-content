@@ -9,7 +9,7 @@ location: "Washington, DC"
 summary: "Evidence that gamma-ray bursts come from massive stars, not neutron-star mergers — supernova bumps in afterglows, an HST/Keck host survey — plus JCAM, a new rapid-response imager on the Palomar 200-inch."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 13
+talk_number: 16
 display_date: "Jan 2002"
 has_transcript: false
 ---

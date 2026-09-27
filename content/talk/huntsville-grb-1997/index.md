@@ -9,7 +9,7 @@ location: "Huntsville, AL"
 summary: "Evidence that the host of GRB 970508 - the first burst with a measured redshift - is a distant dwarf galaxy, tying bursts to faint star-forming hosts."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 3
+talk_number: 4
 display_date: "Sep 1997"
 has_transcript: false
 ---

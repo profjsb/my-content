@@ -9,7 +9,7 @@ location: "Huntsville, AL"
 summary: "Searching for supernova signatures underlying the afterglows of GRB 980519 and GRB 980329, early evidence bearing on the burst-supernova connection."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 6
+talk_number: 8
 display_date: "Oct 1999"
 has_transcript: false
 ---

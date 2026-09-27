@@ -9,7 +9,7 @@ location: "Cambridge, MA"
 summary: "Progenitor evidence for long and short gamma-ray bursts from afterglow positions, host demographics, and supernova signatures."
 topics: ["astronomy"]
 talk_type: "Seminar"
-talk_number: 10
+talk_number: 13
 display_date: "May 2001"
 has_transcript: false
 ---

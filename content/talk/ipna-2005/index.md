@@ -8,7 +8,7 @@ location: "Berkeley, CA"
 summary: "The first afterglow localizations of short gamma-ray bursts and what they reveal about compact-merger progenitors, weeks after the breakthrough events."
 topics: ["astronomy"]
 talk_type: "Seminar"
-talk_number: 25
+talk_number: 31
 display_date: "Jul 2005"
 has_transcript: false
 ---
