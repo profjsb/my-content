@@ -2472,5 +2472,25 @@
     "transcript_url": null,
     "summary": "Opening keynote on AI and the future of science at ALIGN: AI 2026, a Washington, DC summit convening travel-industry leaders and AI innovators around generative AI's reshaping of the traveler's journey.",
     "notes": "Opening keynote (9:15-10:15 slot, right after opening remarks) at the Bonafide-organized ALIGN: AI summit, Grand Hyatt Washington, July 23, 2026; billed as 'Joshua Bloom, Co-Founder and CEO, Valency; Professor, UC Berkeley (BAIR)'. No public recording or slides found as of Aug 2026 (not on YouTube or the open web); the EventCreate event page is the only link. Per JB, the talk also had substantive astronomy content (hence the astronomy topic; no recording to cite)."
+  },
+  {
+    "n": 127,
+    "slug": "pepperdine-hcai-2026",
+    "title": "AI-Accelerated Science Will Always Be a Human Endeavor",
+    "event": "Human-Centered AI Conference 2026, Pepperdine University",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy",
+      "ai-ml"
+    ],
+    "date": "2026-09-26",
+    "location": "Malibu, CA",
+    "video_url": null,
+    "slides_url": "/talk/pepperdine-hcai-2026/#slides",
+    "event_url": "https://seaver.pepperdine.edu/events/human-centered-ai-conference/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "From real-time transient discovery to physics-informed inference, how astronomy turned to AI at scale — and why, as reasoning models take on the conduct of science itself, the questions, trust, and credit remain fundamentally human.",
+    "notes": "Program (seaver.pepperdine.edu/events/human-centered-ai-conference/program/) lists it Day 2, Sat Sep 26 2026, 10:30-11 AM, Elkins Auditorium, with JB's abstract; the conference ran alongside the inaugural Global Summit on Faith in AI. Slides: JB's Keynote PDF export (28 slides) rendered to 2400px WebP images (talks.py slides) and shown in the embedded viewer on the talk page — the first embedded deck. Per JB the deck should not be downloadable, so the PDF itself is deliberately kept off the site and out of the repo. No recording found 2026-09-26, the day the conference ended; recheck Pepperdine's channels later. Topics: astronomy + ai-ml; the Valency segment (~2 of 28 slides) was judged below the industry threshold."
   }
 ]
