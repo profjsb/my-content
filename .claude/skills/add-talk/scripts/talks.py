@@ -6,9 +6,11 @@ Subcommands:
   sync-slugs  backfill/refresh the "slug" field in talks.json by matching pages
   renumber    recompute talk_number = chronological rank across all pages
   scaffold    create a new talk page bundle + talks.json entry (auto-numbering)
+  slides      render a deck PDF into the bundle's slides/ images for the embedded viewer
   linkcheck   verify all outbound links (YouTube via oEmbed); reports rot
 
-Stdlib-only. Run from the repo (or worktree) root:  python3 .claude/skills/add-talk/scripts/talks.py <cmd>
+Stdlib-only (slides also shells out to Ghostscript + cwebp). Run from the repo (or worktree)
+root:  python3 .claude/skills/add-talk/scripts/talks.py <cmd>
 """
 import argparse
 import calendar
@@ -16,8 +18,10 @@ import glob
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
+import tempfile
 from concurrent.futures import ThreadPoolExecutor
 
 CONTENT = "content/talk"
@@ -112,8 +116,12 @@ def cmd_validate(_args):
                 errs.append(f"{p}: topics is empty")
             elif not vals <= TOPICS:
                 errs.append(f"{p}: unknown topics {sorted(vals - TOPICS)} (allowed: {sorted(TOPICS)})")
-        if not any(fm.get(k) for k in ("url_video", "url_slides", "event_url")):
+        embedded = glob.glob(f"{CONTENT}/{slug}/slides/*")
+        if not embedded and not any(fm.get(k) for k in ("url_video", "url_slides", "event_url")):
             warns.append(f"{p}: no links at all (known-unreachable item?)")
+        for pdf in glob.glob(f"{CONTENT}/{slug}/**/*.pdf", recursive=True):
+            warns.append(f"{pdf}: PDFs in a talk bundle are published and public on GitHub "
+                         "— embed the deck with 'slides' and keep the PDF out of the repo")
     # numbering = chronological rank
     order = sorted(pg.items(), key=lambda kv: rank_key(kv[1][1], kv[0]))
     for want, (slug, (p, fm, _)) in enumerate(order, 1):
@@ -259,6 +267,49 @@ def cmd_scaffold(args):
     return 0
 
 
+# ---------- slides ----------
+
+def run_tool(cmd):
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    if r.returncode:
+        raise SystemExit(f"{cmd[0]} failed:\n{(r.stderr or r.stdout).strip()}")
+
+
+def cmd_slides(args):
+    """Render each page of a deck PDF to content/talk/<slug>/slides/NNN.webp; the talk page
+    then embeds a slide viewer. The PDF itself never enters the bundle, so it is not published."""
+    bundle = f"{CONTENT}/{args.slug}"
+    if not os.path.isfile(f"{bundle}/index.md"):
+        raise SystemExit(f"{bundle}/index.md not found — scaffold the talk first")
+    if not os.path.isfile(args.pdf):
+        raise SystemExit(f"{args.pdf}: no such file")
+    for tool in ("gs", "cwebp"):
+        if not shutil.which(tool):
+            raise SystemExit(f"{tool} not found (brew install ghostscript webp)")
+    out = f"{bundle}/slides"
+    with tempfile.TemporaryDirectory() as tmp:
+        # page 1 rendered at 72 dpi is as many pixels wide as the page is points (PNG IHDR)
+        probe = os.path.join(tmp, "probe.png")
+        run_tool(["gs", "-q", "-dNOPAUSE", "-dBATCH", "-sDEVICE=png16m", "-r72",
+                  "-dFirstPage=1", "-dLastPage=1", "-o", probe, args.pdf])
+        with open(probe, "rb") as f:
+            width_pt = int.from_bytes(f.read(24)[16:20], "big")
+        run_tool(["gs", "-q", "-dNOPAUSE", "-dBATCH", "-sDEVICE=png16m",
+                  f"-r{args.width * 72 / width_pt:.4f}", "-dTextAlphaBits=4",
+                  "-dGraphicsAlphaBits=4", "-o", os.path.join(tmp, "%03d.png"), args.pdf])
+        pages = sorted(glob.glob(os.path.join(tmp, "[0-9][0-9][0-9].png")))
+        if not pages:
+            raise SystemExit("Ghostscript rendered no pages")
+        shutil.rmtree(out, ignore_errors=True)
+        os.makedirs(out)
+        for png in pages:
+            run_tool(["cwebp", "-quiet", "-q", str(args.quality), "-m", "6", png,
+                      "-o", os.path.join(out, os.path.basename(png)[:-4] + ".webp")])
+    size = sum(os.path.getsize(f) for f in glob.glob(f"{out}/*.webp"))
+    print(f"{len(pages)} slides -> {out}/ ({size / 1e6:.1f} MB); the talk page now embeds them")
+    return 0
+
+
 # ---------- linkcheck ----------
 
 def check_url(url, is_audio=False):
@@ -340,9 +391,14 @@ def main():
                          "shown only when there is no embedded transcript")
     sc.add_argument("--summary")
     sc.add_argument("--notes")
+    sl = sub.add_parser("slides")
+    sl.add_argument("--slug", required=True)
+    sl.add_argument("--pdf", required=True, help="deck PDF to render (it is not copied)")
+    sl.add_argument("--width", type=int, default=2400, help="slide width in px (default 2400)")
+    sl.add_argument("--quality", type=int, default=82, help="WebP quality (default 82)")
     args = ap.parse_args()
     fn = {"validate": cmd_validate, "sync-slugs": cmd_sync_slugs, "renumber": cmd_renumber,
-          "scaffold": cmd_scaffold, "linkcheck": cmd_linkcheck}[args.cmd]
+          "scaffold": cmd_scaffold, "slides": cmd_slides, "linkcheck": cmd_linkcheck}[args.cmd]
     sys.exit(fn(args))
 
 

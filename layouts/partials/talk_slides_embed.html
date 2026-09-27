@@ -1,0 +1,146 @@
+{{- /* Embedded slide viewer for decks rendered into the page bundle's slides/ folder
+       (`talks.py slides`). It shows images, never the PDF, so the deck itself is not published;
+       saving a slide via right-click, drag, or long-press is suppressed on the stage. That deters
+       casual copying but cannot stop screenshots. */ -}}
+{{- $m := .Resources.Match "slides/*" -}}
+{{- if $m -}}
+{{- $slides := sort $m "Name" -}}
+{{- $n := len $slides -}}
+<div class="talk-slides" id="slides" tabindex="-1" role="region" aria-roledescription="carousel" aria-label="Slides">
+  <div class="talk-slides-stage">
+    {{- range $i, $s := $slides }}
+    <img src="{{ $s.RelPermalink }}" alt="Slide {{ add $i 1 }} of {{ $n }}"{{ if eq $i 0 }} class="is-current"{{ else }} loading="lazy"{{ end }} decoding="async" draggable="false">
+    {{- end }}
+    <button type="button" class="talk-slides-hit talk-slides-hit-prev" data-slides="prev" tabindex="-1" aria-label="Previous slide"></button>
+    <button type="button" class="talk-slides-hit talk-slides-hit-next" data-slides="next" tabindex="-1" aria-label="Next slide"></button>
+    <div class="talk-slides-progress"></div>
+  </div>
+  <div class="talk-slides-bar">
+    <button type="button" class="talk-slides-btn" data-slides="prev" aria-label="Previous slide"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg></button>
+    <span class="talk-slides-count" aria-live="polite"><span class="talk-slides-cur">1</span> / {{ $n }}</span>
+    <button type="button" class="talk-slides-btn" data-slides="next" aria-label="Next slide"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5"/></svg></button>
+    <button type="button" class="talk-slides-btn talk-slides-fs" aria-label="Full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4"/></svg></button>
+  </div>
+</div>
+<script>
+(function () {
+  var root = document.getElementById('slides');
+  if (!root || !root.classList) return;
+  var stage = root.querySelector('.talk-slides-stage');
+  var imgs = stage.getElementsByTagName('img');
+  var n = imgs.length, cur = 0;
+  var curEl = root.querySelector('.talk-slides-cur');
+  var progress = root.querySelector('.talk-slides-progress');
+  var prevs = root.querySelectorAll('[data-slides="prev"]');
+  var nexts = root.querySelectorAll('[data-slides="next"]');
+  var fsBtn = root.querySelector('.talk-slides-fs');
+
+  // Lifting lazy-loading on the neighbours fetches and decodes them ahead of time, so
+  // stepping through the deck never shows a blank stage.
+  function preload(i) {
+    if (i >= 0 && i < n) imgs[i].loading = 'eager';
+  }
+  function disable(list, off) {
+    for (var j = 0; j < list.length; j++) {
+      if (off && document.activeElement === list[j]) root.focus();
+      list[j].disabled = off;
+    }
+  }
+  function go(i) {
+    i = Math.max(0, Math.min(n - 1, i));
+    preload(i);
+    imgs[cur].classList.remove('is-current');
+    imgs[i].classList.add('is-current');
+    cur = i;
+    curEl.textContent = i + 1;
+    progress.style.width = (100 * (i + 1) / n) + '%';
+    disable(prevs, i === 0);
+    disable(nexts, i === n - 1);
+    preload(i + 1);
+    preload(i - 1);
+  }
+  function wire(list, step) {
+    for (var j = 0; j < list.length; j++) {
+      list[j].addEventListener('click', function () { go(cur + step); });
+    }
+  }
+  wire(prevs, -1);
+  wire(nexts, 1);
+
+  // Deck aspect ratio from the first slide (the CSS default is 16:9).
+  function ratio() {
+    if (imgs[0].naturalWidth) stage.style.aspectRatio = imgs[0].naturalWidth + ' / ' + imgs[0].naturalHeight;
+  }
+  if (imgs[0].complete) ratio(); else imgs[0].addEventListener('load', ratio);
+
+  // Arrow keys flip slides while the viewer is mostly on screen; PageUp/PageDown/Home/End
+  // also work once it has focus or is full screen.
+  function fsEl() { return document.fullscreenElement || document.webkitFullscreenElement; }
+  function inView() {
+    var r = stage.getBoundingClientRect();
+    return Math.min(r.bottom, window.innerHeight) - Math.max(r.top, 0) > r.height / 2;
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    var t = e.target;
+    if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+    var owned = fsEl() === root || root.contains(document.activeElement);
+    if (!owned && !inView()) return;
+    var k = e.key, to = null;
+    if (k === 'ArrowRight' || k === 'Right') to = cur + 1;
+    else if (k === 'ArrowLeft' || k === 'Left') to = cur - 1;
+    else if (owned && k === 'PageDown') to = cur + 1;
+    else if (owned && k === 'PageUp') to = cur - 1;
+    else if (owned && k === 'Home') to = 0;
+    else if (owned && k === 'End') to = n - 1;
+    if (to === null) return;
+    e.preventDefault();
+    go(to);
+  });
+
+  // Horizontal swipes on touch screens; vertical drags still scroll the page.
+  var sx = null, sy = 0;
+  stage.addEventListener('touchstart', function (e) {
+    var one = e.touches.length === 1;
+    sx = one ? e.touches[0].clientX : null;
+    sy = one ? e.touches[0].clientY : 0;
+  }, { passive: true });
+  stage.addEventListener('touchend', function (e) {
+    if (sx === null) return;
+    var p = e.changedTouches[0], dx = p.clientX - sx, dy = p.clientY - sy;
+    sx = null;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > 1.5 * Math.abs(dy)) go(cur + (dx < 0 ? 1 : -1));
+  }, { passive: true });
+
+  stage.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+  stage.addEventListener('dragstart', function (e) { e.preventDefault(); });
+
+  var req = root.requestFullscreen || root.webkitRequestFullscreen;
+  if (!req || !(document.fullscreenEnabled || document.webkitFullscreenEnabled)) {
+    fsBtn.style.display = 'none';  // e.g. iPhone Safari, which only full-screens video
+  } else {
+    fsBtn.addEventListener('click', function () {
+      var p = fsEl() ? (document.exitFullscreen || document.webkitExitFullscreen).call(document)
+                     : req.call(root);
+      if (p && p.catch) p.catch(function () {});
+    });
+    var onFs = function () {
+      var on = fsEl() === root;
+      root.classList.toggle('is-fs', on);
+      fsBtn.setAttribute('aria-label', on ? 'Exit full screen' : 'Full screen');
+      if (on) root.focus();
+    };
+    document.addEventListener('fullscreenchange', onFs);
+    document.addEventListener('webkitfullscreenchange', onFs);
+  }
+
+  // Arriving via a Slides button (#slides) hands the keyboard to the viewer.
+  function hashFocus() {
+    if (location.hash === '#slides') root.focus({ preventScroll: true });
+  }
+  window.addEventListener('hashchange', hashFocus);
+  hashFocus();
+  go(0);
+})();
+</script>
+{{- end -}}
