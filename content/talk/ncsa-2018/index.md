@@ -8,7 +8,7 @@ location: "Champaign-Urbana, IL"
 summary: "Autoencoding RNNs for classification and inference on irregularly sampled astronomical time series."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 98
+talk_number: 99
 display_date: "Oct 2018"
 url_slides: "https://www.slideshare.net/JoshuaBloom/autoencoding-rnn-for-inference-on-unevenly-sampled-timeseries-data"
 has_transcript: false

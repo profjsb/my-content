@@ -299,8 +299,8 @@ entries.**
   Jan 2011); "IAU Oxford Sept 2011" matches no IAU meeting and is recorded as an
   Oxford seminar with a caveat note.
 - **Privacy rule applied** (industry decks without venues are private): excluded
-  a16z academic roundtable (deck only; a16z's public interview from it was added
-  2026-09-26, see that addendum), D. E. Shaw, Thomson Reuters, Vodafone, Fujitsu forum,
+  a16z academic roundtable (since published at JB's request, deck in the slide viewer:
+  see the 2026-09-26 a16z addendum), D. E. Shaw, Thomson Reuters, Vodafone, Fujitsu forum,
   TCV CIO/CTO, WeWork, Arkadium, Orange Institute, and all wise.io product/client
   decks (several marked "Confidential / Not for distribution"), plus Valency investor
   decks. Also excluded: courses/guest lectures (INFO 296A), lab-internal decks (BAIR
@@ -363,20 +363,39 @@ YouTube recordings, and all three now have embedded transcripts, Key Quotes and
   courses. The other two stay `astronomy`/`ai-ml`. The HiPACC card summary, previously a
   placeholder, was rewritten from the transcript.
 
-## Addendum — a16z Academic Roundtable interview (2026-09-26)
+## Addendum — a16z Academic Roundtable talk and interview (2026-09-26)
 
 JB asked for a16z's "Supernovas and Novel Insight: Where Machine Learning is Headed Next"
-(a16z.com, Jan 2015) to be added (`a16z-roundtable-2014`). It is **an interview a16z filmed
-at its second annual Academic Roundtable** (Sep 25–27, 2014, at the firm's Menlo Park
-offices), not a recording of his roundtable talk, so it is typed `Interview` and dated to
-the talk day (27 Sep 2014, from the deck's title slide; he refers back to "my talk"). The
-a16z page's Vimeo embed is dead (the page prints the raw `[vimeo]` shortcode), but a16z's
-own YouTube re-upload (`6hQqpQ3IZlY`) is live and now embedded, with a transcript cleaned
-from its auto-captions (2,845 → 2,629 words, 92%). **Transcript pages: 23 → 24.**
+(a16z.com, Jan 2015), then supplied the deck of the talk he gave at the same event, a16z's
+second annual Academic Roundtable (Sep 25–27, 2014, at the firm's Menlo Park offices). Both
+entries are dated 27 Sep 2014.
 
-The privacy rule above still covers the talk itself ("Practicable Machine Intelligence in
-Science & Industry"): no public recording was found, and the deck stays private and off
-the site.
+- **#76 `a16z-roundtable-2014`: "Practicable Machine Intelligence in Science & Industry"
+  (Invited Talk).** a16z's invitation asked for 15 minutes on his ML research, and the
+  archived agenda (Wayback's 2014-10-21 capture of academic.a16z.com, now the `event_url`)
+  lists it at 11:10am on the last morning as the "Artificial Intelligence" session. No
+  recording was posted. The 24-slide deck is in the embedded viewer (`talks.py slides`,
+  2.1 MB of WebP); the PDF stays out of the repo. At JB's request this lifts the
+  slide-archive privacy exclusion (above) for this one deck.
+- **#77 `a16z-interview-2014`: the a16z video (Podcast).** It is an interview a16z filmed
+  at the roundtable after the talk (he refers back to "my talk"), not a talk recording.
+  **Typed `Podcast` per JB**; the first pass used `Interview`, which the Type filter files
+  under Radio. The a16z page's Vimeo embed is dead (the page prints the raw `[vimeo]`
+  shortcode), so the page embeds a16z's own YouTube re-upload (`6hQqpQ3IZlY`).
+  **Transcript pages: 23 → 24.**
+- **Transcript from local Whisper, per JB, not auto-captions.** The installed yt-dlp
+  (2026.07) gets HTTP 403 from YouTube's media servers, so the audio came from the latest
+  yt-dlp run in isolation (`uvx --from "yt-dlp[default]@latest" yt-dlp --js-runtimes node
+  -f 140`). faster-whisper `distil-large-v3` (int8, CPU) transcribed the 14.5 minutes in
+  15, and an AI pass removed fillers, false starts and stutters: 2,794 → 2,657 words
+  (95%). Doubtful phrases and every Key Quote were re-heard with `medium.en` on isolated
+  clips. Whisper fixed several auto-caption errors: "in the penthouse" was "couldn't have
+  done in the past", "apply non-data" was "opine on data", and "no extra mning data" was
+  "noisy streaming data". It also reversed one guess from the caption-based draft: "the
+  total amount of data" is really "the toy amount of data" (a single 0.14-second word in
+  both Whisper models).
+- **Same-day order:** `rank_key` breaks date ties on the existing `talk_number`, so the
+  talk stays #76 and the interview #77 through later renumbers.
 
 ## Maintenance
 
