@@ -8,7 +8,7 @@ location: "Oxford, UK"
 summary: "Ruling out red-giant and most main-sequence companions for the nearest modern Type Ia supernova, weeks after its discovery (Li, Bloom et al., Nature 2011)."
 topics: ["astronomy"]
 talk_type: "Seminar"
-talk_number: 47
+talk_number: 48
 display_date: "Sep 2011"
 has_transcript: false
 ---

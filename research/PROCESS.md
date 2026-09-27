@@ -282,6 +282,25 @@ entries.**
 - 15 old-format Keynote bundles had no extractable preview (incl. citris2010,
   i4science, gw) — unreadable without opening Keynote; left for a manual pass.
 
+## Addendum — AAS/HEAD meeting abstracts (2026-09-26)
+
+JB supplied six ADS abstracts; the meeting programs sorted them:
+
+- **Four oral talks, now with abstracts on their pages.** New: AAS 199 (Jan 2002).
+  Enriched: AAS 191 (Jan 1998; title set to the official abstract title), HEAD 9 (Oct
+  2006), and the 2010 Pierce Prize lecture, which gained the AAS's own video, now
+  embedded (direct `.mp4` files embed like YouTube).
+- **Two posters, deliberately left off** (posters are out of scope for this page):
+  AAS 213 469.07 "Rapid and Automated Classification of Events from the Palomar
+  Transient Factory" (poster session 469 "PTF", Jan 7 2009) and AAS 214 602.03
+  "EXIST-observed GRBs As A Gateway to the z > 7 Universe" (late-abstract poster, Jun 2009).
+
+Where the sources live now: AAS moved its pre-2010 meeting programs and BAAS abstracts to
+`aasarchives.blob.core.windows.net` (linked from aas.org/meetings/past-meetings) and meeting
+videos to `aasfiles.blob.core.windows.net`. aas.org itself returns 403 to curl (so
+`linkcheck` reports it WALLED), and ADS abstract pages demand human verification, so ADS
+links appear only in page bodies, never in link fields.
+
 ## Maintenance
 
 Two skills were added with this branch:

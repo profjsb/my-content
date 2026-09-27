@@ -9,7 +9,7 @@ location: "Bremen, Germany"
 summary: "The proposed EXIST hard X-ray survey mission as a probe of the reionization epoch through high-redshift gamma-ray bursts, as chair of the GRB-EXIST working group."
 topics: ["astronomy"]
 talk_type: "Invited Talk"
-talk_number: 39
+talk_number: 40
 display_date: "Jul 2010"
 has_transcript: false
 ---

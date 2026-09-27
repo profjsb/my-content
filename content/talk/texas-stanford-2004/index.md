@@ -9,7 +9,7 @@ location: "Palo Alto, CA"
 summary: "The observational case connecting long gamma-ray bursts to supernovae and its implications for progenitors."
 topics: ["astronomy"]
 talk_type: "Talk"
-talk_number: 19
+talk_number: 20
 display_date: "Dec 2004"
 has_transcript: false
 ---

@@ -9,7 +9,7 @@ location: "Berkeley, CA"
 summary: "Machine-learned inference for astronomical surveys, at the UC-HiPACC exascale computational astrophysics workshop at LBNL."
 topics: ["astronomy", "ai-ml"]
 talk_type: "Invited Talk"
-talk_number: 67
+talk_number: 68
 display_date: "Mar 2014"
 has_transcript: false
 ---

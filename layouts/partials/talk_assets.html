@@ -431,13 +431,15 @@ body.dark .talk-topic-chip { color: #a0a0a0; background: #333; }
   overflow: hidden;
   background: #000;
 }
-.video-container iframe {
+.video-container iframe,
+.video-container video {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   border: 0;
 }
+.video-container video { object-fit: contain; }  /* letterbox 4:3 recordings; never stretch */
 /* embedded slide viewer (talk_slides_embed.html) */
 .talk-slides { margin-bottom: 32px; outline: none; }
 .talk-slides-stage {
