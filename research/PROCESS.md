@@ -613,7 +613,8 @@ Wayback snapshots one at a time after its parallel pass. This sweep adds 11 Wayb
   Astrophysics with AI" (Nov 5, 2024), with a YouTube recording (`tniRyPP1aGg`). It is not on
   the page yet.
 - Transcripts for `citris-2010` (54 min video) and the two Dean lectures (1 h 38 min and
-  1 h 24 min of audio), via the local-Whisper pipeline.
+  1 h 24 min of audio), via the local-Whisper pipeline. (*Done 2026-09-28; see the
+  Keynote-sweep recordings addendum.*)
 
 ## Addendum — Learning in Retirement 2024 lecture (2026-09-27)
 
@@ -806,6 +807,74 @@ connection during the run. The 10 walled links are the ones already documented u
 health: aas.org (3), ADS, the O'Reilly paywall, the permissioned Drive deck, Columbia DSI,
 CfA ITC, archive.siam.org and the JHU Gazette. The sweep adds five Wayback links (`everhart-2002`,
 `ssl-colloquium-2006`, `pairitel-2006`, `cinc-2006`, `sfaa-2007`).
+
+## Addendum — transcripts for the Keynote-sweep recordings (2026-09-28)
+
+The old-format Keynote sweep added three talks with recordings. All three now have embedded
+transcripts, five Key Quotes each and `research/<slug>.summary.txt` files, made with the
+local-Whisper pipeline of the NRC, a16z and Learning in Retirement addenda. **Transcript pages:
++3 (26 → 29).**
+
+| Talk | Recording | Words (raw → clean) | Speakers |
+|------|-----------|---------------------|----------|
+| `citris-2010` | CITRIS YouTube, 54 min | 8,991 → 8,953 (99.6%) | NIKRAVESH (intro, close), BLOOM; no audience questions |
+| `dean-lecture-2010` | iTunes U MP3, 1:38 | 16,677 → 16,445 (98.6%) | HOST (never named), BLOOM, AUDIENCE (five questioners) |
+| `dean-lecture-2012` | iTunes U MP3, 1:24 | 14,242 → 14,096 (99.0%) | QUOCK, WYATT, BLOOM, AUDIENCE (eight questions) |
+
+- **Pipeline.** Audio: the CITRIS video's audio track via the latest yt-dlp (`uvx`, `-f 140`); the
+  two iTunes U MP3s with plain `curl` over http (both still served, byte sizes unchanged since the
+  sweep). faster-whisper `distil-large-v3` (CPU int8, VAD, beam 5, `condition_on_previous_text=False`,
+  a names prompt) → 15 chunks of 1.6–3.7k words → parallel Opus cleanup agents with one rule sheet and
+  a per-talk glossary drawn from the decks (fillers, false starts, stutters, Whisper's repeated phrases
+  at segment boundaries; keep content) → a checker for retention, leftover fillers and repeats →
+  `medium.en` on 138 clips: every doubtful passage the agents or I flagged, and all 29 Key Quote
+  candidates → fixes by hand. For CITRIS the YouTube auto-captions served only as a tie-breaker.
+  Retention sits above 93–98% because Whisper already drops nearly all fillers, as in the NRC pass.
+- **A starved machine, and the workarounds.** The M2 ran out of memory (10–11 GB in the compressor,
+  swap full, `fseventsd` at 100% CPU) and was shared with the Learning in Retirement job, so distil
+  ran at one to four times real time instead of ~0.4×. At times the antivirus delayed first file opens
+  by ~13 s, and `ctranslate2` imports PyTorch opportunistically (it is only needed for converting models):
+  loading `libtorch_cpu.dylib` through the scanner stalled every new Whisper process for 10+ minutes.
+  `sys.modules.setdefault("torch", None)` before `import faster_whisper` avoids it. Two session
+  restarts killed jobs mid-run, so the runner learned `name@start`: it slices the decoded audio at the
+  last finished segment's end, keeps VAD, and offsets the timestamps. The tail of the 2010 lecture was
+  split across two processes at a silence (−56 dB against a −20 dB median) found by scanning 400 ms
+  RMS frames. One long-lived `medium.en` worker served the re-checks from a queue directory, so the
+  model loaded once per session.
+- **The second model settled** (distil's reading in parentheses): "13 **billion** years" ("million"),
+  "where there **is** a very interesting object" ("isn't"), "And I **don't** want to bore you with
+  data flow" ("I want to"), "Saul Perlmutter" ("Perimeter"), "U Sco, RS Oph" ("USCO, Ars Oaf"), "the
+  Nobel Committee" ("Novo"), "potpourri" ("popery"), "there's where it was in **2006**" ("2007"), "sopping up"
+  ("stopping"). Distil's VAD dropped the CITRIS host's "We have time for a few questions or comments",
+  and distil garbled Ryan Wyatt's closing into "We're going to talk this evening"; `medium.en`
+  recovered both ("…thank you very much for your talk this evening"). Captions broke ties for "the
+  Galaxy Zoo" (both Whisper models heard "galaxies here") and "ride around **in** these telescopes".
+- **Kept as spoken** because both models agree: "put in monitor detectors",
+  "a 2.5 diameter telescope", "since 1602" (Kepler's supernova was 1604), "saturation from bad stars"
+  (the slide says bright), "maybe 40% the mass of the sun", "Beta Lyrae, and then Ursa Major". Also
+  kept: "doesn't inhere any discovery" (`medium.en` and the captions; distil heard "inherit").
+  **One for JB:** in the 2010 lecture Bloom says four times that Galileo recorded **Uranus**; his
+  slides and the CITRIS talk say Neptune. The transcript keeps "Uranus".
+- **Speakers.**
+  - CITRIS: Masoud Nikravesh, CITRIS's Director for Computational Science and Engineering,
+    introduces the talk. "The Soud and the CITRIS program" (medium "SUDE", captions "Su") is
+    rendered "Masoud and the CITRIS program". Nobody asked a question: Nikravesh invites questions,
+    Bloom jokes "Completely crystal clear", and Nikravesh closes. These lines were attributed by
+    loudness (Bloom's lapel mic peaks near −21 dB; the host is 17–23 dB quieter, off-mic), because
+    the 360p video frames stay on Bloom throughout.
+  - 2012: Bing Quock opens and closes the podcast; Ryan Wyatt introduces Bloom and runs the Q&A.
+  - 2010: the host never gives their name. Pitch against the 2012 Quock and Wyatt recordings could
+    not tell them apart, so the label is HOST. Their colleague "Gary" has a surname the two models
+    hear differently ("Charleau", "Sharlow"), so it is written "Gary [inaudible]".
+- **Card summaries and topics.** `citris-2010`'s card summary, first written from the auto-captions,
+  now includes the robotic-telescope and VOEvent section (roughly 15% of the talk). The two Dean
+  summaries already matched the transcripts. `dean-lecture-2012` gains `ai-ml`: the discovery turns on
+  PTF's machine-learned real-bogus ranking, which takes up about a seventh of the words, including two
+  of the eight audience questions. The other topics stand. The 2010 lecture's one curriculum question
+  doesn't make it `education`.
+- **Audio stays out of the repo.** The three audio files and a 360p CITRIS video track, used for the
+  frame check, lived only in the session scratchpad. The iTunes U MP3s remain the most fragile links
+  on the page (http only, not in the Wayback Machine).
 
 ## Maintenance
 
