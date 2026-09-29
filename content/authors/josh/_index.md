@@ -20,7 +20,7 @@ organizations:
   url: "https://berkeley.edu/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Co-founder & CEO of [Valency](https://valency.io); Astrophysics Prof at UC Berkeley; former Wise.io cofounder (acquired by GE); Previous Department Chair; Inventor; Dad, Tennis everything. Anti [\#TransparentMoon](/post/lets-kill-the-transparent-moon/). Check out his group activities at [ml4science.org](https://www.ml4science.org) and art exhibition [CuratingAI.art](https://www.curatingai.art/) (Spring 2024). 
+bio: Co-founder & CEO of [Valency](https://valency.io); Astrophysics Prof at UC Berkeley; former Wise.io cofounder (acquired by GE); Previous Department Chair; Inventor; Dad, Tennis everything. Anti [\#TransparentMoon](/post/lets-kill-the-transparent-moon/). Check out his art exhibition [CuratingAI.art](https://www.curatingai.art/) (Spring 2024). 
 
 interests:
 - Machine learning meets Physics
@@ -50,7 +50,10 @@ social:
   link: 'mailto:joshbloom@berkeley.edu'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/profjsb
+  link: https://x.com/RealJoshBloom
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/profjsb/
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=fHkUYk0AAAAJ
@@ -73,8 +76,6 @@ user_groups:
 - Visitors
 ---
 Joshua Bloom is co-founder and CEO of [Valency](https://valency.io), a venture-backed company building infrastructure for agentic science. He is also an astronomy professor at the [University of California, Berkeley](https://berkeley.edu), where he has taught radiative processes, high-energy astrophysics, astronomy data lab, and a graduate-level "Python for Data Science" course, and served as chair of the Astronomy Department. He has [published over 350 refereed articles](/publication) on time-domain transients events, AI, and telescope/insight automation. He co-founded the [Berkeley Institute for Data Science (BIDS)](https://bids.berkeley.edu) and is a faculty member of the [Berkeley Artificial Intelligence Research (BAIR) Lab](https://bair.berkeley.edu). Josh has been awarded the Data-Driven Discovery prize from the Gordon and Betty Moore Foundation, the Pierce Prize from the American Astronomical Society, the Sloan Fellowship, a Junior Fellowship at the Harvard Society, and the Hertz Foundation Fellowship. He holds a PhD from Caltech and degrees from Harvard College and Cambridge University. Before Valency, he was co-founder and CTO of Wise.io, an AI application startup, acquired by GE Digital in 2016. His [book on gamma-ray bursts](https://www.amazon.com/Gamma-Ray-Bursts-Princeton-Frontiers-Physics/dp/0691145571), a technical introduction for physical scientists, was published by Princeton University Press.
-
-Much of Josh's current group activities can be found at [ML4Science](https://www.ml4science.org).
 
 Josh is the founder and principal curator of the [CuratingAI art exhibition](https://www.curatingai.art/) which ran in April 2024. 
 
