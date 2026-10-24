@@ -897,9 +897,10 @@ career (Sep 10–11, 2026, Cahill Center).
   argument), "errors" → eras, "Minras" → MNRAS, "chat chabit" → ChatGPT, "my clod" → my
   Claude, "the tack thus spat" → "the TAC. Thus spake" (he is reading George's email).
   Shri (Kulkarni), Fiona (Harrison), Mal Ruderman and Bob Goodrich were identified from
-  context. **Kept as heard** because both models agreed: "Italian Space Federation" (the
-  Elba workshop organizer), "welcoming Mike Parr" (possibly Mike Pahre, unverified) and
-  "No more tomorrow" at the end of George's secrecy email.
+  context. **Corrected by JB** (both models had agreed on the misheard versions): "Italian Space
+  Federation" → Italian Space Agency (he misspoke; it organized the Elba workshop), "Mike
+  Parr" → Mike Pahre, and "No more tomorrow" → "Know more tomorrow" at the end of George's
+  secrecy email.
 
 ## Maintenance
 
