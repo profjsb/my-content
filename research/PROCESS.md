@@ -176,7 +176,7 @@ Education (2015, SlideShare), #29 KDD (2017), #30 Autoencoding RNNs (2017),
 - **#15 Strata Santa Clara 2014 video** — behind the O'Reilly learning-platform
   subscription wall (returns 403). Kept as the link anyway since subscribers can reach it.
 
-## Link health (last checked 2026-09-26)
+## Link health (last checked 2026-10-24)
 
 ### At PR time (2026-07-18)
 
@@ -215,6 +215,17 @@ the JHU Gazette, each noted in its ledger entry as live in a browser.
 
 After the old-format Keynote sweep (see its addendum), with the a16z pair merged: **171 ok,
 10 walled, 0 dead of 181 links**; the walled ten are unchanged.
+
+### Re-check (2026-10-24)
+
+A `linkcheck` run during the Pierce Prize transcript PR: **191 ok, 10 walled, 1 dead of 202
+links**. The walled ten are the same as above.
+
+| # | Item | Link | Status | Diagnosis | Repair |
+|---|------|------|--------|-----------|--------|
+| 160 | `cosmic-connections-2023` | `url_video` (simonsfoundation.org/video/cosmic-connections-day-2-session-1/) | 404 | The Simons Foundation dropped its per-session video pages. All twelve session recordings are now Vimeo embeds on the event page. Day 2, Session 1 is Vimeo `839142832` ("2023-05-23 CCA Cosmic Connections Day 2 Part 1"), but the player answers 403 to any referer except simonsfoundation.org. A Vimeo link or embed here would not play, and neither would a Wayback copy. | `url_video` now points to the **event page**, where the recording plays. The page's context line names the session. |
+
+After the repair: **192 ok, 10 walled, 0 dead of 202 links**.
 
 ## Addendum — same-day restyle & audio pass (2026-07-18)
 
