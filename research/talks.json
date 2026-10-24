@@ -755,13 +755,13 @@
     ],
     "date": "2023-05-23",
     "location": "New York, NY",
-    "video_url": "https://www.simonsfoundation.org/video/cosmic-connections-day-2-session-1/",
+    "video_url": "https://www.simonsfoundation.org/event/cosmic-connections-a-ml-x-astrophysics-symposium/",
     "slides_url": "https://speakerdeck.com/profjsb/ai-assisted-discovery-from-ux-to-eureka",
     "event_url": "https://www.simonsfoundation.org/event/cosmic-connections-a-ml-x-astrophysics-symposium/",
     "audio_url": null,
     "transcript_url": null,
     "summary": "How AI/ML has uniquely contributed to novel science in astronomy across three assistive modes: circumventing human-centric bottlenecks, accelerating physics-based computation, and hypothesis generation — including LLMs for UX and a simulation-based-inference breakthrough in microlensing degeneracy theory.",
-    "notes": "At the Flatiron Institute's Ingrid Daubechies Auditorium; video in Day 2 Session 1 recording."
+    "notes": "At the Flatiron Institute's Ingrid Daubechies Auditorium; video in Day 2 Session 1 recording. 2026-10-24: the per-session video page (simonsfoundation.org/video/cosmic-connections-day-2-session-1/) is 404; the session recordings moved onto the event page as Vimeo embeds. Day 2 Session 1 is Vimeo 839142832 (\"2023-05-23 CCA Cosmic Connections Day 2 Part 1\"; Bloom's slot is 9:00-9:30 per the Indico timetable), but it is domain-restricted to simonsfoundation.org (the player returns 403 with any other referer), so video_url points to the event page instead of the Vimeo id."
   },
   {
     "n": 39,
