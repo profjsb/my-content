@@ -901,9 +901,9 @@ min). It now has an embedded transcript, five Key Quotes and `research/aas-pierc
 - **Kept as spoken:** "when the first gamma-ray burst was localized, the short event called 050509b"
   (he means the first short burst), "I denigrated a bit" (of the standard model; both models agree),
   and Huchra's "the 2009 Newton Lacy Pierce Prize" (the 2009 prize, presented in January 2010).
-- **One for JB:** at 49:32, "if indeed GRBs, short GRBs, are associated with short, hard
-  [inaudible]": distil hears "dam rapers", `medium.en` "gamma-rapers". It is probably "mergers" or
-  "NS–NS inspirals" (slides 50–51), but neither model hears that, so the transcript says [inaudible].
+- **Settled by JB:** at 49:32 distil heard "short, hard dam rapers" and `medium.en` "short, hard
+  gamma-rapers". JB confirmed "gamma-ray bursts", so the text is "if indeed GRBs, short GRBs, are
+  associated with short, hard gamma-ray bursts". The first pass had marked it [inaudible].
 - **Card summary** rewritten from the transcript. It was written from the abstract and left out the
   phenomenology and standard-model section, nearly half of the talk. Topics stay `astronomy` alone.
 - **Layout.** The Contents rail now lists an `## Abstract` when the page has one
