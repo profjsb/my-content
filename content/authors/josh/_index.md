@@ -57,6 +57,9 @@ social:
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=fHkUYk0AAAAJ
+- icon: logo
+  icon_pack: valency
+  link: https://hub.valency.io/authors/A_7zdytxzb
 - icon: github
   icon_pack: fab
   link: https://github.com/profjsb
