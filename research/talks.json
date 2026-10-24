@@ -3464,5 +3464,24 @@
     "transcript_url": null,
     "summary": "Short interview in BBC Click's second artificial-intelligence special, in a segment asking whether AI will take our jobs: how wise.io built the image-sharing site We Heart It a spam filter tailored to that one site, and why highly personalized filters are where AI is heading.",
     "notes": "Listed in his 2015-2022 CVs' media section: 'BBC News, Click, \"Machine Learning in Business\"; Oct 2015' (title kept from the CV). BBC programme page b06fy32b (linked): 'Click - 26/09/2015', the second of Click's artificial intelligence specials; first broadcast Sat 26 Sep 2015, 00:30 GMT, on BBC News, with repeats through Thu 1 Oct 2015 (the CV's 'Oct 2015'). The official BBC Click YouTube upload ('Click 803 : Teaching Artificial Intelligence to walk', 2020-06-23, 24:37; url_video starts at 12:10) carries the segment: We Heart It brought in 'AI specialists Wise' to build 'in effect a personalized AI spam filter'; he appears on camera, unnamed, at about 13:30-14:11 on filters 'highly tailored to you' as 'the kind of thing that Wise is trying to do'. No name caption; JB confirmed (2026-09-27) that the spokesperson is him."
+  },
+  {
+    "n": 178,
+    "slug": "georgefest-2026",
+    "title": "The Early Days (and Nights) of GRBs",
+    "event": "GeorgeFest: A Meeting to Celebrate the Work and Career of George Djorgovski",
+    "type": "Invited Talk",
+    "topics": [
+      "astronomy"
+    ],
+    "date": "2026-09-10",
+    "location": "Caltech, Pasadena, CA",
+    "video_url": "https://www.youtube.com/watch?v=4oQGAXUdNdE",
+    "slides_url": null,
+    "event_url": "https://sites.astro.caltech.edu/georgefest/",
+    "audio_url": null,
+    "transcript_url": null,
+    "summary": "Part history, part science, part roast: the afterglow era of gamma-ray bursts as lived in Caltech's GRB group from 1997, told through thirty years of emails with George Djorgovski: the 970508 redshift, host galaxies and offsets, the GRB–supernova connection, and how George taught a young student to be a spectroscopist.",
+    "notes": "GeorgeFest, Sep 10-11, 2026, Cahill Center, Caltech. Agenda PDF (sites.astro.caltech.edu/georgefest/assets/George-Djorgovski-Festschrift-AGENDA.2026.09.09.pdf) lists the talk Thu Sep 10, 4:25-4:40pm, right after Dale Frail's recorded talk. Video on the Caltech YouTube channel (4oQGAXUdNdE, uploaded 2026-09-29, 15.5 min), part of the meeting playlist PLZQVTnFKlYfI. No slides posted. Embedded transcript (2026-10-24) from local faster-whisper distil-large-v3 (YouTube auto-captions hit HTTP 429), cleaned by hand."
   }
 ]

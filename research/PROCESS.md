@@ -876,11 +876,37 @@ local-Whisper pipeline of the NRC, a16z and Learning in Retirement addenda. **Tr
   frame check, lived only in the session scratchpad. The iTunes U MP3s remain the most fragile links
   on the page (http only, not in the Wayback Machine).
 
+## Addendum — GeorgeFest 2026 talk (2026-10-24)
+
+JB asked for his talk at GeorgeFest, the Caltech meeting celebrating George Djorgovski's
+career (Sep 10–11, 2026, Cahill Center).
+
+- **#177 `georgefest-2026`: "The Early Days (and Nights) of GRBs" (Invited Talk).** The
+  meeting agenda PDF (linked in the ledger notes) puts it on Thu Sep 10, 4:25–4:40pm,
+  right after Dale Frail's recorded talk. The video is on Caltech's YouTube channel
+  (`4oQGAXUdNdE`), part of the meeting playlist. No slides were posted. Topic: `astronomy`
+  only. The talk is GRB history and memoir, with no ML content.
+- **Transcript from local Whisper.** YouTube returned HTTP 429 for the auto-captions, and
+  the Homebrew yt-dlp (2025.02) can't extract at all. The isolated latest yt-dlp
+  (`uvx --from "yt-dlp[default]@latest" yt-dlp --js-runtimes node -f bestaudio`) fetched
+  the Opus/WebM track (format 140 was not offered). faster-whisper needed `--with "av<14"`
+  (PyAV 14+ rejects its `metadata_errors` argument). `distil-large-v3` took about 4 minutes
+  for the 15.5-minute talk. Every doubtful passage and Key Quote was re-heard with
+  `medium.en`, then the text was cleaned by hand. **Transcript pages: 29 → 30.**
+- **Fixes:** "Festrift" → Festschrift, "an asotropy" → isotropy (the evenly-distributed
+  argument), "errors" → eras, "Minras" → MNRAS, "chat chabit" → ChatGPT, "my clod" → my
+  Claude, "the tack thus spat" → "the TAC. Thus spake" (he is reading George's email).
+  Shri (Kulkarni), Fiona (Harrison), Mal Ruderman and Bob Goodrich were identified from
+  context. **Corrected by JB** (both models had agreed on the misheard versions): "Italian Space
+  Federation" → Italian Space Agency (he misspoke; it organized the Elba workshop), "Mike
+  Parr" → Mike Pahre, and "No more tomorrow" → "Know more tomorrow" at the end of George's
+  secrecy email.
+
 ## Addendum — transcript for the 2010 Pierce Prize lecture (2026-10-24)
 
 JB asked for a transcript of `aas-pierce-prize-2010`, whose only recording is the AAS's own MP4 (52.5
 min). It now has an embedded transcript, five Key Quotes and `research/aas-pierce-prize-2010.summary.txt`.
-**Transcript pages: 29 → 30.**
+**Transcript pages: 30 → 31.**
 
 - **Pipeline.** Same as the Keynote-sweep addendum, with two changes. The MP4 came down with plain
   `curl` (33 MB). faster-whisper 1.2.1 calls `av.open(metadata_errors=...)`, which PyAV 19 no longer
