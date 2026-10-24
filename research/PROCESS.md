@@ -902,6 +902,40 @@ career (Sep 10–11, 2026, Cahill Center).
   Parr" → Mike Pahre, and "No more tomorrow" → "Know more tomorrow" at the end of George's
   secrecy email.
 
+## Addendum — transcript for the 2010 Pierce Prize lecture (2026-10-24)
+
+JB asked for a transcript of `aas-pierce-prize-2010`, whose only recording is the AAS's own MP4 (52.5
+min). It now has an embedded transcript, five Key Quotes and `research/aas-pierce-prize-2010.summary.txt`.
+**Transcript pages: 30 → 31.**
+
+- **Pipeline.** Same as the Keynote-sweep addendum, with two changes. The MP4 came down with plain
+  `curl` (33 MB). faster-whisper 1.2.1 calls `av.open(metadata_errors=...)`, which PyAV 19 no longer
+  accepts, so the runner decodes to 16 kHz mono itself and passes the array. With the machine idle,
+  `distil-large-v3` and `medium.en` each made a **full** pass in parallel (about 25 min for both), so
+  the four parallel Opus cleanup agents had a second reading of every line, not just of flagged clips.
+  The glossary came from the deck's slide text and notes (`~/Talks/GRBs/pierce_aas_2010.key`, old-format
+  `index.apxl`). Both models then re-heard 14 clips with word probabilities: the doubtful passages and
+  the quote candidates. 8,267 → 8,177 words (98.9%).
+- **Speakers.** John Huchra, then AAS president (2008–2010), introduces the lecture and reads the
+  citation; JB identified him. He closes by saying there is no time for questions, so there is no Q&A.
+  The transcript stops at his thanks: his exhibit-hall announcements before the next talk are left out.
+- **Settled by ear or by the deck:** "Li–Paczyński mini-supernova" (Whisper: "Leiprogensky", "Lie-Przyński"),
+  PAIRITEL "the former 2MASS", "Lyman break galaxies", "hydrogen blanketing" (slide 41), "Poynting flux",
+  "torus" (both models: "Taurus"), and "abundant creativity" (distil; the speaker notes say the same;
+  `medium.en` heard "amount of"). The burst dates "1967, July 2002" in both models; it is GRB 670702,
+  written "July 2nd".
+- **Kept as spoken:** "when the first gamma-ray burst was localized, the short event called 050509b"
+  (he means the first short burst), "I denigrated a bit" (of the standard model; both models agree),
+  and Huchra's "the 2009 Newton Lacy Pierce Prize" (the 2009 prize, presented in January 2010).
+- **Settled by JB:** at 49:32 distil heard "short, hard dam rapers" and `medium.en` "short, hard
+  gamma-rapers". JB confirmed "gamma-ray bursts", so the text is "if indeed GRBs, short GRBs, are
+  associated with short, hard gamma-ray bursts". The first pass had marked it [inaudible].
+- **Card summary** rewritten from the transcript. It was written from the abstract and left out the
+  phenomenology and standard-model section, nearly half of the talk. Topics stay `astronomy` alone.
+- **Layout.** The Contents rail now lists an `## Abstract` when the page has one
+  (`layouts/talk/single.html`). This is the first transcript page with an abstract.
+- **Audio stays out of the repo.** The MP4 and both Whisper outputs lived only in the session scratchpad.
+
 ## Maintenance
 
 Two skills were added with this branch:
