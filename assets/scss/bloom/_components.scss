@@ -403,3 +403,42 @@ div.alert-warning > div:first-child::before { color: #c2410c; }
 }
 .ui-toc a:hover { color: var(--c-heading); }
 .ui-toc a.active { color: var(--c-accent); border-left-color: var(--c-accent); }
+
+// ---------- stream card (title + summary + meta, optional thumbnail) ----------
+// The site's compact list item (layouts/partials/li_compact.html): posts,
+// homepage lists, project pages.
+.ui-stream { display: flex; align-items: flex-start; gap: 18px; }
+.ui-stream-body { flex: 1 1 auto; min-width: 0; }
+.ui-stream-title {
+  font-family: var(--f-sans);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+  margin: 0 0 6px;
+}
+.ui-stream-title a { color: var(--c-heading); }
+.ui-stream-title a:hover { color: var(--c-link); text-decoration: none; }
+.ui-stream-summary {
+  font-family: var(--f-serif);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--c-secondary);
+  margin-bottom: 8px;
+}
+.ui-stream-summary p { margin: 0; }
+.ui-stream-meta.article-metadata,
+.ui-stream-meta .article-metadata { font-size: 13px; letter-spacing: 0; margin: 0; }
+.ui-stream .ui-btn-row { margin-top: 10px; }
+.ui-btn-row .btn { margin: 0 !important; }
+.ui-stream-thumb { flex: 0 0 auto; }
+.ui-stream-thumb img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--c-border);
+}
+@media (max-width: 575px) {
+  .ui-stream-thumb img { width: 80px; height: 56px; }
+}

@@ -1,0 +1,73 @@
+{{- /* Site override of the theme's compact list item (homepage "pages" widgets, the
+       /post/ list, project pages). Talks render as the shared talk card; everything
+       else renders as a .ui-card with the theme's compact fields. */ -}}
+{{ $item := . }}
+
+{{ if eq $item.Type "talk" }}
+{{ partial "talk_card.html" (dict "page" $item "filterable" false) }}
+{{ else }}
+
+{{/* Dynamic view adjusts to content type. */}}
+{{ $show_authors_only := false }}{{/* Show authors only or full metadata? */}}
+{{ $show_buttons := false }}
+{{ $link := $item.RelPermalink }}
+{{ $target := "" }}
+{{ if $item.Params.external_link }}
+  {{ $link = $item.Params.external_link }}
+  {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+{{ if in (slice "publication" "project") $item.Type }}
+  {{ $show_authors_only = true }}
+  {{ $show_buttons = true }}
+{{ end }}
+
+{{/* Get summary. */}}
+{{ $summary := "" }}
+{{ if $item.Params.summary }}
+  {{ $summary = $item.Params.summary | markdownify | emojify }}
+{{ else if .Params.abstract }}
+  {{ $summary = .Params.abstract | markdownify | emojify }}
+{{ else if $item.Truncated }}
+  {{ $summary = $item.Summary }}
+{{ end }}
+
+<div class="ui-card ui-stream">
+  <div class="ui-stream-body">
+
+    <h3 class="ui-stream-title">
+      <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
+    </h3>
+
+    {{ with $summary }}
+    <div class="ui-stream-summary">
+      {{ . | truncate 160 }}
+    </div>
+    {{ end }}
+
+    <div class="ui-stream-meta article-metadata">
+      {{ if and $show_authors_only $item.Params.authors }}
+      <div>
+        {{ partial "page_metadata_authors" $item }}
+      </div>
+      {{ else if not $show_authors_only }}
+        {{ partial "page_metadata" (dict "page" $item "is_list" 1) }}
+      {{ end }}
+    </div>
+
+    {{ if $show_buttons }}
+    <div class="ui-btn-row">
+      {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+    </div>
+    {{ end }}
+
+  </div>
+  {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
+  {{ with $resource }}
+  {{ $image := .Fill "240x160 Smart" }}
+  <a class="ui-stream-thumb" href="{{$link}}" {{ $target | safeHTMLAttr }}>
+    <img src="{{ $image.RelPermalink }}" alt="" loading="lazy">
+  </a>
+  {{ end }}
+</div>
+
+{{ end }}
