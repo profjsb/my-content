@@ -1,5 +1,6 @@
 ---
 title: Publications
+outputs: ["html", "rss", "json"]
 
 # View.
 #   1 = List
@@ -13,3 +14,5 @@ header:
   caption: ""
   image: ""
 ---
+
+Refereed papers, proceedings, book chapters, and circulars, newest first. Search by title, author, venue, or abstract.

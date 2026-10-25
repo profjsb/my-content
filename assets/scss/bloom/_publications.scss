@@ -1,0 +1,57 @@
+// Publications: list (section/publication.html), card (pub_card.html), author
+// lists (pub_authors.html), single page (publication/single.html), cite modal.
+
+.pub-year .ui-section-label { margin: 32px 0 14px; }
+
+.pub-authors {
+  font-family: var(--f-sans);
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--c-secondary);
+  margin: 0 0 10px;
+}
+.pub-authors a { color: inherit; }
+.pub-authors a:hover { color: var(--c-link); }
+.pub-author-me { font-weight: 600; color: var(--c-text); }
+details.pub-authors > summary {
+  display: block;
+  list-style: none;
+  cursor: pointer;
+}
+details.pub-authors > summary::-webkit-details-marker { display: none; }
+.pub-authors-toggle {
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--c-link);
+}
+details.pub-authors > summary:hover .pub-authors-toggle { text-decoration: underline; }
+.pub-less,
+details[open] .pub-more,
+details[open] .pub-authors-short { display: none; }
+details[open] .pub-less { display: inline; }
+.pub-authors-all { margin-top: 2px; }
+
+// single page
+.pub-single .ui-page-title { font-size: 32px; line-height: 1.25; margin-bottom: 20px; }
+.pub-single .ui-info-card .pub-authors { font-size: 14px; margin: 14px 0 0; }
+.pub-single .ui-meta-value em { font-style: normal; }
+.pub-abstract p { margin-bottom: 0; }
+@media (max-width: 575px) {
+  .pub-single .ui-page-title { font-size: 26px; }
+}
+
+// cite modal (theme's js-cite-modal)
+.modal-content,
+.dark .modal-content {
+  background: var(--c-card);
+  color: var(--c-text);
+  border: 1px solid var(--c-card-border);
+  border-radius: 10px;
+}
+.modal-header,
+.dark .modal-header { color: var(--c-heading); }
+.modal-header .close,
+.dark .modal button.close { color: var(--c-secondary); background: none; text-shadow: none; }
+.modal-footer .btn { margin: 0 0 0 8px; }
+.pub-list .ui-filter-label { width: 64px; }

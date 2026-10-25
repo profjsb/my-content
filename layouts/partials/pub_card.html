@@ -1,0 +1,30 @@
+{{- /* One publication as a .ui-card, parallel to talk_card.html.
+       Context: dict "page" <publication page> "filterable" <bool>. filterable (the
+       /publication/ list) adds the data-* hooks its search/filter script reads. */ -}}
+{{- $p := .page -}}
+{{- $types := partial "functions/get_pub_types" $p -}}
+{{- $t := 0 -}}
+{{- with $p.Params.publication_types }}{{ $t = int (index . 0) }}{{ end -}}
+{{- $colors := dict "1" "teal" "2" "blue" "3" "orange" "5" "purple" "6" "purple" "7" "indigo" "8" "green" -}}
+{{- $color := index $colors (string $t) | default "gray" -}}
+{{- $venue := (or $p.Params.publication_short $p.Params.publication "") | replaceRE `^\*(.*)\*$` "$1" -}}
+{{- $year := $p.Date.Format "2006" -}}
+{{- $authors := $p.Params.authors | default (slice) -}}
+{{- $n := len $authors -}}
+{{- if .filterable }}
+{{- $search := printf "%s %s %s %s %s" $p.Title $venue $year (index $types $t) (delimit $authors " ") | plainify | lower -}}
+<div class="ui-card pub-card" data-type="{{ $t }}" data-decade="{{ substr $year 0 3 }}0s" data-search="{{ $search }}">
+{{- else }}
+<div class="ui-card pub-card">
+{{- end }}
+  <div class="ui-card-top">
+    <span class="ui-badge ui-badge-{{ $color }}">{{ index $types $t }}</span>
+    {{ with $venue }}<span class="ui-card-head">{{ . | markdownify }}</span>{{ end }}
+    <span class="ui-card-meta">{{ $p.Date.Format "Jan 2006" }}</span>
+  </div>
+  <h3 class="ui-card-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title | markdownify }}</a></h3>
+  {{ partial "pub_authors.html" (dict "authors" $authors "show" 3 "threshold" 8) }}
+  <div class="ui-btn-row">
+    {{ partial "page_links" (dict "page" $p "is_list" 1) }}
+  </div>
+</div>

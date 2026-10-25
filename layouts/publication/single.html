@@ -1,0 +1,54 @@
+{{- define "main" -}}
+{{- /* Site override of the theme's publication page, laid out like a talk page: title,
+       an info card (type, venue, date, DOI, authors, links), then the abstract. */ -}}
+
+{{ $pub_types := partial "functions/get_pub_types" . }}
+{{ $t := 0 }}
+{{ with .Params.publication_types }}{{ $t = int (index . 0) }}{{ end }}
+{{ $colors := dict "1" "teal" "2" "blue" "3" "orange" "5" "purple" "6" "purple" "7" "indigo" "8" "green" }}
+
+<div class="ui-wrapper pub-single">
+
+  <h1 class="ui-page-title">{{ .Title | markdownify }}</h1>
+  {{ with .Params.subtitle }}<p class="ui-intro">{{ . | markdownify }}</p>{{ end }}
+
+  <div class="ui-info-card">
+    <span class="ui-badge ui-badge-{{ index $colors (string $t) | default "gray" }}">{{ index $pub_types $t }}</span>
+    <div class="ui-meta-row">
+      {{ with .Params.publication }}
+      <span class="ui-meta-item">
+        <span class="ui-meta-label">Venue</span>
+        <span class="ui-meta-value">{{ . | markdownify }}</span>
+      </span>
+      {{ end }}
+      <span class="ui-meta-item">
+        <span class="ui-meta-label">Date</span>
+        <span class="ui-meta-value">{{ .Date.Format (site.Params.publications.date_format | default "January 2006") }}</span>
+      </span>
+      {{ with .Params.doi }}
+      <span class="ui-meta-item">
+        <span class="ui-meta-label">DOI</span>
+        <span class="ui-meta-value"><a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">{{ . }}</a></span>
+      </span>
+      {{ end }}
+    </div>
+    {{ partial "pub_authors.html" (dict "authors" (.Params.authors | default (slice)) "show" 10 "threshold" 15 "link" true) }}
+    <div class="ui-btn-row">
+      {{ partial "page_links" (dict "page" . "is_list" 0) }}
+      <a class="ui-btn" href="{{ (site.GetPage "section" "publication").RelPermalink }}">&larr; All publications</a>
+    </div>
+  </div>
+
+  {{ with .Params.abstract }}
+  <h2 class="ui-h2" id="abstract">{{ i18n "abstract" }}</h2>
+  <div class="ui-prose pub-abstract"><p>{{ . | markdownify }}</p></div>
+  {{ end }}
+
+  {{ with .Content }}
+  <div class="ui-prose article-style">{{ . }}</div>
+  {{ end }}
+
+  {{ partial "page_footer" . }}
+
+</div>
+{{- end -}}

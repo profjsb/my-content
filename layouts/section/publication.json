@@ -1,0 +1,11 @@
+{{- /* Abstract search index for the Publications page: one entry per publication,
+       u = permalink (matches the card link href on the list page),
+       a = abstract as plain text. Fetched lazily by the list-page search. */ -}}
+{{- $idx := slice -}}
+{{- range .Pages.ByDate.Reverse -}}
+{{- $p := . -}}
+{{- with $p.Params.abstract -}}
+{{- $idx = $idx | append (dict "u" $p.RelPermalink "a" (. | markdownify | plainify | htmlUnescape | replaceRE `\s+` " ")) -}}
+{{- end -}}
+{{- end -}}
+{{- jsonify $idx -}}

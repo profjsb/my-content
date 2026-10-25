@@ -1,0 +1,8 @@
+{{- /* One author name for publication cards and pages: J. S. Bloom (every spelling in the
+       ADS-imported data) in bold; overlong entries (a few IAUC imports carry a whole report
+       as an "author") are shortened. Context: the author string. */ -}}
+{{- if findRE `^(J\.|Joshua)( S\.| Simon)? Bloom$` . -}}
+<strong class="pub-author-me">{{ . }}</strong>
+{{- else -}}
+{{ . | truncate 60 }}
+{{- end -}}

@@ -1,10 +1,12 @@
 {{- /* Site override of the theme's compact list item (homepage "pages" widgets, the
-       /post/ list, project pages). Talks render as the shared talk card; everything
-       else renders as a .ui-card with the theme's compact fields. */ -}}
+       /post/ list, project pages). Talks and publications render as their shared cards;
+       everything else renders as a .ui-card with the theme's compact fields. */ -}}
 {{ $item := . }}
 
 {{ if eq $item.Type "talk" }}
 {{ partial "talk_card.html" (dict "page" $item "filterable" false) }}
+{{ else if eq $item.Type "publication" }}
+{{ partial "pub_card.html" (dict "page" $item "filterable" false) }}
 {{ else }}
 
 {{/* Dynamic view adjusts to content type. */}}

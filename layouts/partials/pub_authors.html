@@ -1,0 +1,33 @@
+{{- /* Author list for a publication. Context: dict "authors" <slice> "show" <int> "threshold" <int>
+       "link" <bool, optional>. Lists longer than threshold show the first `show` names (plus
+       J. S. Bloom when that name comes later) and expand in place via <details>; link turns
+       names into links to their author pages. */ -}}
+{{- $authors := .authors -}}
+{{- $n := len $authors -}}
+{{- $link := .link | default false -}}
+{{- if gt $n 0 -}}
+{{- $me := -1 -}}
+{{- range $i, $a := $authors }}{{ if and (lt $me 0) (findRE `^(J\.|Joshua)( S\.| Simon)? Bloom$` $a) }}{{ $me = $i }}{{ end }}{{ end -}}
+{{- $full := slice -}}
+{{- range $authors -}}
+  {{- $name := partial "pub_author.html" . -}}
+  {{- if $link }}{{ with site.GetPage (printf "/authors/%s" (. | anchorize)) }}{{ $name = printf "<a href=\"%s\">%s</a>" .RelPermalink $name }}{{ end }}{{ end -}}
+  {{- $full = $full | append $name -}}
+{{- end -}}
+{{- if le $n .threshold }}
+<div class="pub-authors">{{ delimit $full ", " | safeHTML }}</div>
+{{- else }}
+{{- $short := delimit (first .show $full) ", " -}}
+{{- $shown := .show -}}
+{{- if ge $me .show }}
+  {{- $short = printf "%s … %s …" $short (index $full $me) -}}
+  {{- $shown = add $shown 1 -}}
+{{- else }}
+  {{- $short = printf "%s …" $short -}}
+{{- end }}
+<details class="pub-authors">
+  <summary><span class="pub-authors-short">{{ $short | safeHTML }}</span> <span class="pub-authors-toggle"><span class="pub-more">+{{ sub $n $shown }} more</span><span class="pub-less">Show fewer</span></span></summary>
+  <div class="pub-authors-all">{{ delimit $full ", " | safeHTML }}</div>
+</details>
+{{- end }}
+{{- end -}}
