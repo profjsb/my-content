@@ -1,0 +1,50 @@
+// Design tokens for the whole site: the warm-cream palette and type stacks
+// first built for the Talks & Media page. Every site style reads these, so a
+// palette change (or the dark-mode swap below) happens in one place.
+// Academic toggles dark mode by adding `.dark` to <body>.
+:root {
+  --f-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --f-serif: 'Lora', 'Georgia', 'Times New Roman', serif;
+  --f-mono: 'IBM Plex Mono', 'Menlo', monospace;
+
+  --c-bg: #FDF8F0;
+  --c-card: #FFFEFA;
+  --c-text: #2C2416;
+  --c-heading: #1A1408;
+  --c-secondary: #6B5D4D;
+  --c-border: #E8DFD0;
+  --c-card-border: #D0C4B0;
+  --c-border-strong: #C4B8A8;
+  --c-btn: #F5EEE3;
+  --c-btn-border: #E0D6C8;
+  --c-btn-hover: #EBE3D6;
+  --c-chip: #F0E8DA;
+  --c-chip-text: #8B7D6B;
+  --c-link: #996633;
+  --c-link-hover: #7A4F24;
+  --c-accent: #2a9d8f;
+  --c-accent-ring: rgba(42, 157, 143, 0.15);
+  --c-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --c-shadow-hover: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+body.dark {
+  --c-bg: #1A1815;
+  --c-card: #23201C;
+  --c-text: #E6E0D6;
+  --c-heading: #F4EFE7;
+  --c-secondary: #A69C8E;
+  --c-border: rgba(255, 244, 228, 0.13);
+  --c-card-border: rgba(255, 244, 228, 0.11);
+  --c-border-strong: rgba(255, 244, 228, 0.3);
+  --c-btn: #2A2622;
+  --c-btn-border: rgba(255, 244, 228, 0.16);
+  --c-btn-hover: #35302A;
+  --c-chip: #332E28;
+  --c-chip-text: #A69C8E;
+  --c-link: #C9975C;
+  --c-link-hover: #DDB07A;
+  --c-accent-ring: rgba(42, 157, 143, 0.25);
+  --c-shadow: none;
+  --c-shadow-hover: none;
+}

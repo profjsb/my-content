@@ -1,0 +1,11 @@
+# Site font set (see assets/scss/bloom/_tokens.scss for the full stacks).
+# Inter for headings, nav and UI; Lora for long-form prose (applied in SCSS);
+# IBM Plex Mono for code and chips. Weights are only those the styles use.
+name = "Bloom"
+
+google_fonts = "Inter:400,500,600,700|Lora:400,400i,600,700|IBM+Plex+Mono:400,500"
+
+heading_font = "Inter"
+body_font = "Inter"
+nav_font = "Inter"
+mono_font = "IBM Plex Mono"

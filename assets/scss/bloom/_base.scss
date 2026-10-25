@@ -1,0 +1,219 @@
+// Site-wide foundations: type scale, colors, navbar, footer, and the theme's
+// hard-coded colors (including its dark mode) remapped onto the tokens.
+
+// ---------- type scale ----------
+// The theme's font_size "L" sets html to 21px on desktop (16.17px on mobile),
+// so every rem in the theme rendered ~31% larger than this design intends. Pin
+// 16px at every width instead of switching font_size to "S", which would also
+// shrink mobile to 12.3px.
+html,
+html body {
+  font-size: 16px;
+}
+html {
+  font-family: var(--f-sans);
+  color: var(--c-text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body,
+body.dark {
+  background-color: var(--c-bg);
+  color: var(--c-text);
+}
+::selection { background: rgba(42, 157, 143, 0.22); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--f-sans);
+  color: var(--c-heading);
+}
+// Color only: a font-family here would outrank single-class heading styles
+// such as the Lora .talk-title.
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: var(--c-heading);
+}
+h1 { font-weight: 700; letter-spacing: -0.02em; }
+h2 { font-weight: 600; letter-spacing: -0.01em; }
+h3, h4, h5, h6 { font-weight: 600; }
+
+a { color: var(--c-link); transition: color 0.15s ease; }
+a:hover, a:focus { color: var(--c-link-hover); }
+:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 2px; }
+
+code,
+.dark code {
+  font-family: var(--f-mono);
+  font-size: 0.875em;
+  color: var(--c-heading);
+  background-color: var(--c-btn);
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+}
+pre,
+.dark pre {
+  font-family: var(--f-mono);
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--c-text);
+  background-color: var(--c-btn);
+  border: 1px solid var(--c-btn-border);
+  border-radius: 6px;
+  padding: 14px 16px;
+}
+pre code,
+.dark pre code {
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+hr {
+  height: 0;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--c-border);
+}
+
+blockquote {
+  color: var(--c-secondary);
+  border-left: 3px solid var(--c-link);
+}
+
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+  border-top-color: var(--c-border);
+}
+table > thead > tr > th { border-bottom-color: var(--c-border); }
+table > tbody + tbody { border-top-color: var(--c-border); }
+table table,
+.dark table table { background-color: var(--c-card); }
+table > tbody > tr:nth-child(odd) > td,
+table > tbody > tr:nth-child(odd) > th,
+.dark table > tbody > tr:nth-child(odd) > td,
+.dark table > tbody > tr:nth-child(odd) > th { background-color: var(--c-btn); }
+table > tbody > tr:hover > td,
+table > tbody > tr:hover > th,
+.dark table > tbody > tr:hover > td,
+.dark table > tbody > tr:hover > th { background-color: var(--c-btn-hover); }
+
+// Muted text the theme colors with black/white alpha.
+.article-metadata,
+.article-metadata a,
+.dark .article-metadata,
+.dark .article-metadata a,
+.page-subtitle,
+.dark .page-subtitle,
+.text-muted,
+.dark .text-muted,
+.pub-icon,
+.dark .pub-icon,
+.talk-metadata,
+.dark .talk-metadata,
+.section-heading p,
+.portrait-title h3,
+.dark .portrait-title h3,
+ul.ul-edu li .description p.institution,
+.dark ul.ul-edu li .description p.institution {
+  color: var(--c-secondary) !important;
+}
+.article-metadata a:hover { color: var(--c-link) !important; }
+.article-title a,
+.dark .article-title a,
+.portrait-title h2,
+.dark .portrait-title h2 {
+  color: var(--c-heading);
+}
+.article-title a:hover,
+.dark .article-title a:hover { color: var(--c-link); }
+
+// Home sections: one continuous cream page instead of alternating bands.
+.home-section,
+.home-section:nth-of-type(even),
+.dark .home-section,
+.dark .home-section:nth-of-type(even) {
+  background-color: transparent;
+}
+
+// Form controls and cards the theme paints Dracula-blue in dark mode.
+.dark input,
+.dark select,
+.dark .form-control,
+.dark .form-control:focus {
+  color: var(--c-text);
+  background-color: var(--c-card);
+}
+.dark .form-control:focus {
+  border-color: var(--c-accent);
+  box-shadow: 0 0 0 3px var(--c-accent-ring);
+}
+.dark .card { background: var(--c-card); }
+.dark .pagination li > a,
+.dark .pagination li > span {
+  background-color: var(--c-card);
+  border-color: var(--c-border);
+}
+
+// ---------- navbar ----------
+.navbar,
+.dark .navbar {
+  background: var(--c-bg);
+  box-shadow: none;
+  border-bottom: 1px solid var(--c-border);
+  font-family: var(--f-sans);
+  font-size: 15px;
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus {
+  color: var(--c-heading);
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+#navbar-main .main-menu-item ul li .nav-link,
+#navbar-main .nav-icons .nav-link,
+.navbar-light .navbar-toggler {
+  color: var(--c-secondary);
+  font-weight: 500;
+}
+#navbar-main .main-menu-item ul li .nav-link:hover,
+#navbar-main .main-menu-item ul li .nav-link:focus,
+#navbar-main .nav-icons .nav-link:hover {
+  color: var(--c-heading);
+}
+#navbar-main .navbar-nav .nav-link.active {
+  color: var(--c-link) !important;
+  font-weight: 600 !important;
+}
+.navbar-collapse,
+.dropdown-menu,
+.dropdown-item {
+  background-color: var(--c-bg) !important;
+  color: var(--c-text) !important;
+}
+@media (max-width: 991.98px) {
+  .navbar-collapse { border-bottom: 1px solid var(--c-border); }
+}
+
+// ---------- footer ----------
+.site-footer {
+  margin-top: 64px;
+  padding: 24px 0 32px;
+  border-top: 1px solid var(--c-border);
+  font-family: var(--f-sans);
+  color: var(--c-secondary);
+}
+footer p,
+.site-footer p { font-size: 13px; }
+.site-footer a { color: var(--c-secondary); text-decoration: underline; text-decoration-color: var(--c-border-strong); text-underline-offset: 2px; }
+.site-footer a:hover { color: var(--c-link); }
+footer a.back-to-top i,
+.dark footer a.back-to-top i { color: var(--c-secondary); }
+.site-footer a.back-to-top { text-decoration: none; }

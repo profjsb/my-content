@@ -1,0 +1,20 @@
+# Site palette: the warm-cream look first built for the Talks & Media page.
+# These feed the theme's SCSS variables; the CSS custom properties in
+# assets/scss/bloom/_tokens.scss (including dark mode) are the source of truth.
+name = "Bloom"
+
+light = true
+font = "bloom"
+
+primary = "#996633"
+link = "#996633"
+link_hover = "#7A4F24"
+
+menu_primary = "#FDF8F0"
+menu_text = "#6B5D4D"
+menu_text_active = "#996633"
+menu_title = "#1A1408"
+
+background = "#FDF8F0"
+home_section_odd = "#FDF8F0"
+home_section_even = "#FDF8F0"
