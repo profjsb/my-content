@@ -22,6 +22,7 @@
   --c-chip-text: #8B7D6B;
   --c-link: #996633;
   --c-link-hover: #7A4F24;
+  --c-link-underline: rgba(153, 102, 51, 0.35);
   --c-accent: #2a9d8f;
   --c-accent-ring: rgba(42, 157, 143, 0.15);
   --c-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -44,6 +45,7 @@ body.dark {
   --c-chip-text: #A69C8E;
   --c-link: #C9975C;
   --c-link-hover: #DDB07A;
+  --c-link-underline: rgba(201, 151, 92, 0.4);
   --c-accent-ring: rgba(42, 157, 143, 0.25);
   --c-shadow: none;
   --c-shadow-hover: none;
