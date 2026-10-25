@@ -138,15 +138,27 @@ var PUBS_INDEX_URL = {{ with .OutputFormats.Get "JSON" }}{{ .RelPermalink | json
     Array.prototype.slice.call(row.querySelectorAll('.ui-pill')).forEach(function (btn) {
       btn.addEventListener('click', function () {
         selectPill(group, btn.getAttribute('data-filter'));
+        if (group === 'type') syncHash();
         apply();
       });
     });
   });
 
-  /* #<n> selects publication type n, matching the theme's /publication/#2 links */
+  /* #<n> mirrors the type filter, matching the theme's /publication/#2 links:
+     the hash selects a type on load or change, and a type pill rewrites it
+     (cleared for All) so a reload or shared URL shows the visible selection */
+  function syncHash() {
+    if (!window.history || !history.replaceState) return;
+    var h = state.type === 'all' ? '' : '#' + state.type;
+    history.replaceState(null, '', location.pathname + location.search + h);
+  }
   function applyHash() {
     var hash = location.hash.replace('#', '');
-    if (/^\d+$/.test(hash) && selectPill('type', hash)) apply();
+    if (hash === '') {
+      if (state.type !== 'all' && selectPill('type', 'all')) apply();
+    } else if (/^\d+$/.test(hash) && selectPill('type', hash)) {
+      apply();
+    }
   }
   applyHash();
   window.addEventListener('hashchange', applyHash);
