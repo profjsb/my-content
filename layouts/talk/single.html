@@ -1,10 +1,10 @@
 {{- define "main" -}}
 
-<div class="talks-wrapper talk-single{{ if .Params.has_transcript }} has-toc{{ end }}">
+<div class="ui-wrapper talk-single{{ if .Params.has_transcript }} has-toc{{ end }}">
 
   {{ if .Params.has_transcript }}
-  <nav class="talk-toc" id="talk-toc" aria-label="Contents">
-    <div class="talk-toc-title">Contents</div>
+  <nav class="ui-toc talk-toc" id="talk-toc" aria-label="Contents">
+    <div class="ui-toc-title">Contents</div>
     <ul>
       <li><a href="#summary">Summary</a></li>
       {{ if in .RawContent "## Abstract" }}<li><a href="#abstract">Abstract</a></li>{{ end }}
@@ -16,33 +16,33 @@
 
   <div class="talk-main">
 
-    <h1 class="talk-title-lg">{{ .Title }}</h1>
+    <h1 class="ui-page-title">{{ .Title }}</h1>
 
-    <div class="talk-info-card">
+    <div class="ui-info-card">
       {{ partial "talk_badge.html" . }}
-      <div class="talk-meta-row">
-        <span class="talk-meta-item">
-          <span class="talk-meta-label">Event</span>
-          <span class="talk-meta-value">{{ with .Params.event_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .Params.event }}{{ with .Params.event_url }}</a>{{ end }}</span>
+      <div class="ui-meta-row">
+        <span class="ui-meta-item">
+          <span class="ui-meta-label">Event</span>
+          <span class="ui-meta-value">{{ with .Params.event_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .Params.event }}{{ with .Params.event_url }}</a>{{ end }}</span>
         </span>
         {{ with .Params.location }}
-        <span class="talk-meta-item">
-          <span class="talk-meta-label">Location</span>
-          <span class="talk-meta-value">{{ . }}</span>
+        <span class="ui-meta-item">
+          <span class="ui-meta-label">Location</span>
+          <span class="ui-meta-value">{{ . }}</span>
         </span>
         {{ end }}
-        <span class="talk-meta-item">
-          <span class="talk-meta-label">Date</span>
-          <span class="talk-meta-value">{{ .Params.display_date }}</span>
+        <span class="ui-meta-item">
+          <span class="ui-meta-label">Date</span>
+          <span class="ui-meta-value">{{ .Params.display_date }}</span>
         </span>
       </div>
-      <div class="talk-links">
-        {{ with .Params.url_video }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Video</a>{{ end }}
-        {{ with .Params.url_audio }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Listen</a>{{ end }}
-        {{ if not (.Resources.Match "slides/*") }}{{ with .Params.url_slides }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Slides</a>{{ end }}{{ end }}
-        {{ if not .Params.has_transcript }}{{ with .Params.url_transcript }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Transcript</a>{{ end }}{{ end }}
-        {{ with .Params.event_url }}<a class="talk-btn" href="{{ . }}" target="_blank" rel="noopener">Event page</a>{{ end }}
-        <a class="talk-btn" href="{{ .Parent.RelPermalink }}">&larr; All talks</a>
+      <div class="ui-btn-row">
+        {{ with .Params.url_video }}<a class="ui-btn" href="{{ . }}" target="_blank" rel="noopener">Video</a>{{ end }}
+        {{ with .Params.url_audio }}<a class="ui-btn" href="{{ . }}" target="_blank" rel="noopener">Listen</a>{{ end }}
+        {{ if not (.Resources.Match "slides/*") }}{{ with .Params.url_slides }}<a class="ui-btn" href="{{ . }}" target="_blank" rel="noopener">Slides</a>{{ end }}{{ end }}
+        {{ if not .Params.has_transcript }}{{ with .Params.url_transcript }}<a class="ui-btn" href="{{ . }}" target="_blank" rel="noopener">Transcript</a>{{ end }}{{ end }}
+        {{ with .Params.event_url }}<a class="ui-btn" href="{{ . }}" target="_blank" rel="noopener">Event page</a>{{ end }}
+        <a class="ui-btn" href="{{ .Parent.RelPermalink }}">&larr; All talks</a>
       </div>
     </div>
 
@@ -50,11 +50,11 @@
     {{ partial "talk_slides_embed.html" . }}
 
     {{ if .Params.has_transcript }}
-    <div class="ai-disclaimer">This transcript was auto-generated and lightly edited for readability; it may contain errors. The summary is AI-generated.</div>
+    <div class="ui-note">This transcript was auto-generated and lightly edited for readability; it may contain errors. The summary is AI-generated.</div>
     {{ end }}
 
-    <h2 id="summary">Summary</h2>
-    <div class="talk-content">
+    <h2 id="summary" class="ui-h2">Summary</h2>
+    <div class="ui-prose talk-content">
       {{ .Content }}
     </div>
 

@@ -2,6 +2,7 @@
 // imports "custom" last). Hugo 0.60 compiles with libsass: @import only, no @use.
 @import "bloom/tokens";
 @import "bloom/base";
+@import "bloom/components";
 @import "bloom/talks";
 
 // Custom "valency" icon pack for author social links.

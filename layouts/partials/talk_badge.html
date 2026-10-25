@@ -1,13 +1,13 @@
 {{- $t := lower (.Params.talk_type | default "talk") -}}
-{{- $cls := "talk" -}}
-{{- if in $t "keynote" }}{{ $cls = "keynote" }}
-{{- else if in $t "panel" }}{{ $cls = "panel" }}
-{{- else if in $t "podcast" }}{{ $cls = "podcast" }}
-{{- else if in $t "radio" }}{{ $cls = "radio" }}
-{{- else if in $t "interview" }}{{ $cls = "radio" }}
-{{- else if in $t "tutorial" }}{{ $cls = "tutorial" }}
-{{- else if in $t "colloquium" }}{{ $cls = "academic" }}
-{{- else if in $t "seminar" }}{{ $cls = "academic" }}
-{{- else if in $t "lecture" }}{{ $cls = "academic" }}
+{{- $color := "blue" -}}
+{{- if in $t "keynote" }}{{ $color = "orange" }}
+{{- else if in $t "panel" }}{{ $color = "teal" }}
+{{- else if in $t "podcast" }}{{ $color = "purple" }}
+{{- else if in $t "radio" }}{{ $color = "green" }}
+{{- else if in $t "interview" }}{{ $color = "green" }}
+{{- else if in $t "tutorial" }}{{ $color = "pink" }}
+{{- else if in $t "colloquium" }}{{ $color = "indigo" }}
+{{- else if in $t "seminar" }}{{ $color = "indigo" }}
+{{- else if in $t "lecture" }}{{ $color = "indigo" }}
 {{- end -}}
-<span class="talk-badge talk-badge-{{ $cls }}">{{ .Params.talk_type | default "Talk" }}</span>
+<span class="ui-badge ui-badge-{{ $color }}">{{ .Params.talk_type | default "Talk" }}</span>
