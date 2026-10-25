@@ -1,0 +1,27 @@
+{{- define "main" -}}
+{{- /* Site override of the theme's 404: the shared column, a search box that opens the
+       site search overlay (it reads ?q=), and the latest pages as cards. */ -}}
+
+<div class="ui-wrapper not-found">
+
+  <h1 class="ui-page-title">{{ i18n "page_not_found" }}</h1>
+
+  <p class="ui-intro">{{ i18n "404_recommendations" }}</p>
+
+  {{ if eq site.Params.search.engine 1 }}
+  <form class="ui-search" role="search">
+    <svg class="ui-search-icon" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    <input name="q" type="search" placeholder="{{ i18n "search_placeholder" }}" aria-label="{{ i18n "search" }}" autocomplete="off">
+  </form>
+  {{ end }}
+
+  {{ with first 5 site.RegularPages.ByDate.Reverse }}
+  <div class="ui-section-label">{{ i18n "user_profile_latest" }}</div>
+  {{ range . }}
+    {{ partial "li_compact" . }}
+  {{ end }}
+  {{ end }}
+
+</div>
+
+{{- end -}}
