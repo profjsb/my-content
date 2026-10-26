@@ -1,0 +1,32 @@
+{{- /* One talk as a .ui-card. Context: dict "page" <talk page> "filterable" <bool>.
+       filterable (the /talk/ list) adds the data-* hooks its search/filter script reads and
+       makes topic chips buttons that apply the topic filter; elsewhere chips are plain labels. */ -}}
+{{- $p := .page -}}
+{{- $topicLabels := dict "astronomy" "Astronomy" "industry" "Industry" "ai-ml" "AI/ML" "education" "Education" -}}
+{{- $topics := $p.Params.topics | default (slice) -}}
+{{- if .filterable }}
+{{- $search := printf "%s %s %s %s %s %s %s %s" $p.Title (or $p.Params.event "") (or $p.Params.location "") (or $p.Params.display_date "") ($p.Date.Format "2006") (or $p.Params.talk_type "") (delimit $topics " ") (or $p.Params.summary "") | lower }}
+<div class="ui-card talk-card" data-topics="{{ delimit $topics " " }}" data-type="{{ partial "talk_filter_type.html" $p }}" data-search="{{ $search }}">
+{{- else }}
+<div class="ui-card talk-card">
+{{- end }}
+  <div class="ui-card-top">
+    {{ partial "talk_badge.html" $p }}
+    <span class="ui-card-head">
+      {{ with $p.Params.event_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ $p.Params.event }}{{ with $p.Params.event_url }}</a>{{ end }}
+    </span>
+    <span class="ui-card-meta">
+      {{ with $p.Params.location }}{{ . }} &middot; {{ end }}{{ $p.Params.display_date }}
+    </span>
+    <span class="ui-num">#{{ $p.Params.talk_number }}</span>
+  </div>
+  <h3 class="ui-card-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+  <div class="ui-btn-row">
+    {{ with $p.Params.url_video }}<a class="ui-btn" href="{{ . }}" target="_blank" rel="noopener">Video</a>{{ end }}
+    {{ with $p.Params.url_audio }}<a class="ui-btn" href="{{ . }}" target="_blank" rel="noopener">Listen</a>{{ end }}
+    {{ if $p.Resources.Match "slides/*" }}<a class="ui-btn" href="{{ $p.RelPermalink }}#slides">Slides</a>{{ else }}{{ with $p.Params.url_slides }}<a class="ui-btn" href="{{ . }}" target="_blank" rel="noopener">Slides</a>{{ end }}{{ end }}
+    {{ if $p.Params.has_transcript }}<a class="ui-btn" href="{{ $p.RelPermalink }}#transcript">Transcript</a>{{ else }}{{ with $p.Params.url_transcript }}<a class="ui-btn" href="{{ . }}" target="_blank" rel="noopener">Transcript</a>{{ end }}{{ end }}
+    {{ with $p.Params.event_url }}<a class="ui-btn" href="{{ . }}" target="_blank" rel="noopener">Event</a>{{ end }}
+    {{ with $topics }}<span class="ui-chips">{{ range . }}{{ $label := index $topicLabels . | default . }}{{ if $.filterable }}<button type="button" class="ui-chip" data-topic="{{ . }}" title="Filter by {{ $label }}">{{ $label }}</button>{{ else }}<span class="ui-chip">{{ $label }}</span>{{ end }}{{ end }}</span>{{ end }}
+  </div>
+</div>
