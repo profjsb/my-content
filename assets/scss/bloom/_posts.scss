@@ -1,0 +1,167 @@
+// Long-form pages built on the theme's article layout (_default/single.html +
+// page_header.html): posts, plus privacy/terms. CSS only; templates are the theme's.
+
+.article-container { max-width: 720px; padding: 0 20px; }
+.article-container.pt-3 { padding-top: 40px !important; }
+.article-container.pt-3 > h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+.page-subtitle {
+  font-family: var(--f-serif);
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+article .article-metadata { font-size: 14px; letter-spacing: 0; margin-bottom: 8px; }
+.featured-image-wrapper .featured-image {
+  border-radius: 8px;
+  border: 1px solid var(--c-border);
+}
+@media (max-width: 768px) {
+  .article-container.pt-3 > h1 { font-size: 30px; }
+}
+@media (max-width: 575px) {
+  .article-container.pt-3 > h1 { font-size: 28px; }
+}
+
+// ---------- prose ----------
+.article-style {
+  font-family: var(--f-serif);
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--c-text);
+}
+.article-style p { margin-bottom: 1.15em; }
+.article-style ul,
+.article-style ol { padding-left: 1.4em; margin-bottom: 1.15em; }
+.article-style li { margin-bottom: 0.35em; }
+.article-style h2 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  margin: 44px 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--c-border);
+}
+.article-style h3 { font-size: 19px; line-height: 1.35; margin: 32px 0 10px; }
+.article-style h4 { font-size: 16px; margin: 24px 0 8px; }
+.article-style a {
+  text-decoration: underline;
+  text-decoration-color: var(--c-link-underline);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.article-style a:hover { text-decoration-color: currentColor; }
+.article-style img,
+.article-style video { border-radius: 6px; }
+.article-style figcaption,
+figcaption {
+  font-family: var(--f-sans);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--c-secondary);
+}
+.article-style blockquote { padding-left: 20px; margin: 24px 0; }
+.article-style table { font-family: var(--f-sans); font-size: 14px; }
+.article-style .footnotes {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--c-secondary);
+}
+.article-style .footnotes hr { margin: 40px 0 16px; }
+.article-style .footnotes li { margin-bottom: 0.5em; }
+
+// code: keep highlight.js token colors, drop its own background/padding so the
+// tokenized <pre> box shows through
+.hljs { background: transparent !important; padding: 0 !important; }
+
+// ---------- article footer: tags, share, author, related ----------
+.article-tags { margin-top: 40px; }
+.share-box { margin-top: 20px; }
+ul.share { justify-content: flex-start; gap: 8px; }
+ul.share li { margin: 0; }
+ul.share li a,
+.dark ul.share li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: var(--c-secondary);
+  background: var(--c-btn);
+  border: 1px solid var(--c-btn-border);
+  border-radius: 50%;
+  transition: all 0.15s ease;
+}
+ul.share li a:hover { color: var(--c-link); border-color: var(--c-border-strong); }
+ul.share li i { width: auto; height: auto; line-height: 1; font-size: 15px; }
+ul.share li:hover i { transform: none; }
+
+.content-widget-hr,
+.dark .content-widget-hr { border-top: 1px solid var(--c-border); margin-top: 28px; padding-top: 28px; }
+.media.author-card {
+  background: var(--c-card);
+  border: 1px solid var(--c-card-border);
+  border-radius: 10px;
+  padding: 20px;
+}
+.author-card .portrait { width: 64px; height: 64px; }
+.author-card .card-title,
+.author-card .card-title a,
+.dark .author-card .card-title,
+.dark .author-card .card-title a {
+  font-family: var(--f-sans);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--c-heading);
+  margin-bottom: 4px;
+}
+.author-card .card-subtitle,
+.dark .author-card .card-subtitle {
+  font-family: var(--f-sans);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--c-secondary);
+  margin-bottom: 8px;
+}
+.author-card .card-text,
+.dark .author-card .card-text {
+  font-family: var(--f-serif);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--c-text);
+}
+.author-card ul.network-icon { margin: 8px 0 0; gap: 4px 12px; justify-content: flex-start; }
+.author-card .network-icon .big-icon { font-size: 16px; }
+
+.article-widget h3 {
+  font-family: var(--f-serif);
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--c-secondary);
+  margin: 0 0 12px;
+}
+.article-widget ul { font-family: var(--f-serif); font-size: 16px; line-height: 1.6; padding-left: 1.2em; }
+.article-widget li { margin-bottom: 6px; }
+
+// ---------- pagination (post list) ----------
+.pagination { gap: 8px; margin-top: 24px; }
+.pagination .page-link,
+.dark .pagination li > a {
+  font-family: var(--f-sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--c-secondary);
+  background: var(--c-btn);
+  border: 1px solid var(--c-btn-border);
+  border-radius: 999px !important;
+  padding: 6px 14px;
+}
+.pagination .page-link:hover { color: var(--c-heading); background: var(--c-btn-hover); border-color: var(--c-border-strong); }
