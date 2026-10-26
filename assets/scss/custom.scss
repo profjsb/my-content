@@ -1,3 +1,9 @@
+// Site styles, appended to the theme's SCSS bundle (themes/academic/assets/scss/main.scss
+// imports "custom" last). Hugo 0.60 compiles with libsass: @import only, no @use.
+@import "bloom/tokens";
+@import "bloom/base";
+@import "bloom/talks";
+
 // Custom "valency" icon pack for author social links.
 // Usage in content/authors/*/_index.md:  icon: logo / icon_pack: valency
 // The SVG is used as a mask so the icon takes the link color (and hover
