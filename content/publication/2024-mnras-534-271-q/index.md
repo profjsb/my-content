@@ -21,8 +21,8 @@ authors:
 - Shrinivas Kulkarni
 tags: []
 categories: []
-date: '2024-09-01'
-lastmod: '2026-07-17T00:00:00Z'
+date: '2024-10-01'
+lastmod: '2026-10-26T00:00:00Z'
 featured: false
 draft: false
 image:
@@ -30,6 +30,8 @@ image:
   focal_point: ''
   preview_only: false
 projects: []
+aliases:
+- /publication/2024-mnras-tmp-2013-q/
 publishDate: '2026-07-17T00:00:00Z'
 publication_types:
 - '2'
