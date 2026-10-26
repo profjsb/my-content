@@ -1,0 +1,28 @@
+{{- define "main" -}}
+{{- /* Site override of the theme's generic list (tag, category and publication-type
+       pages, and taxonomy indexes): the shared 900px column; term pages list their
+       pages as cards (li_compact.html), taxonomy indexes list terms as pills. */ -}}
+
+<div class="ui-wrapper term-list">
+
+  <h1 class="ui-page-title">{{ .Title }}</h1>
+
+  {{ with .Content }}<div class="ui-intro">{{ . }}</div>{{ end }}
+
+  {{ if eq .Kind "taxonomyTerm" }}
+  <div class="tag-cloud">
+    {{ range .Data.Terms.ByCount }}
+    <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }} <span class="term-count">{{ .Count }}</span></a>
+    {{ end }}
+  </div>
+  {{ else }}
+  {{ $paginator := .Paginate .Data.Pages }}
+  {{ range $paginator.Pages }}
+    {{ partial "li_compact" . }}
+  {{ end }}
+  {{ partial "pagination" . }}
+  {{ end }}
+
+</div>
+
+{{- end -}}

@@ -1,0 +1,28 @@
+{{/* Author profile page: site override of the theme's, in the shared column. The site
+     owner's page (it has a content file) shows the About widget; every co-author page
+     lists that person's publications and pages as cards. */}}
+
+{{- define "main" -}}
+
+{{ $query := where .Pages ".IsNode" false }}
+
+{{ if .File }}
+<section id="profile-page" class="home-section wg-about">
+  <div class="container">
+    {{ $username := (path.Base (path.Split .Path).Dir) }}{{/* Alternatively, use `index .Params.authors 0` */}}
+    {{ partial "widgets/about.html" (dict "root" $ "page" . "author" $username) }}
+  </div>
+</section>
+{{ end }}
+
+<div class="ui-wrapper author-list">
+  {{ if not .File }}<h1 class="ui-page-title">{{ .Title }}</h1>{{ end }}
+  {{ with $query }}
+  <div class="ui-section-label">{{ i18n "user_profile_latest" | default "Latest" }}</div>
+  {{ range . }}
+    {{ partial "li_compact" . }}
+  {{ end }}
+  {{ end }}
+</div>
+
+{{- end -}}
