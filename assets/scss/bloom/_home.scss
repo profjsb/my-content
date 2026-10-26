@@ -1,0 +1,144 @@
+// Homepage (Academic widget page): one 900px column like /talk/, section
+// headings as section labels, and the about widget's profile + bio.
+// CSS only: the theme's widget templates are not forked.
+
+.home-section,
+.home-section:first-of-type { padding: 40px 0; }
+.home-section > .container { max-width: 900px; padding-left: 16px; padding-right: 16px; }
+.home-section .row > .section-heading,
+.home-section .row > .section-heading + .col-lg-8 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.home-section .section-heading h1 {
+  font-family: var(--f-serif);
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--c-secondary);
+  border-bottom: 2px solid var(--c-border);
+  padding-bottom: 10px;
+  margin: 0 0 20px;
+}
+.home-section .section-heading p { font-size: 15px; margin: -8px 0 20px; }
+.see-all { margin-top: 16px; text-transform: none; }
+.see-all a {
+  display: inline-block;
+  font-family: var(--f-sans);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--c-secondary);
+  background: var(--c-btn);
+  border: 1px solid var(--c-btn-border);
+  border-radius: 5px;
+  padding: 6px 11px;
+  transition: all 0.15s ease;
+}
+.see-all a:hover { background: var(--c-btn-hover); border-color: var(--c-border-strong); color: var(--c-heading); }
+.see-all a .fa-angle-right { margin-left: 4px; }
+
+// ---------- about ----------
+.wg-about #profile { padding: 8px 10px 24px; }
+.wg-about .portrait {
+  width: 168px;
+  height: 168px;
+  border: 4px solid var(--c-card);
+  box-shadow: 0 0 0 1px var(--c-card-border);
+}
+.portrait-title h2 {
+  font-family: var(--f-sans);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 18px 0 8px;
+}
+.portrait-title h3 {
+  font-family: var(--f-sans);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 0 6px;
+}
+.portrait-title h3 a { color: var(--c-link) !important; }
+#profile .network-icon { margin-top: 16px; gap: 4px 14px; }
+.network-icon li { margin-right: 0; transition: transform 0.15s ease; }
+.network-icon li:hover { transform: none; }
+.network-icon a { color: var(--c-secondary); }
+.network-icon a:hover { color: var(--c-link); }
+.network-icon .big-icon { font-size: 21px; }
+
+.wg-about .col-lg-8 > h1 {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+}
+.wg-about .col-lg-8 > p,
+.wg-about .col-lg-8 > ul,
+.wg-about .col-lg-8 > ol {
+  font-family: var(--f-serif);
+  font-size: 17px;
+  line-height: 1.75;
+}
+// the bio's small-print note is a <font size="-1"> inside a <p>; as a block it
+// gets its own line height instead of the paragraph's 1.75 strut
+.wg-about .col-lg-8 > p > font[size] { display: block; font-size: 14px; line-height: 1.65; color: var(--c-secondary); }
+.wg-about .row .row h3 {
+  font-family: var(--f-sans);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--c-secondary);
+  margin: 24px 0 10px;
+}
+ul.ul-interests { padding-left: 18px; }
+ul.ul-interests li { font-size: 15px; line-height: 1.6; margin-bottom: 4px; }
+ul.ul-edu { padding-left: 26px; }
+ul.ul-edu li .fa-li { color: var(--c-secondary); }
+ul.ul-edu li .description p.course { font-size: 15px; font-weight: 500; color: var(--c-text); }
+ul.ul-edu li .description p.institution { font-size: 13px; }
+@media (min-width: 992px) {
+  .wg-about #profile { position: sticky; top: 96px; }
+}
+
+// ---------- popular topics (tag cloud) ----------
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.tag-cloud a {
+  display: inline-block;
+  font-family: var(--f-sans);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--c-secondary);
+  background: var(--c-btn);
+  border: 1px solid var(--c-btn-border);
+  border-radius: 999px;
+  padding: 0.25em 0.8em;
+  margin: 0;
+  transition: all 0.15s ease;
+}
+.tag-cloud a:hover,
+.dark .tag-cloud a:hover {
+  color: var(--c-heading);
+  background: var(--c-btn-hover);
+  border-color: var(--c-border-strong);
+}
+
+// ---------- contact ----------
+.contact-widget .form-control {
+  font-family: var(--f-sans);
+  font-size: 15px;
+  color: var(--c-text);
+  background: var(--c-card);
+  border: 1px solid var(--c-card-border);
+  border-radius: 8px;
+}
+.contact-widget .form-control:focus {
+  border-color: var(--c-accent);
+  box-shadow: 0 0 0 3px var(--c-accent-ring);
+}
+.contact-widget .form-control::placeholder { color: var(--c-secondary); opacity: 0.8; }
+.contact-widget .fa-ul { font-size: 15px; }
+.contact-widget .fa-li { color: var(--c-secondary); font-size: 1.4em; }
