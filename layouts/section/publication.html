@@ -1,0 +1,216 @@
+{{- define "main" -}}
+{{- /* Site override of the theme's publication list: talks-style search box and pill
+       filters over pub_card.html cards grouped by year, replacing the theme's Isotope
+       grid, <select> filters and APA citation rows. */ -}}
+
+{{ $pub_types := partial "functions/get_pub_types" . }}
+{{ $pages := .Pages.ByDate.Reverse }}
+
+<div class="ui-wrapper pub-list">
+
+  <h1 class="ui-page-title">{{ .Title }}</h1>
+
+  {{ with .Content }}<div class="ui-intro">{{ . }}</div>{{ end }}
+
+  <div class="ui-filter">
+    <div class="ui-search" role="search">
+      <svg class="ui-search-icon" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="pubs-search-input" type="search" placeholder="Search {{ len $pages }} publications &mdash; titles, authors, venues, abstracts&hellip;" aria-label="Search publications by title, author, venue, or abstract" autocomplete="off" spellcheck="false">
+      <span class="ui-search-count" id="pubs-search-count" aria-live="polite"></span>
+      <button type="button" class="ui-search-clear" id="pubs-search-clear" aria-label="Clear search" hidden>&times;</button>
+      <kbd class="ui-search-kbd" aria-hidden="true">/</kbd>
+    </div>
+    <div class="ui-filter-row" data-filter-group="type">
+      <span class="ui-filter-label">Type</span>
+      <button type="button" class="ui-pill active" data-filter="all">All</button>
+      {{ range site.Taxonomies.publication_types.ByCount }}
+      <button type="button" class="ui-pill" data-filter="{{ .Name }}">{{ index $pub_types (int .Name) }}</button>
+      {{ end }}
+    </div>
+    <div class="ui-filter-row" data-filter-group="decade">
+      <span class="ui-filter-label">Decade</span>
+      <button type="button" class="ui-pill active" data-filter="all">All</button>
+      {{ $decades := slice }}
+      {{ range $pages }}{{ $d := printf "%s0s" (substr (.Date.Format "2006") 0 3) }}{{ if not (in $decades $d) }}{{ $decades = $decades | append $d }}{{ end }}{{ end }}
+      {{ range $decades }}<button type="button" class="ui-pill" data-filter="{{ . }}">{{ . }}</button>{{ end }}
+    </div>
+  </div>
+
+  {{ range $pages.GroupByDate "2006" }}
+  <section class="pub-year" data-year="{{ .Key }}">
+    <div class="ui-section-label">{{ .Key }}</div>
+    {{ range .Pages }}
+    {{ partial "pub_card.html" (dict "page" . "filterable" true) }}
+    {{ end }}
+  </section>
+  {{ end }}
+
+  <div class="ui-empty" id="pubs-empty" hidden>No publications match your search and filters.</div>
+
+</div>
+
+<script>
+var PUBS_INDEX_URL = {{ with .OutputFormats.Get "JSON" }}{{ .RelPermalink | jsonify | safeJS }}{{ else }}null{{ end }};
+(function () {
+  var state = { type: 'all', decade: 'all', tokens: [] };
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.pub-card'));
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.pub-year'));
+  var empty = document.getElementById('pubs-empty');
+  var input = document.getElementById('pubs-search-input');
+  var clearBtn = document.getElementById('pubs-search-clear');
+  var countEl = document.getElementById('pubs-search-count');
+  var abstracts = null;      /* permalink -> lowercased abstract, from /publication/index.json */
+  var indexState = 'idle';   /* idle | loading | ready | failed */
+
+  cards.forEach(function (c) {
+    var link = c.querySelector('.ui-card-title a');
+    c._url = link ? link.getAttribute('href') : '';
+    c._meta = c.getAttribute('data-search') || '';
+  });
+
+  function loadIndex() {
+    if (indexState !== 'idle' || !PUBS_INDEX_URL || !window.fetch) return;
+    indexState = 'loading';
+    fetch(PUBS_INDEX_URL).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).then(function (data) {
+      abstracts = {};
+      data.forEach(function (d) { abstracts[d.u] = d.a.toLowerCase(); });
+      indexState = 'ready';
+      apply();
+    }).catch(function () {
+      indexState = 'failed'; /* degrade to title/author/venue search */
+      apply();
+    });
+  }
+
+  function tokenize(q) {
+    return q.toLowerCase().split(/\s+/).filter(function (t) { return t.length > 1; });
+  }
+
+  function apply() {
+    var shown = 0;
+    var searching = state.tokens.length > 0;
+    cards.forEach(function (card) {
+      var ok = (state.type === 'all' || card.getAttribute('data-type') === state.type) &&
+               (state.decade === 'all' || card.getAttribute('data-decade') === state.decade);
+      if (ok && searching) {
+        var abs = abstracts && abstracts[card._url];
+        for (var i = 0; i < state.tokens.length; i++) {
+          var t = state.tokens[i];
+          if (card._meta.indexOf(t) === -1 && !(abs && abs.indexOf(t) !== -1)) { ok = false; break; }
+        }
+      }
+      card.style.display = ok ? '' : 'none';
+      if (ok) shown++;
+    });
+    groups.forEach(function (g) {
+      var any = false;
+      for (var el = g.firstElementChild; el; el = el.nextElementSibling) {
+        if (el.classList.contains('pub-card') && el.style.display !== 'none') { any = true; break; }
+      }
+      g.style.display = any ? '' : 'none';
+    });
+    if (empty) empty.hidden = shown !== 0;
+    if (countEl) {
+      var active = searching || state.type !== 'all' || state.decade !== 'all';
+      var txt = active ? shown + ' of ' + cards.length : '';
+      if (active && searching && indexState === 'loading') txt += ' · searching abstracts…';
+      countEl.textContent = txt;
+    }
+    if (clearBtn && input) clearBtn.hidden = input.value === '';
+  }
+
+  function selectPill(group, value) {
+    var row = document.querySelector('.ui-filter-row[data-filter-group="' + group + '"]');
+    if (!row) return false;
+    var pill = row.querySelector('.ui-pill[data-filter="' + value + '"]');
+    if (!pill) return false;
+    Array.prototype.slice.call(row.querySelectorAll('.ui-pill')).forEach(function (b) { b.classList.remove('active'); });
+    pill.classList.add('active');
+    state[group] = value;
+    return true;
+  }
+
+  Array.prototype.slice.call(document.querySelectorAll('.ui-filter-row[data-filter-group]')).forEach(function (row) {
+    var group = row.getAttribute('data-filter-group');
+    Array.prototype.slice.call(row.querySelectorAll('.ui-pill')).forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        selectPill(group, btn.getAttribute('data-filter'));
+        if (group === 'type') syncHash();
+        apply();
+      });
+    });
+  });
+
+  /* #<n> mirrors the type filter, matching the theme's /publication/#2 links:
+     the hash selects a type on load or change, and a type pill rewrites it
+     (cleared for All) so a reload or shared URL shows the visible selection */
+  function syncHash() {
+    if (!window.history || !history.replaceState) return;
+    var h = state.type === 'all' ? '' : '#' + state.type;
+    history.replaceState(null, '', location.pathname + location.search + h);
+  }
+  function applyHash() {
+    var hash = location.hash.replace('#', '');
+    if (hash === '') {
+      if (state.type !== 'all' && selectPill('type', 'all')) apply();
+    } else if (/^\d+$/.test(hash) && selectPill('type', hash)) {
+      apply();
+    }
+  }
+  applyHash();
+  window.addEventListener('hashchange', applyHash);
+
+  if (!input) return;
+
+  var debounce = null;
+  function onQuery() {
+    var q = input.value;
+    state.tokens = tokenize(q);
+    if (state.tokens.length > 0) loadIndex();
+    apply();
+    /* param is "s", not "q": the theme's academic-search.js opens its own
+       fullscreen overlay on any page load whose URL matches *q=... */
+    if (window.history && history.replaceState) {
+      var qs = q ? 's=' + encodeURIComponent(q) : '';
+      try {
+        var params = new URLSearchParams(location.search);
+        if (q) params.set('s', q); else params.delete('s');
+        qs = params.toString();
+      } catch (err) {}
+      history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '') + location.hash);
+    }
+  }
+  input.addEventListener('input', function () {
+    if (tokenize(input.value).length > 0) loadIndex();
+    if (debounce) window.clearTimeout(debounce);
+    debounce = window.setTimeout(onQuery, 120);
+  });
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && input.value !== '') {
+      input.value = '';
+      onQuery();
+      e.stopPropagation();
+    }
+  });
+  if (clearBtn) clearBtn.addEventListener('click', function () { input.value = ''; onQuery(); input.focus(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== '/' || e.ctrlKey || e.metaKey || e.altKey) return;
+    var a = document.activeElement;
+    if (a && (a.tagName === 'INPUT' || a.tagName === 'TEXTAREA' || a.isContentEditable)) return;
+    e.preventDefault();
+    /* registered before the theme's ready-time handler, so this keeps "/" on
+       this page for the publication search instead of the site-wide overlay */
+    e.stopImmediatePropagation();
+    input.focus();
+  });
+
+  var initQ = null;
+  try { initQ = new URLSearchParams(location.search).get('s'); } catch (err) {}
+  if (initQ) { input.value = initQ; onQuery(); }
+})();
+</script>
+
+{{- end -}}
